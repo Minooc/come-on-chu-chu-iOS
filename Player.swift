@@ -15,11 +15,11 @@ class Player: SKSpriteNode {
     }
     
     func sinkPlayer() {
-        self.position.y += 3
+        self.position.y -= 10
     }
     
     func floatPlayer() {
-        self.position.y -= 3
+        self.position.y += 10
     }
     
 }

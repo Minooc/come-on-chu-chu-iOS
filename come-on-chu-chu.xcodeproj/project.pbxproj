@@ -139,7 +139,6 @@
 			isa = PBXGroup;
 			children = (
 				DA29749C1F68DEDE005F6B41 /* come-on-chu-chu */,
-				DA2974D11F68DF53005F6B41 /* Game Classes */,
 				DA2974D21F68DF59005F6B41 /* Scenes */,
 				DA2974DD1F68E2E8005F6B41 /* Assets */,
 				DA2974B71F68DEDE005F6B41 /* come-on-chu-chuTests */,
@@ -166,6 +165,7 @@
 				DA2974A11F68DEDE005F6B41 /* Actions.sks */,
 				DA2974A31F68DEDE005F6B41 /* GameScene.swift */,
 				DA2974A51F68DEDE005F6B41 /* GameViewController.swift */,
+				DA2974D11F68DF53005F6B41 /* Game Classes */,
 				DA2974A71F68DEDE005F6B41 /* Main.storyboard */,
 				DA2974AA1F68DEDE005F6B41 /* Assets.xcassets */,
 				DA2974AC1F68DEDE005F6B41 /* LaunchScreen.storyboard */,
@@ -200,6 +200,7 @@
 				DA2974D31F68DF5E005F6B41 /* Scene Classes */,
 			);
 			name = "Game Classes";
+			path = ..;
 			sourceTree = "<group>";
 		};
 		DA2974D21F68DF59005F6B41 /* Scenes */ = {
