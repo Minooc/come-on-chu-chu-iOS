@@ -8,9 +8,10 @@
 
 import SpriteKit
 
-class GameplayScene: SKScene {
+class GameplayScene: SKScene, SKPhysicsContactDelegate  {
     
     var player: Player?
+    var playerImage: String?
     var playerSink = false
     
     var mainCamera: SKCameraNode?
@@ -18,8 +19,14 @@ class GameplayScene: SKScene {
     override func didMove(to view: SKView) {
         // initialize everything
         
+        physicsWorld.contactDelegate = self
+        
         player = self.childNode(withName: "Player") as? Player
+        player?.texture = SKTexture(imageNamed: playerImage!)
+        player?.initialize()
+        
         mainCamera = self.childNode(withName: "Main Camera") as? SKCameraNode
+       
         
     }
     
@@ -33,6 +40,31 @@ class GameplayScene: SKScene {
         } else {
             player?.floatPlayer()
         }
+    }
+    
+    func didBegin(_ contact: SKPhysicsContact) {
+        
+        // called when two objects collide
+        var firstBody = SKPhysicsBody()     // it will be player
+        var secondBody = SKPhysicsBody()
+        
+        if contact.bodyA.node?.name == "Player" {
+            firstBody = contact.bodyA
+            secondBody = contact.bodyB
+        } else {
+            firstBody = contact.bodyB
+            secondBody = contact.bodyA
+        }
+        
+        if firstBody.node?.name == "Player" && secondBody.node?.name == "Coin" {
+            
+            // TO DO: sound, score up
+            
+            secondBody.node?.removeFromParent()
+            
+        
+        }
+        
     }
     
     override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {

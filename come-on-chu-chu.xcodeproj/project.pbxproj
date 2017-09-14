@@ -13,7 +13,6 @@
 		DA2220F21F68F16A0009AB60 /* Egypt 01-4.png in Resources */ = {isa = PBXBuildFile; fileRef = DA2220EC1F68F16A0009AB60 /* Egypt 01-4.png */; };
 		DA2220F31F68F16A0009AB60 /* Egypt 01-5.png in Resources */ = {isa = PBXBuildFile; fileRef = DA2220ED1F68F16A0009AB60 /* Egypt 01-5.png */; };
 		DA2220F41F68F16A0009AB60 /* Egypt 01-6.png in Resources */ = {isa = PBXBuildFile; fileRef = DA2220EE1F68F16A0009AB60 /* Egypt 01-6.png */; };
-		DA2220F71F68F3230009AB60 /* testcat.png in Resources */ = {isa = PBXBuildFile; fileRef = DA2220F61F68F3230009AB60 /* testcat.png */; };
 		DA29749E1F68DEDE005F6B41 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA29749D1F68DEDE005F6B41 /* AppDelegate.swift */; };
 		DA2974A01F68DEDE005F6B41 /* GameScene.sks in Resources */ = {isa = PBXBuildFile; fileRef = DA29749F1F68DEDE005F6B41 /* GameScene.sks */; };
 		DA2974A21F68DEDE005F6B41 /* Actions.sks in Resources */ = {isa = PBXBuildFile; fileRef = DA2974A11F68DEDE005F6B41 /* Actions.sks */; };
@@ -30,6 +29,14 @@
 		DA2974DC1F68DFB3005F6B41 /* MainMenuScene.sks in Resources */ = {isa = PBXBuildFile; fileRef = DA2974DB1F68DFB3005F6B41 /* MainMenuScene.sks */; };
 		DA29768D1F68E366005F6B41 /* Egypt1.sks in Resources */ = {isa = PBXBuildFile; fileRef = DA29768C1F68E366005F6B41 /* Egypt1.sks */; };
 		DA2976901F68E3D6005F6B41 /* Background.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA29768F1F68E3D6005F6B41 /* Background.swift */; };
+		DAD6571D1F6A2DD9007F99ED /* Obstacles.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAD6571C1F6A2DD9007F99ED /* Obstacles.swift */; };
+		DAD6571F1F6A2DFF007F99ED /* Collectables.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAD6571E1F6A2DFF007F99ED /* Collectables.swift */; };
+		DAD657211F6A2E66007F99ED /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAD657201F6A2E66007F99ED /* Constants.swift */; };
+		DAD657261F6A3EAA007F99ED /* testcat.png in Resources */ = {isa = PBXBuildFile; fileRef = DAD657221F6A3EAA007F99ED /* testcat.png */; };
+		DAD657271F6A3EAA007F99ED /* testcat2.png in Resources */ = {isa = PBXBuildFile; fileRef = DAD657231F6A3EAA007F99ED /* testcat2.png */; };
+		DAD657281F6A3EAA007F99ED /* testcat3.png in Resources */ = {isa = PBXBuildFile; fileRef = DAD657241F6A3EAA007F99ED /* testcat3.png */; };
+		DAD657291F6A3EAA007F99ED /* testcat4.png in Resources */ = {isa = PBXBuildFile; fileRef = DAD657251F6A3EAA007F99ED /* testcat4.png */; };
+		DAD6572B1F6A3F3C007F99ED /* Cat.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAD6572A1F6A3F3C007F99ED /* Cat.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -56,7 +63,6 @@
 		DA2220EC1F68F16A0009AB60 /* Egypt 01-4.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Egypt 01-4.png"; path = "Assets/Egypt/Egypt 01-4.png"; sourceTree = "<group>"; };
 		DA2220ED1F68F16A0009AB60 /* Egypt 01-5.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Egypt 01-5.png"; path = "Assets/Egypt/Egypt 01-5.png"; sourceTree = "<group>"; };
 		DA2220EE1F68F16A0009AB60 /* Egypt 01-6.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Egypt 01-6.png"; path = "Assets/Egypt/Egypt 01-6.png"; sourceTree = "<group>"; };
-		DA2220F61F68F3230009AB60 /* testcat.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = testcat.png; path = Assets/testcat.png; sourceTree = "<group>"; };
 		DA29749A1F68DEDE005F6B41 /* come-on-chu-chu.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "come-on-chu-chu.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		DA29749D1F68DEDE005F6B41 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		DA29749F1F68DEDE005F6B41 /* GameScene.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = GameScene.sks; sourceTree = "<group>"; };
@@ -79,6 +85,14 @@
 		DA2974DB1F68DFB3005F6B41 /* MainMenuScene.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = MainMenuScene.sks; sourceTree = "<group>"; };
 		DA29768C1F68E366005F6B41 /* Egypt1.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = Egypt1.sks; sourceTree = "<group>"; };
 		DA29768F1F68E3D6005F6B41 /* Background.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Background.swift; sourceTree = "<group>"; };
+		DAD6571C1F6A2DD9007F99ED /* Obstacles.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Obstacles.swift; sourceTree = "<group>"; };
+		DAD6571E1F6A2DFF007F99ED /* Collectables.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Collectables.swift; sourceTree = "<group>"; };
+		DAD657201F6A2E66007F99ED /* Constants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Constants.swift; path = "come-on-chu-chu/Constants.swift"; sourceTree = "<group>"; };
+		DAD657221F6A3EAA007F99ED /* testcat.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = testcat.png; path = Assets/testcat.png; sourceTree = "<group>"; };
+		DAD657231F6A3EAA007F99ED /* testcat2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = testcat2.png; path = Assets/testcat2.png; sourceTree = "<group>"; };
+		DAD657241F6A3EAA007F99ED /* testcat3.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = testcat3.png; path = Assets/testcat3.png; sourceTree = "<group>"; };
+		DAD657251F6A3EAA007F99ED /* testcat4.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = testcat4.png; path = Assets/testcat4.png; sourceTree = "<group>"; };
+		DAD6572A1F6A3F3C007F99ED /* Cat.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Cat.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -130,7 +144,10 @@
 		DA2220F51F68F3170009AB60 /* Cats */ = {
 			isa = PBXGroup;
 			children = (
-				DA2220F61F68F3230009AB60 /* testcat.png */,
+				DAD657221F6A3EAA007F99ED /* testcat.png */,
+				DAD657231F6A3EAA007F99ED /* testcat2.png */,
+				DAD657241F6A3EAA007F99ED /* testcat3.png */,
+				DAD657251F6A3EAA007F99ED /* testcat4.png */,
 			);
 			name = Cats;
 			sourceTree = "<group>";
@@ -139,7 +156,9 @@
 			isa = PBXGroup;
 			children = (
 				DA29749C1F68DEDE005F6B41 /* come-on-chu-chu */,
+				DA2974D11F68DF53005F6B41 /* Game Classes */,
 				DA2974D21F68DF59005F6B41 /* Scenes */,
+				DAD657201F6A2E66007F99ED /* Constants.swift */,
 				DA2974DD1F68E2E8005F6B41 /* Assets */,
 				DA2974B71F68DEDE005F6B41 /* come-on-chu-chuTests */,
 				DA2974C21F68DEDE005F6B41 /* come-on-chu-chuUITests */,
@@ -165,7 +184,6 @@
 				DA2974A11F68DEDE005F6B41 /* Actions.sks */,
 				DA2974A31F68DEDE005F6B41 /* GameScene.swift */,
 				DA2974A51F68DEDE005F6B41 /* GameViewController.swift */,
-				DA2974D11F68DF53005F6B41 /* Game Classes */,
 				DA2974A71F68DEDE005F6B41 /* Main.storyboard */,
 				DA2974AA1F68DEDE005F6B41 /* Assets.xcassets */,
 				DA2974AC1F68DEDE005F6B41 /* LaunchScreen.storyboard */,
@@ -195,12 +213,12 @@
 		DA2974D11F68DF53005F6B41 /* Game Classes */ = {
 			isa = PBXGroup;
 			children = (
+				DAD6571B1F6A2DAE007F99ED /* Obstacle Classes */,
 				DA29768E1F68E3CC005F6B41 /* Background Classes */,
 				DA2974D41F68DF65005F6B41 /* Player Classes */,
 				DA2974D31F68DF5E005F6B41 /* Scene Classes */,
 			);
 			name = "Game Classes";
-			path = ..;
 			sourceTree = "<group>";
 		};
 		DA2974D21F68DF59005F6B41 /* Scenes */ = {
@@ -225,6 +243,7 @@
 			isa = PBXGroup;
 			children = (
 				DA2974D51F68DF74005F6B41 /* Player.swift */,
+				DAD6572A1F6A3F3C007F99ED /* Cat.swift */,
 			);
 			name = "Player Classes";
 			sourceTree = "<group>";
@@ -244,6 +263,15 @@
 				DA29768F1F68E3D6005F6B41 /* Background.swift */,
 			);
 			name = "Background Classes";
+			sourceTree = "<group>";
+		};
+		DAD6571B1F6A2DAE007F99ED /* Obstacle Classes */ = {
+			isa = PBXGroup;
+			children = (
+				DAD6571C1F6A2DD9007F99ED /* Obstacles.swift */,
+				DAD6571E1F6A2DFF007F99ED /* Collectables.swift */,
+			);
+			name = "Obstacle Classes";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -360,13 +388,16 @@
 				DA2220F21F68F16A0009AB60 /* Egypt 01-4.png in Resources */,
 				DA2220EF1F68F16A0009AB60 /* Egypt 01-1.png in Resources */,
 				DA2974A91F68DEDE005F6B41 /* Main.storyboard in Resources */,
+				DAD657291F6A3EAA007F99ED /* testcat4.png in Resources */,
 				DA2974A01F68DEDE005F6B41 /* GameScene.sks in Resources */,
 				DA2974AB1F68DEDE005F6B41 /* Assets.xcassets in Resources */,
 				DA2974AE1F68DEDE005F6B41 /* LaunchScreen.storyboard in Resources */,
 				DA2220F01F68F16A0009AB60 /* Egypt 01-2.png in Resources */,
 				DA29768D1F68E366005F6B41 /* Egypt1.sks in Resources */,
 				DA2220F11F68F16A0009AB60 /* Egypt 01-3.png in Resources */,
-				DA2220F71F68F3230009AB60 /* testcat.png in Resources */,
+				DAD657281F6A3EAA007F99ED /* testcat3.png in Resources */,
+				DAD657261F6A3EAA007F99ED /* testcat.png in Resources */,
+				DAD657271F6A3EAA007F99ED /* testcat2.png in Resources */,
 				DA2220F31F68F16A0009AB60 /* Egypt 01-5.png in Resources */,
 				DA2974DC1F68DFB3005F6B41 /* MainMenuScene.sks in Resources */,
 				DA2974A21F68DEDE005F6B41 /* Actions.sks in Resources */,
@@ -396,9 +427,13 @@
 			files = (
 				DA2974DA1F68DFA6005F6B41 /* MainMenuScene.swift in Sources */,
 				DA2976901F68E3D6005F6B41 /* Background.swift in Sources */,
+				DAD6571D1F6A2DD9007F99ED /* Obstacles.swift in Sources */,
+				DAD6572B1F6A3F3C007F99ED /* Cat.swift in Sources */,
 				DA2974D61F68DF74005F6B41 /* Player.swift in Sources */,
 				DA2974D81F68DF91005F6B41 /* GameplayScene.swift in Sources */,
+				DAD657211F6A2E66007F99ED /* Constants.swift in Sources */,
 				DA2974A41F68DEDE005F6B41 /* GameScene.swift in Sources */,
+				DAD6571F1F6A2DFF007F99ED /* Collectables.swift in Sources */,
 				DA2974A61F68DEDE005F6B41 /* GameViewController.swift in Sources */,
 				DA29749E1F68DEDE005F6B41 /* AppDelegate.swift in Sources */,
 			);
