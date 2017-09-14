@@ -7,6 +7,13 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		DA0432C91F6AF23D002EF8F6 /* itemPanel.png in Resources */ = {isa = PBXBuildFile; fileRef = DA0432C41F6AF23D002EF8F6 /* itemPanel.png */; };
+		DA0432CA1F6AF23D002EF8F6 /* pause.png in Resources */ = {isa = PBXBuildFile; fileRef = DA0432C51F6AF23D002EF8F6 /* pause.png */; };
+		DA0432CD1F6AF386002EF8F6 /* coin.png in Resources */ = {isa = PBXBuildFile; fileRef = DA0432CB1F6AF386002EF8F6 /* coin.png */; };
+		DA0432CE1F6AF386002EF8F6 /* collectable.png in Resources */ = {isa = PBXBuildFile; fileRef = DA0432CC1F6AF386002EF8F6 /* collectable.png */; };
+		DA0432D11F6B1338002EF8F6 /* GameplayController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA0432D01F6B1338002EF8F6 /* GameplayController.swift */; };
+		DA0432D51F6B1B4A002EF8F6 /* booster.png in Resources */ = {isa = PBXBuildFile; fileRef = DA0432D41F6B1B4A002EF8F6 /* booster.png */; };
+		DA0432D71F6B1CB4002EF8F6 /* healthBar.png in Resources */ = {isa = PBXBuildFile; fileRef = DA0432D61F6B1CB4002EF8F6 /* healthBar.png */; };
 		DA2220EF1F68F16A0009AB60 /* Egypt 01-1.png in Resources */ = {isa = PBXBuildFile; fileRef = DA2220E91F68F16A0009AB60 /* Egypt 01-1.png */; };
 		DA2220F01F68F16A0009AB60 /* Egypt 01-2.png in Resources */ = {isa = PBXBuildFile; fileRef = DA2220EA1F68F16A0009AB60 /* Egypt 01-2.png */; };
 		DA2220F11F68F16A0009AB60 /* Egypt 01-3.png in Resources */ = {isa = PBXBuildFile; fileRef = DA2220EB1F68F16A0009AB60 /* Egypt 01-3.png */; };
@@ -37,6 +44,7 @@
 		DAD657281F6A3EAA007F99ED /* testcat3.png in Resources */ = {isa = PBXBuildFile; fileRef = DAD657241F6A3EAA007F99ED /* testcat3.png */; };
 		DAD657291F6A3EAA007F99ED /* testcat4.png in Resources */ = {isa = PBXBuildFile; fileRef = DAD657251F6A3EAA007F99ED /* testcat4.png */; };
 		DAD6572B1F6A3F3C007F99ED /* Cat.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAD6572A1F6A3F3C007F99ED /* Cat.swift */; };
+		DAD6572E1F6AE460007F99ED /* interface.png in Resources */ = {isa = PBXBuildFile; fileRef = DAD6572D1F6AE460007F99ED /* interface.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -57,6 +65,13 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		DA0432C41F6AF23D002EF8F6 /* itemPanel.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = itemPanel.png; path = Assets/itemPanel.png; sourceTree = "<group>"; };
+		DA0432C51F6AF23D002EF8F6 /* pause.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = pause.png; path = Assets/pause.png; sourceTree = "<group>"; };
+		DA0432CB1F6AF386002EF8F6 /* coin.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = coin.png; path = Assets/coin.png; sourceTree = "<group>"; };
+		DA0432CC1F6AF386002EF8F6 /* collectable.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = collectable.png; path = Assets/collectable.png; sourceTree = "<group>"; };
+		DA0432D01F6B1338002EF8F6 /* GameplayController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GameplayController.swift; sourceTree = "<group>"; };
+		DA0432D41F6B1B4A002EF8F6 /* booster.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = booster.png; path = Assets/booster.png; sourceTree = "<group>"; };
+		DA0432D61F6B1CB4002EF8F6 /* healthBar.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = healthBar.png; path = Assets/healthBar.png; sourceTree = "<group>"; };
 		DA2220E91F68F16A0009AB60 /* Egypt 01-1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Egypt 01-1.png"; path = "Assets/Egypt/Egypt 01-1.png"; sourceTree = "<group>"; };
 		DA2220EA1F68F16A0009AB60 /* Egypt 01-2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Egypt 01-2.png"; path = "Assets/Egypt/Egypt 01-2.png"; sourceTree = "<group>"; };
 		DA2220EB1F68F16A0009AB60 /* Egypt 01-3.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Egypt 01-3.png"; path = "Assets/Egypt/Egypt 01-3.png"; sourceTree = "<group>"; };
@@ -93,6 +108,7 @@
 		DAD657241F6A3EAA007F99ED /* testcat3.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = testcat3.png; path = Assets/testcat3.png; sourceTree = "<group>"; };
 		DAD657251F6A3EAA007F99ED /* testcat4.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = testcat4.png; path = Assets/testcat4.png; sourceTree = "<group>"; };
 		DAD6572A1F6A3F3C007F99ED /* Cat.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Cat.swift; sourceTree = "<group>"; };
+		DAD6572D1F6AE460007F99ED /* interface.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = interface.png; path = Assets/interface.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -120,6 +136,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		DA0432CF1F6B1325002EF8F6 /* Gameplay Controller */ = {
+			isa = PBXGroup;
+			children = (
+				DA0432D01F6B1338002EF8F6 /* GameplayController.swift */,
+			);
+			name = "Gameplay Controller";
+			sourceTree = "<group>";
+		};
 		DA2220E71F68EFD80009AB60 /* Background */ = {
 			isa = PBXGroup;
 			children = (
@@ -213,6 +237,7 @@
 		DA2974D11F68DF53005F6B41 /* Game Classes */ = {
 			isa = PBXGroup;
 			children = (
+				DA0432CF1F6B1325002EF8F6 /* Gameplay Controller */,
 				DAD6571B1F6A2DAE007F99ED /* Obstacle Classes */,
 				DA29768E1F68E3CC005F6B41 /* Background Classes */,
 				DA2974D41F68DF65005F6B41 /* Player Classes */,
@@ -253,6 +278,7 @@
 			children = (
 				DA2220F51F68F3170009AB60 /* Cats */,
 				DA2220E71F68EFD80009AB60 /* Background */,
+				DAD6572C1F6AE454007F99ED /* Interface */,
 			);
 			name = Assets;
 			sourceTree = "<group>";
@@ -272,6 +298,20 @@
 				DAD6571E1F6A2DFF007F99ED /* Collectables.swift */,
 			);
 			name = "Obstacle Classes";
+			sourceTree = "<group>";
+		};
+		DAD6572C1F6AE454007F99ED /* Interface */ = {
+			isa = PBXGroup;
+			children = (
+				DA0432CB1F6AF386002EF8F6 /* coin.png */,
+				DA0432CC1F6AF386002EF8F6 /* collectable.png */,
+				DA0432C41F6AF23D002EF8F6 /* itemPanel.png */,
+				DA0432C51F6AF23D002EF8F6 /* pause.png */,
+				DAD6572D1F6AE460007F99ED /* interface.png */,
+				DA0432D41F6B1B4A002EF8F6 /* booster.png */,
+				DA0432D61F6B1CB4002EF8F6 /* healthBar.png */,
+			);
+			name = Interface;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -389,18 +429,25 @@
 				DA2220EF1F68F16A0009AB60 /* Egypt 01-1.png in Resources */,
 				DA2974A91F68DEDE005F6B41 /* Main.storyboard in Resources */,
 				DAD657291F6A3EAA007F99ED /* testcat4.png in Resources */,
+				DAD6572E1F6AE460007F99ED /* interface.png in Resources */,
 				DA2974A01F68DEDE005F6B41 /* GameScene.sks in Resources */,
+				DA0432CA1F6AF23D002EF8F6 /* pause.png in Resources */,
 				DA2974AB1F68DEDE005F6B41 /* Assets.xcassets in Resources */,
 				DA2974AE1F68DEDE005F6B41 /* LaunchScreen.storyboard in Resources */,
+				DA0432CE1F6AF386002EF8F6 /* collectable.png in Resources */,
+				DA0432D71F6B1CB4002EF8F6 /* healthBar.png in Resources */,
+				DA0432C91F6AF23D002EF8F6 /* itemPanel.png in Resources */,
 				DA2220F01F68F16A0009AB60 /* Egypt 01-2.png in Resources */,
 				DA29768D1F68E366005F6B41 /* Egypt1.sks in Resources */,
 				DA2220F11F68F16A0009AB60 /* Egypt 01-3.png in Resources */,
+				DA0432D51F6B1B4A002EF8F6 /* booster.png in Resources */,
 				DAD657281F6A3EAA007F99ED /* testcat3.png in Resources */,
 				DAD657261F6A3EAA007F99ED /* testcat.png in Resources */,
 				DAD657271F6A3EAA007F99ED /* testcat2.png in Resources */,
 				DA2220F31F68F16A0009AB60 /* Egypt 01-5.png in Resources */,
 				DA2974DC1F68DFB3005F6B41 /* MainMenuScene.sks in Resources */,
 				DA2974A21F68DEDE005F6B41 /* Actions.sks in Resources */,
+				DA0432CD1F6AF386002EF8F6 /* coin.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -432,6 +479,7 @@
 				DA2974D61F68DF74005F6B41 /* Player.swift in Sources */,
 				DA2974D81F68DF91005F6B41 /* GameplayScene.swift in Sources */,
 				DAD657211F6A2E66007F99ED /* Constants.swift in Sources */,
+				DA0432D11F6B1338002EF8F6 /* GameplayController.swift in Sources */,
 				DA2974A41F68DEDE005F6B41 /* GameScene.swift in Sources */,
 				DAD6571F1F6A2DFF007F99ED /* Collectables.swift in Sources */,
 				DA2974A61F68DEDE005F6B41 /* GameViewController.swift in Sources */,
