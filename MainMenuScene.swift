@@ -11,7 +11,10 @@ import SpriteKit
 class MainMenuScene: SKScene {
     
     override func didMove(to view: SKView) {
+        GameManager.instance.initializeGame()
         
+       getLabel()
+
     }
     
     override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
@@ -34,6 +37,15 @@ class MainMenuScene: SKScene {
         
         }
         
+    }
+    
+    
+    func getLabel() {
+        let scoreLabel = self.childNode(withName: "HighScore") as? SKLabelNode
+        scoreLabel?.text = "\(GameManager.instance.getHighScore())"
+        
+        let coinLabel = self.childNode(withName: "TotalCoin") as? SKLabelNode
+        coinLabel?.text = "\(GameManager.instance.getTotalCoin())"
     }
     
     

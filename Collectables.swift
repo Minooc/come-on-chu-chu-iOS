@@ -15,12 +15,14 @@ class Collectables: SKSpriteNode, SKPhysicsContactDelegate {
         
         super.init(texture: texture, color: color, size: size)
         
+        /*
         self.physicsBody = SKPhysicsBody(rectangleOf: CGSize(width: self.size.width - 50, height: self.size.height - 5))
         self.physicsBody?.affectedByGravity = false
         self.physicsBody?.allowsRotation = false
         self.physicsBody?.restitution = 0   // no bounce
         self.physicsBody?.categoryBitMask = ColliderType.collectables
         self.physicsBody?.collisionBitMask = ColliderType.player
+        */
     }
     
     convenience init(color: UIColor, size: CGSize) {
@@ -31,8 +33,8 @@ class Collectables: SKSpriteNode, SKPhysicsContactDelegate {
     required init?(coder aDecoder: NSCoder) {
         super.init(coder: aDecoder)
     }
- */
-    
+ 
+    */
     
     
 }

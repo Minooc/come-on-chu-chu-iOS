@@ -127,20 +127,29 @@ class GameplayScene: SKScene, SKPhysicsContactDelegate  {
         
         if firstBody.node?.name == "Player" && secondBody.node?.name == "Coin" {
             
-            // TO DO: sound, score up
+            // TO DO: sound
             
             GameplayController.instance.incrementCoin()
             secondBody.node?.removeFromParent()
             
+            
+            
         
         } else if firstBody.node?.name == "Player" && secondBody.node?.name == "Collectable" {
             
-            // TO DO: sound, score up
+            // TO DO: sound
             
             GameplayController.instance.incrementScore()
             secondBody.node?.removeFromParent()
             
             
+        
+        } else if firstBody.node?.name == "Player" && secondBody.node?.name == "End" {
+            // delete this part later
+            
+            gameEnd()
+            print("Your high score is \(GameManager.instance.getHighScore())")
+            print("Your total coin is \(GameManager.instance.getTotalCoin())")
         }
         
     }
@@ -169,6 +178,16 @@ class GameplayScene: SKScene, SKPhysicsContactDelegate  {
         self.mainCamera?.position.x += 7   // move camera right
     }
     
-    
+    func gameEnd() {
+        
+        if (GameManager.instance.getHighScore() < GameplayController.instance.score!) {
+            GameManager.instance.setHighScore(highScore: GameplayController.instance.score!)
+        }
+        
+        let totalCoin = GameManager.instance.getTotalCoin() + GameplayController.instance.coin!
+        GameManager.instance.setTotalCoin(totalCoin: totalCoin)
+        
+        GameManager.instance.saveData()
+    }
     
 }

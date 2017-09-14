@@ -14,6 +14,8 @@
 		DA0432D11F6B1338002EF8F6 /* GameplayController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA0432D01F6B1338002EF8F6 /* GameplayController.swift */; };
 		DA0432D51F6B1B4A002EF8F6 /* booster.png in Resources */ = {isa = PBXBuildFile; fileRef = DA0432D41F6B1B4A002EF8F6 /* booster.png */; };
 		DA0432D71F6B1CB4002EF8F6 /* healthBar.png in Resources */ = {isa = PBXBuildFile; fileRef = DA0432D61F6B1CB4002EF8F6 /* healthBar.png */; };
+		DA0432D91F6B3A5C002EF8F6 /* GameData.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA0432D81F6B3A5C002EF8F6 /* GameData.swift */; };
+		DA0432DB1F6B3AD7002EF8F6 /* GameManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA0432DA1F6B3AD7002EF8F6 /* GameManager.swift */; };
 		DA2220EF1F68F16A0009AB60 /* Egypt 01-1.png in Resources */ = {isa = PBXBuildFile; fileRef = DA2220E91F68F16A0009AB60 /* Egypt 01-1.png */; };
 		DA2220F01F68F16A0009AB60 /* Egypt 01-2.png in Resources */ = {isa = PBXBuildFile; fileRef = DA2220EA1F68F16A0009AB60 /* Egypt 01-2.png */; };
 		DA2220F11F68F16A0009AB60 /* Egypt 01-3.png in Resources */ = {isa = PBXBuildFile; fileRef = DA2220EB1F68F16A0009AB60 /* Egypt 01-3.png */; };
@@ -72,6 +74,8 @@
 		DA0432D01F6B1338002EF8F6 /* GameplayController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GameplayController.swift; sourceTree = "<group>"; };
 		DA0432D41F6B1B4A002EF8F6 /* booster.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = booster.png; path = Assets/booster.png; sourceTree = "<group>"; };
 		DA0432D61F6B1CB4002EF8F6 /* healthBar.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = healthBar.png; path = Assets/healthBar.png; sourceTree = "<group>"; };
+		DA0432D81F6B3A5C002EF8F6 /* GameData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GameData.swift; sourceTree = "<group>"; };
+		DA0432DA1F6B3AD7002EF8F6 /* GameManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GameManager.swift; sourceTree = "<group>"; };
 		DA2220E91F68F16A0009AB60 /* Egypt 01-1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Egypt 01-1.png"; path = "Assets/Egypt/Egypt 01-1.png"; sourceTree = "<group>"; };
 		DA2220EA1F68F16A0009AB60 /* Egypt 01-2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Egypt 01-2.png"; path = "Assets/Egypt/Egypt 01-2.png"; sourceTree = "<group>"; };
 		DA2220EB1F68F16A0009AB60 /* Egypt 01-3.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Egypt 01-3.png"; path = "Assets/Egypt/Egypt 01-3.png"; sourceTree = "<group>"; };
@@ -140,6 +144,8 @@
 			isa = PBXGroup;
 			children = (
 				DA0432D01F6B1338002EF8F6 /* GameplayController.swift */,
+				DA0432D81F6B3A5C002EF8F6 /* GameData.swift */,
+				DA0432DA1F6B3AD7002EF8F6 /* GameManager.swift */,
 			);
 			name = "Gameplay Controller";
 			sourceTree = "<group>";
@@ -475,7 +481,9 @@
 				DA2974DA1F68DFA6005F6B41 /* MainMenuScene.swift in Sources */,
 				DA2976901F68E3D6005F6B41 /* Background.swift in Sources */,
 				DAD6571D1F6A2DD9007F99ED /* Obstacles.swift in Sources */,
+				DA0432DB1F6B3AD7002EF8F6 /* GameManager.swift in Sources */,
 				DAD6572B1F6A3F3C007F99ED /* Cat.swift in Sources */,
+				DA0432D91F6B3A5C002EF8F6 /* GameData.swift in Sources */,
 				DA2974D61F68DF74005F6B41 /* Player.swift in Sources */,
 				DA2974D81F68DF91005F6B41 /* GameplayScene.swift in Sources */,
 				DAD657211F6A2E66007F99ED /* Constants.swift in Sources */,
