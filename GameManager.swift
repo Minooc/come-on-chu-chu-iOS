@@ -65,4 +65,16 @@ class GameManager {
     func setTotalCoin(totalCoin: Int32) {
         self.gameData?.totalCoin = totalCoin
     }
+    
+    func dailyCheck(today: String) {
+        self.gameData?.dailyGift[today] = true
+    }
+    
+    func getDailyCheck(today: String) -> Bool {
+        if let didGetGiftToday = self.gameData?.dailyGift[today] {
+            return didGetGiftToday
+        } else {
+            return false
+        }
+    }
 }

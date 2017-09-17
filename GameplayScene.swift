@@ -175,7 +175,7 @@ class GameplayScene: SKScene, SKPhysicsContactDelegate  {
     }
     
     func moveCamera() {
-        self.mainCamera?.position.x += 7   // move camera right
+        self.mainCamera?.position.x += 4   // move camera right
     }
     
     func gameEnd() {
