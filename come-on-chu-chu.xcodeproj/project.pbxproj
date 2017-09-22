@@ -7,13 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		DA0432C91F6AF23D002EF8F6 /* itemPanel.png in Resources */ = {isa = PBXBuildFile; fileRef = DA0432C41F6AF23D002EF8F6 /* itemPanel.png */; };
-		DA0432CA1F6AF23D002EF8F6 /* pause.png in Resources */ = {isa = PBXBuildFile; fileRef = DA0432C51F6AF23D002EF8F6 /* pause.png */; };
 		DA0432CD1F6AF386002EF8F6 /* coin.png in Resources */ = {isa = PBXBuildFile; fileRef = DA0432CB1F6AF386002EF8F6 /* coin.png */; };
 		DA0432CE1F6AF386002EF8F6 /* collectable.png in Resources */ = {isa = PBXBuildFile; fileRef = DA0432CC1F6AF386002EF8F6 /* collectable.png */; };
 		DA0432D11F6B1338002EF8F6 /* GameplayController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA0432D01F6B1338002EF8F6 /* GameplayController.swift */; };
-		DA0432D51F6B1B4A002EF8F6 /* booster.png in Resources */ = {isa = PBXBuildFile; fileRef = DA0432D41F6B1B4A002EF8F6 /* booster.png */; };
-		DA0432D71F6B1CB4002EF8F6 /* healthBar.png in Resources */ = {isa = PBXBuildFile; fileRef = DA0432D61F6B1CB4002EF8F6 /* healthBar.png */; };
 		DA0432D91F6B3A5C002EF8F6 /* GameData.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA0432D81F6B3A5C002EF8F6 /* GameData.swift */; };
 		DA0432DB1F6B3AD7002EF8F6 /* GameManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA0432DA1F6B3AD7002EF8F6 /* GameManager.swift */; };
 		DA2220EF1F68F16A0009AB60 /* Egypt 01-1.png in Resources */ = {isa = PBXBuildFile; fileRef = DA2220E91F68F16A0009AB60 /* Egypt 01-1.png */; };
@@ -22,17 +18,6 @@
 		DA2220F21F68F16A0009AB60 /* Egypt 01-4.png in Resources */ = {isa = PBXBuildFile; fileRef = DA2220EC1F68F16A0009AB60 /* Egypt 01-4.png */; };
 		DA2220F31F68F16A0009AB60 /* Egypt 01-5.png in Resources */ = {isa = PBXBuildFile; fileRef = DA2220ED1F68F16A0009AB60 /* Egypt 01-5.png */; };
 		DA2220F41F68F16A0009AB60 /* Egypt 01-6.png in Resources */ = {isa = PBXBuildFile; fileRef = DA2220EE1F68F16A0009AB60 /* Egypt 01-6.png */; };
-		DA2599581F70CC6400BB9573 /* mainCollectableBar.png in Resources */ = {isa = PBXBuildFile; fileRef = DA25994D1F70CC6400BB9573 /* mainCollectableBar.png */; };
-		DA2599591F70CC6400BB9573 /* mainDailyBonus.png in Resources */ = {isa = PBXBuildFile; fileRef = DA25994E1F70CC6400BB9573 /* mainDailyBonus.png */; };
-		DA25995A1F70CC6400BB9573 /* mainItemBar.png in Resources */ = {isa = PBXBuildFile; fileRef = DA25994F1F70CC6400BB9573 /* mainItemBar.png */; };
-		DA25995B1F70CC6400BB9573 /* mainPresent.png in Resources */ = {isa = PBXBuildFile; fileRef = DA2599501F70CC6400BB9573 /* mainPresent.png */; };
-		DA25995C1F70CC6400BB9573 /* mainSetting.png in Resources */ = {isa = PBXBuildFile; fileRef = DA2599511F70CC6400BB9573 /* mainSetting.png */; };
-		DA25995D1F70CC6400BB9573 /* jukebox.png in Resources */ = {isa = PBXBuildFile; fileRef = DA2599521F70CC6400BB9573 /* jukebox.png */; };
-		DA25995E1F70CC6400BB9573 /* main screen.png in Resources */ = {isa = PBXBuildFile; fileRef = DA2599531F70CC6400BB9573 /* main screen.png */; };
-		DA25995F1F70CC6400BB9573 /* mainBackground.png in Resources */ = {isa = PBXBuildFile; fileRef = DA2599541F70CC6400BB9573 /* mainBackground.png */; };
-		DA2599601F70CC6400BB9573 /* mainBoard.png in Resources */ = {isa = PBXBuildFile; fileRef = DA2599551F70CC6400BB9573 /* mainBoard.png */; };
-		DA2599611F70CC6400BB9573 /* mainCollectionBook.png in Resources */ = {isa = PBXBuildFile; fileRef = DA2599561F70CC6400BB9573 /* mainCollectionBook.png */; };
-		DA2599621F70CC6400BB9573 /* mainToHome.png in Resources */ = {isa = PBXBuildFile; fileRef = DA2599571F70CC6400BB9573 /* mainToHome.png */; };
 		DA2599641F73941400BB9573 /* testScene.sks in Resources */ = {isa = PBXBuildFile; fileRef = DA2599631F73941400BB9573 /* testScene.sks */; };
 		DA2599861F7397C600BB9573 /* german1-0.png in Resources */ = {isa = PBXBuildFile; fileRef = DA25997C1F7397C600BB9573 /* german1-0.png */; };
 		DA2599871F7397C600BB9573 /* german1-1.png in Resources */ = {isa = PBXBuildFile; fileRef = DA25997D1F7397C600BB9573 /* german1-1.png */; };
@@ -44,6 +29,7 @@
 		DA25998D1F7397C600BB9573 /* german1-7.png in Resources */ = {isa = PBXBuildFile; fileRef = DA2599831F7397C600BB9573 /* german1-7.png */; };
 		DA25998E1F7397C600BB9573 /* german1-8.png in Resources */ = {isa = PBXBuildFile; fileRef = DA2599841F7397C600BB9573 /* german1-8.png */; };
 		DA25998F1F7397C600BB9573 /* german1-9.png in Resources */ = {isa = PBXBuildFile; fileRef = DA2599851F7397C600BB9573 /* german1-9.png */; };
+		DA2599A11F74DD6A00BB9573 /* settingtest.sks in Resources */ = {isa = PBXBuildFile; fileRef = DA2599A01F74DD6A00BB9573 /* settingtest.sks */; };
 		DA29749E1F68DEDE005F6B41 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA29749D1F68DEDE005F6B41 /* AppDelegate.swift */; };
 		DA2974A01F68DEDE005F6B41 /* GameScene.sks in Resources */ = {isa = PBXBuildFile; fileRef = DA29749F1F68DEDE005F6B41 /* GameScene.sks */; };
 		DA2974A21F68DEDE005F6B41 /* Actions.sks in Resources */ = {isa = PBXBuildFile; fileRef = DA2974A11F68DEDE005F6B41 /* Actions.sks */; };
@@ -68,7 +54,28 @@
 		DAD657281F6A3EAA007F99ED /* testcat3.png in Resources */ = {isa = PBXBuildFile; fileRef = DAD657241F6A3EAA007F99ED /* testcat3.png */; };
 		DAD657291F6A3EAA007F99ED /* testcat4.png in Resources */ = {isa = PBXBuildFile; fileRef = DAD657251F6A3EAA007F99ED /* testcat4.png */; };
 		DAD6572B1F6A3F3C007F99ED /* Cat.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAD6572A1F6A3F3C007F99ED /* Cat.swift */; };
-		DAD6572E1F6AE460007F99ED /* interface.png in Resources */ = {isa = PBXBuildFile; fileRef = DAD6572D1F6AE460007F99ED /* interface.png */; };
+		DADC52871F7510550033BB28 /* check sign.png in Resources */ = {isa = PBXBuildFile; fileRef = DADC52811F7510550033BB28 /* check sign.png */; };
+		DADC52881F7510550033BB28 /* default setting screen.png in Resources */ = {isa = PBXBuildFile; fileRef = DADC52821F7510550033BB28 /* default setting screen.png */; };
+		DADC52891F7510550033BB28 /* facebookBtn.png in Resources */ = {isa = PBXBuildFile; fileRef = DADC52831F7510550033BB28 /* facebookBtn.png */; };
+		DADC528A1F7510550033BB28 /* instruction.png in Resources */ = {isa = PBXBuildFile; fileRef = DADC52841F7510550033BB28 /* instruction.png */; };
+		DADC528B1F7510550033BB28 /* selectionBox.png in Resources */ = {isa = PBXBuildFile; fileRef = DADC52851F7510550033BB28 /* selectionBox.png */; };
+		DADC528C1F7510550033BB28 /* Setting Screen.png in Resources */ = {isa = PBXBuildFile; fileRef = DADC52861F7510550033BB28 /* Setting Screen.png */; };
+		DADC52921F7510C10033BB28 /* booster.png in Resources */ = {isa = PBXBuildFile; fileRef = DADC528D1F7510C10033BB28 /* booster.png */; };
+		DADC52931F7510C10033BB28 /* healthBar.png in Resources */ = {isa = PBXBuildFile; fileRef = DADC528E1F7510C10033BB28 /* healthBar.png */; };
+		DADC52941F7510C10033BB28 /* interface.png in Resources */ = {isa = PBXBuildFile; fileRef = DADC528F1F7510C10033BB28 /* interface.png */; };
+		DADC52951F7510C10033BB28 /* itemPanel.png in Resources */ = {isa = PBXBuildFile; fileRef = DADC52901F7510C10033BB28 /* itemPanel.png */; };
+		DADC52961F7510C10033BB28 /* pause.png in Resources */ = {isa = PBXBuildFile; fileRef = DADC52911F7510C10033BB28 /* pause.png */; };
+		DADC529D1F7510DA0033BB28 /* jukebox.png in Resources */ = {isa = PBXBuildFile; fileRef = DADC52971F7510DA0033BB28 /* jukebox.png */; };
+		DADC529E1F7510DA0033BB28 /* main screen.png in Resources */ = {isa = PBXBuildFile; fileRef = DADC52981F7510DA0033BB28 /* main screen.png */; };
+		DADC529F1F7510DA0033BB28 /* mainBackground.png in Resources */ = {isa = PBXBuildFile; fileRef = DADC52991F7510DA0033BB28 /* mainBackground.png */; };
+		DADC52A01F7510DA0033BB28 /* mainBoard.png in Resources */ = {isa = PBXBuildFile; fileRef = DADC529A1F7510DA0033BB28 /* mainBoard.png */; };
+		DADC52A11F7510DA0033BB28 /* mainCollectionBook.png in Resources */ = {isa = PBXBuildFile; fileRef = DADC529B1F7510DA0033BB28 /* mainCollectionBook.png */; };
+		DADC52A21F7510DA0033BB28 /* mainToHome.png in Resources */ = {isa = PBXBuildFile; fileRef = DADC529C1F7510DA0033BB28 /* mainToHome.png */; };
+		DADC52A91F75111F0033BB28 /* mainCollectableBar.png in Resources */ = {isa = PBXBuildFile; fileRef = DADC52A41F75111F0033BB28 /* mainCollectableBar.png */; };
+		DADC52AA1F75111F0033BB28 /* mainDailyBonus.png in Resources */ = {isa = PBXBuildFile; fileRef = DADC52A51F75111F0033BB28 /* mainDailyBonus.png */; };
+		DADC52AB1F75111F0033BB28 /* mainItemBar.png in Resources */ = {isa = PBXBuildFile; fileRef = DADC52A61F75111F0033BB28 /* mainItemBar.png */; };
+		DADC52AC1F75111F0033BB28 /* mainPresent.png in Resources */ = {isa = PBXBuildFile; fileRef = DADC52A71F75111F0033BB28 /* mainPresent.png */; };
+		DADC52AD1F75111F0033BB28 /* mainSetting.png in Resources */ = {isa = PBXBuildFile; fileRef = DADC52A81F75111F0033BB28 /* mainSetting.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -89,13 +96,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		DA0432C41F6AF23D002EF8F6 /* itemPanel.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = itemPanel.png; path = Assets/itemPanel.png; sourceTree = "<group>"; };
-		DA0432C51F6AF23D002EF8F6 /* pause.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = pause.png; path = Assets/pause.png; sourceTree = "<group>"; };
 		DA0432CB1F6AF386002EF8F6 /* coin.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = coin.png; path = Assets/coin.png; sourceTree = "<group>"; };
 		DA0432CC1F6AF386002EF8F6 /* collectable.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = collectable.png; path = Assets/collectable.png; sourceTree = "<group>"; };
 		DA0432D01F6B1338002EF8F6 /* GameplayController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GameplayController.swift; sourceTree = "<group>"; };
-		DA0432D41F6B1B4A002EF8F6 /* booster.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = booster.png; path = Assets/booster.png; sourceTree = "<group>"; };
-		DA0432D61F6B1CB4002EF8F6 /* healthBar.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = healthBar.png; path = Assets/healthBar.png; sourceTree = "<group>"; };
 		DA0432D81F6B3A5C002EF8F6 /* GameData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GameData.swift; sourceTree = "<group>"; };
 		DA0432DA1F6B3AD7002EF8F6 /* GameManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GameManager.swift; sourceTree = "<group>"; };
 		DA2220E91F68F16A0009AB60 /* Egypt 01-1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Egypt 01-1.png"; path = "Assets/Egypt/Egypt 01-1.png"; sourceTree = "<group>"; };
@@ -104,17 +107,6 @@
 		DA2220EC1F68F16A0009AB60 /* Egypt 01-4.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Egypt 01-4.png"; path = "Assets/Egypt/Egypt 01-4.png"; sourceTree = "<group>"; };
 		DA2220ED1F68F16A0009AB60 /* Egypt 01-5.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Egypt 01-5.png"; path = "Assets/Egypt/Egypt 01-5.png"; sourceTree = "<group>"; };
 		DA2220EE1F68F16A0009AB60 /* Egypt 01-6.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Egypt 01-6.png"; path = "Assets/Egypt/Egypt 01-6.png"; sourceTree = "<group>"; };
-		DA25994D1F70CC6400BB9573 /* mainCollectableBar.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = mainCollectableBar.png; sourceTree = "<group>"; };
-		DA25994E1F70CC6400BB9573 /* mainDailyBonus.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = mainDailyBonus.png; sourceTree = "<group>"; };
-		DA25994F1F70CC6400BB9573 /* mainItemBar.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = mainItemBar.png; sourceTree = "<group>"; };
-		DA2599501F70CC6400BB9573 /* mainPresent.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = mainPresent.png; sourceTree = "<group>"; };
-		DA2599511F70CC6400BB9573 /* mainSetting.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = mainSetting.png; sourceTree = "<group>"; };
-		DA2599521F70CC6400BB9573 /* jukebox.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = jukebox.png; path = "Assets/main screen/jukebox.png"; sourceTree = "<group>"; };
-		DA2599531F70CC6400BB9573 /* main screen.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "main screen.png"; path = "Assets/main screen/main screen.png"; sourceTree = "<group>"; };
-		DA2599541F70CC6400BB9573 /* mainBackground.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = mainBackground.png; path = "Assets/main screen/mainBackground.png"; sourceTree = "<group>"; };
-		DA2599551F70CC6400BB9573 /* mainBoard.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = mainBoard.png; path = "Assets/main screen/mainBoard.png"; sourceTree = "<group>"; };
-		DA2599561F70CC6400BB9573 /* mainCollectionBook.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = mainCollectionBook.png; path = "Assets/main screen/mainCollectionBook.png"; sourceTree = "<group>"; };
-		DA2599571F70CC6400BB9573 /* mainToHome.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = mainToHome.png; path = "Assets/main screen/mainToHome.png"; sourceTree = "<group>"; };
 		DA2599631F73941400BB9573 /* testScene.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = testScene.sks; sourceTree = "<group>"; };
 		DA25997C1F7397C600BB9573 /* german1-0.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "german1-0.png"; path = "Assets/german1 [www.imagesplitter.net]/german1-0.png"; sourceTree = "<group>"; };
 		DA25997D1F7397C600BB9573 /* german1-1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "german1-1.png"; path = "Assets/german1 [www.imagesplitter.net]/german1-1.png"; sourceTree = "<group>"; };
@@ -126,6 +118,7 @@
 		DA2599831F7397C600BB9573 /* german1-7.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "german1-7.png"; path = "Assets/german1 [www.imagesplitter.net]/german1-7.png"; sourceTree = "<group>"; };
 		DA2599841F7397C600BB9573 /* german1-8.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "german1-8.png"; path = "Assets/german1 [www.imagesplitter.net]/german1-8.png"; sourceTree = "<group>"; };
 		DA2599851F7397C600BB9573 /* german1-9.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "german1-9.png"; path = "Assets/german1 [www.imagesplitter.net]/german1-9.png"; sourceTree = "<group>"; };
+		DA2599A01F74DD6A00BB9573 /* settingtest.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = settingtest.sks; sourceTree = "<group>"; };
 		DA29749A1F68DEDE005F6B41 /* come-on-chu-chu.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "come-on-chu-chu.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		DA29749D1F68DEDE005F6B41 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		DA29749F1F68DEDE005F6B41 /* GameScene.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = GameScene.sks; sourceTree = "<group>"; };
@@ -156,7 +149,28 @@
 		DAD657241F6A3EAA007F99ED /* testcat3.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = testcat3.png; path = Assets/testcat3.png; sourceTree = "<group>"; };
 		DAD657251F6A3EAA007F99ED /* testcat4.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = testcat4.png; path = Assets/testcat4.png; sourceTree = "<group>"; };
 		DAD6572A1F6A3F3C007F99ED /* Cat.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Cat.swift; sourceTree = "<group>"; };
-		DAD6572D1F6AE460007F99ED /* interface.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = interface.png; path = Assets/interface.png; sourceTree = "<group>"; };
+		DADC52811F7510550033BB28 /* check sign.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "check sign.png"; sourceTree = "<group>"; };
+		DADC52821F7510550033BB28 /* default setting screen.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "default setting screen.png"; sourceTree = "<group>"; };
+		DADC52831F7510550033BB28 /* facebookBtn.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = facebookBtn.png; sourceTree = "<group>"; };
+		DADC52841F7510550033BB28 /* instruction.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = instruction.png; sourceTree = "<group>"; };
+		DADC52851F7510550033BB28 /* selectionBox.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = selectionBox.png; sourceTree = "<group>"; };
+		DADC52861F7510550033BB28 /* Setting Screen.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Setting Screen.png"; sourceTree = "<group>"; };
+		DADC528D1F7510C10033BB28 /* booster.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = booster.png; path = "Assets/Gameplay Interface/booster.png"; sourceTree = "<group>"; };
+		DADC528E1F7510C10033BB28 /* healthBar.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = healthBar.png; path = "Assets/Gameplay Interface/healthBar.png"; sourceTree = "<group>"; };
+		DADC528F1F7510C10033BB28 /* interface.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = interface.png; path = "Assets/Gameplay Interface/interface.png"; sourceTree = "<group>"; };
+		DADC52901F7510C10033BB28 /* itemPanel.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = itemPanel.png; path = "Assets/Gameplay Interface/itemPanel.png"; sourceTree = "<group>"; };
+		DADC52911F7510C10033BB28 /* pause.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = pause.png; path = "Assets/Gameplay Interface/pause.png"; sourceTree = "<group>"; };
+		DADC52971F7510DA0033BB28 /* jukebox.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = jukebox.png; path = "Assets/Main Menu/jukebox.png"; sourceTree = "<group>"; };
+		DADC52981F7510DA0033BB28 /* main screen.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "main screen.png"; path = "Assets/Main Menu/main screen.png"; sourceTree = "<group>"; };
+		DADC52991F7510DA0033BB28 /* mainBackground.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = mainBackground.png; path = "Assets/Main Menu/mainBackground.png"; sourceTree = "<group>"; };
+		DADC529A1F7510DA0033BB28 /* mainBoard.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = mainBoard.png; path = "Assets/Main Menu/mainBoard.png"; sourceTree = "<group>"; };
+		DADC529B1F7510DA0033BB28 /* mainCollectionBook.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = mainCollectionBook.png; path = "Assets/Main Menu/mainCollectionBook.png"; sourceTree = "<group>"; };
+		DADC529C1F7510DA0033BB28 /* mainToHome.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = mainToHome.png; path = "Assets/Main Menu/mainToHome.png"; sourceTree = "<group>"; };
+		DADC52A41F75111F0033BB28 /* mainCollectableBar.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = mainCollectableBar.png; sourceTree = "<group>"; };
+		DADC52A51F75111F0033BB28 /* mainDailyBonus.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = mainDailyBonus.png; sourceTree = "<group>"; };
+		DADC52A61F75111F0033BB28 /* mainItemBar.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = mainItemBar.png; sourceTree = "<group>"; };
+		DADC52A71F75111F0033BB28 /* mainPresent.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = mainPresent.png; sourceTree = "<group>"; };
+		DADC52A81F75111F0033BB28 /* mainSetting.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = mainSetting.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -230,28 +244,16 @@
 		DA25994B1F70CC2900BB9573 /* Main Screen */ = {
 			isa = PBXGroup;
 			children = (
-				DA25994C1F70CC6400BB9573 /* interface */,
-				DA2599521F70CC6400BB9573 /* jukebox.png */,
-				DA2599531F70CC6400BB9573 /* main screen.png */,
-				DA2599541F70CC6400BB9573 /* mainBackground.png */,
-				DA2599551F70CC6400BB9573 /* mainBoard.png */,
-				DA2599561F70CC6400BB9573 /* mainCollectionBook.png */,
-				DA2599571F70CC6400BB9573 /* mainToHome.png */,
+				DADC52801F7510550033BB28 /* setting */,
+				DADC52971F7510DA0033BB28 /* jukebox.png */,
+				DADC52981F7510DA0033BB28 /* main screen.png */,
+				DADC52991F7510DA0033BB28 /* mainBackground.png */,
+				DADC529A1F7510DA0033BB28 /* mainBoard.png */,
+				DADC529B1F7510DA0033BB28 /* mainCollectionBook.png */,
+				DADC529C1F7510DA0033BB28 /* mainToHome.png */,
+				DADC52A31F75111F0033BB28 /* interface */,
 			);
 			name = "Main Screen";
-			sourceTree = "<group>";
-		};
-		DA25994C1F70CC6400BB9573 /* interface */ = {
-			isa = PBXGroup;
-			children = (
-				DA25994D1F70CC6400BB9573 /* mainCollectableBar.png */,
-				DA25994E1F70CC6400BB9573 /* mainDailyBonus.png */,
-				DA25994F1F70CC6400BB9573 /* mainItemBar.png */,
-				DA2599501F70CC6400BB9573 /* mainPresent.png */,
-				DA2599511F70CC6400BB9573 /* mainSetting.png */,
-			);
-			name = interface;
-			path = "Assets/main screen/interface";
 			sourceTree = "<group>";
 		};
 		DA2599671F73957E00BB9573 /* TestGerman */ = {
@@ -347,6 +349,7 @@
 				DA2974DB1F68DFB3005F6B41 /* MainMenuScene.sks */,
 				DA29768C1F68E366005F6B41 /* Egypt1.sks */,
 				DA2599631F73941400BB9573 /* testScene.sks */,
+				DA2599A01F74DD6A00BB9573 /* settingtest.sks */,
 			);
 			name = Scenes;
 			sourceTree = "<group>";
@@ -402,13 +405,40 @@
 			children = (
 				DA0432CB1F6AF386002EF8F6 /* coin.png */,
 				DA0432CC1F6AF386002EF8F6 /* collectable.png */,
-				DA0432C41F6AF23D002EF8F6 /* itemPanel.png */,
-				DA0432C51F6AF23D002EF8F6 /* pause.png */,
-				DAD6572D1F6AE460007F99ED /* interface.png */,
-				DA0432D41F6B1B4A002EF8F6 /* booster.png */,
-				DA0432D61F6B1CB4002EF8F6 /* healthBar.png */,
+				DADC528D1F7510C10033BB28 /* booster.png */,
+				DADC528E1F7510C10033BB28 /* healthBar.png */,
+				DADC528F1F7510C10033BB28 /* interface.png */,
+				DADC52901F7510C10033BB28 /* itemPanel.png */,
+				DADC52911F7510C10033BB28 /* pause.png */,
 			);
 			name = "Game Screen Interface";
+			sourceTree = "<group>";
+		};
+		DADC52801F7510550033BB28 /* setting */ = {
+			isa = PBXGroup;
+			children = (
+				DADC52811F7510550033BB28 /* check sign.png */,
+				DADC52821F7510550033BB28 /* default setting screen.png */,
+				DADC52831F7510550033BB28 /* facebookBtn.png */,
+				DADC52841F7510550033BB28 /* instruction.png */,
+				DADC52851F7510550033BB28 /* selectionBox.png */,
+				DADC52861F7510550033BB28 /* Setting Screen.png */,
+			);
+			name = setting;
+			path = Assets/setting;
+			sourceTree = "<group>";
+		};
+		DADC52A31F75111F0033BB28 /* interface */ = {
+			isa = PBXGroup;
+			children = (
+				DADC52A41F75111F0033BB28 /* mainCollectableBar.png */,
+				DADC52A51F75111F0033BB28 /* mainDailyBonus.png */,
+				DADC52A61F75111F0033BB28 /* mainItemBar.png */,
+				DADC52A71F75111F0033BB28 /* mainPresent.png */,
+				DADC52A81F75111F0033BB28 /* mainSetting.png */,
+			);
+			name = interface;
+			path = "Assets/Main Menu/interface";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -523,50 +553,57 @@
 			files = (
 				DA25998D1F7397C600BB9573 /* german1-7.png in Resources */,
 				DA25998C1F7397C600BB9573 /* german1-6.png in Resources */,
+				DADC529D1F7510DA0033BB28 /* jukebox.png in Resources */,
 				DA2220F41F68F16A0009AB60 /* Egypt 01-6.png in Resources */,
+				DADC52AC1F75111F0033BB28 /* mainPresent.png in Resources */,
 				DA2220F21F68F16A0009AB60 /* Egypt 01-4.png in Resources */,
 				DA2220EF1F68F16A0009AB60 /* Egypt 01-1.png in Resources */,
 				DA2974A91F68DEDE005F6B41 /* Main.storyboard in Resources */,
-				DA2599621F70CC6400BB9573 /* mainToHome.png in Resources */,
+				DADC52AB1F75111F0033BB28 /* mainItemBar.png in Resources */,
 				DA2599881F7397C600BB9573 /* german1-2.png in Resources */,
-				DA2599601F70CC6400BB9573 /* mainBoard.png in Resources */,
+				DADC52941F7510C10033BB28 /* interface.png in Resources */,
 				DA2599871F7397C600BB9573 /* german1-1.png in Resources */,
+				DADC528B1F7510550033BB28 /* selectionBox.png in Resources */,
+				DADC52A01F7510DA0033BB28 /* mainBoard.png in Resources */,
+				DADC52A91F75111F0033BB28 /* mainCollectableBar.png in Resources */,
 				DAD657291F6A3EAA007F99ED /* testcat4.png in Resources */,
-				DAD6572E1F6AE460007F99ED /* interface.png in Resources */,
+				DADC52921F7510C10033BB28 /* booster.png in Resources */,
 				DA2974A01F68DEDE005F6B41 /* GameScene.sks in Resources */,
-				DA25995E1F70CC6400BB9573 /* main screen.png in Resources */,
-				DA0432CA1F6AF23D002EF8F6 /* pause.png in Resources */,
-				DA25995D1F70CC6400BB9573 /* jukebox.png in Resources */,
+				DADC52931F7510C10033BB28 /* healthBar.png in Resources */,
+				DADC52951F7510C10033BB28 /* itemPanel.png in Resources */,
+				DADC52871F7510550033BB28 /* check sign.png in Resources */,
+				DADC52A11F7510DA0033BB28 /* mainCollectionBook.png in Resources */,
 				DA25998B1F7397C600BB9573 /* german1-5.png in Resources */,
-				DA25995F1F70CC6400BB9573 /* mainBackground.png in Resources */,
 				DA2599861F7397C600BB9573 /* german1-0.png in Resources */,
 				DA2974AB1F68DEDE005F6B41 /* Assets.xcassets in Resources */,
 				DA2974AE1F68DEDE005F6B41 /* LaunchScreen.storyboard in Resources */,
+				DADC52891F7510550033BB28 /* facebookBtn.png in Resources */,
 				DA0432CE1F6AF386002EF8F6 /* collectable.png in Resources */,
-				DA0432D71F6B1CB4002EF8F6 /* healthBar.png in Resources */,
 				DA25998E1F7397C600BB9573 /* german1-8.png in Resources */,
-				DA25995B1F70CC6400BB9573 /* mainPresent.png in Resources */,
-				DA0432C91F6AF23D002EF8F6 /* itemPanel.png in Resources */,
+				DADC528A1F7510550033BB28 /* instruction.png in Resources */,
 				DA2220F01F68F16A0009AB60 /* Egypt 01-2.png in Resources */,
 				DA29768D1F68E366005F6B41 /* Egypt1.sks in Resources */,
+				DADC52AA1F75111F0033BB28 /* mainDailyBonus.png in Resources */,
 				DA2220F11F68F16A0009AB60 /* Egypt 01-3.png in Resources */,
-				DA0432D51F6B1B4A002EF8F6 /* booster.png in Resources */,
 				DAD657281F6A3EAA007F99ED /* testcat3.png in Resources */,
+				DADC52AD1F75111F0033BB28 /* mainSetting.png in Resources */,
 				DAD657261F6A3EAA007F99ED /* testcat.png in Resources */,
 				DA2599891F7397C600BB9573 /* german1-3.png in Resources */,
 				DAD657271F6A3EAA007F99ED /* testcat2.png in Resources */,
+				DADC52A21F7510DA0033BB28 /* mainToHome.png in Resources */,
 				DA2599641F73941400BB9573 /* testScene.sks in Resources */,
-				DA2599591F70CC6400BB9573 /* mainDailyBonus.png in Resources */,
-				DA2599581F70CC6400BB9573 /* mainCollectableBar.png in Resources */,
+				DA2599A11F74DD6A00BB9573 /* settingtest.sks in Resources */,
+				DADC52881F7510550033BB28 /* default setting screen.png in Resources */,
 				DA2220F31F68F16A0009AB60 /* Egypt 01-5.png in Resources */,
+				DADC52961F7510C10033BB28 /* pause.png in Resources */,
 				DA25998F1F7397C600BB9573 /* german1-9.png in Resources */,
 				DA2974DC1F68DFB3005F6B41 /* MainMenuScene.sks in Resources */,
 				DA25998A1F7397C600BB9573 /* german1-4.png in Resources */,
 				DA2974A21F68DEDE005F6B41 /* Actions.sks in Resources */,
-				DA25995A1F70CC6400BB9573 /* mainItemBar.png in Resources */,
-				DA25995C1F70CC6400BB9573 /* mainSetting.png in Resources */,
+				DADC529F1F7510DA0033BB28 /* mainBackground.png in Resources */,
 				DA0432CD1F6AF386002EF8F6 /* coin.png in Resources */,
-				DA2599611F70CC6400BB9573 /* mainCollectionBook.png in Resources */,
+				DADC528C1F7510550033BB28 /* Setting Screen.png in Resources */,
+				DADC529E1F7510DA0033BB28 /* main screen.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

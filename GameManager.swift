@@ -23,6 +23,10 @@ class GameManager {
             gameData?.highScore = 0
             gameData?.totalCoin = 0
             
+            gameData?.backgroundMusic = true
+            gameData?.soundEffect = true
+            gameData?.notification = true
+            
             saveData()
         }
         
@@ -83,6 +87,54 @@ class GameManager {
             return didGetGiftToday
         } else {
             return false
+        }
+    }
+    
+    func getBGM() -> Bool {
+        if let backgroundMusic = self.gameData?.backgroundMusic {
+            return backgroundMusic
+        } else {
+            return false
+        }
+    }
+    
+    func shuffleBGM() {
+        if (getBGM() == true) {
+            self.gameData?.backgroundMusic = false
+        } else {
+            self.gameData?.backgroundMusic = true
+        }
+    }
+    
+    func getSoundEffect() -> Bool {
+        if let soundEffect = self.gameData?.soundEffect {
+            return soundEffect
+        } else {
+            return false
+        }
+    }
+    
+    func shuffleSoundEffect() {
+        if (getSoundEffect() == true) {
+            self.gameData?.soundEffect = false
+        } else {
+            self.gameData?.soundEffect = true
+        }
+    }
+    
+    func getNotification() -> Bool {
+        if let notification = self.gameData?.notification {
+            return notification
+        } else {
+            return false
+        }
+    }
+    
+    func shuffleNotification() {
+        if (getNotification() == true) {
+            self.gameData?.notification = false
+        } else {
+            self.gameData?.notification = true
         }
     }
 }
