@@ -16,6 +16,10 @@ class GameplayScene: SKScene, SKPhysicsContactDelegate  {
     
     var mainCamera: SKCameraNode?
     
+    var health: Double!
+    
+    var playerGotHit = false
+    var playerCanGetHit = true
     
     override func didMove(to view: SKView) {
         // initialize everything
@@ -23,8 +27,9 @@ class GameplayScene: SKScene, SKPhysicsContactDelegate  {
         physicsWorld.contactDelegate = self
         
         player = self.childNode(withName: "Player") as? Player
-        player?.texture = SKTexture(imageNamed: playerImage!)
+        //player?.texture = SKTexture(imageNamed: playerImage!)
         player?.initialize()
+        
         
         mainCamera = self.childNode(withName: "Main Camera") as? SKCameraNode
         
@@ -32,6 +37,8 @@ class GameplayScene: SKScene, SKPhysicsContactDelegate  {
         GameplayController.instance.coinText = self.mainCamera!.childNode(withName: "Coin Label") as? SKLabelNode
         GameplayController.instance.initializeVariables()
         
+        
+        health = 100.0
         interfaceLocater()
 
         
@@ -41,6 +48,7 @@ class GameplayScene: SKScene, SKPhysicsContactDelegate  {
         
         player?.movePlayer()
         moveCamera()
+        managePlayer()
         
         if (playerSink) {
             player?.sinkPlayer()
@@ -144,7 +152,17 @@ class GameplayScene: SKScene, SKPhysicsContactDelegate  {
             
             
         
-        } else if firstBody.node?.name == "Player" && secondBody.node?.name == "End" {
+        } else if firstBody.node?.name == "Player" && secondBody.node?.name == "GeneralObstacle" {
+            
+            if (playerCanGetHit) {
+                print("You got hit")
+                playerGotHit = true
+                playerCanGetHit = false
+                health = health - 20.0
+            }
+            
+            
+        } else if firstBody.node?.name == "Player" && secondBody.node?.name == "CriticalObstacle" {
             // delete this part later
             
             gameEnd()
@@ -178,6 +196,47 @@ class GameplayScene: SKScene, SKPhysicsContactDelegate  {
         self.mainCamera?.position.x += 4   // move camera right
     }
     
+
+    func managePlayer() {
+        
+
+        
+        if (player?.position.y)! - (player?.size.height)! * 3.0 > (mainCamera?.position.y)! {
+            print("The player is out of bounds up")
+            gameEnd()
+            self.scene?.isPaused = true
+            
+        }
+        
+        if (player?.position.y)! + (player?.size.height)! * 3.3 < (mainCamera?.position.y)! {
+            print("The player is out of bounds DOWN")
+            gameEnd()
+            self.scene?.isPaused = true
+        }
+        
+        if playerGotHit {
+            playerGotHit = false
+            
+            perform(#selector(setPlayerCanGetHitTrue), with: nil, afterDelay: 1.2)
+            
+        }
+        
+        if health <= 0.0 {
+            print("Health is 0")
+            gameEnd()
+            self.scene?.isPaused = true
+        }
+        
+
+    }
+    
+    func setPlayerCanGetHitTrue() {
+        playerCanGetHit = true
+        print("Now you can hit again")
+    }
+    
+
+    
     func gameEnd() {
         
         if (GameManager.instance.getHighScore() < GameplayController.instance.score!) {
@@ -188,6 +247,13 @@ class GameplayScene: SKScene, SKPhysicsContactDelegate  {
         GameManager.instance.setTotalCoin(totalCoin: totalCoin)
         
         GameManager.instance.saveData()
+        
+        
+        let scene = MainMenuScene(fileNamed: "MainMenuScene")
+        scene!.scaleMode = .aspectFill
+        
+        self.view?.presentScene(scene!, transition: SKTransition.doorsOpenVertical(withDuration: 1))
+
     }
     
 }

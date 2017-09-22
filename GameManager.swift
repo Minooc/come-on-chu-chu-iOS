@@ -51,7 +51,11 @@ class GameManager {
     
     
     func getHighScore() -> Int32 {
-        return (self.gameData?.highScore)!
+        if (self.gameData?.highScore != nil) {
+            return (self.gameData?.highScore)!
+        } else {
+            return 0
+        }
     }
     
     func setHighScore(highScore: Int32) {
@@ -59,7 +63,11 @@ class GameManager {
     }
     
     func getTotalCoin() -> Int32 {
-        return (self.gameData?.totalCoin)!
+        if (self.gameData?.totalCoin != nil) {
+            return (self.gameData?.totalCoin)!
+        } else {
+            return 0
+        }
     }
     
     func setTotalCoin(totalCoin: Int32) {
