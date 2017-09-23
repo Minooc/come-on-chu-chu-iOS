@@ -60,6 +60,13 @@ class MainMenuScene: SKScene {
             }
             */
             
+            if touchedNode.name == "CollectionBtn" {
+                let scene = CollectionScene(fileNamed: "CollectionScene")
+                scene!.scaleMode = .aspectFill
+                self.view?.presentScene(scene!, transition: SKTransition.doorsOpenVertical(withDuration: 1))
+
+            }
+            
             
             // on Setting
             

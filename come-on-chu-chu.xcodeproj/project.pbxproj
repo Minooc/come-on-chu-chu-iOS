@@ -45,7 +45,23 @@
 		DA2974DA1F68DFA6005F6B41 /* MainMenuScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA2974D91F68DFA6005F6B41 /* MainMenuScene.swift */; };
 		DA2974DC1F68DFB3005F6B41 /* MainMenuScene.sks in Resources */ = {isa = PBXBuildFile; fileRef = DA2974DB1F68DFB3005F6B41 /* MainMenuScene.sks */; };
 		DA29768D1F68E366005F6B41 /* Egypt1.sks in Resources */ = {isa = PBXBuildFile; fileRef = DA29768C1F68E366005F6B41 /* Egypt1.sks */; };
-		DA2976901F68E3D6005F6B41 /* Background.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA29768F1F68E3D6005F6B41 /* Background.swift */; };
+		DACF746A1F75F6D300915446 /* CollectionScene.sks in Resources */ = {isa = PBXBuildFile; fileRef = DACF74691F75F6D300915446 /* CollectionScene.sks */; };
+		DACF74981F75F98300915446 /* daytime-default.png in Resources */ = {isa = PBXBuildFile; fileRef = DACF74861F75F98300915446 /* daytime-default.png */; };
+		DACF74991F75F98300915446 /* daytime-holycrapSelected.png in Resources */ = {isa = PBXBuildFile; fileRef = DACF74871F75F98300915446 /* daytime-holycrapSelected.png */; };
+		DACF749A1F75F98300915446 /* daytime-mycatSelected.png in Resources */ = {isa = PBXBuildFile; fileRef = DACF74881F75F98300915446 /* daytime-mycatSelected.png */; };
+		DACF749B1F75F98300915446 /* daytime-normalSelected.png in Resources */ = {isa = PBXBuildFile; fileRef = DACF74891F75F98300915446 /* daytime-normalSelected.png */; };
+		DACF749C1F75F98300915446 /* daytime-rareSelected.png in Resources */ = {isa = PBXBuildFile; fileRef = DACF748A1F75F98300915446 /* daytime-rareSelected.png */; };
+		DACF749F1F75F98300915446 /* nighttime-default.png in Resources */ = {isa = PBXBuildFile; fileRef = DACF74901F75F98300915446 /* nighttime-default.png */; };
+		DACF74A01F75F98300915446 /* nighttime-holycrapSelected.png in Resources */ = {isa = PBXBuildFile; fileRef = DACF74911F75F98300915446 /* nighttime-holycrapSelected.png */; };
+		DACF74A11F75F98300915446 /* nighttime-mycatSelected.png in Resources */ = {isa = PBXBuildFile; fileRef = DACF74921F75F98300915446 /* nighttime-mycatSelected.png */; };
+		DACF74A21F75F98300915446 /* nighttime-normalSelected.png in Resources */ = {isa = PBXBuildFile; fileRef = DACF74931F75F98300915446 /* nighttime-normalSelected.png */; };
+		DACF74A31F75F98300915446 /* nighttime-rareSelected.png in Resources */ = {isa = PBXBuildFile; fileRef = DACF74941F75F98300915446 /* nighttime-rareSelected.png */; };
+		DACF74A71F75F9AC00915446 /* CollectionScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = DACF74A61F75F9AC00915446 /* CollectionScene.swift */; };
+		DACF74A91F75FC9700915446 /* daytime-superrareSelected.png in Resources */ = {isa = PBXBuildFile; fileRef = DACF74A81F75FC9700915446 /* daytime-superrareSelected.png */; };
+		DACF74AB1F76000F00915446 /* switch on.png in Resources */ = {isa = PBXBuildFile; fileRef = DACF74AA1F76000F00915446 /* switch on.png */; };
+		DACF74AD1F76001600915446 /* switch off.png in Resources */ = {isa = PBXBuildFile; fileRef = DACF74AC1F76001600915446 /* switch off.png */; };
+		DACF74B31F76020600915446 /* nighttime-superrareSelected.png in Resources */ = {isa = PBXBuildFile; fileRef = DACF74B21F76020600915446 /* nighttime-superrareSelected.png */; };
+		DACF74B51F76037300915446 /* backToMenu.png in Resources */ = {isa = PBXBuildFile; fileRef = DACF74B41F76037300915446 /* backToMenu.png */; };
 		DAD6571D1F6A2DD9007F99ED /* Obstacles.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAD6571C1F6A2DD9007F99ED /* Obstacles.swift */; };
 		DAD6571F1F6A2DFF007F99ED /* Collectables.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAD6571E1F6A2DFF007F99ED /* Collectables.swift */; };
 		DAD657211F6A2E66007F99ED /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAD657201F6A2E66007F99ED /* Constants.swift */; };
@@ -140,7 +156,23 @@
 		DA2974D91F68DFA6005F6B41 /* MainMenuScene.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainMenuScene.swift; sourceTree = "<group>"; };
 		DA2974DB1F68DFB3005F6B41 /* MainMenuScene.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = MainMenuScene.sks; sourceTree = "<group>"; };
 		DA29768C1F68E366005F6B41 /* Egypt1.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = Egypt1.sks; sourceTree = "<group>"; };
-		DA29768F1F68E3D6005F6B41 /* Background.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Background.swift; sourceTree = "<group>"; };
+		DACF74691F75F6D300915446 /* CollectionScene.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = CollectionScene.sks; sourceTree = "<group>"; };
+		DACF74861F75F98300915446 /* daytime-default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "daytime-default.png"; sourceTree = "<group>"; };
+		DACF74871F75F98300915446 /* daytime-holycrapSelected.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "daytime-holycrapSelected.png"; sourceTree = "<group>"; };
+		DACF74881F75F98300915446 /* daytime-mycatSelected.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "daytime-mycatSelected.png"; sourceTree = "<group>"; };
+		DACF74891F75F98300915446 /* daytime-normalSelected.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "daytime-normalSelected.png"; sourceTree = "<group>"; };
+		DACF748A1F75F98300915446 /* daytime-rareSelected.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "daytime-rareSelected.png"; sourceTree = "<group>"; };
+		DACF74901F75F98300915446 /* nighttime-default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "nighttime-default.png"; sourceTree = "<group>"; };
+		DACF74911F75F98300915446 /* nighttime-holycrapSelected.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "nighttime-holycrapSelected.png"; sourceTree = "<group>"; };
+		DACF74921F75F98300915446 /* nighttime-mycatSelected.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "nighttime-mycatSelected.png"; sourceTree = "<group>"; };
+		DACF74931F75F98300915446 /* nighttime-normalSelected.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "nighttime-normalSelected.png"; sourceTree = "<group>"; };
+		DACF74941F75F98300915446 /* nighttime-rareSelected.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "nighttime-rareSelected.png"; sourceTree = "<group>"; };
+		DACF74A61F75F9AC00915446 /* CollectionScene.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CollectionScene.swift; sourceTree = "<group>"; };
+		DACF74A81F75FC9700915446 /* daytime-superrareSelected.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "daytime-superrareSelected.png"; sourceTree = "<group>"; };
+		DACF74AA1F76000F00915446 /* switch on.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "switch on.png"; sourceTree = "<group>"; };
+		DACF74AC1F76001600915446 /* switch off.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "switch off.png"; sourceTree = "<group>"; };
+		DACF74B21F76020600915446 /* nighttime-superrareSelected.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "nighttime-superrareSelected.png"; sourceTree = "<group>"; };
+		DACF74B41F76037300915446 /* backToMenu.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = backToMenu.png; path = "Assets/Collection Scene/backToMenu.png"; sourceTree = "<group>"; };
 		DAD6571C1F6A2DD9007F99ED /* Obstacles.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Obstacles.swift; sourceTree = "<group>"; };
 		DAD6571E1F6A2DFF007F99ED /* Collectables.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Collectables.swift; sourceTree = "<group>"; };
 		DAD657201F6A2E66007F99ED /* Constants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Constants.swift; path = "come-on-chu-chu/Constants.swift"; sourceTree = "<group>"; };
@@ -336,7 +368,6 @@
 			children = (
 				DA0432CF1F6B1325002EF8F6 /* Gameplay Controller */,
 				DAD6571B1F6A2DAE007F99ED /* Obstacle Classes */,
-				DA29768E1F68E3CC005F6B41 /* Background Classes */,
 				DA2974D41F68DF65005F6B41 /* Player Classes */,
 				DA2974D31F68DF5E005F6B41 /* Scene Classes */,
 			);
@@ -347,6 +378,7 @@
 			isa = PBXGroup;
 			children = (
 				DA2974DB1F68DFB3005F6B41 /* MainMenuScene.sks */,
+				DACF74691F75F6D300915446 /* CollectionScene.sks */,
 				DA29768C1F68E366005F6B41 /* Egypt1.sks */,
 				DA2599631F73941400BB9573 /* testScene.sks */,
 				DA2599A01F74DD6A00BB9573 /* settingtest.sks */,
@@ -359,6 +391,7 @@
 			children = (
 				DA2974D71F68DF91005F6B41 /* GameplayScene.swift */,
 				DA2974D91F68DFA6005F6B41 /* MainMenuScene.swift */,
+				DACF74A61F75F9AC00915446 /* CollectionScene.swift */,
 			);
 			name = "Scene Classes";
 			sourceTree = "<group>";
@@ -375,6 +408,7 @@
 		DA2974DD1F68E2E8005F6B41 /* Assets */ = {
 			isa = PBXGroup;
 			children = (
+				DACF746B1F75F77E00915446 /* Collection Screen */,
 				DA25994B1F70CC2900BB9573 /* Main Screen */,
 				DA2220F51F68F3170009AB60 /* Cats */,
 				DA2220E71F68EFD80009AB60 /* Game Screen Background */,
@@ -383,12 +417,76 @@
 			name = Assets;
 			sourceTree = "<group>";
 		};
-		DA29768E1F68E3CC005F6B41 /* Background Classes */ = {
+		DACF746B1F75F77E00915446 /* Collection Screen */ = {
 			isa = PBXGroup;
 			children = (
-				DA29768F1F68E3D6005F6B41 /* Background.swift */,
+				DACF74B41F76037300915446 /* backToMenu.png */,
+				DACF74841F75F98300915446 /* Switch OFF */,
+				DACF748E1F75F98300915446 /* Switch ON */,
 			);
-			name = "Background Classes";
+			name = "Collection Screen";
+			sourceTree = "<group>";
+		};
+		DACF74841F75F98300915446 /* Switch OFF */ = {
+			isa = PBXGroup;
+			children = (
+				DACF74851F75F98300915446 /* background */,
+				DACF748C1F75F98300915446 /* UI */,
+			);
+			name = "Switch OFF";
+			path = "Assets/Collection Scene/Switch OFF";
+			sourceTree = "<group>";
+		};
+		DACF74851F75F98300915446 /* background */ = {
+			isa = PBXGroup;
+			children = (
+				DACF74861F75F98300915446 /* daytime-default.png */,
+				DACF74871F75F98300915446 /* daytime-holycrapSelected.png */,
+				DACF74881F75F98300915446 /* daytime-mycatSelected.png */,
+				DACF74891F75F98300915446 /* daytime-normalSelected.png */,
+				DACF748A1F75F98300915446 /* daytime-rareSelected.png */,
+				DACF74A81F75FC9700915446 /* daytime-superrareSelected.png */,
+			);
+			path = background;
+			sourceTree = "<group>";
+		};
+		DACF748C1F75F98300915446 /* UI */ = {
+			isa = PBXGroup;
+			children = (
+				DACF74AC1F76001600915446 /* switch off.png */,
+			);
+			path = UI;
+			sourceTree = "<group>";
+		};
+		DACF748E1F75F98300915446 /* Switch ON */ = {
+			isa = PBXGroup;
+			children = (
+				DACF748F1F75F98300915446 /* background */,
+				DACF74961F75F98300915446 /* UI */,
+			);
+			name = "Switch ON";
+			path = "Assets/Collection Scene/Switch ON";
+			sourceTree = "<group>";
+		};
+		DACF748F1F75F98300915446 /* background */ = {
+			isa = PBXGroup;
+			children = (
+				DACF74901F75F98300915446 /* nighttime-default.png */,
+				DACF74911F75F98300915446 /* nighttime-holycrapSelected.png */,
+				DACF74921F75F98300915446 /* nighttime-mycatSelected.png */,
+				DACF74931F75F98300915446 /* nighttime-normalSelected.png */,
+				DACF74941F75F98300915446 /* nighttime-rareSelected.png */,
+				DACF74B21F76020600915446 /* nighttime-superrareSelected.png */,
+			);
+			path = background;
+			sourceTree = "<group>";
+		};
+		DACF74961F75F98300915446 /* UI */ = {
+			isa = PBXGroup;
+			children = (
+				DACF74AA1F76000F00915446 /* switch on.png */,
+			);
+			path = UI;
 			sourceTree = "<group>";
 		};
 		DAD6571B1F6A2DAE007F99ED /* Obstacle Classes */ = {
@@ -561,8 +659,12 @@
 				DA2974A91F68DEDE005F6B41 /* Main.storyboard in Resources */,
 				DADC52AB1F75111F0033BB28 /* mainItemBar.png in Resources */,
 				DA2599881F7397C600BB9573 /* german1-2.png in Resources */,
+				DACF74A11F75F98300915446 /* nighttime-mycatSelected.png in Resources */,
+				DACF74A01F75F98300915446 /* nighttime-holycrapSelected.png in Resources */,
 				DADC52941F7510C10033BB28 /* interface.png in Resources */,
 				DA2599871F7397C600BB9573 /* german1-1.png in Resources */,
+				DACF74991F75F98300915446 /* daytime-holycrapSelected.png in Resources */,
+				DACF749B1F75F98300915446 /* daytime-normalSelected.png in Resources */,
 				DADC528B1F7510550033BB28 /* selectionBox.png in Resources */,
 				DADC52A01F7510DA0033BB28 /* mainBoard.png in Resources */,
 				DADC52A91F75111F0033BB28 /* mainCollectableBar.png in Resources */,
@@ -570,22 +672,31 @@
 				DADC52921F7510C10033BB28 /* booster.png in Resources */,
 				DA2974A01F68DEDE005F6B41 /* GameScene.sks in Resources */,
 				DADC52931F7510C10033BB28 /* healthBar.png in Resources */,
+				DACF74A91F75FC9700915446 /* daytime-superrareSelected.png in Resources */,
 				DADC52951F7510C10033BB28 /* itemPanel.png in Resources */,
+				DACF749A1F75F98300915446 /* daytime-mycatSelected.png in Resources */,
 				DADC52871F7510550033BB28 /* check sign.png in Resources */,
 				DADC52A11F7510DA0033BB28 /* mainCollectionBook.png in Resources */,
 				DA25998B1F7397C600BB9573 /* german1-5.png in Resources */,
 				DA2599861F7397C600BB9573 /* german1-0.png in Resources */,
+				DACF74B51F76037300915446 /* backToMenu.png in Resources */,
+				DACF749C1F75F98300915446 /* daytime-rareSelected.png in Resources */,
+				DACF74AB1F76000F00915446 /* switch on.png in Resources */,
 				DA2974AB1F68DEDE005F6B41 /* Assets.xcassets in Resources */,
 				DA2974AE1F68DEDE005F6B41 /* LaunchScreen.storyboard in Resources */,
+				DACF74A31F75F98300915446 /* nighttime-rareSelected.png in Resources */,
 				DADC52891F7510550033BB28 /* facebookBtn.png in Resources */,
 				DA0432CE1F6AF386002EF8F6 /* collectable.png in Resources */,
 				DA25998E1F7397C600BB9573 /* german1-8.png in Resources */,
+				DACF749F1F75F98300915446 /* nighttime-default.png in Resources */,
 				DADC528A1F7510550033BB28 /* instruction.png in Resources */,
 				DA2220F01F68F16A0009AB60 /* Egypt 01-2.png in Resources */,
 				DA29768D1F68E366005F6B41 /* Egypt1.sks in Resources */,
 				DADC52AA1F75111F0033BB28 /* mainDailyBonus.png in Resources */,
 				DA2220F11F68F16A0009AB60 /* Egypt 01-3.png in Resources */,
+				DACF74A21F75F98300915446 /* nighttime-normalSelected.png in Resources */,
 				DAD657281F6A3EAA007F99ED /* testcat3.png in Resources */,
+				DACF74AD1F76001600915446 /* switch off.png in Resources */,
 				DADC52AD1F75111F0033BB28 /* mainSetting.png in Resources */,
 				DAD657261F6A3EAA007F99ED /* testcat.png in Resources */,
 				DA2599891F7397C600BB9573 /* german1-3.png in Resources */,
@@ -595,8 +706,11 @@
 				DA2599A11F74DD6A00BB9573 /* settingtest.sks in Resources */,
 				DADC52881F7510550033BB28 /* default setting screen.png in Resources */,
 				DA2220F31F68F16A0009AB60 /* Egypt 01-5.png in Resources */,
+				DACF746A1F75F6D300915446 /* CollectionScene.sks in Resources */,
 				DADC52961F7510C10033BB28 /* pause.png in Resources */,
+				DACF74B31F76020600915446 /* nighttime-superrareSelected.png in Resources */,
 				DA25998F1F7397C600BB9573 /* german1-9.png in Resources */,
+				DACF74981F75F98300915446 /* daytime-default.png in Resources */,
 				DA2974DC1F68DFB3005F6B41 /* MainMenuScene.sks in Resources */,
 				DA25998A1F7397C600BB9573 /* german1-4.png in Resources */,
 				DA2974A21F68DEDE005F6B41 /* Actions.sks in Resources */,
@@ -629,12 +743,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				DA2974DA1F68DFA6005F6B41 /* MainMenuScene.swift in Sources */,
-				DA2976901F68E3D6005F6B41 /* Background.swift in Sources */,
 				DAD6571D1F6A2DD9007F99ED /* Obstacles.swift in Sources */,
 				DA0432DB1F6B3AD7002EF8F6 /* GameManager.swift in Sources */,
 				DAD6572B1F6A3F3C007F99ED /* Cat.swift in Sources */,
 				DA0432D91F6B3A5C002EF8F6 /* GameData.swift in Sources */,
 				DA2974D61F68DF74005F6B41 /* Player.swift in Sources */,
+				DACF74A71F75F9AC00915446 /* CollectionScene.swift in Sources */,
 				DA2974D81F68DF91005F6B41 /* GameplayScene.swift in Sources */,
 				DAD657211F6A2E66007F99ED /* Constants.swift in Sources */,
 				DA0432D11F6B1338002EF8F6 /* GameplayController.swift in Sources */,
