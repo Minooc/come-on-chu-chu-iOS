@@ -137,4 +137,21 @@ class GameManager {
             self.gameData?.notification = true
         }
     }
+    
+    
+    func openMap(mapToOpen: String) {
+        self.gameData?.mapDictionary[mapToOpen] = true
+    }
+    
+    func closeMap(mapToOpen: String) {
+        self.gameData?.mapDictionary[mapToOpen] = false
+    }
+    
+    func getMapStatus(mapToOpen: String) -> Bool {
+        if let didMapOpen = self.gameData?.mapDictionary[mapToOpen] {
+            return didMapOpen
+        } else {
+            return false
+        }
+    }
 }

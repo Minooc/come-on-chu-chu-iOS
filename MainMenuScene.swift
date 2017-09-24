@@ -67,6 +67,12 @@ class MainMenuScene: SKScene {
 
             }
             
+            if touchedNode.name == "mapBtn" {
+                let scene = MapScene(fileNamed: "MapScene")
+                scene!.scaleMode = .aspectFill
+                self.view?.presentScene(scene!, transition: SKTransition.doorsOpenVertical(withDuration: 1))
+            }
+            
             
             // on Setting
             
@@ -150,8 +156,8 @@ class MainMenuScene: SKScene {
             default: break
         }
         
-        let gift = self.childNode(withName: "giftLabel") as? SKLabelNode
-        gift?.text = todayOfWeek
+//        let gift = self.childNode(withName: "giftLabel") as? SKLabelNode
+//        gift?.text = todayOfWeek
         
         let today = "\(calendar.component(.year, from: date))-\(calendar.component(.month, from: date))-\(calendar.component(.day, from: date))"
         

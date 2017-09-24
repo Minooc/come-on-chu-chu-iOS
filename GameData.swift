@@ -21,6 +21,8 @@ class GameData: NSObject, NSCoding {
         static let Notification = "Notification"
         static let BGM = "BGM"
         static let SoundEffect = "Sound"
+        
+        static let MapDictionary = "MapDictionary"
     }
     
     var highScore = Int32()
@@ -31,6 +33,8 @@ class GameData: NSObject, NSCoding {
     var backgroundMusic = Bool()
     var soundEffect = Bool()
     var notification = Bool()
+    
+    var mapDictionary = [String: Bool]()
 
     override init() {}
     
@@ -48,6 +52,10 @@ class GameData: NSObject, NSCoding {
          self.backgroundMusic = aDecoder.decodeBool(forKey: Keys.BGM)
          self.soundEffect = aDecoder.decodeBool(forKey: Keys.SoundEffect)
         
+        if let mapDict = aDecoder.decodeObject(forKey: Keys.MapDictionary) as? [String: Bool] {
+            self.mapDictionary = mapDict
+        }
+        
     }
     
     func encode(with aCoder: NSCoder) {
@@ -60,6 +68,8 @@ class GameData: NSObject, NSCoding {
         aCoder.encode(self.notification, forKey: Keys.Notification)
         aCoder.encode(self.soundEffect, forKey: Keys.SoundEffect)
         aCoder.encode(self.backgroundMusic, forKey: Keys.BGM)
+        
+        aCoder.encode(self.mapDictionary, forKey: Keys.MapDictionary)
     }
     
 
