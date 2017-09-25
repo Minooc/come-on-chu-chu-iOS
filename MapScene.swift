@@ -227,6 +227,10 @@ class MapScene: SKScene {
         } else {
          
             // go to level select scene
+            let scene = LevelSelectScene(fileNamed: "LevelSelectScene")
+            scene?.selectedMap = mapToOpen
+            scene!.scaleMode = .aspectFill
+            self.view?.presentScene(scene!, transition: SKTransition.doorsOpenVertical(withDuration: 1))
             
         }
         

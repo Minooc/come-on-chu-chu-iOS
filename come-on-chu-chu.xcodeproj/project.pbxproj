@@ -62,20 +62,6 @@
 		DACF74AD1F76001600915446 /* switch off.png in Resources */ = {isa = PBXBuildFile; fileRef = DACF74AC1F76001600915446 /* switch off.png */; };
 		DACF74B31F76020600915446 /* nighttime-superrareSelected.png in Resources */ = {isa = PBXBuildFile; fileRef = DACF74B21F76020600915446 /* nighttime-superrareSelected.png */; };
 		DACF74B51F76037300915446 /* backToMenu.png in Resources */ = {isa = PBXBuildFile; fileRef = DACF74B41F76037300915446 /* backToMenu.png */; };
-		DACF74F71F77CD6500915446 /* levelselect_barcelonau.png in Resources */ = {isa = PBXBuildFile; fileRef = DACF74C01F77CD6500915446 /* levelselect_barcelonau.png */; };
-		DACF74F81F77CD6500915446 /* levelselect_berinya.png in Resources */ = {isa = PBXBuildFile; fileRef = DACF74C11F77CD6500915446 /* levelselect_berinya.png */; };
-		DACF74F91F77CD6500915446 /* levelselect_brazilinya.png in Resources */ = {isa = PBXBuildFile; fileRef = DACF74C21F77CD6500915446 /* levelselect_brazilinya.png */; };
-		DACF74FA1F77CD6500915446 /* levelselect_cairong.png in Resources */ = {isa = PBXBuildFile; fileRef = DACF74C31F77CD6500915446 /* levelselect_cairong.png */; };
-		DACF74FB1F77CD6500915446 /* levelselect_default.png in Resources */ = {isa = PBXBuildFile; fileRef = DACF74C41F77CD6500915446 /* levelselect_default.png */; };
-		DACF74FC1F77CD6500915446 /* levelselect_londonya.png in Resources */ = {isa = PBXBuildFile; fileRef = DACF74C51F77CD6500915446 /* levelselect_londonya.png */; };
-		DACF74FD1F77CD6500915446 /* levelselect_losangelnya.png in Resources */ = {isa = PBXBuildFile; fileRef = DACF74C61F77CD6500915446 /* levelselect_losangelnya.png */; };
-		DACF74FE1F77CD6500915446 /* levelselect_meoul.png in Resources */ = {isa = PBXBuildFile; fileRef = DACF74C71F77CD6500915446 /* levelselect_meoul.png */; };
-		DACF74FF1F77CD6500915446 /* levelselect_meowcover.png in Resources */ = {isa = PBXBuildFile; fileRef = DACF74C81F77CD6500915446 /* levelselect_meowcover.png */; };
-		DACF75001F77CD6500915446 /* levelselect_meowjing.png in Resources */ = {isa = PBXBuildFile; fileRef = DACF74C91F77CD6500915446 /* levelselect_meowjing.png */; };
-		DACF75011F77CD6500915446 /* levelselect_moscyau.png in Resources */ = {isa = PBXBuildFile; fileRef = DACF74CA1F77CD6500915446 /* levelselect_moscyau.png */; };
-		DACF75021F77CD6500915446 /* levelselect_ny.png in Resources */ = {isa = PBXBuildFile; fileRef = DACF74CB1F77CD6500915446 /* levelselect_ny.png */; };
-		DACF75031F77CD6500915446 /* levelselect_parismiao.png in Resources */ = {isa = PBXBuildFile; fileRef = DACF74CC1F77CD6500915446 /* levelselect_parismiao.png */; };
-		DACF75041F77CD6500915446 /* levelselect_romya.png in Resources */ = {isa = PBXBuildFile; fileRef = DACF74CD1F77CD6500915446 /* levelselect_romya.png */; };
 		DACF75051F77CD6500915446 /* map instruction.png in Resources */ = {isa = PBXBuildFile; fileRef = DACF74CE1F77CD6500915446 /* map instruction.png */; };
 		DACF75061F77CD6500915446 /* grayfoot.png in Resources */ = {isa = PBXBuildFile; fileRef = DACF74D11F77CD6500915446 /* grayfoot.png */; };
 		DACF75071F77CD6500915446 /* grayfoot1.png in Resources */ = {isa = PBXBuildFile; fileRef = DACF74D21F77CD6500915446 /* grayfoot1.png */; };
@@ -110,6 +96,28 @@
 		DACF75401F786ADB00915446 /* redfoot11.png in Resources */ = {isa = PBXBuildFile; fileRef = DACF753B1F786ADB00915446 /* redfoot11.png */; };
 		DACF75411F786ADB00915446 /* redfoot12.png in Resources */ = {isa = PBXBuildFile; fileRef = DACF753C1F786ADB00915446 /* redfoot12.png */; };
 		DACF75421F786ADB00915446 /* redfoot13.png in Resources */ = {isa = PBXBuildFile; fileRef = DACF753D1F786ADB00915446 /* redfoot13.png */; };
+		DACF75641F78E4BD00915446 /* LevelSelectScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = DACF75631F78E4BD00915446 /* LevelSelectScene.swift */; };
+		DACF75731F78E5AE00915446 /* levelselect_Barcelonau.png in Resources */ = {isa = PBXBuildFile; fileRef = DACF75651F78E5AE00915446 /* levelselect_Barcelonau.png */; };
+		DACF75741F78E5AE00915446 /* levelselect_Berinya.png in Resources */ = {isa = PBXBuildFile; fileRef = DACF75661F78E5AE00915446 /* levelselect_Berinya.png */; };
+		DACF75751F78E5AE00915446 /* levelselect_Brazilinya.png in Resources */ = {isa = PBXBuildFile; fileRef = DACF75671F78E5AE00915446 /* levelselect_Brazilinya.png */; };
+		DACF75761F78E5AE00915446 /* levelselect_Cairong.png in Resources */ = {isa = PBXBuildFile; fileRef = DACF75681F78E5AE00915446 /* levelselect_Cairong.png */; };
+		DACF75771F78E5AE00915446 /* levelselect_default.png in Resources */ = {isa = PBXBuildFile; fileRef = DACF75691F78E5AE00915446 /* levelselect_default.png */; };
+		DACF75781F78E5AE00915446 /* levelselect_Londonya.png in Resources */ = {isa = PBXBuildFile; fileRef = DACF756A1F78E5AE00915446 /* levelselect_Londonya.png */; };
+		DACF75791F78E5AE00915446 /* levelselect_Losangelnya.png in Resources */ = {isa = PBXBuildFile; fileRef = DACF756B1F78E5AE00915446 /* levelselect_Losangelnya.png */; };
+		DACF757A1F78E5AE00915446 /* levelselect_Meoul.png in Resources */ = {isa = PBXBuildFile; fileRef = DACF756C1F78E5AE00915446 /* levelselect_Meoul.png */; };
+		DACF757B1F78E5AE00915446 /* levelselect_Meowcouver.png in Resources */ = {isa = PBXBuildFile; fileRef = DACF756D1F78E5AE00915446 /* levelselect_Meowcouver.png */; };
+		DACF757C1F78E5AE00915446 /* levelselect_Meowjing.png in Resources */ = {isa = PBXBuildFile; fileRef = DACF756E1F78E5AE00915446 /* levelselect_Meowjing.png */; };
+		DACF757D1F78E5AE00915446 /* levelselect_Moscyau.png in Resources */ = {isa = PBXBuildFile; fileRef = DACF756F1F78E5AE00915446 /* levelselect_Moscyau.png */; };
+		DACF757E1F78E5AE00915446 /* levelselect_Ny.png in Resources */ = {isa = PBXBuildFile; fileRef = DACF75701F78E5AE00915446 /* levelselect_Ny.png */; };
+		DACF757F1F78E5AE00915446 /* levelselect_Parismiao.png in Resources */ = {isa = PBXBuildFile; fileRef = DACF75711F78E5AE00915446 /* levelselect_Parismiao.png */; };
+		DACF75801F78E5AE00915446 /* levelselect_Romya.png in Resources */ = {isa = PBXBuildFile; fileRef = DACF75721F78E5AE00915446 /* levelselect_Romya.png */; };
+		DACF75891F78E67B00915446 /* level1.png in Resources */ = {isa = PBXBuildFile; fileRef = DACF75821F78E67B00915446 /* level1.png */; };
+		DACF758A1F78E67C00915446 /* level2.png in Resources */ = {isa = PBXBuildFile; fileRef = DACF75831F78E67B00915446 /* level2.png */; };
+		DACF758B1F78E67C00915446 /* level3.png in Resources */ = {isa = PBXBuildFile; fileRef = DACF75841F78E67B00915446 /* level3.png */; };
+		DACF758C1F78E67C00915446 /* level4.png in Resources */ = {isa = PBXBuildFile; fileRef = DACF75851F78E67B00915446 /* level4.png */; };
+		DACF758D1F78E67C00915446 /* level5.png in Resources */ = {isa = PBXBuildFile; fileRef = DACF75861F78E67B00915446 /* level5.png */; };
+		DACF758E1F78E67C00915446 /* level6.png in Resources */ = {isa = PBXBuildFile; fileRef = DACF75871F78E67B00915446 /* level6.png */; };
+		DACF758F1F78E67C00915446 /* level7.png in Resources */ = {isa = PBXBuildFile; fileRef = DACF75881F78E67B00915446 /* level7.png */; };
 		DAD6571D1F6A2DD9007F99ED /* Obstacles.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAD6571C1F6A2DD9007F99ED /* Obstacles.swift */; };
 		DAD6571F1F6A2DFF007F99ED /* Collectables.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAD6571E1F6A2DFF007F99ED /* Collectables.swift */; };
 		DAD657211F6A2E66007F99ED /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAD657201F6A2E66007F99ED /* Constants.swift */; };
@@ -221,20 +229,6 @@
 		DACF74AC1F76001600915446 /* switch off.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "switch off.png"; sourceTree = "<group>"; };
 		DACF74B21F76020600915446 /* nighttime-superrareSelected.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "nighttime-superrareSelected.png"; sourceTree = "<group>"; };
 		DACF74B41F76037300915446 /* backToMenu.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = backToMenu.png; path = "Assets/Collection Scene/backToMenu.png"; sourceTree = "<group>"; };
-		DACF74C01F77CD6500915446 /* levelselect_barcelonau.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = levelselect_barcelonau.png; sourceTree = "<group>"; };
-		DACF74C11F77CD6500915446 /* levelselect_berinya.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = levelselect_berinya.png; sourceTree = "<group>"; };
-		DACF74C21F77CD6500915446 /* levelselect_brazilinya.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = levelselect_brazilinya.png; sourceTree = "<group>"; };
-		DACF74C31F77CD6500915446 /* levelselect_cairong.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = levelselect_cairong.png; sourceTree = "<group>"; };
-		DACF74C41F77CD6500915446 /* levelselect_default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = levelselect_default.png; sourceTree = "<group>"; };
-		DACF74C51F77CD6500915446 /* levelselect_londonya.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = levelselect_londonya.png; sourceTree = "<group>"; };
-		DACF74C61F77CD6500915446 /* levelselect_losangelnya.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = levelselect_losangelnya.png; sourceTree = "<group>"; };
-		DACF74C71F77CD6500915446 /* levelselect_meoul.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = levelselect_meoul.png; sourceTree = "<group>"; };
-		DACF74C81F77CD6500915446 /* levelselect_meowcover.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = levelselect_meowcover.png; sourceTree = "<group>"; };
-		DACF74C91F77CD6500915446 /* levelselect_meowjing.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = levelselect_meowjing.png; sourceTree = "<group>"; };
-		DACF74CA1F77CD6500915446 /* levelselect_moscyau.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = levelselect_moscyau.png; sourceTree = "<group>"; };
-		DACF74CB1F77CD6500915446 /* levelselect_ny.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = levelselect_ny.png; sourceTree = "<group>"; };
-		DACF74CC1F77CD6500915446 /* levelselect_parismiao.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = levelselect_parismiao.png; sourceTree = "<group>"; };
-		DACF74CD1F77CD6500915446 /* levelselect_romya.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = levelselect_romya.png; sourceTree = "<group>"; };
 		DACF74CE1F77CD6500915446 /* map instruction.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "map instruction.png"; sourceTree = "<group>"; };
 		DACF74D11F77CD6500915446 /* grayfoot.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = grayfoot.png; sourceTree = "<group>"; };
 		DACF74D21F77CD6500915446 /* grayfoot1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = grayfoot1.png; sourceTree = "<group>"; };
@@ -269,6 +263,28 @@
 		DACF753B1F786ADB00915446 /* redfoot11.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = redfoot11.png; sourceTree = "<group>"; };
 		DACF753C1F786ADB00915446 /* redfoot12.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = redfoot12.png; sourceTree = "<group>"; };
 		DACF753D1F786ADB00915446 /* redfoot13.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = redfoot13.png; sourceTree = "<group>"; };
+		DACF75631F78E4BD00915446 /* LevelSelectScene.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LevelSelectScene.swift; sourceTree = "<group>"; };
+		DACF75651F78E5AE00915446 /* levelselect_Barcelonau.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = levelselect_Barcelonau.png; sourceTree = "<group>"; };
+		DACF75661F78E5AE00915446 /* levelselect_Berinya.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = levelselect_Berinya.png; sourceTree = "<group>"; };
+		DACF75671F78E5AE00915446 /* levelselect_Brazilinya.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = levelselect_Brazilinya.png; sourceTree = "<group>"; };
+		DACF75681F78E5AE00915446 /* levelselect_Cairong.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = levelselect_Cairong.png; sourceTree = "<group>"; };
+		DACF75691F78E5AE00915446 /* levelselect_default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = levelselect_default.png; sourceTree = "<group>"; };
+		DACF756A1F78E5AE00915446 /* levelselect_Londonya.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = levelselect_Londonya.png; sourceTree = "<group>"; };
+		DACF756B1F78E5AE00915446 /* levelselect_Losangelnya.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = levelselect_Losangelnya.png; sourceTree = "<group>"; };
+		DACF756C1F78E5AE00915446 /* levelselect_Meoul.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = levelselect_Meoul.png; sourceTree = "<group>"; };
+		DACF756D1F78E5AE00915446 /* levelselect_Meowcouver.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = levelselect_Meowcouver.png; sourceTree = "<group>"; };
+		DACF756E1F78E5AE00915446 /* levelselect_Meowjing.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = levelselect_Meowjing.png; sourceTree = "<group>"; };
+		DACF756F1F78E5AE00915446 /* levelselect_Moscyau.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = levelselect_Moscyau.png; sourceTree = "<group>"; };
+		DACF75701F78E5AE00915446 /* levelselect_Ny.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = levelselect_Ny.png; sourceTree = "<group>"; };
+		DACF75711F78E5AE00915446 /* levelselect_Parismiao.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = levelselect_Parismiao.png; sourceTree = "<group>"; };
+		DACF75721F78E5AE00915446 /* levelselect_Romya.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = levelselect_Romya.png; sourceTree = "<group>"; };
+		DACF75821F78E67B00915446 /* level1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = level1.png; sourceTree = "<group>"; };
+		DACF75831F78E67B00915446 /* level2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = level2.png; sourceTree = "<group>"; };
+		DACF75841F78E67B00915446 /* level3.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = level3.png; sourceTree = "<group>"; };
+		DACF75851F78E67B00915446 /* level4.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = level4.png; sourceTree = "<group>"; };
+		DACF75861F78E67B00915446 /* level5.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = level5.png; sourceTree = "<group>"; };
+		DACF75871F78E67B00915446 /* level6.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = level6.png; sourceTree = "<group>"; };
+		DACF75881F78E67B00915446 /* level7.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = level7.png; sourceTree = "<group>"; };
 		DAD6571C1F6A2DD9007F99ED /* Obstacles.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Obstacles.swift; sourceTree = "<group>"; };
 		DAD6571E1F6A2DFF007F99ED /* Collectables.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Collectables.swift; sourceTree = "<group>"; };
 		DAD657201F6A2E66007F99ED /* Constants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Constants.swift; path = "come-on-chu-chu/Constants.swift"; sourceTree = "<group>"; };
@@ -489,6 +505,7 @@
 				DA2974D91F68DFA6005F6B41 /* MainMenuScene.swift */,
 				DACF74A61F75F9AC00915446 /* CollectionScene.swift */,
 				DACF75261F77CD9700915446 /* MapScene.swift */,
+				DACF75631F78E4BD00915446 /* LevelSelectScene.swift */,
 			);
 			name = "Scene Classes";
 			sourceTree = "<group>";
@@ -590,8 +607,8 @@
 		DACF74B61F77CD6500915446 /* Map */ = {
 			isa = PBXGroup;
 			children = (
-				DACF74B71F77CD6500915446 /* level select */,
 				DACF74CE1F77CD6500915446 /* map instruction.png */,
+				DACF74B71F77CD6500915446 /* level select */,
 				DACF74CF1F77CD6500915446 /* UI */,
 				DACF74EF1F77CD6500915446 /* worldmap.png */,
 			);
@@ -602,20 +619,21 @@
 		DACF74B71F77CD6500915446 /* level select */ = {
 			isa = PBXGroup;
 			children = (
-				DACF74C01F77CD6500915446 /* levelselect_barcelonau.png */,
-				DACF74C11F77CD6500915446 /* levelselect_berinya.png */,
-				DACF74C21F77CD6500915446 /* levelselect_brazilinya.png */,
-				DACF74C31F77CD6500915446 /* levelselect_cairong.png */,
-				DACF74C41F77CD6500915446 /* levelselect_default.png */,
-				DACF74C51F77CD6500915446 /* levelselect_londonya.png */,
-				DACF74C61F77CD6500915446 /* levelselect_losangelnya.png */,
-				DACF74C71F77CD6500915446 /* levelselect_meoul.png */,
-				DACF74C81F77CD6500915446 /* levelselect_meowcover.png */,
-				DACF74C91F77CD6500915446 /* levelselect_meowjing.png */,
-				DACF74CA1F77CD6500915446 /* levelselect_moscyau.png */,
-				DACF74CB1F77CD6500915446 /* levelselect_ny.png */,
-				DACF74CC1F77CD6500915446 /* levelselect_parismiao.png */,
-				DACF74CD1F77CD6500915446 /* levelselect_romya.png */,
+				DACF75811F78E67B00915446 /* levels */,
+				DACF75651F78E5AE00915446 /* levelselect_Barcelonau.png */,
+				DACF75661F78E5AE00915446 /* levelselect_Berinya.png */,
+				DACF75671F78E5AE00915446 /* levelselect_Brazilinya.png */,
+				DACF75681F78E5AE00915446 /* levelselect_Cairong.png */,
+				DACF75691F78E5AE00915446 /* levelselect_default.png */,
+				DACF756A1F78E5AE00915446 /* levelselect_Londonya.png */,
+				DACF756B1F78E5AE00915446 /* levelselect_Losangelnya.png */,
+				DACF756C1F78E5AE00915446 /* levelselect_Meoul.png */,
+				DACF756D1F78E5AE00915446 /* levelselect_Meowcouver.png */,
+				DACF756E1F78E5AE00915446 /* levelselect_Meowjing.png */,
+				DACF756F1F78E5AE00915446 /* levelselect_Moscyau.png */,
+				DACF75701F78E5AE00915446 /* levelselect_Ny.png */,
+				DACF75711F78E5AE00915446 /* levelselect_Parismiao.png */,
+				DACF75721F78E5AE00915446 /* levelselect_Romya.png */,
 			);
 			path = "level select";
 			sourceTree = "<group>";
@@ -680,6 +698,20 @@
 				DACF752B1F7858FA00915446 /* map test.sks */,
 			);
 			name = Test;
+			sourceTree = "<group>";
+		};
+		DACF75811F78E67B00915446 /* levels */ = {
+			isa = PBXGroup;
+			children = (
+				DACF75821F78E67B00915446 /* level1.png */,
+				DACF75831F78E67B00915446 /* level2.png */,
+				DACF75841F78E67B00915446 /* level3.png */,
+				DACF75851F78E67B00915446 /* level4.png */,
+				DACF75861F78E67B00915446 /* level5.png */,
+				DACF75871F78E67B00915446 /* level6.png */,
+				DACF75881F78E67B00915446 /* level7.png */,
+			);
+			path = levels;
 			sourceTree = "<group>";
 		};
 		DAD6571B1F6A2DAE007F99ED /* Obstacle Classes */ = {
@@ -842,14 +874,15 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DACF75751F78E5AE00915446 /* levelselect_Brazilinya.png in Resources */,
 				DACF75211F77CD6500915446 /* redfoot8.png in Resources */,
-				DACF74FE1F77CD6500915446 /* levelselect_meoul.png in Resources */,
+				DACF757C1F78E5AE00915446 /* levelselect_Meowjing.png in Resources */,
+				DACF75801F78E5AE00915446 /* levelselect_Romya.png in Resources */,
 				DACF750F1F77CD6500915446 /* grayfoot5.png in Resources */,
-				DACF75001F77CD6500915446 /* levelselect_meowjing.png in Resources */,
 				DA25998D1F7397C600BB9573 /* german1-7.png in Resources */,
 				DA25998C1F7397C600BB9573 /* german1-6.png in Resources */,
 				DADC529D1F7510DA0033BB28 /* jukebox.png in Resources */,
-				DACF74FA1F77CD6500915446 /* levelselect_cairong.png in Resources */,
+				DACF758B1F78E67C00915446 /* level3.png in Resources */,
 				DA2220F41F68F16A0009AB60 /* Egypt 01-6.png in Resources */,
 				DADC52AC1F75111F0033BB28 /* mainPresent.png in Resources */,
 				DA2220F21F68F16A0009AB60 /* Egypt 01-4.png in Resources */,
@@ -864,11 +897,11 @@
 				DACF74A11F75F98300915446 /* nighttime-mycatSelected.png in Resources */,
 				DACF751F1F77CD6500915446 /* redfoot6.png in Resources */,
 				DACF74A01F75F98300915446 /* nighttime-holycrapSelected.png in Resources */,
+				DACF75761F78E5AE00915446 /* levelselect_Cairong.png in Resources */,
 				DADC52941F7510C10033BB28 /* interface.png in Resources */,
-				DACF74FC1F77CD6500915446 /* levelselect_londonya.png in Resources */,
+				DACF758C1F78E67C00915446 /* level4.png in Resources */,
 				DA2599871F7397C600BB9573 /* german1-1.png in Resources */,
 				DACF74991F75F98300915446 /* daytime-holycrapSelected.png in Resources */,
-				DACF74F81F77CD6500915446 /* levelselect_berinya.png in Resources */,
 				DACF75291F78589C00915446 /* LevelSelectScene.sks in Resources */,
 				DACF75101F77CD6500915446 /* grayfoot6.png in Resources */,
 				DACF749B1F75F98300915446 /* daytime-normalSelected.png in Resources */,
@@ -887,33 +920,38 @@
 				DACF749A1F75F98300915446 /* daytime-mycatSelected.png in Resources */,
 				DADC52871F7510550033BB28 /* check sign.png in Resources */,
 				DACF75091F77CD6500915446 /* grayfoot11.png in Resources */,
-				DACF74F91F77CD6500915446 /* levelselect_brazilinya.png in Resources */,
 				DADC52A11F7510DA0033BB28 /* mainCollectionBook.png in Resources */,
 				DACF751D1F77CD6500915446 /* redfoot4.png in Resources */,
 				DACF75131F77CD6500915446 /* grayfoot9.png in Resources */,
+				DACF75741F78E5AE00915446 /* levelselect_Berinya.png in Resources */,
 				DACF750B1F77CD6500915446 /* grayfoot13.png in Resources */,
 				DA25998B1F7397C600BB9573 /* german1-5.png in Resources */,
+				DACF75791F78E5AE00915446 /* levelselect_Losangelnya.png in Resources */,
 				DA2599861F7397C600BB9573 /* german1-0.png in Resources */,
 				DACF75411F786ADB00915446 /* redfoot12.png in Resources */,
 				DACF750E1F77CD6500915446 /* grayfoot4.png in Resources */,
 				DACF74B51F76037300915446 /* backToMenu.png in Resources */,
 				DACF749C1F75F98300915446 /* daytime-rareSelected.png in Resources */,
-				DACF75031F77CD6500915446 /* levelselect_parismiao.png in Resources */,
-				DACF75021F77CD6500915446 /* levelselect_ny.png in Resources */,
 				DACF74AB1F76000F00915446 /* switch on.png in Resources */,
 				DA2974AB1F68DEDE005F6B41 /* Assets.xcassets in Resources */,
 				DA2974AE1F68DEDE005F6B41 /* LaunchScreen.storyboard in Resources */,
 				DACF752C1F7858FA00915446 /* map test.sks in Resources */,
 				DACF74A31F75F98300915446 /* nighttime-rareSelected.png in Resources */,
+				DACF758D1F78E67C00915446 /* level5.png in Resources */,
 				DADC52891F7510550033BB28 /* facebookBtn.png in Resources */,
 				DA0432CE1F6AF386002EF8F6 /* collectable.png in Resources */,
+				DACF757F1F78E5AE00915446 /* levelselect_Parismiao.png in Resources */,
+				DACF758F1F78E67C00915446 /* level7.png in Resources */,
 				DA25998E1F7397C600BB9573 /* german1-8.png in Resources */,
+				DACF758A1F78E67C00915446 /* level2.png in Resources */,
+				DACF757B1F78E5AE00915446 /* levelselect_Meowcouver.png in Resources */,
 				DACF75081F77CD6500915446 /* grayfoot10.png in Resources */,
-				DACF74FD1F77CD6500915446 /* levelselect_losangelnya.png in Resources */,
+				DACF757E1F78E5AE00915446 /* levelselect_Ny.png in Resources */,
 				DACF749F1F75F98300915446 /* nighttime-default.png in Resources */,
 				DADC528A1F7510550033BB28 /* instruction.png in Resources */,
 				DA2220F01F68F16A0009AB60 /* Egypt 01-2.png in Resources */,
 				DACF75201F77CD6500915446 /* redfoot7.png in Resources */,
+				DACF75781F78E5AE00915446 /* levelselect_Londonya.png in Resources */,
 				DA29768D1F68E366005F6B41 /* Egypt1.sks in Resources */,
 				DACF75071F77CD6500915446 /* grayfoot1.png in Resources */,
 				DADC52AA1F75111F0033BB28 /* mainDailyBonus.png in Resources */,
@@ -927,6 +965,8 @@
 				DADC52AD1F75111F0033BB28 /* mainSetting.png in Resources */,
 				DAD657261F6A3EAA007F99ED /* testcat.png in Resources */,
 				DA2599891F7397C600BB9573 /* german1-3.png in Resources */,
+				DACF757D1F78E5AE00915446 /* levelselect_Moscyau.png in Resources */,
+				DACF757A1F78E5AE00915446 /* levelselect_Meoul.png in Resources */,
 				DACF753F1F786ADB00915446 /* redfoot10.png in Resources */,
 				DAD657271F6A3EAA007F99ED /* testcat2.png in Resources */,
 				DADC52A21F7510DA0033BB28 /* mainToHome.png in Resources */,
@@ -934,17 +974,16 @@
 				DA2599A11F74DD6A00BB9573 /* settingtest.sks in Resources */,
 				DADC52881F7510550033BB28 /* default setting screen.png in Resources */,
 				DA2220F31F68F16A0009AB60 /* Egypt 01-5.png in Resources */,
-				DACF75011F77CD6500915446 /* levelselect_moscyau.png in Resources */,
-				DACF74F71F77CD6500915446 /* levelselect_barcelonau.png in Resources */,
+				DACF758E1F78E67C00915446 /* level6.png in Resources */,
 				DACF75141F77CD6500915446 /* redfoot.png in Resources */,
 				DACF746A1F75F6D300915446 /* CollectionScene.sks in Resources */,
-				DACF75041F77CD6500915446 /* levelselect_romya.png in Resources */,
 				DADC52961F7510C10033BB28 /* pause.png in Resources */,
-				DACF74FF1F77CD6500915446 /* levelselect_meowcover.png in Resources */,
 				DACF74B31F76020600915446 /* nighttime-superrareSelected.png in Resources */,
 				DACF750D1F77CD6500915446 /* grayfoot3.png in Resources */,
 				DA25998F1F7397C600BB9573 /* german1-9.png in Resources */,
 				DACF74981F75F98300915446 /* daytime-default.png in Resources */,
+				DACF75771F78E5AE00915446 /* levelselect_default.png in Resources */,
+				DACF75891F78E67B00915446 /* level1.png in Resources */,
 				DA2974DC1F68DFB3005F6B41 /* MainMenuScene.sks in Resources */,
 				DA25998A1F7397C600BB9573 /* german1-4.png in Resources */,
 				DA2974A21F68DEDE005F6B41 /* Actions.sks in Resources */,
@@ -954,8 +993,8 @@
 				DADC528C1F7510550033BB28 /* Setting Screen.png in Resources */,
 				DACF75111F77CD6500915446 /* grayfoot7.png in Resources */,
 				DACF75051F77CD6500915446 /* map instruction.png in Resources */,
+				DACF75731F78E5AE00915446 /* levelselect_Barcelonau.png in Resources */,
 				DACF75231F77CD6500915446 /* worldmap.png in Resources */,
-				DACF74FB1F77CD6500915446 /* levelselect_default.png in Resources */,
 				DADC529E1F7510DA0033BB28 /* main screen.png in Resources */,
 				DACF75421F786ADB00915446 /* redfoot13.png in Resources */,
 			);
@@ -989,6 +1028,7 @@
 				DA0432D91F6B3A5C002EF8F6 /* GameData.swift in Sources */,
 				DACF75271F77CD9700915446 /* MapScene.swift in Sources */,
 				DA2974D61F68DF74005F6B41 /* Player.swift in Sources */,
+				DACF75641F78E4BD00915446 /* LevelSelectScene.swift in Sources */,
 				DACF74A71F75F9AC00915446 /* CollectionScene.swift in Sources */,
 				DA2974D81F68DF91005F6B41 /* GameplayScene.swift in Sources */,
 				DAD657211F6A2E66007F99ED /* Constants.swift in Sources */,
