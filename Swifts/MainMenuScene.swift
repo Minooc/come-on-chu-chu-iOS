@@ -5,7 +5,6 @@
 //  Created by Minooc Choo on 9/12/17.
 //  Copyright © 2017 Minooc Choo. All rights reserved.
 //
-
 import SpriteKit
 
 class MainMenuScene: SKScene {
@@ -24,7 +23,7 @@ class MainMenuScene: SKScene {
     
     
     var onSetting: Bool?
-
+    
     
     override func didMove(to view: SKView) {
         
@@ -35,7 +34,7 @@ class MainMenuScene: SKScene {
         getLabel()
         
         onSetting = false
-
+        
     }
     
     override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
@@ -50,21 +49,21 @@ class MainMenuScene: SKScene {
             }
             
             /*
-            if let nameOfCat = touchedNode.name {
-                
-                let scene = GameplayScene(fileNamed: "Egypt1")
-                scene?.playerImage = nameOfCat
-                scene!.scaleMode = .aspectFill
-                
-                self.view?.presentScene(scene!, transition: SKTransition.doorsOpenVertical(withDuration: 1))
-            }
-            */
+             if let nameOfCat = touchedNode.name {
+             
+             let scene = GameplayScene(fileNamed: "Egypt1")
+             scene?.playerImage = nameOfCat
+             scene!.scaleMode = .aspectFill
+             
+             self.view?.presentScene(scene!, transition: SKTransition.doorsOpenVertical(withDuration: 1))
+             }
+             */
             
             if touchedNode.name == "CollectionBtn" {
                 let scene = CollectionScene(fileNamed: "CollectionScene")
                 scene!.scaleMode = .aspectFill
                 self.view?.presentScene(scene!, transition: SKTransition.doorsOpenVertical(withDuration: 1))
-
+                
             }
             
             if touchedNode.name == "mapBtn" {
@@ -85,7 +84,7 @@ class MainMenuScene: SKScene {
                 else if touchedNode == facebookBtn {
                     
                 }
-                
+                    
                 else if touchedNode == soundsBox || touchedNode == soundsCheck {
                     
                     if (GameManager.instance.getSoundEffect() == false) {
@@ -95,9 +94,9 @@ class MainMenuScene: SKScene {
                         soundsCheck?.isHidden = true
                         GameManager.instance.shuffleSoundEffect()
                     }
-                
+                    
                 }
-                
+                    
                 else if touchedNode == musicBox || touchedNode == musicCheck {
                     
                     if (GameManager.instance.getBGM() == false) {
@@ -109,7 +108,7 @@ class MainMenuScene: SKScene {
                     }
                     
                 }
-                
+                    
                 else if touchedNode == notificationBox || touchedNode == notificationCheck {
                     
                     if (GameManager.instance.getNotification() == false) {
@@ -121,7 +120,7 @@ class MainMenuScene: SKScene {
                     }
                     
                 }
-                
+                    
                 else {
                     settingSquare.removeFromParent()
                     settingPanel.removeFromParent()
@@ -134,7 +133,7 @@ class MainMenuScene: SKScene {
                 
             }
             
-        
+            
         }
         
     }
@@ -146,18 +145,18 @@ class MainMenuScene: SKScene {
         var todayOfWeek: String!
         
         switch (calendar.component(.weekday, from: date)) {
-            case 1: todayOfWeek = "Sunday"
-            case 2: todayOfWeek = "Monday"
-            case 3: todayOfWeek = "Tuesday"
-            case 4: todayOfWeek = "Wednesday"
-            case 5: todayOfWeek = "Thursday"
-            case 6: todayOfWeek = "Friday"
-            case 7: todayOfWeek = "Saturday"
-            default: break
+        case 1: todayOfWeek = "Sunday"
+        case 2: todayOfWeek = "Monday"
+        case 3: todayOfWeek = "Tuesday"
+        case 4: todayOfWeek = "Wednesday"
+        case 5: todayOfWeek = "Thursday"
+        case 6: todayOfWeek = "Friday"
+        case 7: todayOfWeek = "Saturday"
+        default: break
         }
         
-//        let gift = self.childNode(withName: "giftLabel") as? SKLabelNode
-//        gift?.text = todayOfWeek
+        //        let gift = self.childNode(withName: "giftLabel") as? SKLabelNode
+        //        gift?.text = todayOfWeek
         
         let today = "\(calendar.component(.year, from: date))-\(calendar.component(.month, from: date))-\(calendar.component(.day, from: date))"
         
@@ -170,7 +169,7 @@ class MainMenuScene: SKScene {
                 let currentCoin = GameManager.instance.getTotalCoin()
                 GameManager.instance.setTotalCoin(totalCoin: currentCoin + 200)
                 print("You got 200 coins!")
-
+                
             } else if (todayOfWeek == "Monday") {
                 let currentCoin = GameManager.instance.getTotalCoin()
                 GameManager.instance.setTotalCoin(totalCoin: currentCoin + 100)
@@ -205,7 +204,7 @@ class MainMenuScene: SKScene {
             
             
             GameManager.instance.saveData()
-        } 
+        }
         
         
     }
@@ -221,7 +220,7 @@ class MainMenuScene: SKScene {
     func createSettingPanel() {
         print("Making Pannel")
         
-
+        
         settingPanel = SKSpriteNode(imageNamed: "default setting screen")
         settingPanel.anchorPoint = CGPoint(x: 0.5, y:0.5)
         settingPanel.xScale = 1
@@ -277,7 +276,7 @@ class MainMenuScene: SKScene {
         soundsCheck?.zPosition = 6
         soundsCheck?.position.y += 10
         soundsBox.addChild(soundsCheck!)
-
+        
         musicCheck = SKSpriteNode(imageNamed: "check sign")
         musicCheck?.anchorPoint = CGPoint(x: 0.5, y: 0.5)
         musicCheck?.xScale = 1
@@ -293,7 +292,7 @@ class MainMenuScene: SKScene {
         notificationCheck?.zPosition = 6
         notificationCheck?.position.y += 10
         notificationBox.addChild(notificationCheck!)
-
+        
         if (GameManager.instance.getSoundEffect() == false) {
             soundsCheck?.isHidden = true
         } else {

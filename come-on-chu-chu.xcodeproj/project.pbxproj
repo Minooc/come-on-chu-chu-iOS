@@ -9,16 +9,12 @@
 /* Begin PBXBuildFile section */
 		DA0432CD1F6AF386002EF8F6 /* coin.png in Resources */ = {isa = PBXBuildFile; fileRef = DA0432CB1F6AF386002EF8F6 /* coin.png */; };
 		DA0432CE1F6AF386002EF8F6 /* collectable.png in Resources */ = {isa = PBXBuildFile; fileRef = DA0432CC1F6AF386002EF8F6 /* collectable.png */; };
-		DA0432D11F6B1338002EF8F6 /* GameplayController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA0432D01F6B1338002EF8F6 /* GameplayController.swift */; };
-		DA0432D91F6B3A5C002EF8F6 /* GameData.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA0432D81F6B3A5C002EF8F6 /* GameData.swift */; };
-		DA0432DB1F6B3AD7002EF8F6 /* GameManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA0432DA1F6B3AD7002EF8F6 /* GameManager.swift */; };
 		DA2220EF1F68F16A0009AB60 /* Egypt 01-1.png in Resources */ = {isa = PBXBuildFile; fileRef = DA2220E91F68F16A0009AB60 /* Egypt 01-1.png */; };
 		DA2220F01F68F16A0009AB60 /* Egypt 01-2.png in Resources */ = {isa = PBXBuildFile; fileRef = DA2220EA1F68F16A0009AB60 /* Egypt 01-2.png */; };
 		DA2220F11F68F16A0009AB60 /* Egypt 01-3.png in Resources */ = {isa = PBXBuildFile; fileRef = DA2220EB1F68F16A0009AB60 /* Egypt 01-3.png */; };
 		DA2220F21F68F16A0009AB60 /* Egypt 01-4.png in Resources */ = {isa = PBXBuildFile; fileRef = DA2220EC1F68F16A0009AB60 /* Egypt 01-4.png */; };
 		DA2220F31F68F16A0009AB60 /* Egypt 01-5.png in Resources */ = {isa = PBXBuildFile; fileRef = DA2220ED1F68F16A0009AB60 /* Egypt 01-5.png */; };
 		DA2220F41F68F16A0009AB60 /* Egypt 01-6.png in Resources */ = {isa = PBXBuildFile; fileRef = DA2220EE1F68F16A0009AB60 /* Egypt 01-6.png */; };
-		DA2599641F73941400BB9573 /* testScene.sks in Resources */ = {isa = PBXBuildFile; fileRef = DA2599631F73941400BB9573 /* testScene.sks */; };
 		DA2599861F7397C600BB9573 /* german1-0.png in Resources */ = {isa = PBXBuildFile; fileRef = DA25997C1F7397C600BB9573 /* german1-0.png */; };
 		DA2599871F7397C600BB9573 /* german1-1.png in Resources */ = {isa = PBXBuildFile; fileRef = DA25997D1F7397C600BB9573 /* german1-1.png */; };
 		DA2599881F7397C600BB9573 /* german1-2.png in Resources */ = {isa = PBXBuildFile; fileRef = DA25997E1F7397C600BB9573 /* german1-2.png */; };
@@ -29,7 +25,6 @@
 		DA25998D1F7397C600BB9573 /* german1-7.png in Resources */ = {isa = PBXBuildFile; fileRef = DA2599831F7397C600BB9573 /* german1-7.png */; };
 		DA25998E1F7397C600BB9573 /* german1-8.png in Resources */ = {isa = PBXBuildFile; fileRef = DA2599841F7397C600BB9573 /* german1-8.png */; };
 		DA25998F1F7397C600BB9573 /* german1-9.png in Resources */ = {isa = PBXBuildFile; fileRef = DA2599851F7397C600BB9573 /* german1-9.png */; };
-		DA2599A11F74DD6A00BB9573 /* settingtest.sks in Resources */ = {isa = PBXBuildFile; fileRef = DA2599A01F74DD6A00BB9573 /* settingtest.sks */; };
 		DA29749E1F68DEDE005F6B41 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA29749D1F68DEDE005F6B41 /* AppDelegate.swift */; };
 		DA2974A01F68DEDE005F6B41 /* GameScene.sks in Resources */ = {isa = PBXBuildFile; fileRef = DA29749F1F68DEDE005F6B41 /* GameScene.sks */; };
 		DA2974A21F68DEDE005F6B41 /* Actions.sks in Resources */ = {isa = PBXBuildFile; fileRef = DA2974A11F68DEDE005F6B41 /* Actions.sks */; };
@@ -40,12 +35,6 @@
 		DA2974AE1F68DEDE005F6B41 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DA2974AC1F68DEDE005F6B41 /* LaunchScreen.storyboard */; };
 		DA2974B91F68DEDE005F6B41 /* come_on_chu_chuTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA2974B81F68DEDE005F6B41 /* come_on_chu_chuTests.swift */; };
 		DA2974C41F68DEDE005F6B41 /* come_on_chu_chuUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA2974C31F68DEDE005F6B41 /* come_on_chu_chuUITests.swift */; };
-		DA2974D61F68DF74005F6B41 /* Player.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA2974D51F68DF74005F6B41 /* Player.swift */; };
-		DA2974D81F68DF91005F6B41 /* GameplayScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA2974D71F68DF91005F6B41 /* GameplayScene.swift */; };
-		DA2974DA1F68DFA6005F6B41 /* MainMenuScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA2974D91F68DFA6005F6B41 /* MainMenuScene.swift */; };
-		DA2974DC1F68DFB3005F6B41 /* MainMenuScene.sks in Resources */ = {isa = PBXBuildFile; fileRef = DA2974DB1F68DFB3005F6B41 /* MainMenuScene.sks */; };
-		DA29768D1F68E366005F6B41 /* Egypt1.sks in Resources */ = {isa = PBXBuildFile; fileRef = DA29768C1F68E366005F6B41 /* Egypt1.sks */; };
-		DACF746A1F75F6D300915446 /* CollectionScene.sks in Resources */ = {isa = PBXBuildFile; fileRef = DACF74691F75F6D300915446 /* CollectionScene.sks */; };
 		DACF74981F75F98300915446 /* daytime-default.png in Resources */ = {isa = PBXBuildFile; fileRef = DACF74861F75F98300915446 /* daytime-default.png */; };
 		DACF74991F75F98300915446 /* daytime-holycrapSelected.png in Resources */ = {isa = PBXBuildFile; fileRef = DACF74871F75F98300915446 /* daytime-holycrapSelected.png */; };
 		DACF749A1F75F98300915446 /* daytime-mycatSelected.png in Resources */ = {isa = PBXBuildFile; fileRef = DACF74881F75F98300915446 /* daytime-mycatSelected.png */; };
@@ -56,7 +45,6 @@
 		DACF74A11F75F98300915446 /* nighttime-mycatSelected.png in Resources */ = {isa = PBXBuildFile; fileRef = DACF74921F75F98300915446 /* nighttime-mycatSelected.png */; };
 		DACF74A21F75F98300915446 /* nighttime-normalSelected.png in Resources */ = {isa = PBXBuildFile; fileRef = DACF74931F75F98300915446 /* nighttime-normalSelected.png */; };
 		DACF74A31F75F98300915446 /* nighttime-rareSelected.png in Resources */ = {isa = PBXBuildFile; fileRef = DACF74941F75F98300915446 /* nighttime-rareSelected.png */; };
-		DACF74A71F75F9AC00915446 /* CollectionScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = DACF74A61F75F9AC00915446 /* CollectionScene.swift */; };
 		DACF74A91F75FC9700915446 /* daytime-superrareSelected.png in Resources */ = {isa = PBXBuildFile; fileRef = DACF74A81F75FC9700915446 /* daytime-superrareSelected.png */; };
 		DACF74AB1F76000F00915446 /* switch on.png in Resources */ = {isa = PBXBuildFile; fileRef = DACF74AA1F76000F00915446 /* switch on.png */; };
 		DACF74AD1F76001600915446 /* switch off.png in Resources */ = {isa = PBXBuildFile; fileRef = DACF74AC1F76001600915446 /* switch off.png */; };
@@ -87,16 +75,11 @@
 		DACF75201F77CD6500915446 /* redfoot7.png in Resources */ = {isa = PBXBuildFile; fileRef = DACF74EC1F77CD6500915446 /* redfoot7.png */; };
 		DACF75211F77CD6500915446 /* redfoot8.png in Resources */ = {isa = PBXBuildFile; fileRef = DACF74ED1F77CD6500915446 /* redfoot8.png */; };
 		DACF75231F77CD6500915446 /* worldmap.png in Resources */ = {isa = PBXBuildFile; fileRef = DACF74EF1F77CD6500915446 /* worldmap.png */; };
-		DACF75251F77CD8500915446 /* MapScene.sks in Resources */ = {isa = PBXBuildFile; fileRef = DACF75241F77CD8500915446 /* MapScene.sks */; };
-		DACF75271F77CD9700915446 /* MapScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = DACF75261F77CD9700915446 /* MapScene.swift */; };
-		DACF75291F78589C00915446 /* LevelSelectScene.sks in Resources */ = {isa = PBXBuildFile; fileRef = DACF75281F78589C00915446 /* LevelSelectScene.sks */; };
-		DACF752C1F7858FA00915446 /* map test.sks in Resources */ = {isa = PBXBuildFile; fileRef = DACF752B1F7858FA00915446 /* map test.sks */; };
 		DACF753E1F786ADB00915446 /* redfoot9.png in Resources */ = {isa = PBXBuildFile; fileRef = DACF75391F786ADB00915446 /* redfoot9.png */; };
 		DACF753F1F786ADB00915446 /* redfoot10.png in Resources */ = {isa = PBXBuildFile; fileRef = DACF753A1F786ADB00915446 /* redfoot10.png */; };
 		DACF75401F786ADB00915446 /* redfoot11.png in Resources */ = {isa = PBXBuildFile; fileRef = DACF753B1F786ADB00915446 /* redfoot11.png */; };
 		DACF75411F786ADB00915446 /* redfoot12.png in Resources */ = {isa = PBXBuildFile; fileRef = DACF753C1F786ADB00915446 /* redfoot12.png */; };
 		DACF75421F786ADB00915446 /* redfoot13.png in Resources */ = {isa = PBXBuildFile; fileRef = DACF753D1F786ADB00915446 /* redfoot13.png */; };
-		DACF75641F78E4BD00915446 /* LevelSelectScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = DACF75631F78E4BD00915446 /* LevelSelectScene.swift */; };
 		DACF75731F78E5AE00915446 /* levelselect_Barcelonau.png in Resources */ = {isa = PBXBuildFile; fileRef = DACF75651F78E5AE00915446 /* levelselect_Barcelonau.png */; };
 		DACF75741F78E5AE00915446 /* levelselect_Berinya.png in Resources */ = {isa = PBXBuildFile; fileRef = DACF75661F78E5AE00915446 /* levelselect_Berinya.png */; };
 		DACF75751F78E5AE00915446 /* levelselect_Brazilinya.png in Resources */ = {isa = PBXBuildFile; fileRef = DACF75671F78E5AE00915446 /* levelselect_Brazilinya.png */; };
@@ -118,14 +101,31 @@
 		DACF758D1F78E67C00915446 /* level5.png in Resources */ = {isa = PBXBuildFile; fileRef = DACF75861F78E67B00915446 /* level5.png */; };
 		DACF758E1F78E67C00915446 /* level6.png in Resources */ = {isa = PBXBuildFile; fileRef = DACF75871F78E67B00915446 /* level6.png */; };
 		DACF758F1F78E67C00915446 /* level7.png in Resources */ = {isa = PBXBuildFile; fileRef = DACF75881F78E67B00915446 /* level7.png */; };
-		DAD6571D1F6A2DD9007F99ED /* Obstacles.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAD6571C1F6A2DD9007F99ED /* Obstacles.swift */; };
-		DAD6571F1F6A2DFF007F99ED /* Collectables.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAD6571E1F6A2DFF007F99ED /* Collectables.swift */; };
+		DACF759C1F79F90400915446 /* GameManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = DACF75991F79F90400915446 /* GameManager.swift */; };
+		DACF759D1F79F90400915446 /* GameplayController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DACF759A1F79F90400915446 /* GameplayController.swift */; };
+		DACF75A01F79F90D00915446 /* Player.swift in Sources */ = {isa = PBXBuildFile; fileRef = DACF759F1F79F90D00915446 /* Player.swift */; };
+		DACF75A61F79F92100915446 /* CollectionScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = DACF75A11F79F92100915446 /* CollectionScene.swift */; };
+		DACF75A71F79F92100915446 /* GameplayScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = DACF75A21F79F92100915446 /* GameplayScene.swift */; };
+		DACF75A81F79F92100915446 /* LevelSelectScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = DACF75A31F79F92100915446 /* LevelSelectScene.swift */; };
+		DACF75A91F79F92100915446 /* MainMenuScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = DACF75A41F79F92100915446 /* MainMenuScene.swift */; };
+		DACF75AA1F79F92100915446 /* MapScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = DACF75A51F79F92100915446 /* MapScene.swift */; };
+		DACF75AC1F79F92C00915446 /* CollectionTable.swift in Sources */ = {isa = PBXBuildFile; fileRef = DACF75AB1F79F92C00915446 /* CollectionTable.swift */; };
+		DACF75B71F79F96200915446 /* CollectionScene.sks in Resources */ = {isa = PBXBuildFile; fileRef = DACF75AE1F79F96200915446 /* CollectionScene.sks */; };
+		DACF75B81F79F96200915446 /* LevelSelectScene.sks in Resources */ = {isa = PBXBuildFile; fileRef = DACF75AF1F79F96200915446 /* LevelSelectScene.sks */; };
+		DACF75B91F79F96200915446 /* MainMenuScene.sks in Resources */ = {isa = PBXBuildFile; fileRef = DACF75B01F79F96200915446 /* MainMenuScene.sks */; };
+		DACF75BA1F79F96200915446 /* MapScene.sks in Resources */ = {isa = PBXBuildFile; fileRef = DACF75B11F79F96200915446 /* MapScene.sks */; };
+		DACF75BB1F79F96200915446 /* Egypt1.sks in Resources */ = {isa = PBXBuildFile; fileRef = DACF75B31F79F96200915446 /* Egypt1.sks */; };
+		DACF75BC1F79F96200915446 /* map test.sks in Resources */ = {isa = PBXBuildFile; fileRef = DACF75B41F79F96200915446 /* map test.sks */; };
+		DACF75BD1F79F96200915446 /* settingtest.sks in Resources */ = {isa = PBXBuildFile; fileRef = DACF75B51F79F96200915446 /* settingtest.sks */; };
+		DACF75BE1F79F96200915446 /* testScene.sks in Resources */ = {isa = PBXBuildFile; fileRef = DACF75B61F79F96200915446 /* testScene.sks */; };
+		DACF75C21F79FA1000915446 /* GameData.swift in Sources */ = {isa = PBXBuildFile; fileRef = DACF75C11F79FA1000915446 /* GameData.swift */; };
+		DACF75C41F7A1C4100915446 /* collectionCell.png in Resources */ = {isa = PBXBuildFile; fileRef = DACF75C31F7A1C4100915446 /* collectionCell.png */; };
+		DACF75C61F7A261C00915446 /* Create Cat.png in Resources */ = {isa = PBXBuildFile; fileRef = DACF75C51F7A261C00915446 /* Create Cat.png */; };
 		DAD657211F6A2E66007F99ED /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAD657201F6A2E66007F99ED /* Constants.swift */; };
 		DAD657261F6A3EAA007F99ED /* testcat.png in Resources */ = {isa = PBXBuildFile; fileRef = DAD657221F6A3EAA007F99ED /* testcat.png */; };
 		DAD657271F6A3EAA007F99ED /* testcat2.png in Resources */ = {isa = PBXBuildFile; fileRef = DAD657231F6A3EAA007F99ED /* testcat2.png */; };
 		DAD657281F6A3EAA007F99ED /* testcat3.png in Resources */ = {isa = PBXBuildFile; fileRef = DAD657241F6A3EAA007F99ED /* testcat3.png */; };
 		DAD657291F6A3EAA007F99ED /* testcat4.png in Resources */ = {isa = PBXBuildFile; fileRef = DAD657251F6A3EAA007F99ED /* testcat4.png */; };
-		DAD6572B1F6A3F3C007F99ED /* Cat.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAD6572A1F6A3F3C007F99ED /* Cat.swift */; };
 		DADC52871F7510550033BB28 /* check sign.png in Resources */ = {isa = PBXBuildFile; fileRef = DADC52811F7510550033BB28 /* check sign.png */; };
 		DADC52881F7510550033BB28 /* default setting screen.png in Resources */ = {isa = PBXBuildFile; fileRef = DADC52821F7510550033BB28 /* default setting screen.png */; };
 		DADC52891F7510550033BB28 /* facebookBtn.png in Resources */ = {isa = PBXBuildFile; fileRef = DADC52831F7510550033BB28 /* facebookBtn.png */; };
@@ -170,16 +170,12 @@
 /* Begin PBXFileReference section */
 		DA0432CB1F6AF386002EF8F6 /* coin.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = coin.png; path = Assets/coin.png; sourceTree = "<group>"; };
 		DA0432CC1F6AF386002EF8F6 /* collectable.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = collectable.png; path = Assets/collectable.png; sourceTree = "<group>"; };
-		DA0432D01F6B1338002EF8F6 /* GameplayController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GameplayController.swift; sourceTree = "<group>"; };
-		DA0432D81F6B3A5C002EF8F6 /* GameData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GameData.swift; sourceTree = "<group>"; };
-		DA0432DA1F6B3AD7002EF8F6 /* GameManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GameManager.swift; sourceTree = "<group>"; };
 		DA2220E91F68F16A0009AB60 /* Egypt 01-1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Egypt 01-1.png"; path = "Assets/Egypt/Egypt 01-1.png"; sourceTree = "<group>"; };
 		DA2220EA1F68F16A0009AB60 /* Egypt 01-2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Egypt 01-2.png"; path = "Assets/Egypt/Egypt 01-2.png"; sourceTree = "<group>"; };
 		DA2220EB1F68F16A0009AB60 /* Egypt 01-3.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Egypt 01-3.png"; path = "Assets/Egypt/Egypt 01-3.png"; sourceTree = "<group>"; };
 		DA2220EC1F68F16A0009AB60 /* Egypt 01-4.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Egypt 01-4.png"; path = "Assets/Egypt/Egypt 01-4.png"; sourceTree = "<group>"; };
 		DA2220ED1F68F16A0009AB60 /* Egypt 01-5.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Egypt 01-5.png"; path = "Assets/Egypt/Egypt 01-5.png"; sourceTree = "<group>"; };
 		DA2220EE1F68F16A0009AB60 /* Egypt 01-6.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Egypt 01-6.png"; path = "Assets/Egypt/Egypt 01-6.png"; sourceTree = "<group>"; };
-		DA2599631F73941400BB9573 /* testScene.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = testScene.sks; sourceTree = "<group>"; };
 		DA25997C1F7397C600BB9573 /* german1-0.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "german1-0.png"; path = "Assets/german1 [www.imagesplitter.net]/german1-0.png"; sourceTree = "<group>"; };
 		DA25997D1F7397C600BB9573 /* german1-1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "german1-1.png"; path = "Assets/german1 [www.imagesplitter.net]/german1-1.png"; sourceTree = "<group>"; };
 		DA25997E1F7397C600BB9573 /* german1-2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "german1-2.png"; path = "Assets/german1 [www.imagesplitter.net]/german1-2.png"; sourceTree = "<group>"; };
@@ -190,7 +186,6 @@
 		DA2599831F7397C600BB9573 /* german1-7.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "german1-7.png"; path = "Assets/german1 [www.imagesplitter.net]/german1-7.png"; sourceTree = "<group>"; };
 		DA2599841F7397C600BB9573 /* german1-8.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "german1-8.png"; path = "Assets/german1 [www.imagesplitter.net]/german1-8.png"; sourceTree = "<group>"; };
 		DA2599851F7397C600BB9573 /* german1-9.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "german1-9.png"; path = "Assets/german1 [www.imagesplitter.net]/german1-9.png"; sourceTree = "<group>"; };
-		DA2599A01F74DD6A00BB9573 /* settingtest.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = settingtest.sks; sourceTree = "<group>"; };
 		DA29749A1F68DEDE005F6B41 /* come-on-chu-chu.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "come-on-chu-chu.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		DA29749D1F68DEDE005F6B41 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		DA29749F1F68DEDE005F6B41 /* GameScene.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = GameScene.sks; sourceTree = "<group>"; };
@@ -207,12 +202,6 @@
 		DA2974BF1F68DEDE005F6B41 /* come-on-chu-chuUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "come-on-chu-chuUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		DA2974C31F68DEDE005F6B41 /* come_on_chu_chuUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = come_on_chu_chuUITests.swift; sourceTree = "<group>"; };
 		DA2974C51F68DEDE005F6B41 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		DA2974D51F68DF74005F6B41 /* Player.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Player.swift; sourceTree = "<group>"; };
-		DA2974D71F68DF91005F6B41 /* GameplayScene.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GameplayScene.swift; sourceTree = "<group>"; };
-		DA2974D91F68DFA6005F6B41 /* MainMenuScene.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainMenuScene.swift; sourceTree = "<group>"; };
-		DA2974DB1F68DFB3005F6B41 /* MainMenuScene.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = MainMenuScene.sks; sourceTree = "<group>"; };
-		DA29768C1F68E366005F6B41 /* Egypt1.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = Egypt1.sks; sourceTree = "<group>"; };
-		DACF74691F75F6D300915446 /* CollectionScene.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = CollectionScene.sks; sourceTree = "<group>"; };
 		DACF74861F75F98300915446 /* daytime-default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "daytime-default.png"; sourceTree = "<group>"; };
 		DACF74871F75F98300915446 /* daytime-holycrapSelected.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "daytime-holycrapSelected.png"; sourceTree = "<group>"; };
 		DACF74881F75F98300915446 /* daytime-mycatSelected.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "daytime-mycatSelected.png"; sourceTree = "<group>"; };
@@ -223,7 +212,6 @@
 		DACF74921F75F98300915446 /* nighttime-mycatSelected.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "nighttime-mycatSelected.png"; sourceTree = "<group>"; };
 		DACF74931F75F98300915446 /* nighttime-normalSelected.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "nighttime-normalSelected.png"; sourceTree = "<group>"; };
 		DACF74941F75F98300915446 /* nighttime-rareSelected.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "nighttime-rareSelected.png"; sourceTree = "<group>"; };
-		DACF74A61F75F9AC00915446 /* CollectionScene.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CollectionScene.swift; sourceTree = "<group>"; };
 		DACF74A81F75FC9700915446 /* daytime-superrareSelected.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "daytime-superrareSelected.png"; sourceTree = "<group>"; };
 		DACF74AA1F76000F00915446 /* switch on.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "switch on.png"; sourceTree = "<group>"; };
 		DACF74AC1F76001600915446 /* switch off.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "switch off.png"; sourceTree = "<group>"; };
@@ -254,16 +242,11 @@
 		DACF74EC1F77CD6500915446 /* redfoot7.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = redfoot7.png; sourceTree = "<group>"; };
 		DACF74ED1F77CD6500915446 /* redfoot8.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = redfoot8.png; sourceTree = "<group>"; };
 		DACF74EF1F77CD6500915446 /* worldmap.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = worldmap.png; sourceTree = "<group>"; };
-		DACF75241F77CD8500915446 /* MapScene.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = MapScene.sks; sourceTree = "<group>"; };
-		DACF75261F77CD9700915446 /* MapScene.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MapScene.swift; sourceTree = "<group>"; };
-		DACF75281F78589C00915446 /* LevelSelectScene.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = LevelSelectScene.sks; sourceTree = "<group>"; };
-		DACF752B1F7858FA00915446 /* map test.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = "map test.sks"; sourceTree = "<group>"; };
 		DACF75391F786ADB00915446 /* redfoot9.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = redfoot9.png; sourceTree = "<group>"; };
 		DACF753A1F786ADB00915446 /* redfoot10.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = redfoot10.png; sourceTree = "<group>"; };
 		DACF753B1F786ADB00915446 /* redfoot11.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = redfoot11.png; sourceTree = "<group>"; };
 		DACF753C1F786ADB00915446 /* redfoot12.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = redfoot12.png; sourceTree = "<group>"; };
 		DACF753D1F786ADB00915446 /* redfoot13.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = redfoot13.png; sourceTree = "<group>"; };
-		DACF75631F78E4BD00915446 /* LevelSelectScene.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LevelSelectScene.swift; sourceTree = "<group>"; };
 		DACF75651F78E5AE00915446 /* levelselect_Barcelonau.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = levelselect_Barcelonau.png; sourceTree = "<group>"; };
 		DACF75661F78E5AE00915446 /* levelselect_Berinya.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = levelselect_Berinya.png; sourceTree = "<group>"; };
 		DACF75671F78E5AE00915446 /* levelselect_Brazilinya.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = levelselect_Brazilinya.png; sourceTree = "<group>"; };
@@ -285,14 +268,31 @@
 		DACF75861F78E67B00915446 /* level5.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = level5.png; sourceTree = "<group>"; };
 		DACF75871F78E67B00915446 /* level6.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = level6.png; sourceTree = "<group>"; };
 		DACF75881F78E67B00915446 /* level7.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = level7.png; sourceTree = "<group>"; };
-		DAD6571C1F6A2DD9007F99ED /* Obstacles.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Obstacles.swift; sourceTree = "<group>"; };
-		DAD6571E1F6A2DFF007F99ED /* Collectables.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Collectables.swift; sourceTree = "<group>"; };
+		DACF75991F79F90400915446 /* GameManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = GameManager.swift; path = Swifts/GameManager.swift; sourceTree = "<group>"; };
+		DACF759A1F79F90400915446 /* GameplayController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = GameplayController.swift; path = Swifts/GameplayController.swift; sourceTree = "<group>"; };
+		DACF759F1F79F90D00915446 /* Player.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Player.swift; path = Swifts/Player.swift; sourceTree = "<group>"; };
+		DACF75A11F79F92100915446 /* CollectionScene.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = CollectionScene.swift; path = Swifts/CollectionScene.swift; sourceTree = "<group>"; };
+		DACF75A21F79F92100915446 /* GameplayScene.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = GameplayScene.swift; path = Swifts/GameplayScene.swift; sourceTree = "<group>"; };
+		DACF75A31F79F92100915446 /* LevelSelectScene.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = LevelSelectScene.swift; path = Swifts/LevelSelectScene.swift; sourceTree = "<group>"; };
+		DACF75A41F79F92100915446 /* MainMenuScene.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = MainMenuScene.swift; path = Swifts/MainMenuScene.swift; sourceTree = "<group>"; };
+		DACF75A51F79F92100915446 /* MapScene.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = MapScene.swift; path = Swifts/MapScene.swift; sourceTree = "<group>"; };
+		DACF75AB1F79F92C00915446 /* CollectionTable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = CollectionTable.swift; path = Swifts/CollectionTable.swift; sourceTree = "<group>"; };
+		DACF75AE1F79F96200915446 /* CollectionScene.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = CollectionScene.sks; sourceTree = "<group>"; };
+		DACF75AF1F79F96200915446 /* LevelSelectScene.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = LevelSelectScene.sks; sourceTree = "<group>"; };
+		DACF75B01F79F96200915446 /* MainMenuScene.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = MainMenuScene.sks; sourceTree = "<group>"; };
+		DACF75B11F79F96200915446 /* MapScene.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = MapScene.sks; sourceTree = "<group>"; };
+		DACF75B31F79F96200915446 /* Egypt1.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = Egypt1.sks; sourceTree = "<group>"; };
+		DACF75B41F79F96200915446 /* map test.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = "map test.sks"; sourceTree = "<group>"; };
+		DACF75B51F79F96200915446 /* settingtest.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = settingtest.sks; sourceTree = "<group>"; };
+		DACF75B61F79F96200915446 /* testScene.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = testScene.sks; sourceTree = "<group>"; };
+		DACF75C11F79FA1000915446 /* GameData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = GameData.swift; path = Swifts/GameData.swift; sourceTree = "<group>"; };
+		DACF75C31F7A1C4100915446 /* collectionCell.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = collectionCell.png; path = "Assets/Collection Scene/collectionCell.png"; sourceTree = "<group>"; };
+		DACF75C51F7A261C00915446 /* Create Cat.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Create Cat.png"; path = "Assets/Collection Scene/list/Create Cat.png"; sourceTree = "<group>"; };
 		DAD657201F6A2E66007F99ED /* Constants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Constants.swift; path = "come-on-chu-chu/Constants.swift"; sourceTree = "<group>"; };
 		DAD657221F6A3EAA007F99ED /* testcat.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = testcat.png; path = Assets/testcat.png; sourceTree = "<group>"; };
 		DAD657231F6A3EAA007F99ED /* testcat2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = testcat2.png; path = Assets/testcat2.png; sourceTree = "<group>"; };
 		DAD657241F6A3EAA007F99ED /* testcat3.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = testcat3.png; path = Assets/testcat3.png; sourceTree = "<group>"; };
 		DAD657251F6A3EAA007F99ED /* testcat4.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = testcat4.png; path = Assets/testcat4.png; sourceTree = "<group>"; };
-		DAD6572A1F6A3F3C007F99ED /* Cat.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Cat.swift; sourceTree = "<group>"; };
 		DADC52811F7510550033BB28 /* check sign.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "check sign.png"; sourceTree = "<group>"; };
 		DADC52821F7510550033BB28 /* default setting screen.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "default setting screen.png"; sourceTree = "<group>"; };
 		DADC52831F7510550033BB28 /* facebookBtn.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = facebookBtn.png; sourceTree = "<group>"; };
@@ -345,9 +345,9 @@
 		DA0432CF1F6B1325002EF8F6 /* Gameplay Controller */ = {
 			isa = PBXGroup;
 			children = (
-				DA0432D01F6B1338002EF8F6 /* GameplayController.swift */,
-				DA0432D81F6B3A5C002EF8F6 /* GameData.swift */,
-				DA0432DA1F6B3AD7002EF8F6 /* GameManager.swift */,
+				DACF75991F79F90400915446 /* GameManager.swift */,
+				DACF759A1F79F90400915446 /* GameplayController.swift */,
+				DACF75C11F79FA1000915446 /* GameData.swift */,
 			);
 			name = "Gameplay Controller";
 			sourceTree = "<group>";
@@ -422,7 +422,7 @@
 			children = (
 				DA29749C1F68DEDE005F6B41 /* come-on-chu-chu */,
 				DA2974D11F68DF53005F6B41 /* Game Classes */,
-				DA2974D21F68DF59005F6B41 /* Scenes */,
+				DACF75AD1F79F96200915446 /* Scenes */,
 				DAD657201F6A2E66007F99ED /* Constants.swift */,
 				DA2974DD1F68E2E8005F6B41 /* Assets */,
 				DA2974B71F68DEDE005F6B41 /* come-on-chu-chuTests */,
@@ -479,33 +479,21 @@
 			isa = PBXGroup;
 			children = (
 				DA0432CF1F6B1325002EF8F6 /* Gameplay Controller */,
-				DAD6571B1F6A2DAE007F99ED /* Obstacle Classes */,
 				DA2974D41F68DF65005F6B41 /* Player Classes */,
 				DA2974D31F68DF5E005F6B41 /* Scene Classes */,
+				DACF75AB1F79F92C00915446 /* CollectionTable.swift */,
 			);
 			name = "Game Classes";
-			sourceTree = "<group>";
-		};
-		DA2974D21F68DF59005F6B41 /* Scenes */ = {
-			isa = PBXGroup;
-			children = (
-				DA2974DB1F68DFB3005F6B41 /* MainMenuScene.sks */,
-				DACF74691F75F6D300915446 /* CollectionScene.sks */,
-				DACF75241F77CD8500915446 /* MapScene.sks */,
-				DACF75281F78589C00915446 /* LevelSelectScene.sks */,
-				DACF752A1F7858AB00915446 /* Test */,
-			);
-			name = Scenes;
 			sourceTree = "<group>";
 		};
 		DA2974D31F68DF5E005F6B41 /* Scene Classes */ = {
 			isa = PBXGroup;
 			children = (
-				DA2974D71F68DF91005F6B41 /* GameplayScene.swift */,
-				DA2974D91F68DFA6005F6B41 /* MainMenuScene.swift */,
-				DACF74A61F75F9AC00915446 /* CollectionScene.swift */,
-				DACF75261F77CD9700915446 /* MapScene.swift */,
-				DACF75631F78E4BD00915446 /* LevelSelectScene.swift */,
+				DACF75A11F79F92100915446 /* CollectionScene.swift */,
+				DACF75A21F79F92100915446 /* GameplayScene.swift */,
+				DACF75A31F79F92100915446 /* LevelSelectScene.swift */,
+				DACF75A41F79F92100915446 /* MainMenuScene.swift */,
+				DACF75A51F79F92100915446 /* MapScene.swift */,
 			);
 			name = "Scene Classes";
 			sourceTree = "<group>";
@@ -513,8 +501,7 @@
 		DA2974D41F68DF65005F6B41 /* Player Classes */ = {
 			isa = PBXGroup;
 			children = (
-				DA2974D51F68DF74005F6B41 /* Player.swift */,
-				DAD6572A1F6A3F3C007F99ED /* Cat.swift */,
+				DACF759F1F79F90D00915446 /* Player.swift */,
 			);
 			name = "Player Classes";
 			sourceTree = "<group>";
@@ -535,6 +522,8 @@
 		DACF746B1F75F77E00915446 /* Collection Screen */ = {
 			isa = PBXGroup;
 			children = (
+				DACF75C51F7A261C00915446 /* Create Cat.png */,
+				DACF75C31F7A1C4100915446 /* collectionCell.png */,
 				DACF74B41F76037300915446 /* backToMenu.png */,
 				DACF74841F75F98300915446 /* Switch OFF */,
 				DACF748E1F75F98300915446 /* Switch ON */,
@@ -689,17 +678,6 @@
 			path = "red foot";
 			sourceTree = "<group>";
 		};
-		DACF752A1F7858AB00915446 /* Test */ = {
-			isa = PBXGroup;
-			children = (
-				DA29768C1F68E366005F6B41 /* Egypt1.sks */,
-				DA2599A01F74DD6A00BB9573 /* settingtest.sks */,
-				DA2599631F73941400BB9573 /* testScene.sks */,
-				DACF752B1F7858FA00915446 /* map test.sks */,
-			);
-			name = Test;
-			sourceTree = "<group>";
-		};
 		DACF75811F78E67B00915446 /* levels */ = {
 			isa = PBXGroup;
 			children = (
@@ -714,13 +692,27 @@
 			path = levels;
 			sourceTree = "<group>";
 		};
-		DAD6571B1F6A2DAE007F99ED /* Obstacle Classes */ = {
+		DACF75AD1F79F96200915446 /* Scenes */ = {
 			isa = PBXGroup;
 			children = (
-				DAD6571C1F6A2DD9007F99ED /* Obstacles.swift */,
-				DAD6571E1F6A2DFF007F99ED /* Collectables.swift */,
+				DACF75AE1F79F96200915446 /* CollectionScene.sks */,
+				DACF75AF1F79F96200915446 /* LevelSelectScene.sks */,
+				DACF75B01F79F96200915446 /* MainMenuScene.sks */,
+				DACF75B11F79F96200915446 /* MapScene.sks */,
+				DACF75B21F79F96200915446 /* test */,
 			);
-			name = "Obstacle Classes";
+			path = Scenes;
+			sourceTree = "<group>";
+		};
+		DACF75B21F79F96200915446 /* test */ = {
+			isa = PBXGroup;
+			children = (
+				DACF75B31F79F96200915446 /* Egypt1.sks */,
+				DACF75B41F79F96200915446 /* map test.sks */,
+				DACF75B51F79F96200915446 /* settingtest.sks */,
+				DACF75B61F79F96200915446 /* testScene.sks */,
+			);
+			path = test;
 			sourceTree = "<group>";
 		};
 		DAD6572C1F6AE454007F99ED /* Game Screen Interface */ = {
@@ -902,7 +894,6 @@
 				DACF758C1F78E67C00915446 /* level4.png in Resources */,
 				DA2599871F7397C600BB9573 /* german1-1.png in Resources */,
 				DACF74991F75F98300915446 /* daytime-holycrapSelected.png in Resources */,
-				DACF75291F78589C00915446 /* LevelSelectScene.sks in Resources */,
 				DACF75101F77CD6500915446 /* grayfoot6.png in Resources */,
 				DACF749B1F75F98300915446 /* daytime-normalSelected.png in Resources */,
 				DACF751B1F77CD6500915446 /* redfoot2.png in Resources */,
@@ -915,7 +906,6 @@
 				DADC52931F7510C10033BB28 /* healthBar.png in Resources */,
 				DACF74A91F75FC9700915446 /* daytime-superrareSelected.png in Resources */,
 				DACF75121F77CD6500915446 /* grayfoot8.png in Resources */,
-				DACF75251F77CD8500915446 /* MapScene.sks in Resources */,
 				DADC52951F7510C10033BB28 /* itemPanel.png in Resources */,
 				DACF749A1F75F98300915446 /* daytime-mycatSelected.png in Resources */,
 				DADC52871F7510550033BB28 /* check sign.png in Resources */,
@@ -935,7 +925,6 @@
 				DACF74AB1F76000F00915446 /* switch on.png in Resources */,
 				DA2974AB1F68DEDE005F6B41 /* Assets.xcassets in Resources */,
 				DA2974AE1F68DEDE005F6B41 /* LaunchScreen.storyboard in Resources */,
-				DACF752C1F7858FA00915446 /* map test.sks in Resources */,
 				DACF74A31F75F98300915446 /* nighttime-rareSelected.png in Resources */,
 				DACF758D1F78E67C00915446 /* level5.png in Resources */,
 				DADC52891F7510550033BB28 /* facebookBtn.png in Resources */,
@@ -943,6 +932,7 @@
 				DACF757F1F78E5AE00915446 /* levelselect_Parismiao.png in Resources */,
 				DACF758F1F78E67C00915446 /* level7.png in Resources */,
 				DA25998E1F7397C600BB9573 /* german1-8.png in Resources */,
+				DACF75B81F79F96200915446 /* LevelSelectScene.sks in Resources */,
 				DACF758A1F78E67C00915446 /* level2.png in Resources */,
 				DACF757B1F78E5AE00915446 /* levelselect_Meowcouver.png in Resources */,
 				DACF75081F77CD6500915446 /* grayfoot10.png in Resources */,
@@ -950,15 +940,16 @@
 				DACF749F1F75F98300915446 /* nighttime-default.png in Resources */,
 				DADC528A1F7510550033BB28 /* instruction.png in Resources */,
 				DA2220F01F68F16A0009AB60 /* Egypt 01-2.png in Resources */,
+				DACF75BA1F79F96200915446 /* MapScene.sks in Resources */,
 				DACF75201F77CD6500915446 /* redfoot7.png in Resources */,
 				DACF75781F78E5AE00915446 /* levelselect_Londonya.png in Resources */,
-				DA29768D1F68E366005F6B41 /* Egypt1.sks in Resources */,
 				DACF75071F77CD6500915446 /* grayfoot1.png in Resources */,
 				DADC52AA1F75111F0033BB28 /* mainDailyBonus.png in Resources */,
 				DACF751E1F77CD6500915446 /* redfoot5.png in Resources */,
 				DA2220F11F68F16A0009AB60 /* Egypt 01-3.png in Resources */,
 				DACF751C1F77CD6500915446 /* redfoot3.png in Resources */,
 				DACF75401F786ADB00915446 /* redfoot11.png in Resources */,
+				DACF75BB1F79F96200915446 /* Egypt1.sks in Resources */,
 				DACF74A21F75F98300915446 /* nighttime-normalSelected.png in Resources */,
 				DAD657281F6A3EAA007F99ED /* testcat3.png in Resources */,
 				DACF74AD1F76001600915446 /* switch off.png in Resources */,
@@ -967,16 +958,16 @@
 				DA2599891F7397C600BB9573 /* german1-3.png in Resources */,
 				DACF757D1F78E5AE00915446 /* levelselect_Moscyau.png in Resources */,
 				DACF757A1F78E5AE00915446 /* levelselect_Meoul.png in Resources */,
+				DACF75C61F7A261C00915446 /* Create Cat.png in Resources */,
 				DACF753F1F786ADB00915446 /* redfoot10.png in Resources */,
 				DAD657271F6A3EAA007F99ED /* testcat2.png in Resources */,
 				DADC52A21F7510DA0033BB28 /* mainToHome.png in Resources */,
-				DA2599641F73941400BB9573 /* testScene.sks in Resources */,
-				DA2599A11F74DD6A00BB9573 /* settingtest.sks in Resources */,
+				DACF75B71F79F96200915446 /* CollectionScene.sks in Resources */,
 				DADC52881F7510550033BB28 /* default setting screen.png in Resources */,
+				DACF75C41F7A1C4100915446 /* collectionCell.png in Resources */,
 				DA2220F31F68F16A0009AB60 /* Egypt 01-5.png in Resources */,
 				DACF758E1F78E67C00915446 /* level6.png in Resources */,
 				DACF75141F77CD6500915446 /* redfoot.png in Resources */,
-				DACF746A1F75F6D300915446 /* CollectionScene.sks in Resources */,
 				DADC52961F7510C10033BB28 /* pause.png in Resources */,
 				DACF74B31F76020600915446 /* nighttime-superrareSelected.png in Resources */,
 				DACF750D1F77CD6500915446 /* grayfoot3.png in Resources */,
@@ -984,19 +975,22 @@
 				DACF74981F75F98300915446 /* daytime-default.png in Resources */,
 				DACF75771F78E5AE00915446 /* levelselect_default.png in Resources */,
 				DACF75891F78E67B00915446 /* level1.png in Resources */,
-				DA2974DC1F68DFB3005F6B41 /* MainMenuScene.sks in Resources */,
 				DA25998A1F7397C600BB9573 /* german1-4.png in Resources */,
 				DA2974A21F68DEDE005F6B41 /* Actions.sks in Resources */,
 				DADC529F1F7510DA0033BB28 /* mainBackground.png in Resources */,
+				DACF75BD1F79F96200915446 /* settingtest.sks in Resources */,
 				DACF75061F77CD6500915446 /* grayfoot.png in Resources */,
 				DA0432CD1F6AF386002EF8F6 /* coin.png in Resources */,
+				DACF75BE1F79F96200915446 /* testScene.sks in Resources */,
 				DADC528C1F7510550033BB28 /* Setting Screen.png in Resources */,
 				DACF75111F77CD6500915446 /* grayfoot7.png in Resources */,
+				DACF75B91F79F96200915446 /* MainMenuScene.sks in Resources */,
 				DACF75051F77CD6500915446 /* map instruction.png in Resources */,
 				DACF75731F78E5AE00915446 /* levelselect_Barcelonau.png in Resources */,
 				DACF75231F77CD6500915446 /* worldmap.png in Resources */,
 				DADC529E1F7510DA0033BB28 /* main screen.png in Resources */,
 				DACF75421F786ADB00915446 /* redfoot13.png in Resources */,
+				DACF75BC1F79F96200915446 /* map test.sks in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1021,22 +1015,20 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				DA2974DA1F68DFA6005F6B41 /* MainMenuScene.swift in Sources */,
-				DAD6571D1F6A2DD9007F99ED /* Obstacles.swift in Sources */,
-				DA0432DB1F6B3AD7002EF8F6 /* GameManager.swift in Sources */,
-				DAD6572B1F6A3F3C007F99ED /* Cat.swift in Sources */,
-				DA0432D91F6B3A5C002EF8F6 /* GameData.swift in Sources */,
-				DACF75271F77CD9700915446 /* MapScene.swift in Sources */,
-				DA2974D61F68DF74005F6B41 /* Player.swift in Sources */,
-				DACF75641F78E4BD00915446 /* LevelSelectScene.swift in Sources */,
-				DACF74A71F75F9AC00915446 /* CollectionScene.swift in Sources */,
-				DA2974D81F68DF91005F6B41 /* GameplayScene.swift in Sources */,
+				DACF75A91F79F92100915446 /* MainMenuScene.swift in Sources */,
+				DACF759C1F79F90400915446 /* GameManager.swift in Sources */,
+				DACF75AA1F79F92100915446 /* MapScene.swift in Sources */,
+				DACF75AC1F79F92C00915446 /* CollectionTable.swift in Sources */,
 				DAD657211F6A2E66007F99ED /* Constants.swift in Sources */,
-				DA0432D11F6B1338002EF8F6 /* GameplayController.swift in Sources */,
+				DACF75A71F79F92100915446 /* GameplayScene.swift in Sources */,
+				DACF75A61F79F92100915446 /* CollectionScene.swift in Sources */,
 				DA2974A41F68DEDE005F6B41 /* GameScene.swift in Sources */,
-				DAD6571F1F6A2DFF007F99ED /* Collectables.swift in Sources */,
 				DA2974A61F68DEDE005F6B41 /* GameViewController.swift in Sources */,
+				DACF759D1F79F90400915446 /* GameplayController.swift in Sources */,
+				DACF75A01F79F90D00915446 /* Player.swift in Sources */,
+				DACF75C21F79FA1000915446 /* GameData.swift in Sources */,
 				DA29749E1F68DEDE005F6B41 /* AppDelegate.swift in Sources */,
+				DACF75A81F79F92100915446 /* LevelSelectScene.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

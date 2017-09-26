@@ -10,10 +10,14 @@ import SpriteKit
 
 class CollectionScene: SKScene {
     
+    var createCat: SKSpriteNode!
+    
     var background: SKSpriteNode!
     var switchImage: SKSpriteNode!
     var currentTime: String!
     var selected: String!
+    
+    var collectionTable: CollectionTable!
     
     override func didMove(to view: SKView) {
         
@@ -23,8 +27,9 @@ class CollectionScene: SKScene {
         currentTime = "daytime"
         selected = "default"
         
+        collectionTableHandler()
+        
     }
-    
     
     override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
         
@@ -32,7 +37,12 @@ class CollectionScene: SKScene {
             let location = touch.location(in: self)
             let touchedNode = atPoint(location)
             
+
+          
             if touchedNode.name == "backToMenu" {
+                
+                collectionTable.removeFromSuperview()
+                
                 let scene = MainMenuScene(fileNamed: "MainMenuScene")
                 scene!.scaleMode = .aspectFill
                 self.view?.presentScene(scene!, transition: SKTransition.doorsOpenVertical(withDuration: 1))
@@ -83,5 +93,17 @@ class CollectionScene: SKScene {
     
     func setImage() {
         background.texture = SKTexture(imageNamed: "\(currentTime!)-\(selected!)")
+    }
+    
+    func collectionTableHandler() {
+        
+        collectionTable = CollectionTable()
+        
+        collectionTable.register(UITableViewCell.self, forCellReuseIdentifier: "Cell")
+        collectionTable.frame=CGRect(x:130,y:160,width:270,height:240)
+        collectionTable.backgroundColor = .clear
+        self.scene?.view?.addSubview(collectionTable)
+        collectionTable.reloadData()
+        
     }
 }
