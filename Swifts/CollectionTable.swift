@@ -11,7 +11,8 @@ import SpriteKit
 
 class CollectionTable: UITableView, UITableViewDelegate, UITableViewDataSource {
 
-    var cats = ["name1", "name2", "name3", "name4", "name5", "lastcell"]
+    var category: String?
+    var cats = ["name1", "name2", "3", "4", "5", "6", "createcat"]
     
     override init(frame: CGRect, style: UITableViewStyle) {
         super.init(frame: frame, style: style)
@@ -43,8 +44,12 @@ class CollectionTable: UITableView, UITableViewDelegate, UITableViewDataSource {
             cell.imageView?.image = img
         } else {
             
-            let createCat = UIImage(named: "Create Cat")
-            cell.imageView?.image = createCat
+            if (category == "My Cat") {
+                let createCat = UIImage(named: "creat cat")
+                cell.imageView?.image = createCat
+            } else {
+                cell.imageView?.image = nil
+            }
         }
         
         return cell
@@ -63,6 +68,7 @@ class CollectionTable: UITableView, UITableViewDelegate, UITableViewDataSource {
     }
     
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
-        return 70
+        
+        return 75
     }
 }

@@ -27,6 +27,7 @@ class CollectionScene: SKScene {
         currentTime = "daytime"
         selected = "default"
         
+        collectionTable = CollectionTable()
         collectionTableHandler()
         
     }
@@ -61,22 +62,34 @@ class CollectionScene: SKScene {
             
             if touchedNode.name == "normalBtn" {
                 selected = "normalSelected"
+                collectionTable.category = "Normal Cat"
+                //collectionTable.cats = ["name1", "name2", "3", "6", "createcat"]
+
+                
             }
             
             if touchedNode.name == "rareBtn" {
                 selected = "rareSelected"
+                collectionTable.category = "Rare Cat"
+                //collectionTable.cats = ["name1", "name2", "createcat"]
             }
             
             if touchedNode.name == "superrareBtn" {
                 selected = "superrareSelected"
+                collectionTable.category = "Super Rare Cat"
+                
             }
             
             if touchedNode.name == "holycrapBtn" {
                 selected = "holycrapSelected"
+                collectionTable.category = "Holy Crap Cat"
+                
             }
             
             if touchedNode.name == "mycatBtn" {
                 selected = "mycatSelected"
+                collectionTable.category = "My Cat"
+                
             }
             
             perform(#selector(setImage), with: nil, afterDelay: 0.1)
@@ -93,15 +106,17 @@ class CollectionScene: SKScene {
     
     func setImage() {
         background.texture = SKTexture(imageNamed: "\(currentTime!)-\(selected!)")
+        collectionTable.reloadData()
     }
     
     func collectionTableHandler() {
         
-        collectionTable = CollectionTable()
+        
         
         collectionTable.register(UITableViewCell.self, forCellReuseIdentifier: "Cell")
-        collectionTable.frame=CGRect(x:130,y:160,width:270,height:240)
+        collectionTable.frame=CGRect(x:120,y:150,width:310,height:240)
         collectionTable.backgroundColor = .clear
+        collectionTable.separatorColor = .clear
         self.scene?.view?.addSubview(collectionTable)
         collectionTable.reloadData()
         

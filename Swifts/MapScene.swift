@@ -38,9 +38,7 @@ class MapScene: SKScene {
     
     }
     
-    override func update(_ currentTime: TimeInterval) {
-    }
-    
+
     override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
         
         
