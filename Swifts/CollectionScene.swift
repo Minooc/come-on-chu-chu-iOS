@@ -111,8 +111,6 @@ class CollectionScene: SKScene {
     
     func collectionTableHandler() {
         
-        
-        
         collectionTable.register(UITableViewCell.self, forCellReuseIdentifier: "Cell")
         collectionTable.frame=CGRect(x:120,y:150,width:310,height:240)
         collectionTable.backgroundColor = .clear

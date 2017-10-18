@@ -16,10 +16,26 @@ class GameplayScene: SKScene, SKPhysicsContactDelegate  {
     
     var mainCamera: SKCameraNode?
     
-    var health: Double!
+    var health: Int!
     
     var playerGotHit = false
     var playerCanGetHit = true
+    
+    var scoreText: SKLabelNode!
+    var coinText: SKLabelNode!
+    
+    var firstHealth: SKSpriteNode!
+    var secondHealth: SKSpriteNode!
+    var thirdHealth: SKSpriteNode!
+    
+    var fishTail: SKSpriteNode!
+    var fishBody: SKSpriteNode!
+    var fishHead: SKSpriteNode!
+    
+    var gotFishTail: Bool!
+    var gotFishBody: Bool!
+    var gotFishHead: Bool!
+    
     
     override func didMove(to view: SKView) {
         // initialize everything
@@ -33,13 +49,24 @@ class GameplayScene: SKScene, SKPhysicsContactDelegate  {
         
         mainCamera = self.childNode(withName: "Main Camera") as? SKCameraNode
         
-        GameplayController.instance.scoreText = self.mainCamera!.childNode(withName: "Score Label") as? SKLabelNode
-        GameplayController.instance.coinText = self.mainCamera!.childNode(withName: "Coin Label") as? SKLabelNode
+        labelLocater()
+        
+        GameplayController.instance.scoreText = scoreText
+        GameplayController.instance.coinText = coinText
+//        GameplayController.instance.scoreText = self.mainCamera!.childNode(withName: "Score Label") as? SKLabelNode
+//        GameplayController.instance.coinText = self.mainCamera!.childNode(withName: "Coin Label") as? SKLabelNode
         GameplayController.instance.initializeVariables()
         
+        health = 3
+        gotFishBody = false
+        gotFishHead = false
+        gotFishTail = false
         
-        health = 100.0
+        healthLocater()
         interfaceLocater()
+        fishLocater()
+        
+        
 
         
     }
@@ -57,11 +84,27 @@ class GameplayScene: SKScene, SKPhysicsContactDelegate  {
         }
     }
     
+    func labelLocater() {
+        scoreText = SKLabelNode(fontNamed: "Conformity")
+        scoreText.fontSize = 48
+        scoreText.fontColor = UIColor.darkText
+        scoreText.position = CGPoint(x: -550.779, y: 313.243)
+        scoreText.zPosition = 3
+        self.mainCamera?.addChild(scoreText)
+        
+        coinText = SKLabelNode(fontNamed: "Conformity")
+        coinText.fontSize = 48
+        coinText.fontColor = UIColor.darkText
+        coinText.position = CGPoint(x: 442.152, y: 313.243)
+        coinText.zPosition = 3
+        self.mainCamera?.addChild(coinText)
+    }
+    
     func interfaceLocater() {
         // Health bar, Coin image, Coin label, Score image, Score label, Booster, pause, item
         
         // pause
-        let pauseBtn = SKSpriteNode(imageNamed: "pause")
+        let pauseBtn = SKSpriteNode(imageNamed: "pause_button-crop")
         pauseBtn.anchorPoint = CGPoint(x: 0.5, y:0.5)
         pauseBtn.size.width = 75.5
         pauseBtn.size.height = 75.2
@@ -70,28 +113,26 @@ class GameplayScene: SKScene, SKPhysicsContactDelegate  {
         self.mainCamera?.addChild(pauseBtn)
         
         // collectable image
-        let collectableImg = SKSpriteNode(imageNamed: "collectable")
+        let collectableImg = SKSpriteNode(imageNamed: "Collectable_located")
         collectableImg.anchorPoint = CGPoint(x: 0.5, y:0.5)
-        collectableImg.size.width = 79.586
-        collectableImg.size.height = 68.4
-        collectableImg.position = CGPoint(x: -107.319, y: 264.156)
+        collectableImg.size.width = 1337
+        collectableImg.size.height = 750
+        collectableImg.position = CGPoint(x: 0, y: 0)
         collectableImg.zPosition = 3
-        
         self.mainCamera?.addChild(collectableImg)
         
      
         // coin image
-        let coinImg = SKSpriteNode(imageNamed: "coin")
+        let coinImg = SKSpriteNode(imageNamed: "Coin_located")
         coinImg.anchorPoint = CGPoint(x: 0.5, y:0.5)
-        coinImg.size.width = 71.085
-        coinImg.size.height = 70
-        coinImg.position = CGPoint(x: -602.845, y: 256.506)
+        coinImg.size.width = 1337
+        coinImg.size.height = 750
+        coinImg.position = CGPoint(x: 0, y: 0)
         coinImg.zPosition = 3
         self.mainCamera?.addChild(coinImg)
         
         // booster
-        
-        let booster = SKSpriteNode(imageNamed: "booster")
+        let booster = SKSpriteNode(imageNamed: "booster_button-crop")
         booster.anchorPoint = CGPoint(x: 0.5, y:0.5)
         booster.size.width = 251.991
         booster.size.height = 154.679
@@ -99,24 +140,78 @@ class GameplayScene: SKScene, SKPhysicsContactDelegate  {
         booster.zPosition = 3
         self.mainCamera?.addChild(booster)
         
-        let itemPanel = SKSpriteNode(imageNamed: "itemPanel")
-        itemPanel.anchorPoint = CGPoint(x: 0.5, y:0.5)
-        itemPanel.size.width = 318.783
-        itemPanel.size.height = 109.699
-        itemPanel.position = CGPoint(x: -0.828, y: -304.16)
-        itemPanel.zPosition = 3
-        self.mainCamera?.addChild(itemPanel)
         
-        // health bar
-        let healthBar = SKSpriteNode(imageNamed: "healthBar")
-        healthBar.anchorPoint = CGPoint(x: 0.5, y:0.5)
-        healthBar.size.width = 1178.902
-        healthBar.size.height = 50.57
-        healthBar.position = CGPoint(x: -55.067, y: 324.543)
-        healthBar.zPosition = 3
-        self.mainCamera?.addChild(healthBar)
+        let length = SKSpriteNode(imageNamed: "length_showing")
+        length.anchorPoint = CGPoint(x: 0.5, y:0.5)
+        length.size.width = 1337
+        length.size.height = 750
+        length.position = CGPoint(x: 0, y: 0)
+        length.zPosition = 3
+        self.mainCamera?.addChild(length)
+        
+        let fish_bottom = SKSpriteNode(imageNamed: "Collectable_fish_buttom")
+        fish_bottom.anchorPoint = CGPoint(x: 0.5, y:0.5)
+        fish_bottom.size.width = 1337
+        fish_bottom.size.height = 750
+        fish_bottom.position = CGPoint(x: 0, y: 0)
+        fish_bottom.zPosition = 3
+        self.mainCamera?.addChild(fish_bottom)
+        
+    }
+    
+    func healthLocater() {
+        
+        firstHealth = SKSpriteNode(imageNamed: "1_health")
+        firstHealth.anchorPoint = CGPoint(x: 0.5, y:0.5)
+        firstHealth.size.width = 1337
+        firstHealth.size.height = 750
+        firstHealth.position = CGPoint(x: 0, y: 0)
+        firstHealth.zPosition = 3
+        self.mainCamera?.addChild(firstHealth)
+        
+        secondHealth = SKSpriteNode(imageNamed: "2_health")
+        secondHealth.anchorPoint = CGPoint(x: 0.5, y:0.5)
+        secondHealth.size.width = 1337
+        secondHealth.size.height = 750
+        secondHealth.position = CGPoint(x: 0, y: 0)
+        secondHealth.zPosition = 3
+        self.mainCamera?.addChild(secondHealth)
+        
+        thirdHealth = SKSpriteNode(imageNamed: "3_full_health")
+        thirdHealth.anchorPoint = CGPoint(x: 0.5, y:0.5)
+        thirdHealth.size.width = 1337
+        thirdHealth.size.height = 750
+        thirdHealth.position = CGPoint(x: 0, y: 0)
+        thirdHealth.zPosition = 3
+        self.mainCamera?.addChild(thirdHealth)
         
         
+    }
+    
+    func fishLocater() {
+        fishTail = SKSpriteNode(imageNamed: "Collectable_fish_tail")
+        fishTail.anchorPoint = CGPoint(x: 0.5, y:0.5)
+        fishTail.size.width = 1337
+        fishTail.size.height = 750
+        fishTail.position = CGPoint(x: 0, y: 0)
+        fishTail.zPosition = 4
+        self.mainCamera?.addChild(fishTail)
+        
+        fishBody = SKSpriteNode(imageNamed: "Collectable_fish_body")
+        fishBody.anchorPoint = CGPoint(x: 0.5, y:0.5)
+        fishBody.size.width = 1337
+        fishBody.size.height = 750
+        fishBody.position = CGPoint(x: 0, y: 0)
+        fishBody.zPosition = 4
+        self.mainCamera?.addChild(fishBody)
+        
+        fishHead = SKSpriteNode(imageNamed: "Collectable_fish_head")
+        fishHead.anchorPoint = CGPoint(x: 0.5, y:0.5)
+        fishHead.size.width = 1337
+        fishHead.size.height = 750
+        fishHead.position = CGPoint(x: 0, y: 0)
+        fishHead.zPosition = 4
+        self.mainCamera?.addChild(fishHead)
     }
     
     func didBegin(_ contact: SKPhysicsContact) {
@@ -152,13 +247,31 @@ class GameplayScene: SKScene, SKPhysicsContactDelegate  {
             
             
         
+        } else if firstBody.node?.name == "Player" && secondBody.node?.name == "Fish Head" {
+            
+            
+            secondBody.node?.removeFromParent()
+            gotFishHead = true
+            
+        } else if firstBody.node?.name == "Player" && secondBody.node?.name == "Fish Body" {
+            
+            
+            secondBody.node?.removeFromParent()
+            gotFishBody = true
+            
+        } else if firstBody.node?.name == "Player" && secondBody.node?.name == "Fish Tail" {
+            
+            
+            secondBody.node?.removeFromParent()
+            gotFishTail = true
+            
         } else if firstBody.node?.name == "Player" && secondBody.node?.name == "GeneralObstacle" {
             
             if (playerCanGetHit) {
                 print("You got hit")
                 playerGotHit = true
                 playerCanGetHit = false
-                health = health - 20.0
+                health = health - 1
             }
             
             
@@ -214,14 +327,54 @@ class GameplayScene: SKScene, SKPhysicsContactDelegate  {
             self.scene?.isPaused = true
         }
         
+        if gotFishBody {
+            fishBody.isHidden = false
+        } else {
+            fishBody.isHidden = true
+        }
+        
+        if gotFishTail {
+            fishTail.isHidden = false
+        } else {
+            fishTail.isHidden = true
+        }
+        
+        if gotFishHead {
+            fishHead.isHidden = false
+        } else {
+            fishHead.isHidden = true
+        }
+        
         if playerGotHit {
             playerGotHit = false
             
-            perform(#selector(setPlayerCanGetHitTrue), with: nil, afterDelay: 1.2)
+            perform(#selector(setPlayerCanGetHitTrue), with: nil, afterDelay: 1.5)
             
         }
         
-        if health <= 0.0 {
+        if health == 3 {
+            thirdHealth.isHidden = false
+            secondHealth.isHidden = false
+            firstHealth.isHidden = false
+        }
+        
+        if health <= 2 {
+            thirdHealth.isHidden = true
+            secondHealth.isHidden = false
+            firstHealth.isHidden = false
+        }
+        
+        if health <= 1 {
+            thirdHealth.isHidden = true
+            secondHealth.isHidden = true
+            firstHealth.isHidden = false
+        }
+        
+        if health == 0 {
+            thirdHealth.isHidden = true
+            secondHealth.isHidden = true
+            firstHealth.isHidden = true
+            
             print("Health is 0")
             gameEnd()
             self.scene?.isPaused = true

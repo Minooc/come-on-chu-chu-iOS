@@ -72,6 +72,12 @@ class MainMenuScene: SKScene {
                 self.view?.presentScene(scene!, transition: SKTransition.doorsOpenVertical(withDuration: 1))
             }
             
+            if touchedNode.name == "homeBtn" {
+                let scene = MyHomeScene(fileNamed: "MyHomeScene")
+                scene!.scaleMode = .aspectFill
+                self.view?.presentScene(scene!, transition: SKTransition.doorsOpenVertical(withDuration: 1))
+            }
+            
             
             // on Setting
             

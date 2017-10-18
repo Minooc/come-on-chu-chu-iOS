@@ -34,7 +34,7 @@ class ItemShopScene: SKScene {
         initializePicture()
         
         boostPanelSelected = true
-        boostItems()
+        displayBoostItems()
         
         itemSelected.isHidden = true
         instruction.isHidden = true
@@ -44,12 +44,14 @@ class ItemShopScene: SKScene {
     
     func initializePicture() {
         
+        // backgrounds
         background = self.childNode(withName: "background") as! SKSpriteNode
         itemSelected = self.childNode(withName: "ItemSelected") as! SKSpriteNode
         instruction = self.childNode(withName: "Instruction") as! SKSpriteNode
         boostBuyPanel = self.childNode(withName: "BuyPanel") as! SKSpriteNode
         item_big = self.childNode(withName: "Item_big") as! SKSpriteNode
         
+        // boost items
         autoFlying =  self.childNode(withName: "AutoFlying") as! SKSpriteNode
         bubbleShield =  self.childNode(withName: "BubbleShield") as! SKSpriteNode
         slipperyLotion =  self.childNode(withName: "SlipperyLotion") as! SKSpriteNode
@@ -61,7 +63,7 @@ class ItemShopScene: SKScene {
         
     }
     
-    func boostItems() {
+    func displayBoostItems() {
         
 
         autoFlying.isHidden = false
@@ -76,7 +78,7 @@ class ItemShopScene: SKScene {
         
     }
     
-    func upgradeItems() {
+    func displayUpgradeItems() {
         
         autoFlying.isHidden = true
         bubbleShield.isHidden = true
@@ -94,8 +96,6 @@ class ItemShopScene: SKScene {
             let location = touch.location(in: self)
             let touchedNode = atPoint(location)
             
-            
-
             if touchedNode.name == "BoooostBtn" {
                 if !boostPanelSelected {
                     background.texture = SKTexture(imageNamed: "Boost Item Background")
@@ -103,7 +103,7 @@ class ItemShopScene: SKScene {
                     boostPanelSelected = true
                     item_big.isHidden = true
                     
-                    boostItems()
+                    displayBoostItems()
                 }
                 
             }
@@ -117,7 +117,7 @@ class ItemShopScene: SKScene {
                     boostPanelSelected = false
                     item_big.isHidden = true
                     
-                    upgradeItems()
+                    displayUpgradeItems()
                 }
             }
             
