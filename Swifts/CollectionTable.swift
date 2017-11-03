@@ -34,11 +34,10 @@ class CollectionTable: UITableView, UITableViewDelegate, UITableViewDataSource {
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "Cell", for: indexPath)
-        
       
         cell.backgroundColor = .clear
         cell.selectionStyle = UITableViewCellSelectionStyle.none
-    
+        
         if (indexPath.row != cats.count - 1) {
             let img = UIImage(named: "collectionCell")
             cell.imageView?.image = img

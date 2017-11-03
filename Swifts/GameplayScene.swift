@@ -36,6 +36,7 @@ class GameplayScene: SKScene, SKPhysicsContactDelegate  {
     var gotFishBody: Bool!
     var gotFishHead: Bool!
     
+    var obstacles = [Obstacle]()
     
     override func didMove(to view: SKView) {
         // initialize everything
@@ -53,8 +54,6 @@ class GameplayScene: SKScene, SKPhysicsContactDelegate  {
         
         GameplayController.instance.scoreText = scoreText
         GameplayController.instance.coinText = coinText
-//        GameplayController.instance.scoreText = self.mainCamera!.childNode(withName: "Score Label") as? SKLabelNode
-//        GameplayController.instance.coinText = self.mainCamera!.childNode(withName: "Coin Label") as? SKLabelNode
         GameplayController.instance.initializeVariables()
         
         health = 3
@@ -66,7 +65,7 @@ class GameplayScene: SKScene, SKPhysicsContactDelegate  {
         interfaceLocater()
         fishLocater()
         
-        
+        setObstacles()
 
         
     }
@@ -84,18 +83,33 @@ class GameplayScene: SKScene, SKPhysicsContactDelegate  {
         }
     }
     
+    func setObstacles() {
+        
+        while(true) {
+            if let obs = self.childNode(withName: "obstacle") as? Obstacle {
+                obs.animateObject()
+                obs.name = "GeneralObstacle"
+            }
+            else {
+                break
+            }
+        }
+        
+
+    }
+    
     func labelLocater() {
         scoreText = SKLabelNode(fontNamed: "Conformity")
         scoreText.fontSize = 48
         scoreText.fontColor = UIColor.darkText
-        scoreText.position = CGPoint(x: -550.779, y: 313.243)
+        scoreText.position = CGPoint(x: 442.152, y: 313.243)
         scoreText.zPosition = 3
         self.mainCamera?.addChild(scoreText)
         
         coinText = SKLabelNode(fontNamed: "Conformity")
         coinText.fontSize = 48
         coinText.fontColor = UIColor.darkText
-        coinText.position = CGPoint(x: 442.152, y: 313.243)
+        coinText.position = CGPoint(x: -550.779, y: 313.243)
         coinText.zPosition = 3
         self.mainCamera?.addChild(coinText)
     }
@@ -348,7 +362,7 @@ class GameplayScene: SKScene, SKPhysicsContactDelegate  {
         if playerGotHit {
             playerGotHit = false
             
-            perform(#selector(setPlayerCanGetHitTrue), with: nil, afterDelay: 1.5)
+            perform(#selector(setPlayerCanGetHitTrue), with: nil, afterDelay: 1.0)
             
         }
         

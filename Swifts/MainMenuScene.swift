@@ -22,7 +22,16 @@ class MainMenuScene: SKScene {
     var notificationCheck: SKSpriteNode?
     
     
+    var meowshopPanel: SKSpriteNode!
+    var specialPackage: SKSpriteNode!
+    var ultraBooster: SKSpriteNode!
+    var canAndCoin: SKSpriteNode!
+    var exitShop: SKSpriteNode!
+    
     var onSetting: Bool?
+    var onMeowshop: Bool?
+    
+    var meowshopTable: UICollectionView!
     
     
     override func didMove(to view: SKView) {
@@ -34,6 +43,7 @@ class MainMenuScene: SKScene {
         getLabel()
         
         onSetting = false
+        onMeowshop = false
         
     }
     
@@ -41,7 +51,7 @@ class MainMenuScene: SKScene {
         
         for touch in touches {
             let location = touch.location(in: self)
-            var touchedNode = atPoint(location)
+            let touchedNode = atPoint(location)
             
             
             if touchedNode.name == "Setting" {
@@ -78,6 +88,9 @@ class MainMenuScene: SKScene {
                 self.view?.presentScene(scene!, transition: SKTransition.doorsOpenVertical(withDuration: 1))
             }
             
+            if touchedNode.name == "Meowshop" {
+                createMeowshopPanel()
+            }
             
             // on Setting
             
@@ -138,6 +151,22 @@ class MainMenuScene: SKScene {
                 
                 
             }
+            
+            // end of Setting
+            
+            
+            
+            if onMeowshop == true {
+                
+                if (touchedNode == exitShop) {
+                    
+                    meowshopTable.removeFromSuperview()
+                    meowshopPanel.removeFromParent()
+                    perform(#selector(meowshopMode), with: nil, afterDelay: 0.1)
+                }
+            }
+            
+
             
             
         }
@@ -321,12 +350,98 @@ class MainMenuScene: SKScene {
         
     }
     
+    func createMeowshopPanel() {
+    
+        meowshopPanel = SKSpriteNode(imageNamed: "Meowshop-Background")
+        meowshopPanel.anchorPoint = CGPoint(x: 0.5, y:0.5)
+        meowshopPanel.size = CGSize(width: 1337, height: 750)
+        meowshopPanel.xScale = 1
+        meowshopPanel.yScale = 1
+        meowshopPanel.zPosition = 5
+        self.addChild(meowshopPanel)
+        
+        specialPackage = SKSpriteNode(imageNamed: "meowshop-special")
+        specialPackage?.anchorPoint = CGPoint(x: 0.5, y: 0.5)
+        specialPackage?.position = CGPoint(x: -260, y: 135)
+        specialPackage?.xScale = 1
+        specialPackage?.yScale = 1
+        specialPackage.size = CGSize(width: 253, height: 95)
+        specialPackage?.zPosition = 6
+        meowshopPanel.addChild(specialPackage!)
+        
+        ultraBooster = SKSpriteNode(imageNamed: "meowshop-booster")
+        ultraBooster?.anchorPoint = CGPoint(x: 0.5, y: 0.5)
+        ultraBooster?.position = CGPoint(x: 5, y: 147)
+        ultraBooster?.xScale = 1
+        ultraBooster?.yScale = 1
+        ultraBooster.size = CGSize(width: 253, height: 115)
+        ultraBooster?.zPosition = 6
+        meowshopPanel.addChild(ultraBooster!)
+        
+        canAndCoin = SKSpriteNode(imageNamed: "meowshop-CanAndCoin")
+        canAndCoin?.anchorPoint = CGPoint(x: 0.5, y: 0.5)
+        canAndCoin?.position = CGPoint(x: 270, y: 135)
+        canAndCoin?.xScale = 1
+        canAndCoin?.yScale = 1
+        canAndCoin.size = CGSize(width: 253, height: 95)
+        canAndCoin?.zPosition = 6
+        meowshopPanel.addChild(canAndCoin!)
+        
+        //        designitem = SKSpriteNode(imageNamed: "designhome_item-crop")
+        //        designitem?.anchorPoint = CGPoint(x: 0.5, y: 0.5)
+        //        designitem?.position = CGPoint(x: -437, y: -132)
+        //        designitem?.xScale = 1
+        //        designitem?.yScale = 1
+        //        designitem.size = CGSize(width: 255.9, height: 400)
+        //        designitem?.zPosition = 6
+        //        designPanel.addChild(designitem!)
+        
+        exitShop = SKSpriteNode(imageNamed: "meowshop-exit")
+        exitShop?.anchorPoint = CGPoint(x: 0.5, y: 0.5)
+        exitShop?.position = CGPoint(x: 573, y: 213)
+        exitShop?.xScale = 1
+        exitShop?.yScale = 1
+        exitShop.size = CGSize(width: 90, height: 90)
+        exitShop?.zPosition = 6
+        meowshopPanel.addChild(exitShop!)
+        
+        print("on shop mode")
+        
+        // Build a collection view of purchasable items
+//        purchaseItemTable = PurchaseItemTable(frame: CGRect(x:55,y:170,width:610,height:220), collectionViewLayout: UICollectionViewLayout())
+//        purchaseItemHandler()
+        
+        meowshopTable = MeowshopTable(frame: CGRect(x:55,y:170,width:610,height:230), collectionViewLayout: UICollectionViewLayout())
+        meowshopHandler()
+        
+         perform(#selector(meowshopMode), with: nil, afterDelay: 0.1)
+    }
+    
     func settingMode() {
         if (onSetting == false) {
             onSetting = true
         } else {
             onSetting = false
         }
+    }
+    
+    func meowshopMode() {
+        if (onMeowshop == false) {
+            onMeowshop = true
+        } else {
+            onMeowshop = false
+        }
+    }
+    
+    func meowshopHandler() {
+        
+        
+        //purchaseItemTable.register(UICollectionViewCell.self, forCellWithReuseIdentifier: "Item")
+        meowshopTable.backgroundColor = UIColor.clear
+        self.scene?.view?.addSubview(meowshopTable)
+        
+        meowshopTable.reloadData()
+        
     }
     
 }
