@@ -34,6 +34,9 @@ class MeowshopTable: UICollectionView, UICollectionViewDelegate, UICollectionVie
         flowLayout.minimumInteritemSpacing = 1.0
         self.setCollectionViewLayout(flowLayout, animated: true)
         
+        
+        category = "can-and-coin"
+        
         self.delegate = self
         self.dataSource = self
         
@@ -51,6 +54,9 @@ class MeowshopTable: UICollectionView, UICollectionViewDelegate, UICollectionVie
     }
     
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
+        if category == "ultra-booster" {
+            return 6
+        }
         return 9
     }
     
@@ -61,21 +67,35 @@ class MeowshopTable: UICollectionView, UICollectionViewDelegate, UICollectionVie
         
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "Item", for: indexPath) as! ShopItem
         
-        switch(indexPath.row) {
-        case 0: cell.imageView.image = UIImage(named: "meowshop-1-watch-video"); break
-        case 1: cell.imageView.image = UIImage(named: "meowshop-2-cool-tuna"); break
-        case 2: cell.imageView.image = UIImage(named: "meowshop-3-1000tuna");
-        cell.configureSize(x: 0, y: 9.8, width: 2, height: 14.2); break
-        case 3: cell.imageView.image = UIImage(named: "meowshop-4-3000tuna"); break
-        case 4: cell.imageView.image = UIImage(named: "meowshop-5-8000tuna");
-        cell.configureSize(x: 0, y: 10.5, width: 0, height: 10); break
-        case 5: cell.imageView.image = UIImage(named: "meowshop-6-goldcoin"); break
-        case 6: cell.imageView.image = UIImage(named: "meowshop-7-goldcoin2"); break
-        case 7: cell.imageView.image = UIImage(named: "meowshop-8-goldcoin3");
-        cell.configureSize(x: 0, y: 7, width: 0, height: 10);break
-        case 8: cell.imageView.image = UIImage(named: "meowshop-9-goldcoin4"); break
-        default: break
+        if (category == "can-and-coin") {
+            switch(indexPath.row) {
+            case 0: cell.imageView.image = UIImage(named: "meowshop-1-watch-video"); break
+            case 1: cell.imageView.image = UIImage(named: "meowshop-2-cool-tuna"); break
+            case 2: cell.imageView.image = UIImage(named: "meowshop-3-1000tuna");
+//            cell.configureSize(x: 0, y: 9.8, width: 2, height: 14.2); break
+            case 3: cell.imageView.image = UIImage(named: "meowshop-4-3000tuna"); break
+            case 4: cell.imageView.image = UIImage(named: "meowshop-5-8000tuna");
+//            cell.configureSize(x: 0, y: 10.5, width: 0, height: 10); break
+            case 5: cell.imageView.image = UIImage(named: "meowshop-6-goldcoin"); break
+            case 6: cell.imageView.image = UIImage(named: "meowshop-7-goldcoin2"); break
+            case 7: cell.imageView.image = UIImage(named: "meowshop-8-goldcoin3");
+//            cell.configureSize(x: 0, y: 7, width: 0, height: 10);break
+            case 8: cell.imageView.image = UIImage(named: "meowshop-9-goldcoin4"); break
+            default: break
             
+            }
+        }
+        
+        else if (category == "ultra-booster") {
+            switch(indexPath.row) {
+            case 0: cell.imageView.image = UIImage(named: "ultrabooster-1"); break
+            case 1: cell.imageView.image = UIImage(named: "ultrabooster-2"); break
+            case 2: cell.imageView.image = UIImage(named: "ultrabooster-3");
+            case 3: cell.imageView.image = UIImage(named: "ultrabooster-4"); break
+            case 4: cell.imageView.image = UIImage(named: "ultrabooster-5");
+            case 5: cell.imageView.image = UIImage(named: "ultrabooster-6"); break
+            default: break
+            }
         }
         return cell
     }

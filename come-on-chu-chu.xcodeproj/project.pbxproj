@@ -45,6 +45,13 @@
 		DA2707201FAC326C00FE28F5 /* meowshoptest.sks in Resources */ = {isa = PBXBuildFile; fileRef = DA27071F1FAC326C00FE28F5 /* meowshoptest.sks */; };
 		DA2707221FAC32C500FE28F5 /* Meowshop-Background.png in Resources */ = {isa = PBXBuildFile; fileRef = DA2707211FAC32C500FE28F5 /* Meowshop-Background.png */; };
 		DA2707241FAC36CD00FE28F5 /* MeowshopTable.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA2707231FAC36CD00FE28F5 /* MeowshopTable.swift */; };
+		DA27072E1FAD96D600FE28F5 /* ultrabooster-1.png in Resources */ = {isa = PBXBuildFile; fileRef = DA2707281FAD96D600FE28F5 /* ultrabooster-1.png */; };
+		DA27072F1FAD96D600FE28F5 /* ultrabooster-2.png in Resources */ = {isa = PBXBuildFile; fileRef = DA2707291FAD96D600FE28F5 /* ultrabooster-2.png */; };
+		DA2707301FAD96D600FE28F5 /* ultrabooster-3.png in Resources */ = {isa = PBXBuildFile; fileRef = DA27072A1FAD96D600FE28F5 /* ultrabooster-3.png */; };
+		DA2707311FAD96D600FE28F5 /* ultrabooster-4.png in Resources */ = {isa = PBXBuildFile; fileRef = DA27072B1FAD96D600FE28F5 /* ultrabooster-4.png */; };
+		DA2707321FAD96D600FE28F5 /* ultrabooster-5.png in Resources */ = {isa = PBXBuildFile; fileRef = DA27072C1FAD96D600FE28F5 /* ultrabooster-5.png */; };
+		DA2707331FAD96D600FE28F5 /* ultrabooster-6.png in Resources */ = {isa = PBXBuildFile; fileRef = DA27072D1FAD96D600FE28F5 /* ultrabooster-6.png */; };
+		DA2707341FAF08F700FE28F5 /* NY2.sks in Resources */ = {isa = PBXBuildFile; fileRef = DABC2C101F98769600BA3617 /* NY2.sks */; };
 		DA29749E1F68DEDE005F6B41 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA29749D1F68DEDE005F6B41 /* AppDelegate.swift */; };
 		DA2974A01F68DEDE005F6B41 /* GameScene.sks in Resources */ = {isa = PBXBuildFile; fileRef = DA29749F1F68DEDE005F6B41 /* GameScene.sks */; };
 		DA2974A21F68DEDE005F6B41 /* Actions.sks in Resources */ = {isa = PBXBuildFile; fileRef = DA2974A11F68DEDE005F6B41 /* Actions.sks */; };
@@ -231,6 +238,8 @@
 		DAEE59311F91A1E7006F6269 /* newinterfacetest.sks in Resources */ = {isa = PBXBuildFile; fileRef = DAEE59301F91A1E7006F6269 /* newinterfacetest.sks */; };
 		DAEF1E1A1FA4398000B888AE /* NY_obj.atlas in Resources */ = {isa = PBXBuildFile; fileRef = DAEF1E191FA4397D00B888AE /* NY_obj.atlas */; };
 		DAEF1E201FA86B6400B888AE /* Social.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DAEF1E1F1FA86B6400B888AE /* Social.framework */; };
+		DAF02F561FAF22870002B2F4 /* NY3.sks in Resources */ = {isa = PBXBuildFile; fileRef = DABC2C111F98769600BA3617 /* NY3.sks */; };
+		DAF02F571FAF228A0002B2F4 /* NY4.sks in Resources */ = {isa = PBXBuildFile; fileRef = DABC2C121F98769600BA3617 /* NY4.sks */; };
 		DAF499571F7C8327008CD2F6 /* Travel Button-crop.png in Resources */ = {isa = PBXBuildFile; fileRef = DAF499561F7C8327008CD2F6 /* Travel Button-crop.png */; };
 		DAF499591F7CB741008CD2F6 /* InstantFish Inst.png in Resources */ = {isa = PBXBuildFile; fileRef = DAF499581F7CB740008CD2F6 /* InstantFish Inst.png */; };
 		DAF499631F7CB78E008CD2F6 /* AutoFlying_big.png in Resources */ = {isa = PBXBuildFile; fileRef = DAF4995B1F7CB78E008CD2F6 /* AutoFlying_big.png */; };
@@ -314,6 +323,12 @@
 		DA27071F1FAC326C00FE28F5 /* meowshoptest.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = meowshoptest.sks; sourceTree = "<group>"; };
 		DA2707211FAC32C500FE28F5 /* Meowshop-Background.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Meowshop-Background.png"; sourceTree = "<group>"; };
 		DA2707231FAC36CD00FE28F5 /* MeowshopTable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = MeowshopTable.swift; path = Swifts/MeowshopTable.swift; sourceTree = "<group>"; };
+		DA2707281FAD96D600FE28F5 /* ultrabooster-1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "ultrabooster-1.png"; sourceTree = "<group>"; };
+		DA2707291FAD96D600FE28F5 /* ultrabooster-2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "ultrabooster-2.png"; sourceTree = "<group>"; };
+		DA27072A1FAD96D600FE28F5 /* ultrabooster-3.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "ultrabooster-3.png"; sourceTree = "<group>"; };
+		DA27072B1FAD96D600FE28F5 /* ultrabooster-4.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "ultrabooster-4.png"; sourceTree = "<group>"; };
+		DA27072C1FAD96D600FE28F5 /* ultrabooster-5.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "ultrabooster-5.png"; sourceTree = "<group>"; };
+		DA27072D1FAD96D600FE28F5 /* ultrabooster-6.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "ultrabooster-6.png"; sourceTree = "<group>"; };
 		DA29749A1F68DEDE005F6B41 /* come-on-chu-chu.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "come-on-chu-chu.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		DA29749D1F68DEDE005F6B41 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		DA29749F1F68DEDE005F6B41 /* GameScene.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = GameScene.sks; sourceTree = "<group>"; };
@@ -648,6 +663,7 @@
 				DA2707091FAC325700FE28F5 /* meowshop-special.png */,
 				DA27070A1FAC325700FE28F5 /* Special package button.png */,
 				DA27070B1FAC325700FE28F5 /* Ultra booster button.png */,
+				DA2707271FAD96D600FE28F5 /* Ultra booster */,
 			);
 			name = Meowshop;
 			path = Assets/Meowshop;
@@ -667,6 +683,19 @@
 				DA2707011FAC325700FE28F5 /* meowshop-9-goldcoin4.png */,
 			);
 			path = "Can and coin";
+			sourceTree = "<group>";
+		};
+		DA2707271FAD96D600FE28F5 /* Ultra booster */ = {
+			isa = PBXGroup;
+			children = (
+				DA2707281FAD96D600FE28F5 /* ultrabooster-1.png */,
+				DA2707291FAD96D600FE28F5 /* ultrabooster-2.png */,
+				DA27072A1FAD96D600FE28F5 /* ultrabooster-3.png */,
+				DA27072B1FAD96D600FE28F5 /* ultrabooster-4.png */,
+				DA27072C1FAD96D600FE28F5 /* ultrabooster-5.png */,
+				DA27072D1FAD96D600FE28F5 /* ultrabooster-6.png */,
+			);
+			path = "Ultra booster";
 			sourceTree = "<group>";
 		};
 		DA2974911F68DEDE005F6B41 = {
@@ -1337,6 +1366,7 @@
 				DA2707151FAC325700FE28F5 /* meowshop-5-8000tuna.png in Resources */,
 				DAEF1E1A1FA4398000B888AE /* NY_obj.atlas in Resources */,
 				DACF76091F7C798800915446 /* RandomBox.png in Resources */,
+				DA2707321FAD96D600FE28F5 /* ultrabooster-5.png in Resources */,
 				DACF75751F78E5AE00915446 /* levelselect_Brazilinya.png in Resources */,
 				DA2707201FAC326C00FE28F5 /* meowshoptest.sks in Resources */,
 				DACF75CC1F7B704B00915446 /* collectionCell.png in Resources */,
@@ -1347,9 +1377,11 @@
 				DA25998D1F7397C600BB9573 /* german1-7.png in Resources */,
 				DABB8FB71F974994002AD581 /* customizing_background.png in Resources */,
 				DABB8FD11F9749B3002AD581 /* Collectable_fish_tail.png in Resources */,
+				DAF02F571FAF228A0002B2F4 /* NY4.sks in Resources */,
 				DA25998C1F7397C600BB9573 /* german1-6.png in Resources */,
 				DADC529D1F7510DA0033BB28 /* jukebox.png in Resources */,
 				DACF758B1F78E67C00915446 /* level3.png in Resources */,
+				DA2707341FAF08F700FE28F5 /* NY2.sks in Resources */,
 				DA2220F41F68F16A0009AB60 /* Egypt 01-6.png in Resources */,
 				DADC52AC1F75111F0033BB28 /* mainPresent.png in Resources */,
 				DA2220F21F68F16A0009AB60 /* Egypt 01-4.png in Resources */,
@@ -1369,6 +1401,7 @@
 				DACF74A01F75F98300915446 /* nighttime-holycrapSelected.png in Resources */,
 				DACF76121F7C798800915446 /* Upgrade Item Background.png in Resources */,
 				DACF76101F7C798800915446 /* Upgrade Button.png in Resources */,
+				DA2707311FAD96D600FE28F5 /* ultrabooster-4.png in Resources */,
 				DACF75761F78E5AE00915446 /* levelselect_Cairong.png in Resources */,
 				DACF75FA1F7C798800915446 /* BadassPaw.png in Resources */,
 				DA3382A51FA86DE40027C30E /* NY_map_07.png in Resources */,
@@ -1401,6 +1434,7 @@
 				DAEE59311F91A1E7006F6269 /* newinterfacetest.sks in Resources */,
 				DACF75FB1F7C798800915446 /* BubbleShield Inst.png in Resources */,
 				DA2707131FAC325700FE28F5 /* meowshop-8-goldcoin3.png in Resources */,
+				DA2707331FAD96D600FE28F5 /* ultrabooster-6.png in Resources */,
 				DADC52951F7510C10033BB28 /* itemPanel (old).png in Resources */,
 				DAD0B7A41F9DC89A00AC8BE1 /* designhome_item-crop.png in Resources */,
 				DABB8FCB1F9749B3002AD581 /* booster_button.png in Resources */,
@@ -1418,6 +1452,7 @@
 				DACF75741F78E5AE00915446 /* levelselect_Berinya.png in Resources */,
 				DABB8F371F973ADE002AD581 /* MyHomeScene.sks in Resources */,
 				DAF499591F7CB741008CD2F6 /* InstantFish Inst.png in Resources */,
+				DA2707301FAD96D600FE28F5 /* ultrabooster-3.png in Resources */,
 				DAD0B7A31F9DC89A00AC8BE1 /* designhome_furniture-crop.png in Resources */,
 				DA2707101FAC325700FE28F5 /* meowshop-4-3000tuna.png in Resources */,
 				DABB8FB61F974990002AD581 /* myhome_screenshot.png in Resources */,
@@ -1447,6 +1482,7 @@
 				DAF499571F7C8327008CD2F6 /* Travel Button-crop.png in Resources */,
 				DA33829C1FA86DE40027C30E /* NY_2.png in Resources */,
 				DACF757F1F78E5AE00915446 /* levelselect_Parismiao.png in Resources */,
+				DA27072F1FAD96D600FE28F5 /* ultrabooster-2.png in Resources */,
 				DACF758F1F78E67C00915446 /* level7.png in Resources */,
 				DABB8FDF1F97510E002AD581 /* Collectable_fish_body-crop.png in Resources */,
 				DA27071D1FAC325700FE28F5 /* Special package button.png in Resources */,
@@ -1498,6 +1534,7 @@
 				DAF499641F7CB78E008CD2F6 /* AwesomeSticker_big.png in Resources */,
 				DAD657271F6A3EAA007F99ED /* testcat2.png in Resources */,
 				DAF499661F7CB78E008CD2F6 /* BubbleShield_big.png in Resources */,
+				DA27072E1FAD96D600FE28F5 /* ultrabooster-1.png in Resources */,
 				DADC52A21F7510DA0033BB28 /* mainToHome.png in Resources */,
 				DACF75B71F79F96200915446 /* CollectionScene.sks in Resources */,
 				DA27070F1FAC325700FE28F5 /* meowshop-3-1000tuna.png in Resources */,
@@ -1538,6 +1575,7 @@
 				DACF75231F77CD6500915446 /* worldmap.png in Resources */,
 				DA27071A1FAC325700FE28F5 /* meowshop-CanAndCoin.png in Resources */,
 				DADC529E1F7510DA0033BB28 /* main screen.png in Resources */,
+				DAF02F561FAF22870002B2F4 /* NY3.sks in Resources */,
 				DACF76071F7C798800915446 /* InstantFish.png in Resources */,
 				DACF760E1F7C798800915446 /* Boooost Buy Panel.png in Resources */,
 				DACF760D1F7C798800915446 /* Boooost Button.png in Resources */,

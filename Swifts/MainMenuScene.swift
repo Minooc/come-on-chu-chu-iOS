@@ -11,27 +11,28 @@ class MainMenuScene: SKScene {
     
     var settingPanel: SKSpriteNode!
     var settingSquare: SKShapeNode!
-    
+
     var soundsBox: SKSpriteNode!
     var musicBox: SKSpriteNode!
     var notificationBox: SKSpriteNode!
     var facebookBtn: SKSpriteNode!
-    
+
     var soundsCheck: SKSpriteNode?
     var musicCheck: SKSpriteNode?
     var notificationCheck: SKSpriteNode?
-    
-    
+
+
     var meowshopPanel: SKSpriteNode!
     var specialPackage: SKSpriteNode!
     var ultraBooster: SKSpriteNode!
     var canAndCoin: SKSpriteNode!
     var exitShop: SKSpriteNode!
-    
+
     var onSetting: Bool?
     var onMeowshop: Bool?
-    
-    var meowshopTable: UICollectionView!
+
+//    var meowshopTable: UICollectionView!
+    var meowshopTable: MeowshopTable!
     
     
     override func didMove(to view: SKView) {
@@ -164,6 +165,18 @@ class MainMenuScene: SKScene {
                     meowshopPanel.removeFromParent()
                     perform(#selector(meowshopMode), with: nil, afterDelay: 0.1)
                 }
+                
+                if (touchedNode == ultraBooster) {
+                    
+                    meowshopTable.category = "ultra-booster"
+                    meowshopTable.reloadData()
+                }
+                
+                if (touchedNode == canAndCoin) {
+                    
+                    meowshopTable.category = "can-and-coin"
+                    meowshopTable.reloadData()
+                }
             }
             
 
@@ -254,15 +267,15 @@ class MainMenuScene: SKScene {
     
     func createSettingPanel() {
         print("Making Pannel")
-        
-        
+
+
         settingPanel = SKSpriteNode(imageNamed: "default setting screen")
         settingPanel.anchorPoint = CGPoint(x: 0.5, y:0.5)
         settingPanel.xScale = 1
         settingPanel.yScale = 1
         settingPanel.zPosition = 5
         self.addChild(settingPanel)
-        
+
         settingSquare = SKShapeNode(rectOf: CGSize(width: 100, height: 100))
         settingSquare.position = CGPoint(x: 13, y: -25)
         settingSquare.xScale = 10
@@ -270,7 +283,7 @@ class MainMenuScene: SKScene {
         settingSquare.zPosition = 6
         settingSquare.lineWidth = 0
         self.addChild(settingSquare)
-        
+
         facebookBtn = SKSpriteNode(imageNamed: "facebookBtn")
         facebookBtn.anchorPoint = CGPoint(x: 0.5, y: 0.5)
         facebookBtn.xScale = 1
@@ -278,7 +291,7 @@ class MainMenuScene: SKScene {
         facebookBtn.zPosition = 6
         facebookBtn.position = CGPoint(x: 193, y: 67)
         settingPanel.addChild(facebookBtn)
-        
+
         soundsBox = SKSpriteNode(imageNamed: "selectionBox")
         soundsBox.anchorPoint = CGPoint(x: 0.5, y: 0.5)
         soundsBox.xScale = 1
@@ -286,7 +299,7 @@ class MainMenuScene: SKScene {
         soundsBox.zPosition = 6
         soundsBox.position = CGPoint(x: 200, y: 0)
         settingPanel.addChild(soundsBox)
-        
+
         musicBox = SKSpriteNode(imageNamed: "selectionBox")
         musicBox.anchorPoint = CGPoint(x: 0.5, y: 0.5)
         musicBox.xScale = 1
@@ -294,7 +307,7 @@ class MainMenuScene: SKScene {
         musicBox.zPosition = 6
         musicBox.position = CGPoint(x: 200, y: -65)
         settingPanel.addChild(musicBox)
-        
+
         notificationBox = SKSpriteNode(imageNamed: "selectionBox")
         notificationBox.anchorPoint = CGPoint(x: 0.5, y: 0.5)
         notificationBox.xScale = 1
@@ -302,8 +315,8 @@ class MainMenuScene: SKScene {
         notificationBox.zPosition = 6
         notificationBox.position = CGPoint(x: 200, y: -130)
         settingPanel.addChild(notificationBox)
-        
-        
+
+
         soundsCheck = SKSpriteNode(imageNamed: "check sign")
         soundsCheck?.anchorPoint = CGPoint(x: 0.5, y: 0.5)
         soundsCheck?.xScale = 1
@@ -311,7 +324,7 @@ class MainMenuScene: SKScene {
         soundsCheck?.zPosition = 6
         soundsCheck?.position.y += 10
         soundsBox.addChild(soundsCheck!)
-        
+
         musicCheck = SKSpriteNode(imageNamed: "check sign")
         musicCheck?.anchorPoint = CGPoint(x: 0.5, y: 0.5)
         musicCheck?.xScale = 1
@@ -319,7 +332,7 @@ class MainMenuScene: SKScene {
         musicCheck?.zPosition = 6
         musicCheck?.position.y += 10
         musicBox.addChild(musicCheck!)
-        
+
         notificationCheck = SKSpriteNode(imageNamed: "check sign")
         notificationCheck?.anchorPoint = CGPoint(x: 0.5, y: 0.5)
         notificationCheck?.xScale = 1
@@ -327,31 +340,31 @@ class MainMenuScene: SKScene {
         notificationCheck?.zPosition = 6
         notificationCheck?.position.y += 10
         notificationBox.addChild(notificationCheck!)
-        
+
         if (GameManager.instance.getSoundEffect() == false) {
             soundsCheck?.isHidden = true
         } else {
             soundsCheck?.isHidden = false
         }
-        
+
         if (GameManager.instance.getBGM() == false) {
             musicCheck?.isHidden = true
         } else {
             musicCheck?.isHidden = false
         }
-        
+
         if (GameManager.instance.getNotification() == false) {
             notificationCheck?.isHidden = true
         } else {
             notificationCheck?.isHidden = false
         }
-        
+
         perform(#selector(settingMode), with: nil, afterDelay: 0.1)
-        
+
     }
-    
+
     func createMeowshopPanel() {
-    
+
         meowshopPanel = SKSpriteNode(imageNamed: "Meowshop-Background")
         meowshopPanel.anchorPoint = CGPoint(x: 0.5, y:0.5)
         meowshopPanel.size = CGSize(width: 1337, height: 750)
@@ -359,7 +372,7 @@ class MainMenuScene: SKScene {
         meowshopPanel.yScale = 1
         meowshopPanel.zPosition = 5
         self.addChild(meowshopPanel)
-        
+
         specialPackage = SKSpriteNode(imageNamed: "meowshop-special")
         specialPackage?.anchorPoint = CGPoint(x: 0.5, y: 0.5)
         specialPackage?.position = CGPoint(x: -260, y: 135)
@@ -368,7 +381,7 @@ class MainMenuScene: SKScene {
         specialPackage.size = CGSize(width: 253, height: 95)
         specialPackage?.zPosition = 6
         meowshopPanel.addChild(specialPackage!)
-        
+
         ultraBooster = SKSpriteNode(imageNamed: "meowshop-booster")
         ultraBooster?.anchorPoint = CGPoint(x: 0.5, y: 0.5)
         ultraBooster?.position = CGPoint(x: 5, y: 147)
@@ -377,7 +390,7 @@ class MainMenuScene: SKScene {
         ultraBooster.size = CGSize(width: 253, height: 115)
         ultraBooster?.zPosition = 6
         meowshopPanel.addChild(ultraBooster!)
-        
+
         canAndCoin = SKSpriteNode(imageNamed: "meowshop-CanAndCoin")
         canAndCoin?.anchorPoint = CGPoint(x: 0.5, y: 0.5)
         canAndCoin?.position = CGPoint(x: 270, y: 135)
@@ -386,7 +399,7 @@ class MainMenuScene: SKScene {
         canAndCoin.size = CGSize(width: 253, height: 95)
         canAndCoin?.zPosition = 6
         meowshopPanel.addChild(canAndCoin!)
-        
+
         //        designitem = SKSpriteNode(imageNamed: "designhome_item-crop")
         //        designitem?.anchorPoint = CGPoint(x: 0.5, y: 0.5)
         //        designitem?.position = CGPoint(x: -437, y: -132)
@@ -395,7 +408,7 @@ class MainMenuScene: SKScene {
         //        designitem.size = CGSize(width: 255.9, height: 400)
         //        designitem?.zPosition = 6
         //        designPanel.addChild(designitem!)
-        
+
         exitShop = SKSpriteNode(imageNamed: "meowshop-exit")
         exitShop?.anchorPoint = CGPoint(x: 0.5, y: 0.5)
         exitShop?.position = CGPoint(x: 573, y: 213)
@@ -404,19 +417,19 @@ class MainMenuScene: SKScene {
         exitShop.size = CGSize(width: 90, height: 90)
         exitShop?.zPosition = 6
         meowshopPanel.addChild(exitShop!)
-        
+
         print("on shop mode")
-        
+
         // Build a collection view of purchasable items
 //        purchaseItemTable = PurchaseItemTable(frame: CGRect(x:55,y:170,width:610,height:220), collectionViewLayout: UICollectionViewLayout())
 //        purchaseItemHandler()
-        
+
         meowshopTable = MeowshopTable(frame: CGRect(x:55,y:170,width:610,height:230), collectionViewLayout: UICollectionViewLayout())
         meowshopHandler()
-        
+
          perform(#selector(meowshopMode), with: nil, afterDelay: 0.1)
     }
-    
+
     func settingMode() {
         if (onSetting == false) {
             onSetting = true
@@ -424,7 +437,7 @@ class MainMenuScene: SKScene {
             onSetting = false
         }
     }
-    
+
     func meowshopMode() {
         if (onMeowshop == false) {
             onMeowshop = true
@@ -432,16 +445,16 @@ class MainMenuScene: SKScene {
             onMeowshop = false
         }
     }
-    
+
     func meowshopHandler() {
-        
-        
+
+
         //purchaseItemTable.register(UICollectionViewCell.self, forCellWithReuseIdentifier: "Item")
         meowshopTable.backgroundColor = UIColor.clear
         self.scene?.view?.addSubview(meowshopTable)
-        
+
         meowshopTable.reloadData()
-        
+
     }
     
 }

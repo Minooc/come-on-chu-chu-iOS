@@ -14,9 +14,15 @@ class GameplayScene: SKScene, SKPhysicsContactDelegate  {
     var playerImage: String?
     var playerSink = false
     
+    var background: SKSpriteNode!
+    var previousBackground: SKSpriteNode!
+    
     var mainCamera: SKCameraNode?
     
     var health: Int!
+    
+    var nextLevel: Int!
+    var backgroundLengthSum: CGFloat!
     
     var playerGotHit = false
     var playerCanGetHit = true
@@ -38,6 +44,8 @@ class GameplayScene: SKScene, SKPhysicsContactDelegate  {
     
     var obstacles = [Obstacle]()
     
+    var loaded: Bool!
+    
     override func didMove(to view: SKView) {
         // initialize everything
         
@@ -47,8 +55,12 @@ class GameplayScene: SKScene, SKPhysicsContactDelegate  {
         //player?.texture = SKTexture(imageNamed: playerImage!)
         player?.initialize()
         
+        previousBackground = SKSpriteNode()
+        previousBackground.position = CGPoint(x: 99999, y: 0)
+        backgroundLengthSum = 0
         
         mainCamera = self.childNode(withName: "Main Camera") as? SKCameraNode
+        background = self.childNode(withName: "background") as? SKSpriteNode
         
         labelLocater()
         
@@ -67,7 +79,10 @@ class GameplayScene: SKScene, SKPhysicsContactDelegate  {
         
         setObstacles()
 
+        loaded = false
+        nextLevel = 1
         
+
     }
     
     override func update(_ currentTime: TimeInterval) {
@@ -81,6 +96,63 @@ class GameplayScene: SKScene, SKPhysicsContactDelegate  {
         } else {
             player?.floatPlayer()
         }
+        
+        if !loaded {
+            if (player!.position.x > background.position.x + (background.size.width / 2) - 1100) {
+
+                print("close close!")
+                loadNextLevel()
+            }
+        }
+        
+        else {
+            if (player!.position.x > previousBackground.position.x + (previousBackground.size.width / 2) + 1100) {
+                removePreviousLevel()
+            }
+        }
+    }
+    
+    func loadNextLevel() {
+        loaded = true
+        
+        nextLevel = nextLevel + 1
+        
+        print("NY\(nextLevel!)")
+        let nextScene = SKScene(fileNamed: "NY\(nextLevel!)")
+        
+
+
+//        nextScene?.enumerateChildNodes(withName: "//*", using: { (node, stop) -> Void in
+        
+
+//        if (node.name == "background") {
+        if let node = nextScene?.childNode(withName: "background") {
+            let nextNode = node.copy() as! SKSpriteNode
+            nextNode.position.x += self.background.size.width + backgroundLengthSum
+            self.addChild(nextNode)
+            
+            self.previousBackground = self.background
+            self.background = nextNode
+            print("background changed")
+
+        }
+
+            
+//        })
+        
+        backgroundLengthSum = backgroundLengthSum + previousBackground.size.width
+
+        
+
+    }
+    
+    func removePreviousLevel() {
+//        for child in previousBackground.children as [SKNode] {
+//            child.removeFromParent()
+//        }
+        previousBackground.removeFromParent()
+        print("removed")
+        loaded = false
     }
     
     func setObstacles() {
