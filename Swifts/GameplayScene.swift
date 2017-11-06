@@ -14,6 +14,8 @@ class GameplayScene: SKScene, SKPhysicsContactDelegate  {
     var playerImage: String?
     var playerSink = false
     
+
+    
     var background: SKSpriteNode!
     var previousBackground: SKSpriteNode!
     
@@ -21,6 +23,7 @@ class GameplayScene: SKScene, SKPhysicsContactDelegate  {
     
     var health: Int!
     
+    var currentLocation: String?
     var nextLevel: Int!
     var backgroundLengthSum: CGFloat!
     
@@ -80,7 +83,7 @@ class GameplayScene: SKScene, SKPhysicsContactDelegate  {
         setObstacles()
 
         loaded = false
-        nextLevel = 1
+//        nextLevel = 1
         
 
     }
@@ -117,8 +120,8 @@ class GameplayScene: SKScene, SKPhysicsContactDelegate  {
         
         nextLevel = nextLevel + 1
         
-        print("NY\(nextLevel!)")
-        let nextScene = SKScene(fileNamed: "NY\(nextLevel!)")
+        print("\(currentLocation!)\(nextLevel!)")
+        let nextScene = SKScene(fileNamed: "\(currentLocation!)\(nextLevel!)")
         
 
 

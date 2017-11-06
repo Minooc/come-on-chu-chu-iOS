@@ -27,6 +27,9 @@ class ItemShopScene: SKScene {
     var awesomeSticker: SKSpriteNode!
     var instantFish: SKSpriteNode!
     var randomBox: SKSpriteNode!
+    
+    var locationToTravel: String!
+    var levelToTravel: Int!
 
     
     override func didMove(to view: SKView) {
@@ -207,6 +210,15 @@ class ItemShopScene: SKScene {
             
             if touchedNode.name == "TravelBtn" {
                 // go to level
+                print("\(locationToTravel!)\(levelToTravel!)")
+                let scene = GameplayScene(fileNamed: "\(locationToTravel!)\(levelToTravel!)")
+                scene?.playerImage = "nameOfCat"
+                scene?.nextLevel = self.levelToTravel
+                scene?.currentLocation = self.locationToTravel
+                scene!.scaleMode = .aspectFill
+
+                self.view?.presentScene(scene!, transition: SKTransition.doorsOpenVertical(withDuration: 1))
+                
             }
             
 

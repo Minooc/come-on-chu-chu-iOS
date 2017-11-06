@@ -51,7 +51,7 @@
 		DA2707311FAD96D600FE28F5 /* ultrabooster-4.png in Resources */ = {isa = PBXBuildFile; fileRef = DA27072B1FAD96D600FE28F5 /* ultrabooster-4.png */; };
 		DA2707321FAD96D600FE28F5 /* ultrabooster-5.png in Resources */ = {isa = PBXBuildFile; fileRef = DA27072C1FAD96D600FE28F5 /* ultrabooster-5.png */; };
 		DA2707331FAD96D600FE28F5 /* ultrabooster-6.png in Resources */ = {isa = PBXBuildFile; fileRef = DA27072D1FAD96D600FE28F5 /* ultrabooster-6.png */; };
-		DA2707341FAF08F700FE28F5 /* NY2.sks in Resources */ = {isa = PBXBuildFile; fileRef = DABC2C101F98769600BA3617 /* NY2.sks */; };
+		DA2707341FAF08F700FE28F5 /* Ny2.sks in Resources */ = {isa = PBXBuildFile; fileRef = DABC2C101F98769600BA3617 /* Ny2.sks */; };
 		DA29749E1F68DEDE005F6B41 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA29749D1F68DEDE005F6B41 /* AppDelegate.swift */; };
 		DA2974A01F68DEDE005F6B41 /* GameScene.sks in Resources */ = {isa = PBXBuildFile; fileRef = DA29749F1F68DEDE005F6B41 /* GameScene.sks */; };
 		DA2974A21F68DEDE005F6B41 /* Actions.sks in Resources */ = {isa = PBXBuildFile; fileRef = DA2974A11F68DEDE005F6B41 /* Actions.sks */; };
@@ -86,6 +86,16 @@
 		DA3382B61FA8714A0027C30E /* PurchaseItemTable.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA3382B51FA8714A0027C30E /* PurchaseItemTable.swift */; };
 		DA3382B81FA874D90027C30E /* Cat.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA3382B71FA874D90027C30E /* Cat.swift */; };
 		DA3382BA1FA87E8A0027C30E /* ShopItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA3382B91FA87E8A0027C30E /* ShopItem.swift */; };
+		DA774C1A1FAFF98800C6A208 /* Ny10.sks in Resources */ = {isa = PBXBuildFile; fileRef = DABC2C0C1F98769600BA3617 /* Ny10.sks */; };
+		DA774C1B1FAFF98800C6A208 /* Ny11.sks in Resources */ = {isa = PBXBuildFile; fileRef = DABC2C0D1F98769600BA3617 /* Ny11.sks */; };
+		DA774C1C1FAFF98800C6A208 /* Ny12.sks in Resources */ = {isa = PBXBuildFile; fileRef = DABC2C0E1F98769600BA3617 /* Ny12.sks */; };
+		DA774C1D1FAFF98800C6A208 /* Ny13.sks in Resources */ = {isa = PBXBuildFile; fileRef = DABC2C0F1F98769600BA3617 /* Ny13.sks */; };
+		DA774C231FAFF98E00C6A208 /* Ny4.sks in Resources */ = {isa = PBXBuildFile; fileRef = DABC2C121F98769600BA3617 /* Ny4.sks */; };
+		DA774C241FAFF98E00C6A208 /* Ny5.sks in Resources */ = {isa = PBXBuildFile; fileRef = DABC2C131F98769600BA3617 /* Ny5.sks */; };
+		DA774C251FAFF98E00C6A208 /* Ny6.sks in Resources */ = {isa = PBXBuildFile; fileRef = DABC2C141F98769600BA3617 /* Ny6.sks */; };
+		DA774C261FAFF98E00C6A208 /* Ny7.sks in Resources */ = {isa = PBXBuildFile; fileRef = DABC2C151F98769600BA3617 /* Ny7.sks */; };
+		DA774C271FAFF98E00C6A208 /* Ny8.sks in Resources */ = {isa = PBXBuildFile; fileRef = DABC2C161F98769600BA3617 /* Ny8.sks */; };
+		DA774C281FAFF98E00C6A208 /* Ny9.sks in Resources */ = {isa = PBXBuildFile; fileRef = DABC2C171F98769600BA3617 /* Ny9.sks */; };
 		DABB8F371F973ADE002AD581 /* MyHomeScene.sks in Resources */ = {isa = PBXBuildFile; fileRef = DABB8F361F973ADE002AD581 /* MyHomeScene.sks */; };
 		DABB8FB21F974987002AD581 /* myhome_fullbackground.png in Resources */ = {isa = PBXBuildFile; fileRef = DABB8FA61F974747002AD581 /* myhome_fullbackground.png */; };
 		DABB8FB31F974990002AD581 /* myhome_callmycat.png in Resources */ = {isa = PBXBuildFile; fileRef = DABB8F941F974747002AD581 /* myhome_callmycat.png */; };
@@ -112,7 +122,7 @@
 		DABB8FDF1F97510E002AD581 /* Collectable_fish_body-crop.png in Resources */ = {isa = PBXBuildFile; fileRef = DABB8FDE1F97510B002AD581 /* Collectable_fish_body-crop.png */; };
 		DABB8FE01F975110002AD581 /* Collectable_fish_head-crop.png in Resources */ = {isa = PBXBuildFile; fileRef = DABB8FDC1F97510B002AD581 /* Collectable_fish_head-crop.png */; };
 		DABB8FE11F975112002AD581 /* Collectable_fish_tail-crop.png in Resources */ = {isa = PBXBuildFile; fileRef = DABB8FDD1F97510B002AD581 /* Collectable_fish_tail-crop.png */; };
-		DABC2C181F9876D600BA3617 /* NY1.sks in Resources */ = {isa = PBXBuildFile; fileRef = DABC2C0B1F98769600BA3617 /* NY1.sks */; };
+		DABC2C181F9876D600BA3617 /* Ny1.sks in Resources */ = {isa = PBXBuildFile; fileRef = DABC2C0B1F98769600BA3617 /* Ny1.sks */; };
 		DACF74981F75F98300915446 /* daytime-default.png in Resources */ = {isa = PBXBuildFile; fileRef = DACF74861F75F98300915446 /* daytime-default.png */; };
 		DACF74991F75F98300915446 /* daytime-holycrapSelected.png in Resources */ = {isa = PBXBuildFile; fileRef = DACF74871F75F98300915446 /* daytime-holycrapSelected.png */; };
 		DACF749A1F75F98300915446 /* daytime-mycatSelected.png in Resources */ = {isa = PBXBuildFile; fileRef = DACF74881F75F98300915446 /* daytime-mycatSelected.png */; };
@@ -238,8 +248,7 @@
 		DAEE59311F91A1E7006F6269 /* newinterfacetest.sks in Resources */ = {isa = PBXBuildFile; fileRef = DAEE59301F91A1E7006F6269 /* newinterfacetest.sks */; };
 		DAEF1E1A1FA4398000B888AE /* NY_obj.atlas in Resources */ = {isa = PBXBuildFile; fileRef = DAEF1E191FA4397D00B888AE /* NY_obj.atlas */; };
 		DAEF1E201FA86B6400B888AE /* Social.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DAEF1E1F1FA86B6400B888AE /* Social.framework */; };
-		DAF02F561FAF22870002B2F4 /* NY3.sks in Resources */ = {isa = PBXBuildFile; fileRef = DABC2C111F98769600BA3617 /* NY3.sks */; };
-		DAF02F571FAF228A0002B2F4 /* NY4.sks in Resources */ = {isa = PBXBuildFile; fileRef = DABC2C121F98769600BA3617 /* NY4.sks */; };
+		DAF02F561FAF22870002B2F4 /* Ny3.sks in Resources */ = {isa = PBXBuildFile; fileRef = DABC2C111F98769600BA3617 /* Ny3.sks */; };
 		DAF499571F7C8327008CD2F6 /* Travel Button-crop.png in Resources */ = {isa = PBXBuildFile; fileRef = DAF499561F7C8327008CD2F6 /* Travel Button-crop.png */; };
 		DAF499591F7CB741008CD2F6 /* InstantFish Inst.png in Resources */ = {isa = PBXBuildFile; fileRef = DAF499581F7CB740008CD2F6 /* InstantFish Inst.png */; };
 		DAF499631F7CB78E008CD2F6 /* AutoFlying_big.png in Resources */ = {isa = PBXBuildFile; fileRef = DAF4995B1F7CB78E008CD2F6 /* AutoFlying_big.png */; };
@@ -395,19 +404,19 @@
 		DABB8FDC1F97510B002AD581 /* Collectable_fish_head-crop.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Collectable_fish_head-crop.png"; sourceTree = "<group>"; };
 		DABB8FDD1F97510B002AD581 /* Collectable_fish_tail-crop.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Collectable_fish_tail-crop.png"; sourceTree = "<group>"; };
 		DABB8FDE1F97510B002AD581 /* Collectable_fish_body-crop.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Collectable_fish_body-crop.png"; sourceTree = "<group>"; };
-		DABC2C0B1F98769600BA3617 /* NY1.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = NY1.sks; sourceTree = "<group>"; };
-		DABC2C0C1F98769600BA3617 /* NY10.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = NY10.sks; sourceTree = "<group>"; };
-		DABC2C0D1F98769600BA3617 /* NY11.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = NY11.sks; sourceTree = "<group>"; };
-		DABC2C0E1F98769600BA3617 /* NY12.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = NY12.sks; sourceTree = "<group>"; };
-		DABC2C0F1F98769600BA3617 /* NY13.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = NY13.sks; sourceTree = "<group>"; };
-		DABC2C101F98769600BA3617 /* NY2.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = NY2.sks; sourceTree = "<group>"; };
-		DABC2C111F98769600BA3617 /* NY3.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = NY3.sks; sourceTree = "<group>"; };
-		DABC2C121F98769600BA3617 /* NY4.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = NY4.sks; sourceTree = "<group>"; };
-		DABC2C131F98769600BA3617 /* NY5.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = NY5.sks; sourceTree = "<group>"; };
-		DABC2C141F98769600BA3617 /* NY6.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = NY6.sks; sourceTree = "<group>"; };
-		DABC2C151F98769600BA3617 /* NY7.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = NY7.sks; sourceTree = "<group>"; };
-		DABC2C161F98769600BA3617 /* NY8.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = NY8.sks; sourceTree = "<group>"; };
-		DABC2C171F98769600BA3617 /* NY9.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = NY9.sks; sourceTree = "<group>"; };
+		DABC2C0B1F98769600BA3617 /* Ny1.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = Ny1.sks; sourceTree = "<group>"; };
+		DABC2C0C1F98769600BA3617 /* Ny10.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = Ny10.sks; sourceTree = "<group>"; };
+		DABC2C0D1F98769600BA3617 /* Ny11.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = Ny11.sks; sourceTree = "<group>"; };
+		DABC2C0E1F98769600BA3617 /* Ny12.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = Ny12.sks; sourceTree = "<group>"; };
+		DABC2C0F1F98769600BA3617 /* Ny13.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = Ny13.sks; sourceTree = "<group>"; };
+		DABC2C101F98769600BA3617 /* Ny2.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = Ny2.sks; sourceTree = "<group>"; };
+		DABC2C111F98769600BA3617 /* Ny3.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = Ny3.sks; sourceTree = "<group>"; };
+		DABC2C121F98769600BA3617 /* Ny4.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = Ny4.sks; sourceTree = "<group>"; };
+		DABC2C131F98769600BA3617 /* Ny5.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = Ny5.sks; sourceTree = "<group>"; };
+		DABC2C141F98769600BA3617 /* Ny6.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = Ny6.sks; sourceTree = "<group>"; };
+		DABC2C151F98769600BA3617 /* Ny7.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = Ny7.sks; sourceTree = "<group>"; };
+		DABC2C161F98769600BA3617 /* Ny8.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = Ny8.sks; sourceTree = "<group>"; };
+		DABC2C171F98769600BA3617 /* Ny9.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = Ny9.sks; sourceTree = "<group>"; };
 		DACF74861F75F98300915446 /* daytime-default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "daytime-default.png"; sourceTree = "<group>"; };
 		DACF74871F75F98300915446 /* daytime-holycrapSelected.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "daytime-holycrapSelected.png"; sourceTree = "<group>"; };
 		DACF74881F75F98300915446 /* daytime-mycatSelected.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "daytime-mycatSelected.png"; sourceTree = "<group>"; };
@@ -924,25 +933,25 @@
 			path = 02NY;
 			sourceTree = "<group>";
 		};
-		DABC2C0A1F98769600BA3617 /* NY */ = {
+		DABC2C0A1F98769600BA3617 /* Ny */ = {
 			isa = PBXGroup;
 			children = (
-				DABC2C0B1F98769600BA3617 /* NY1.sks */,
-				DABC2C0C1F98769600BA3617 /* NY10.sks */,
-				DABC2C0D1F98769600BA3617 /* NY11.sks */,
-				DABC2C0E1F98769600BA3617 /* NY12.sks */,
-				DABC2C0F1F98769600BA3617 /* NY13.sks */,
-				DABC2C101F98769600BA3617 /* NY2.sks */,
-				DABC2C111F98769600BA3617 /* NY3.sks */,
-				DABC2C121F98769600BA3617 /* NY4.sks */,
-				DABC2C131F98769600BA3617 /* NY5.sks */,
-				DABC2C141F98769600BA3617 /* NY6.sks */,
-				DABC2C151F98769600BA3617 /* NY7.sks */,
-				DABC2C161F98769600BA3617 /* NY8.sks */,
-				DABC2C171F98769600BA3617 /* NY9.sks */,
+				DABC2C0B1F98769600BA3617 /* Ny1.sks */,
+				DABC2C0C1F98769600BA3617 /* Ny10.sks */,
+				DABC2C0D1F98769600BA3617 /* Ny11.sks */,
+				DABC2C0E1F98769600BA3617 /* Ny12.sks */,
+				DABC2C0F1F98769600BA3617 /* Ny13.sks */,
+				DABC2C101F98769600BA3617 /* Ny2.sks */,
+				DABC2C111F98769600BA3617 /* Ny3.sks */,
+				DABC2C121F98769600BA3617 /* Ny4.sks */,
+				DABC2C131F98769600BA3617 /* Ny5.sks */,
+				DABC2C141F98769600BA3617 /* Ny6.sks */,
+				DABC2C151F98769600BA3617 /* Ny7.sks */,
+				DABC2C161F98769600BA3617 /* Ny8.sks */,
+				DABC2C171F98769600BA3617 /* Ny9.sks */,
 			);
-			name = NY;
-			path = ../../../Downloads/COCC/COCC/NY;
+			name = Ny;
+			path = ../../../Downloads/COCC/COCC/Ny;
 			sourceTree = "<group>";
 		};
 		DACF746B1F75F77E00915446 /* Collection Screen */ = {
@@ -1085,7 +1094,7 @@
 				DACF75B11F79F96200915446 /* MapScene.sks */,
 				DACF76131F7C799E00915446 /* ItemShopScene.sks */,
 				DABB8F361F973ADE002AD581 /* MyHomeScene.sks */,
-				DABC2C0A1F98769600BA3617 /* NY */,
+				DABC2C0A1F98769600BA3617 /* Ny */,
 				DACF75B21F79F96200915446 /* test */,
 			);
 			path = Scenes;
@@ -1377,11 +1386,11 @@
 				DA25998D1F7397C600BB9573 /* german1-7.png in Resources */,
 				DABB8FB71F974994002AD581 /* customizing_background.png in Resources */,
 				DABB8FD11F9749B3002AD581 /* Collectable_fish_tail.png in Resources */,
-				DAF02F571FAF228A0002B2F4 /* NY4.sks in Resources */,
 				DA25998C1F7397C600BB9573 /* german1-6.png in Resources */,
 				DADC529D1F7510DA0033BB28 /* jukebox.png in Resources */,
+				DA774C1D1FAFF98800C6A208 /* Ny13.sks in Resources */,
 				DACF758B1F78E67C00915446 /* level3.png in Resources */,
-				DA2707341FAF08F700FE28F5 /* NY2.sks in Resources */,
+				DA2707341FAF08F700FE28F5 /* Ny2.sks in Resources */,
 				DA2220F41F68F16A0009AB60 /* Egypt 01-6.png in Resources */,
 				DADC52AC1F75111F0033BB28 /* mainPresent.png in Resources */,
 				DA2220F21F68F16A0009AB60 /* Egypt 01-4.png in Resources */,
@@ -1389,12 +1398,14 @@
 				DA2220EF1F68F16A0009AB60 /* Egypt 01-1.png in Resources */,
 				DA2974A91F68DEDE005F6B41 /* Main.storyboard in Resources */,
 				DADC52AB1F75111F0033BB28 /* mainItemBar.png in Resources */,
+				DA774C1B1FAFF98800C6A208 /* Ny11.sks in Resources */,
 				DAD0B7A91F9DC8E100AC8BE1 /* designHomeScene.sks in Resources */,
 				DA2599881F7397C600BB9573 /* german1-2.png in Resources */,
 				DAD0B7A21F9DC89A00AC8BE1 /* designhome_floor-crop.png in Resources */,
 				DAD0B7B31F9DCE2C00AC8BE1 /* customizing_checkBtn-crop.png in Resources */,
 				DAD0B7B41F9DCE2C00AC8BE1 /* customizing_exit-crop.png in Resources */,
 				DACF760C1F7C798800915446 /* Boost Item Background.png in Resources */,
+				DA774C251FAFF98E00C6A208 /* Ny6.sks in Resources */,
 				DACF74A11F75F98300915446 /* nighttime-mycatSelected.png in Resources */,
 				DABB8FCD1F9749B3002AD581 /* Collectable_located.png in Resources */,
 				DABB8FCE1F9749B3002AD581 /* Collectable_fish_body.png in Resources */,
@@ -1432,6 +1443,7 @@
 				DABB8FD01F9749B3002AD581 /* Collectable_fish_head.png in Resources */,
 				DACF74A91F75FC9700915446 /* daytime-superrareSelected.png in Resources */,
 				DAEE59311F91A1E7006F6269 /* newinterfacetest.sks in Resources */,
+				DA774C281FAFF98E00C6A208 /* Ny9.sks in Resources */,
 				DACF75FB1F7C798800915446 /* BubbleShield Inst.png in Resources */,
 				DA2707131FAC325700FE28F5 /* meowshop-8-goldcoin3.png in Resources */,
 				DA2707331FAD96D600FE28F5 /* ultrabooster-6.png in Resources */,
@@ -1448,6 +1460,7 @@
 				DA3382AB1FA86DE40027C30E /* NY_map_13.png in Resources */,
 				DA2707111FAC325700FE28F5 /* meowshop-6-goldcoin.png in Resources */,
 				DACF75F51F7C798800915446 /* AutoFlying Inst.png in Resources */,
+				DA774C231FAFF98E00C6A208 /* Ny4.sks in Resources */,
 				DA27071C1FAC325700FE28F5 /* meowshop-special.png in Resources */,
 				DACF75741F78E5AE00915446 /* levelselect_Berinya.png in Resources */,
 				DABB8F371F973ADE002AD581 /* MyHomeScene.sks in Resources */,
@@ -1474,6 +1487,7 @@
 				DA3382A71FA86DE40027C30E /* NY_map_09.png in Resources */,
 				DACF74A31F75F98300915446 /* nighttime-rareSelected.png in Resources */,
 				DAD0B7B61F9DCE2C00AC8BE1 /* customizing_skin.png in Resources */,
+				DA774C1C1FAFF98800C6A208 /* Ny12.sks in Resources */,
 				DACF75FC1F7C798800915446 /* BubbleShield.png in Resources */,
 				DACF758D1F78E67C00915446 /* level5.png in Resources */,
 				DA2707161FAC325700FE28F5 /* Can and coin button.png in Resources */,
@@ -1485,6 +1499,7 @@
 				DA27072F1FAD96D600FE28F5 /* ultrabooster-2.png in Resources */,
 				DACF758F1F78E67C00915446 /* level7.png in Resources */,
 				DABB8FDF1F97510E002AD581 /* Collectable_fish_body-crop.png in Resources */,
+				DA774C241FAFF98E00C6A208 /* Ny5.sks in Resources */,
 				DA27071D1FAC325700FE28F5 /* Special package button.png in Resources */,
 				DA25998E1F7397C600BB9573 /* german1-8.png in Resources */,
 				DACF75B81F79F96200915446 /* LevelSelectScene.sks in Resources */,
@@ -1527,8 +1542,10 @@
 				DA33829E1FA86DE40027C30E /* NY_4.png in Resources */,
 				DAD657261F6A3EAA007F99ED /* testcat.png in Resources */,
 				DABB8FE01F975110002AD581 /* Collectable_fish_head-crop.png in Resources */,
+				DA774C1A1FAFF98800C6A208 /* Ny10.sks in Resources */,
 				DA2599891F7397C600BB9573 /* german1-3.png in Resources */,
 				DACF757D1F78E5AE00915446 /* levelselect_Moscyau.png in Resources */,
+				DA774C271FAFF98E00C6A208 /* Ny8.sks in Resources */,
 				DAD0B7BA1F9DD12200AC8BE1 /* customizing_usemypicture.png in Resources */,
 				DACF757A1F78E5AE00915446 /* levelselect_Meoul.png in Resources */,
 				DAF499641F7CB78E008CD2F6 /* AwesomeSticker_big.png in Resources */,
@@ -1560,6 +1577,7 @@
 				DADC529F1F7510DA0033BB28 /* mainBackground.png in Resources */,
 				DACF75BD1F79F96200915446 /* settingtest.sks in Resources */,
 				DACF75061F77CD6500915446 /* grayfoot.png in Resources */,
+				DA774C261FAFF98E00C6A208 /* Ny7.sks in Resources */,
 				DA3382A01FA86DE40027C30E /* NY_map_01.png in Resources */,
 				DA3382A81FA86DE40027C30E /* NY_map_10.png in Resources */,
 				DA0432CD1F6AF386002EF8F6 /* coin.png in Resources */,
@@ -1569,13 +1587,13 @@
 				DADC528C1F7510550033BB28 /* Setting Screen.png in Resources */,
 				DAF499671F7CB78E008CD2F6 /* FluufyTail_big.png in Resources */,
 				DACF75B91F79F96200915446 /* MainMenuScene.sks in Resources */,
-				DABC2C181F9876D600BA3617 /* NY1.sks in Resources */,
+				DABC2C181F9876D600BA3617 /* Ny1.sks in Resources */,
 				DACF75F91F7C798800915446 /* BadassPaw Inst.png in Resources */,
 				DACF75731F78E5AE00915446 /* levelselect_Barcelonau.png in Resources */,
 				DACF75231F77CD6500915446 /* worldmap.png in Resources */,
 				DA27071A1FAC325700FE28F5 /* meowshop-CanAndCoin.png in Resources */,
 				DADC529E1F7510DA0033BB28 /* main screen.png in Resources */,
-				DAF02F561FAF22870002B2F4 /* NY3.sks in Resources */,
+				DAF02F561FAF22870002B2F4 /* Ny3.sks in Resources */,
 				DACF76071F7C798800915446 /* InstantFish.png in Resources */,
 				DACF760E1F7C798800915446 /* Boooost Buy Panel.png in Resources */,
 				DACF760D1F7C798800915446 /* Boooost Button.png in Resources */,

@@ -46,6 +46,10 @@ class MainMenuScene: SKScene {
         onSetting = false
         onMeowshop = false
         
+        print("Giving 2000 gold")
+        GameManager.instance.setTotalCoin(totalCoin: 2000)
+        GameManager.instance.saveData()
+        
     }
     
     override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
