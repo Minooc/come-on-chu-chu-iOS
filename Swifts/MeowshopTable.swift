@@ -13,7 +13,7 @@ class MeowshopTable: UICollectionView, UICollectionViewDelegate, UICollectionVie
     
     
     var category: String?
-    var items = ["name1", "name2", "3", "4", "5", "6", "createcat"]
+    var items = ["1", "1-1", "1-2", "2", "2-1", "2-2"]
     
     
     override init(frame: CGRect, collectionViewLayout layout: UICollectionViewLayout) {

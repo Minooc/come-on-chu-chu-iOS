@@ -30,6 +30,13 @@ class MainMenuScene: SKScene {
 
     var onSetting: Bool?
     var onMeowshop: Bool?
+    var onDailyBonus: Bool?
+    
+    var dailyBonusPanel: SKSpriteNode!
+    var receiverBtn: SKSpriteNode!
+    var facebookLoginBtn: SKSpriteNode!
+    var dailyBonusExit: SKSpriteNode!
+    var dailyBonusListBox: SKSpriteNode!
 
 //    var meowshopTable: UICollectionView!
     var meowshopTable: MeowshopTable!
@@ -45,6 +52,7 @@ class MainMenuScene: SKScene {
         
         onSetting = false
         onMeowshop = false
+        onDailyBonus = false
         
         print("Giving 2000 gold")
         GameManager.instance.setTotalCoin(totalCoin: 2000)
@@ -93,9 +101,21 @@ class MainMenuScene: SKScene {
                 self.view?.presentScene(scene!, transition: SKTransition.doorsOpenVertical(withDuration: 1))
             }
             
+            if touchedNode.name == "GachaBtn" {
+                let scene = GachaScene(fileNamed: "GachaScene")
+                scene!.scaleMode = .aspectFill
+                self.view?.presentScene(scene!, transition: SKTransition.doorsOpenVertical(withDuration: 1))
+            }
+            
+            if touchedNode.name == "DailyBonusBtn" {
+                createDailyBonusPanel()
+            }
+            
             if touchedNode.name == "Meowshop" {
                 createMeowshopPanel()
             }
+            
+            
             
             // on Setting
             
@@ -161,6 +181,8 @@ class MainMenuScene: SKScene {
             
             
             
+            // on Meowshop panel
+            
             if onMeowshop == true {
                 
                 if (touchedNode == exitShop) {
@@ -183,6 +205,17 @@ class MainMenuScene: SKScene {
                 }
             }
             
+            
+            // on Daily Bonus Panel
+            
+            if onDailyBonus == true {
+                
+                if (touchedNode == dailyBonusExit) {
+                    
+                    dailyBonusPanel.removeFromParent()
+                    perform(#selector(dailyBonusMode), with: nil, afterDelay: 0.1)
+                }
+            }
 
             
             
@@ -267,6 +300,47 @@ class MainMenuScene: SKScene {
         
         let coinLabel = self.childNode(withName: "TotalCoin") as? SKLabelNode
         coinLabel?.text = "\(GameManager.instance.getTotalCoin())"
+    }
+    
+    func createDailyBonusPanel() {
+        
+        dailyBonusPanel = SKSpriteNode(imageNamed: "DailyBonus_background")
+        dailyBonusPanel.anchorPoint = CGPoint(x: 0.5, y:0.5)
+        dailyBonusPanel.xScale = 1
+        dailyBonusPanel.yScale = 1
+        dailyBonusPanel.zPosition = 5
+        self.addChild(dailyBonusPanel)
+        
+        
+        receiverBtn = SKSpriteNode(imageNamed: "DailyBonus_Receive")
+        receiverBtn.xScale = 1
+        receiverBtn.yScale = 1
+        receiverBtn.zPosition = 6
+        receiverBtn.position = CGPoint(x:4.282, y: -336.929)
+        dailyBonusPanel.addChild(receiverBtn)
+        
+        facebookLoginBtn = SKSpriteNode(imageNamed: "DailyBonus_Facebook_login")
+        facebookLoginBtn.xScale = 1
+        facebookLoginBtn.yScale = 1
+        facebookLoginBtn.zPosition = 5
+        facebookLoginBtn.position = CGPoint(x: -510.676, y:133.86)
+        dailyBonusPanel.addChild(facebookLoginBtn)
+        
+        dailyBonusExit = SKSpriteNode(imageNamed: "DailyBonus_Exit_button")
+        dailyBonusExit.xScale = 1
+        dailyBonusExit.yScale = 1
+        dailyBonusExit.zPosition = 5
+        dailyBonusExit.position = CGPoint(x: 419.461, y: 245.164)
+        dailyBonusPanel.addChild(dailyBonusExit)
+        
+        dailyBonusListBox = SKSpriteNode(imageNamed: "DailyBonus_list_box")
+        dailyBonusListBox.xScale = 1
+        dailyBonusListBox.yScale = 1
+        dailyBonusListBox.zPosition = 5
+        dailyBonusListBox.position = CGPoint(x:-0.134, y: -147.628)
+        dailyBonusPanel.addChild(dailyBonusListBox)
+        
+        perform(#selector(dailyBonusMode), with: nil, afterDelay: 0.1)
     }
     
     func createSettingPanel() {
@@ -449,6 +523,15 @@ class MainMenuScene: SKScene {
             onMeowshop = false
         }
     }
+    
+    func dailyBonusMode() {
+        if (onDailyBonus == false) {
+            onDailyBonus = true
+        } else {
+            onDailyBonus = false
+        }
+    }
+
 
     func meowshopHandler() {
 

@@ -13,7 +13,7 @@ class PurchaseItemTable: UICollectionView, UICollectionViewDelegate, UICollectio
 
 
     var category: String?
-    var items = ["name1", "name2", "3", "4", "5", "6", "createcat"]
+    var items = [""]
 
 
     override init(frame: CGRect, collectionViewLayout layout: UICollectionViewLayout) {
@@ -36,6 +36,7 @@ class PurchaseItemTable: UICollectionView, UICollectionViewDelegate, UICollectio
         
         self.delegate = self
         self.dataSource = self
+        
 
         self.reloadData()
     }
@@ -46,12 +47,14 @@ class PurchaseItemTable: UICollectionView, UICollectionViewDelegate, UICollectio
     
     
     
+    
     func numberOfSections(in collectionView: UICollectionView) -> Int {
         return 1
     }
 
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        return 6
+        return items.count
+
     }
     
     
@@ -61,24 +64,57 @@ class PurchaseItemTable: UICollectionView, UICollectionViewDelegate, UICollectio
         
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "Item", for: indexPath) as! ShopItem
         
-        cell.imageView.image = UIImage(named: "designhome_item-crop")
+        if (category == "furniture") {
+            cell.imageView.image = UIImage(named: "Furniture \(items[indexPath.row])")
+        }
+        
+        if (category == "props") {
+            cell.imageView.image = UIImage(named: "Props \(items[indexPath.row])")
+        }
+        
+        if (category == "floor") {
+            cell.imageView.image = UIImage(named: "\(items[indexPath.row])")
+        }
+        
+
+        
         return cell
     }
     
 
-    /*
-    func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
+    func furniture_generator() {
+        items = []
+        for i in 1...16 {
+            items.append("\(i)")
+            items.append("\(i)-1")
+            items.append("\(i)-2")
+        }
+//        print(items)
+    }
+    
+    func floor_generator() {
+        items = []
+        for i in 1...37 {
+            items.append("Floor \(i)")
+        }
+        for i in 1...16 {
+            items.append("Wallpaper \(i)")
+        }
         
     }
-    */
-
     
- 
-//    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
-//
-//        print("C")
-//        return CGSize(width: 80, height: 100)
-//    }
+   func prop_generator() {
+        items = []
+        for i in 1...9 {
+            items.append("\(i)")
+            items.append("\(i)-1")
+            items.append("\(i)-2")
+        }
+        for i in 10...36 {
+                items.append("\(i)")
+        }
+    }
+
     
 }
 

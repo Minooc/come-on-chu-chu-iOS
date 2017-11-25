@@ -49,6 +49,10 @@ class GameplayScene: SKScene, SKPhysicsContactDelegate  {
     
     var loaded: Bool!
     
+    
+    var bombSpeedX: CGFloat!
+    var bombSpeedY: CGFloat!
+    
     override func didMove(to view: SKView) {
         // initialize everything
         
@@ -85,6 +89,9 @@ class GameplayScene: SKScene, SKPhysicsContactDelegate  {
         loaded = false
 //        nextLevel = 1
         
+        bombSpeedX = 0
+        bombSpeedY = 0
+        
 
     }
     
@@ -93,6 +100,79 @@ class GameplayScene: SKScene, SKPhysicsContactDelegate  {
         player?.movePlayer()
         moveCamera()
         managePlayer()
+        
+        for ob in obstacles {
+            
+            
+            if ob.name == "FlyingObstacle" {
+                 if (ob.position.x < (player?.position.x)! + 1200) {
+                        ob.flying()
+                    }
+            }
+            
+            if ob.name == "RisingObstacle" {
+                if (ob.position.x < (player?.position.x)! + 500) {
+                    ob.rising()
+                }
+            }
+            
+            if ob.name == "BombObstacle" {
+                
+                if (ob.position.x < (player?.position.x)! + 1100) {
+
+                    
+                    if (ob.position.x > (player?.position.x)! + 1095) {
+                        
+                        let playerX = (player?.position.x)!
+                        let playerY = (player?.position.y)!
+                        
+                        bombSpeedX = (playerX - ob.position.x)/130
+                        bombSpeedY = (playerY - ob.position.y)/130
+                        
+                        ob.preExplode()
+                    }
+                    
+                    if (ob.position.x > (player?.position.x)! + 900 && ob.position.x < (player?.position.x)! + 920) {
+                        print("CALLED THE EXPLODE FUNCTION")
+                        ob.bombExplode()
+                    }
+                    
+
+                    if (ob.position.x > (player?.position.x)! - 5) {
+                        ob.position.x += bombSpeedX
+                        ob.position.y += bombSpeedY
+
+                    }
+                    
+                
+                }
+                
+
+                
+            }
+            
+            if ob.name == "AssObstacle" {
+                if let presetTexture = ob.texture {
+                    ob.physicsBody = SKPhysicsBody(texture: presetTexture, size: (presetTexture.size()))
+                    ob.physicsBody?.affectedByGravity = false
+                    ob.physicsBody?.allowsRotation = false
+                    ob.physicsBody?.velocity = CGVector(dx: 0, dy: 0)
+                    ob.physicsBody?.categoryBitMask = 2
+                    ob.physicsBody?.collisionBitMask = 0
+                }
+            }
+            
+            if (ob.position.x <  (player?.position.x)! - 1200) {
+                let indexToDelete = obstacles.index(of: ob)
+                ob.removeFromParent()
+                obstacles.remove(at: indexToDelete!)
+                print("it's gone")
+                
+            }
+        
+
+
+        }
         
         if (playerSink) {
             player?.sinkPlayer()
@@ -164,6 +244,28 @@ class GameplayScene: SKScene, SKPhysicsContactDelegate  {
             if let obs = self.childNode(withName: "obstacle") as? Obstacle {
                 obs.animateObject()
                 obs.name = "GeneralObstacle"
+                obstacles.append(obs)
+            }
+            else if let obs = self.childNode(withName: "flying") as? Obstacle {
+                obs.name = "FlyingObstacle"
+                obstacles.append(obs)
+
+            }
+            else if let obs = self.childNode(withName: "rising") as? Obstacle {
+                obs.name = "RisingObstacle"
+                obstacles.append(obs)
+                
+            }
+            else if let obs = self.childNode(withName: "ass") as? Obstacle {
+                obs.name = "AssObstacle"
+                obs.ass()
+                obstacles.append(obs)
+                
+            }
+            else if let obs = self.childNode(withName: "bomb") as? Obstacle {
+                obs.name = "BombObstacle"
+                obstacles.append(obs)
+                
             }
             else {
                 break
@@ -354,8 +456,8 @@ class GameplayScene: SKScene, SKPhysicsContactDelegate  {
             secondBody.node?.removeFromParent()
             gotFishTail = true
             
-        } else if firstBody.node?.name == "Player" && secondBody.node?.name == "GeneralObstacle" {
-            
+        } else if firstBody.node?.name == "Player" && (secondBody.node?.name == "GeneralObsatcle" || secondBody.node?.name == "FlyingObstacle" || secondBody.node?.name == "RisingObstacle" || secondBody.node?.name == "AssObstacle" || secondBody.node?.name == "BombObstacle") {
+            //  secondBody.node?.name == "GeneralObstacle"
             if (playerCanGetHit) {
                 print("You got hit")
                 playerGotHit = true
