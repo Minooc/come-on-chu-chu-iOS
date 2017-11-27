@@ -8,25 +8,25 @@
 
 import SpriteKit
 
-struct MapName {
-    static let Meoul = "Meoul"
-    static let Parismiao = "Parismiao"
-    static let Meowjing = "Meowjing"
-    static let Moscyau = "Moscyau"
-    static let Londonya = "Londonya"
-    static let Romya = "Romya"
-    static let Losangelnya = "Losangelnya"
-    static let Berinya = "Berinya"
-    static let Brazilinya = "Brazilinya"
-    static let Ny = "Ny"
-    static let Cairong = "Cairong"
-    static let Meowcouver = "Meowcouver"
-    static let Barcelonau = "Barcelonau"
-}
+//struct MapName {
+//    static let Meoul = "Meoul"
+//    static let Parismiao = "Parismiao"
+//    static let Meowjing = "Meowjing"
+//    static let Moscyau = "Moscyau"
+//    static let Londonya = "Londonya"
+//    static let Romya = "Romya"
+//    static let Losangelnya = "Losangelnya"
+//    static let Berinya = "Berinya"
+//    static let Brazilinya = "Brazilinya"
+//    static let Ny = "Ny"
+//    static let Cairong = "Cairong"
+//    static let Meowcouver = "Meowcouver"
+//    static let Barcelonau = "Barcelonau"
+//}
 
 class MapScene: SKScene {
     
-    var cities = ["Meoul", "Parismiao", "Meowjing", "Moscyau", "Londonya", "Romya", "Losangelnya", "Berinya", "Brazilinya", "Ny", "Cairong", "Meowcouver", "Barcelonau"]
+    var cities = ["CityOfMeow", "Japanese", "Miauw", "Korean", "Meow", "FestivalOfMiau", "Miau","MountainOfMeow", "Miao","MeowKingdom","Chinese","Egypt","Russian"]
     
     var mapDictionary = [String: Bool]()
     
@@ -184,13 +184,13 @@ class MapScene: SKScene {
             
             print("We're opening \(mapToOpenPar)")
             let priceLbl = SKLabelNode(fontNamed: "Conformity")
-            if (mapToOpenPar == "Brazilinya" || mapToOpenPar == "Losangelnya" || mapToOpenPar == "Meowcouver" || mapToOpenPar == "Ny" || mapToOpenPar == "Parismiao") {
+            if (mapToOpenPar == "MountainOfMeow" || mapToOpenPar == "Meow" || mapToOpenPar == "CityOfMeow" || mapToOpenPar == "Japanese" || mapToOpenPar == "FestivalOfMiau") {
                 priceLbl.text = "2000"
                 amountToTravel = 2000
-            } else if (mapToOpenPar == "Berinya" || mapToOpenPar == "Meoul" || mapToOpenPar == "Barcelonau" || mapToOpenPar == "Romya") {
+            } else if (mapToOpenPar == "Miauw" || mapToOpenPar == "Korean" || mapToOpenPar == "Miao" || mapToOpenPar == "Miau") {
                 priceLbl.text = "2800"
                 amountToTravel = 2800
-            } else if (mapToOpenPar == "Moscyau" || mapToOpenPar == "Cairong" || mapToOpenPar == "Meowjing" || mapToOpenPar == "Londonya") {
+            } else if (mapToOpenPar == "Russian" || mapToOpenPar == "Egypt" || mapToOpenPar == "Chinese" || mapToOpenPar == "MeowKingdom") {
                 priceLbl.text = "3600"
                 amountToTravel = 3600
             }

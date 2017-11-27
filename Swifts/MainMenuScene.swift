@@ -107,6 +107,12 @@ class MainMenuScene: SKScene {
                 self.view?.presentScene(scene!, transition: SKTransition.doorsOpenVertical(withDuration: 1))
             }
             
+            if touchedNode.name == "orgolBtn" {
+                let scene = OrgolScene(fileNamed: "OrgolScene")
+                scene!.scaleMode = .aspectFill
+                self.view?.presentScene(scene!, transition: SKTransition.fade(withDuration: 0.1))
+            }
+            
             if touchedNode.name == "DailyBonusBtn" {
                 createDailyBonusPanel()
             }
