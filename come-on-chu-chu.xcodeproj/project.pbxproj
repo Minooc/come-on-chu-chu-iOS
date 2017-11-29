@@ -49,7 +49,7 @@
 		DA2707311FAD96D600FE28F5 /* ultrabooster-4.png in Resources */ = {isa = PBXBuildFile; fileRef = DA27072B1FAD96D600FE28F5 /* ultrabooster-4.png */; };
 		DA2707321FAD96D600FE28F5 /* ultrabooster-5.png in Resources */ = {isa = PBXBuildFile; fileRef = DA27072C1FAD96D600FE28F5 /* ultrabooster-5.png */; };
 		DA2707331FAD96D600FE28F5 /* ultrabooster-6.png in Resources */ = {isa = PBXBuildFile; fileRef = DA27072D1FAD96D600FE28F5 /* ultrabooster-6.png */; };
-		DA2707341FAF08F700FE28F5 /* Ny2.sks in Resources */ = {isa = PBXBuildFile; fileRef = DABC2C101F98769600BA3617 /* Ny2.sks */; };
+		DA2707341FAF08F700FE28F5 /* CityOfMeow2.sks in Resources */ = {isa = PBXBuildFile; fileRef = DABC2C101F98769600BA3617 /* CityOfMeow2.sks */; };
 		DA29749E1F68DEDE005F6B41 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA29749D1F68DEDE005F6B41 /* AppDelegate.swift */; };
 		DA2974A01F68DEDE005F6B41 /* GameScene.sks in Resources */ = {isa = PBXBuildFile; fileRef = DA29749F1F68DEDE005F6B41 /* GameScene.sks */; };
 		DA2974A21F68DEDE005F6B41 /* Actions.sks in Resources */ = {isa = PBXBuildFile; fileRef = DA2974A11F68DEDE005F6B41 /* Actions.sks */; };
@@ -134,6 +134,12 @@
 		DA4AF9021FCC0D0E00B4F9B0 /* orgol_rewardHead.png in Resources */ = {isa = PBXBuildFile; fileRef = DA4AF8FA1FCC0D0D00B4F9B0 /* orgol_rewardHead.png */; };
 		DA4AF9041FCC0D2000B4F9B0 /* OrgolScene.sks in Resources */ = {isa = PBXBuildFile; fileRef = DA4AF9031FCC0D2000B4F9B0 /* OrgolScene.sks */; };
 		DA4AF9061FCC0D6400B4F9B0 /* OrgolScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA4AF9051FCC0D6400B4F9B0 /* OrgolScene.swift */; };
+		DA4AF90C1FCD3DF400B4F9B0 /* Life3.atlas in Resources */ = {isa = PBXBuildFile; fileRef = DA4AF9081FCD3DF400B4F9B0 /* Life3.atlas */; };
+		DA4AF90D1FCD3DF400B4F9B0 /* Life1.atlas in Resources */ = {isa = PBXBuildFile; fileRef = DA4AF9091FCD3DF400B4F9B0 /* Life1.atlas */; };
+		DA4AF90E1FCD3DF400B4F9B0 /* Life2.atlas in Resources */ = {isa = PBXBuildFile; fileRef = DA4AF90A1FCD3DF400B4F9B0 /* Life2.atlas */; };
+		DA4AF90F1FCD3DF400B4F9B0 /* Life4.atlas in Resources */ = {isa = PBXBuildFile; fileRef = DA4AF90B1FCD3DF400B4F9B0 /* Life4.atlas */; };
+		DA4AF9111FCD433600B4F9B0 /* LifeEngine.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA4AF9101FCD433600B4F9B0 /* LifeEngine.swift */; };
+		DA4AF9131FCE4AD400B4F9B0 /* emptycat.png in Resources */ = {isa = PBXBuildFile; fileRef = DA4AF9121FCE4AD300B4F9B0 /* emptycat.png */; };
 		DA774C1A1FAFF98800C6A208 /* Ny10.sks in Resources */ = {isa = PBXBuildFile; fileRef = DABC2C0C1F98769600BA3617 /* Ny10.sks */; };
 		DA774C1B1FAFF98800C6A208 /* Ny11.sks in Resources */ = {isa = PBXBuildFile; fileRef = DABC2C0D1F98769600BA3617 /* Ny11.sks */; };
 		DA774C1C1FAFF98800C6A208 /* Ny12.sks in Resources */ = {isa = PBXBuildFile; fileRef = DABC2C0E1F98769600BA3617 /* Ny12.sks */; };
@@ -281,7 +287,7 @@
 		DABB8FDF1F97510E002AD581 /* Collectable_fish_body-crop.png in Resources */ = {isa = PBXBuildFile; fileRef = DABB8FDE1F97510B002AD581 /* Collectable_fish_body-crop.png */; };
 		DABB8FE01F975110002AD581 /* Collectable_fish_head-crop.png in Resources */ = {isa = PBXBuildFile; fileRef = DABB8FDC1F97510B002AD581 /* Collectable_fish_head-crop.png */; };
 		DABB8FE11F975112002AD581 /* Collectable_fish_tail-crop.png in Resources */ = {isa = PBXBuildFile; fileRef = DABB8FDD1F97510B002AD581 /* Collectable_fish_tail-crop.png */; };
-		DABC2C181F9876D600BA3617 /* Ny1.sks in Resources */ = {isa = PBXBuildFile; fileRef = DABC2C0B1F98769600BA3617 /* Ny1.sks */; };
+		DABC2C181F9876D600BA3617 /* CityOfMeow1.sks in Resources */ = {isa = PBXBuildFile; fileRef = DABC2C0B1F98769600BA3617 /* CityOfMeow1.sks */; };
 		DACF74981F75F98300915446 /* daytime-default.png in Resources */ = {isa = PBXBuildFile; fileRef = DACF74861F75F98300915446 /* daytime-default.png */; };
 		DACF74991F75F98300915446 /* daytime-holycrapSelected.png in Resources */ = {isa = PBXBuildFile; fileRef = DACF74871F75F98300915446 /* daytime-holycrapSelected.png */; };
 		DACF749A1F75F98300915446 /* daytime-mycatSelected.png in Resources */ = {isa = PBXBuildFile; fileRef = DACF74881F75F98300915446 /* daytime-mycatSelected.png */; };
@@ -466,7 +472,7 @@
 		DAEE59311F91A1E7006F6269 /* newinterfacetest.sks in Resources */ = {isa = PBXBuildFile; fileRef = DAEE59301F91A1E7006F6269 /* newinterfacetest.sks */; };
 		DAEF1E1A1FA4398000B888AE /* NY_obj.atlas in Resources */ = {isa = PBXBuildFile; fileRef = DAEF1E191FA4397D00B888AE /* NY_obj.atlas */; };
 		DAEF1E201FA86B6400B888AE /* Social.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DAEF1E1F1FA86B6400B888AE /* Social.framework */; };
-		DAF02F561FAF22870002B2F4 /* Ny3.sks in Resources */ = {isa = PBXBuildFile; fileRef = DABC2C111F98769600BA3617 /* Ny3.sks */; };
+		DAF02F561FAF22870002B2F4 /* CityOfMeow3.sks in Resources */ = {isa = PBXBuildFile; fileRef = DABC2C111F98769600BA3617 /* CityOfMeow3.sks */; };
 		DAF499571F7C8327008CD2F6 /* Travel Button-crop.png in Resources */ = {isa = PBXBuildFile; fileRef = DAF499561F7C8327008CD2F6 /* Travel Button-crop.png */; };
 		DAF499591F7CB741008CD2F6 /* InstantFish Inst.png in Resources */ = {isa = PBXBuildFile; fileRef = DAF499581F7CB740008CD2F6 /* InstantFish Inst.png */; };
 		DAF499631F7CB78E008CD2F6 /* AutoFlying_big.png in Resources */ = {isa = PBXBuildFile; fileRef = DAF4995B1F7CB78E008CD2F6 /* AutoFlying_big.png */; };
@@ -644,6 +650,12 @@
 		DA4AF8FA1FCC0D0D00B4F9B0 /* orgol_rewardHead.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = orgol_rewardHead.png; sourceTree = "<group>"; };
 		DA4AF9031FCC0D2000B4F9B0 /* OrgolScene.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = OrgolScene.sks; sourceTree = "<group>"; };
 		DA4AF9051FCC0D6400B4F9B0 /* OrgolScene.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = OrgolScene.swift; path = Swifts/OrgolScene.swift; sourceTree = "<group>"; };
+		DA4AF9081FCD3DF400B4F9B0 /* Life3.atlas */ = {isa = PBXFileReference; lastKnownFileType = folder.skatlas; path = Life3.atlas; sourceTree = "<group>"; };
+		DA4AF9091FCD3DF400B4F9B0 /* Life1.atlas */ = {isa = PBXFileReference; lastKnownFileType = folder.skatlas; path = Life1.atlas; sourceTree = "<group>"; };
+		DA4AF90A1FCD3DF400B4F9B0 /* Life2.atlas */ = {isa = PBXFileReference; lastKnownFileType = folder.skatlas; path = Life2.atlas; sourceTree = "<group>"; };
+		DA4AF90B1FCD3DF400B4F9B0 /* Life4.atlas */ = {isa = PBXFileReference; lastKnownFileType = folder.skatlas; path = Life4.atlas; sourceTree = "<group>"; };
+		DA4AF9101FCD433600B4F9B0 /* LifeEngine.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LifeEngine.swift; sourceTree = "<group>"; };
+		DA4AF9121FCE4AD300B4F9B0 /* emptycat.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = emptycat.png; path = Assets/emptycat.png; sourceTree = "<group>"; };
 		DA774C2B1FB0403A00C6A208 /* Furniture 1-1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Furniture 1-1.png"; sourceTree = "<group>"; };
 		DA774C2C1FB0403A00C6A208 /* Furniture 1-2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Furniture 1-2.png"; sourceTree = "<group>"; };
 		DA774C2D1FB0403A00C6A208 /* Furniture 1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Furniture 1.png"; sourceTree = "<group>"; };
@@ -781,13 +793,13 @@
 		DABB8FDC1F97510B002AD581 /* Collectable_fish_head-crop.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Collectable_fish_head-crop.png"; sourceTree = "<group>"; };
 		DABB8FDD1F97510B002AD581 /* Collectable_fish_tail-crop.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Collectable_fish_tail-crop.png"; sourceTree = "<group>"; };
 		DABB8FDE1F97510B002AD581 /* Collectable_fish_body-crop.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Collectable_fish_body-crop.png"; sourceTree = "<group>"; };
-		DABC2C0B1F98769600BA3617 /* Ny1.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = Ny1.sks; sourceTree = "<group>"; };
+		DABC2C0B1F98769600BA3617 /* CityOfMeow1.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = CityOfMeow1.sks; sourceTree = "<group>"; };
 		DABC2C0C1F98769600BA3617 /* Ny10.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = Ny10.sks; sourceTree = "<group>"; };
 		DABC2C0D1F98769600BA3617 /* Ny11.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = Ny11.sks; sourceTree = "<group>"; };
 		DABC2C0E1F98769600BA3617 /* Ny12.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = Ny12.sks; sourceTree = "<group>"; };
 		DABC2C0F1F98769600BA3617 /* Ny13.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = Ny13.sks; sourceTree = "<group>"; };
-		DABC2C101F98769600BA3617 /* Ny2.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = Ny2.sks; sourceTree = "<group>"; };
-		DABC2C111F98769600BA3617 /* Ny3.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = Ny3.sks; sourceTree = "<group>"; };
+		DABC2C101F98769600BA3617 /* CityOfMeow2.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = CityOfMeow2.sks; sourceTree = "<group>"; };
+		DABC2C111F98769600BA3617 /* CityOfMeow3.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = CityOfMeow3.sks; sourceTree = "<group>"; };
 		DABC2C121F98769600BA3617 /* Ny4.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = Ny4.sks; sourceTree = "<group>"; };
 		DABC2C131F98769600BA3617 /* Ny5.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = Ny5.sks; sourceTree = "<group>"; };
 		DABC2C141F98769600BA3617 /* Ny6.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = Ny6.sks; sourceTree = "<group>"; };
@@ -1059,6 +1071,7 @@
 				DAD657231F6A3EAA007F99ED /* testcat2.png */,
 				DAD657241F6A3EAA007F99ED /* testcat3.png */,
 				DAD657251F6A3EAA007F99ED /* testcat4.png */,
+				DA4AF9121FCE4AD300B4F9B0 /* emptycat.png */,
 			);
 			name = Cats;
 			sourceTree = "<group>";
@@ -1238,6 +1251,7 @@
 			isa = PBXGroup;
 			children = (
 				DACF759F1F79F90D00915446 /* Player.swift */,
+				DA4AF9101FCD433600B4F9B0 /* LifeEngine.swift */,
 			);
 			name = "Player Classes";
 			sourceTree = "<group>";
@@ -1349,6 +1363,17 @@
 				DA4AF8FA1FCC0D0D00B4F9B0 /* orgol_rewardHead.png */,
 			);
 			path = "Orgol Reward UI";
+			sourceTree = "<group>";
+		};
+		DA4AF9071FCD3DF400B4F9B0 /* Life */ = {
+			isa = PBXGroup;
+			children = (
+				DA4AF9081FCD3DF400B4F9B0 /* Life3.atlas */,
+				DA4AF9091FCD3DF400B4F9B0 /* Life1.atlas */,
+				DA4AF90A1FCD3DF400B4F9B0 /* Life2.atlas */,
+				DA4AF90B1FCD3DF400B4F9B0 /* Life4.atlas */,
+			);
+			path = Life;
 			sourceTree = "<group>";
 		};
 		DA774C291FB0403A00C6A208 /* Design Home */ = {
@@ -1480,6 +1505,7 @@
 		DABB8F421F97415B002AD581 /* Game Screen Interface  */ = {
 			isa = PBXGroup;
 			children = (
+				DA4AF9071FCD3DF400B4F9B0 /* Life */,
 				DA0432CB1F6AF386002EF8F6 /* coin.png */,
 				DA0432CC1F6AF386002EF8F6 /* collectable.png */,
 				DABB8FD51F974D03002AD581 /* booster_button-crop.png */,
@@ -1595,16 +1621,16 @@
 			path = 02NY;
 			sourceTree = "<group>";
 		};
-		DABC2C0A1F98769600BA3617 /* Ny */ = {
+		DABC2C0A1F98769600BA3617 /* CityOfMeow */ = {
 			isa = PBXGroup;
 			children = (
-				DABC2C0B1F98769600BA3617 /* Ny1.sks */,
+				DABC2C0B1F98769600BA3617 /* CityOfMeow1.sks */,
 				DABC2C0C1F98769600BA3617 /* Ny10.sks */,
 				DABC2C0D1F98769600BA3617 /* Ny11.sks */,
 				DABC2C0E1F98769600BA3617 /* Ny12.sks */,
 				DABC2C0F1F98769600BA3617 /* Ny13.sks */,
-				DABC2C101F98769600BA3617 /* Ny2.sks */,
-				DABC2C111F98769600BA3617 /* Ny3.sks */,
+				DABC2C101F98769600BA3617 /* CityOfMeow2.sks */,
+				DABC2C111F98769600BA3617 /* CityOfMeow3.sks */,
 				DABC2C121F98769600BA3617 /* Ny4.sks */,
 				DABC2C131F98769600BA3617 /* Ny5.sks */,
 				DABC2C141F98769600BA3617 /* Ny6.sks */,
@@ -1612,8 +1638,8 @@
 				DABC2C161F98769600BA3617 /* Ny8.sks */,
 				DABC2C171F98769600BA3617 /* Ny9.sks */,
 			);
-			name = Ny;
-			path = ../../../Downloads/COCC/COCC/Ny;
+			name = CityOfMeow;
+			path = ../../../Downloads/COCC/COCC/CityOfMeow;
 			sourceTree = "<group>";
 		};
 		DACF746B1F75F77E00915446 /* Collection Screen */ = {
@@ -1722,7 +1748,7 @@
 				DABB8F361F973ADE002AD581 /* MyHomeScene.sks */,
 				DAD3199F1FBEF4FD00258820 /* GachaScene.sks */,
 				DA4AF9031FCC0D2000B4F9B0 /* OrgolScene.sks */,
-				DABC2C0A1F98769600BA3617 /* Ny */,
+				DABC2C0A1F98769600BA3617 /* CityOfMeow */,
 				DACF75B21F79F96200915446 /* test */,
 			);
 			path = Scenes;
@@ -2201,7 +2227,7 @@
 				DADC529D1F7510DA0033BB28 /* jukebox.png in Resources */,
 				DA4AF81B1FC9148500B4F9B0 /* myhome_screenshot-crop.png in Resources */,
 				DA774C1D1FAFF98800C6A208 /* Ny13.sks in Resources */,
-				DA2707341FAF08F700FE28F5 /* Ny2.sks in Resources */,
+				DA2707341FAF08F700FE28F5 /* CityOfMeow2.sks in Resources */,
 				DA4AF80C1FC90CA100B4F9B0 /* dailybonusScene.sks in Resources */,
 				DA774C831FB0403A00C6A208 /* Furniture 6.png in Resources */,
 				DA4AF8DE1FCC0B2700B4F9B0 /* levelselect_FestivalOfMiau.png in Resources */,
@@ -2301,6 +2327,7 @@
 				DAEE59311F91A1E7006F6269 /* newinterfacetest.sks in Resources */,
 				DA774D091FB5AC5900C6A208 /* Props 14.png in Resources */,
 				DAD319371FBEF18600258820 /* Floor 21.png in Resources */,
+				DA4AF9131FCE4AD400B4F9B0 /* emptycat.png in Resources */,
 				DA4AF81A1FC9148500B4F9B0 /* myhome_customize-crop.png in Resources */,
 				DA774C281FAFF98E00C6A208 /* Ny9.sks in Resources */,
 				DACF75FB1F7C798800915446 /* BubbleShield Inst.png in Resources */,
@@ -2475,6 +2502,7 @@
 				DACF76111F7C798800915446 /* Itemshop Background.png in Resources */,
 				DA774C691FB0403A00C6A208 /* Furniture 13-1.png in Resources */,
 				DACF75D01F7B734D00915446 /* creat cat.png in Resources */,
+				DA4AF90F1FCD3DF400B4F9B0 /* Life4.atlas in Resources */,
 				DADC52AD1F75111F0033BB28 /* mainSetting.png in Resources */,
 				DA33829E1FA86DE40027C30E /* NY_4.png in Resources */,
 				DA4AF8231FC9327000B4F9B0 /* Korea_green kimchi.png in Resources */,
@@ -2496,6 +2524,7 @@
 				DA774C6B1FB0403A00C6A208 /* Furniture 13.png in Resources */,
 				DAD319821FBEF4D000258820 /* CCH_Swish.png in Resources */,
 				DA774C8B1FB0403A00C6A208 /* Furniture 9-2.png in Resources */,
+				DA4AF90C1FCD3DF400B4F9B0 /* Life3.atlas in Resources */,
 				DA774C271FAFF98E00C6A208 /* Ny8.sks in Resources */,
 				DA774C7D1FB0403A00C6A208 /* Furniture 4.png in Resources */,
 				DAD0B7BA1F9DD12200AC8BE1 /* customizing_usemypicture.png in Resources */,
@@ -2571,6 +2600,7 @@
 				DAF499761F7F7127008CD2F6 /* conformityFont.ttf in Resources */,
 				DA3382A91FA86DE40027C30E /* NY_map_11.png in Resources */,
 				DA774C821FB0403A00C6A208 /* Furniture 6-2.png in Resources */,
+				DA4AF90E1FCD3DF400B4F9B0 /* Life2.atlas in Resources */,
 				DA774D181FB5AC5900C6A208 /* Props 26.png in Resources */,
 				DAD319431FBEF18600258820 /* Floor 32.png in Resources */,
 				DA774D341FB5AC5900C6A208 /* Props 8.png in Resources */,
@@ -2579,7 +2609,7 @@
 				DA774C771FB0403A00C6A208 /* Furniture 2.png in Resources */,
 				DAF499671F7CB78E008CD2F6 /* FluufyTail_big.png in Resources */,
 				DACF75B91F79F96200915446 /* MainMenuScene.sks in Resources */,
-				DABC2C181F9876D600BA3617 /* Ny1.sks in Resources */,
+				DABC2C181F9876D600BA3617 /* CityOfMeow1.sks in Resources */,
 				DAD3194E1FBEF18600258820 /* Floor 9.png in Resources */,
 				DACF75F91F7C798800915446 /* BadassPaw Inst.png in Resources */,
 				DA774D101FB5AC5900C6A208 /* Props 2-2.png in Resources */,
@@ -2589,7 +2619,7 @@
 				DADC529E1F7510DA0033BB28 /* main screen.png in Resources */,
 				DA774CC81FB5175800C6A208 /* meowshop-6-goldcoin.png in Resources */,
 				DAD319381FBEF18600258820 /* Floor 22.png in Resources */,
-				DAF02F561FAF22870002B2F4 /* Ny3.sks in Resources */,
+				DAF02F561FAF22870002B2F4 /* CityOfMeow3.sks in Resources */,
 				DA774C6D1FB0403A00C6A208 /* Furniture 14-2.png in Resources */,
 				DACF76071F7C798800915446 /* InstantFish.png in Resources */,
 				DA774D2E1FB5AC5900C6A208 /* Props 6.png in Resources */,
@@ -2613,6 +2643,7 @@
 				DACF75BC1F79F96200915446 /* map test.sks in Resources */,
 				DA774C8A1FB0403A00C6A208 /* Furniture 9-1.png in Resources */,
 				DAD3198A1FBEF4D000258820 /* CCH_Swish_3_3.png in Resources */,
+				DA4AF90D1FCD3DF400B4F9B0 /* Life1.atlas in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -2640,6 +2671,7 @@
 				DACF75A91F79F92100915446 /* MainMenuScene.swift in Sources */,
 				DACF759C1F79F90400915446 /* GameManager.swift in Sources */,
 				DA3382BA1FA87E8A0027C30E /* ShopItem.swift in Sources */,
+				DA4AF9111FCD433600B4F9B0 /* LifeEngine.swift in Sources */,
 				DACF75AA1F79F92100915446 /* MapScene.swift in Sources */,
 				DA4AF9061FCC0D6400B4F9B0 /* OrgolScene.swift in Sources */,
 				DACF75AC1F79F92C00915446 /* CollectionTable.swift in Sources */,

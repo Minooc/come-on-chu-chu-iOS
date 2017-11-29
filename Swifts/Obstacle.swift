@@ -70,8 +70,8 @@ class Obstacle: SKSpriteNode {
 
     
     func animateObject() {
-        initializePlayerAndAnimations(atlasName: "NY_obj.atlas", prefix: "obj_NY1_", timePerFrame: 0.08)
-        self.run(SKAction.repeatForever(animateObstacleAction), withKey: "Animate")
+//        initializePlayerAndAnimations(atlasName: "NY_obj.atlas", prefix: "obj_NY1_", timePerFrame: 0.08)
+//        self.run(SKAction.repeatForever(animateObstacleAction), withKey: "Animate")
     }
     
     func flying() {
