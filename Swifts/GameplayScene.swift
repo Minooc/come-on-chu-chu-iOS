@@ -101,6 +101,8 @@ class GameplayScene: SKScene, SKPhysicsContactDelegate  {
         bombSpeedX = 0
         bombSpeedY = 0
         
+        print("Current Location is \(currentLocation)")
+        
 
     }
     
@@ -111,16 +113,57 @@ class GameplayScene: SKScene, SKPhysicsContactDelegate  {
         managePlayer()
         
         for ob in obstacles {
-            
+            if ob.name == "WalkingObstacle" {
+                if (ob.position.x < (player?.position.x)! + 1200) {
+                    ob.walking()
+                }
+            }
             if ob.name == "FlyingObstacle" {
                  if (ob.position.x < (player?.position.x)! + 1200) {
                         ob.flying()
                     }
             }
             
+            if ob.name == "UpFlyingObstacle" {
+                if (ob.position.x < (player?.position.x)! + 1000) {
+                    ob.upFlying()
+                }
+            }
+            
+            if ob.name == "DownFlyingObstacle" {
+                if (ob.position.x < (player?.position.x)! + 1000) {
+                    ob.downFlying()
+                }
+            }
+            
+            if ob.name == "DroppingObstacle" {
+                if (ob.position.x < (player?.position.x)! + 1000) {
+                    ob.dropping()
+                }
+            }
+            
             if ob.name == "RisingObstacle" {
                 if (ob.position.x < (player?.position.x)! + 500) {
                     ob.rising()
+                }
+            }
+            
+            if ob.name == "ChaseObstacle" {
+                if (ob.position.x < (player?.position.x)! + 1100) {
+                    
+                    if (ob.position.x > (player?.position.x)! + 1095) {
+                        
+                        let playerX = (player?.position.x)!
+                        let playerY = (player?.position.y)!
+                        
+                        bombSpeedX = (playerX - ob.position.x)/100
+                        bombSpeedY = (playerY - ob.position.y)/100
+                        
+                        
+                    }
+                    
+                    ob.position.x += bombSpeedX
+                    ob.position.y += bombSpeedY
                 }
             }
             
@@ -134,19 +177,18 @@ class GameplayScene: SKScene, SKPhysicsContactDelegate  {
                         let playerX = (player?.position.x)!
                         let playerY = (player?.position.y)!
                         
-                        bombSpeedX = (playerX - ob.position.x)/130
-                        bombSpeedY = (playerY - ob.position.y)/130
+                        bombSpeedX = (playerX - ob.position.x)/100
+                        bombSpeedY = (playerY - ob.position.y)/100
                         
                         ob.preExplode()
                     }
                     
                     if (ob.position.x > (player?.position.x)! + 900 && ob.position.x < (player?.position.x)! + 920) {
-                        print("CALLED THE EXPLODE FUNCTION")
                         ob.bombExplode()
                     }
                     
 
-                    if (ob.position.x > (player?.position.x)! - 5) {
+                    if (ob.position.x > (player?.position.x)! - 100) {
                         ob.position.x += bombSpeedX
                         ob.position.y += bombSpeedY
 
@@ -154,7 +196,6 @@ class GameplayScene: SKScene, SKPhysicsContactDelegate  {
                     
                 
                 }
-                
 
                 
             }
@@ -170,6 +211,8 @@ class GameplayScene: SKScene, SKPhysicsContactDelegate  {
                 }
             }
             
+            
+         // Remove obstacle that passed
             if (ob.position.x <  (player?.position.x)! - 1200) {
                 let indexToDelete = obstacles.index(of: ob)
                 ob.removeFromParent()
@@ -216,7 +259,6 @@ class GameplayScene: SKScene, SKPhysicsContactDelegate  {
 //        nextScene?.enumerateChildNodes(withName: "//*", using: { (node, stop) -> Void in
         
 
-//        if (node.name == "background") {
         if let node = nextScene?.childNode(withName: "background") {
             let nextNode = node.copy() as! SKSpriteNode
             nextNode.position.x += self.background.size.width + backgroundLengthSum
@@ -228,8 +270,6 @@ class GameplayScene: SKScene, SKPhysicsContactDelegate  {
 
         }
 
-            
-//        })
         
         backgroundLengthSum = backgroundLengthSum + previousBackground.size.width
 
@@ -238,27 +278,82 @@ class GameplayScene: SKScene, SKPhysicsContactDelegate  {
     }
     
     func removePreviousLevel() {
-//        for child in previousBackground.children as [SKNode] {
-//            child.removeFromParent()
-//        }
+
         previousBackground.removeFromParent()
-        print("removed")
         loaded = false
     }
     
     func setObstacles() {
         
         while(true) {
-            if let obs = self.childNode(withName: "obstacle") as? Obstacle {
-                obs.animateObject()
-                obs.name = "GeneralObstacle"
+            if let obs = self.childNode(withName: "princess_cat") as? Obstacle {
+                obs.animateObject(atlasName: "England_princess.atlas", prefix: "England_princess_cat_", timePerFrame: 0.16)
+                obs.name = "StandingObstacle"
                 obstacles.append(obs)
             }
+            else if let obs = self.childNode(withName: "pie") as? Obstacle {
+                obs.animateObject(atlasName: "England_pie.atlas", prefix: "England_pie_", timePerFrame: 0.21)
+                obs.name = "StandingObstacle"
+                obstacles.append(obs)
+                
+            }
+            else if let obs = self.childNode(withName: "umbrella cat") as? Obstacle {
+                obs.animateObject(atlasName: "England_umbrella.atlas", prefix: "England_umbrella_", timePerFrame: 0.14)
+                obs.name = "DroppingObstacle"
+                obstacles.append(obs)
+                
+            }
+            
+            else if let obs = self.childNode(withName: "director_cat") as? Obstacle {
+                obs.animateObject(atlasName: "LA_director.atlas", prefix: "LA_director_cat_", timePerFrame: 0.12)
+                obs.name = "FlyingObstacle"
+                obstacles.append(obs)
+                
+            }
+                
+            else if let obs = self.childNode(withName: "dancing_cat") as? Obstacle {
+                obs.animateObject(atlasName: "Spain_dancing_cat.atlas", prefix: "Spain_dancing_cat_", timePerFrame: 0.16)
+                obs.name = "WalkingObstacle"
+                obstacles.append(obs)
+                
+            }
+                
+            else if let obs = self.childNode(withName: "cat_man") as? Obstacle {
+                obs.animateObject(atlasName: "Spain_catman.atlas", prefix: "Spain_catman_", timePerFrame: 0.05)
+                obs.name = "WalkingObstacle"
+                obstacles.append(obs)
+                
+            }
+              
+            else if let obs = self.childNode(withName: "tomato") as? Obstacle {
+                
+                obs.name = "ChaseObstacle"
+                obstacles.append(obs)
+                
+            }
+               
+            else if let obs = self.childNode(withName: "dropping") as? Obstacle {
+                obs.name = "DroppingObstacle"
+                obstacles.append(obs)
+                
+            }
+                
             else if let obs = self.childNode(withName: "flying") as? Obstacle {
                 obs.name = "FlyingObstacle"
                 obstacles.append(obs)
 
             }
+            else if let obs = self.childNode(withName: "upflying") as? Obstacle {
+                obs.name = "UpFlyingObstacle"
+                obstacles.append(obs)
+                
+            }
+            else if let obs = self.childNode(withName: "downflying") as? Obstacle {
+                obs.name = "DownFlyingObstacle"
+                obstacles.append(obs)
+                
+            }
+                
             else if let obs = self.childNode(withName: "rising") as? Obstacle {
                 obs.name = "RisingObstacle"
                 obstacles.append(obs)
@@ -282,6 +377,7 @@ class GameplayScene: SKScene, SKPhysicsContactDelegate  {
         
 
     }
+    
     
     func labelLocater() {
         scoreText = SKLabelNode(fontNamed: "Conformity")
@@ -447,7 +543,7 @@ class GameplayScene: SKScene, SKPhysicsContactDelegate  {
             secondBody.node?.removeFromParent()
             gotFishTail = true
             
-        } else if firstBody.node?.name == "Player" && (secondBody.node?.name == "GeneralObsatcle" || secondBody.node?.name == "FlyingObstacle" || secondBody.node?.name == "RisingObstacle" || secondBody.node?.name == "AssObstacle" || secondBody.node?.name == "BombObstacle") {
+        } else if firstBody.node?.name == "Player" && (secondBody.node?.name == "StandingObstacle" || secondBody.node?.name == "FlyingObstacle" || secondBody.node?.name == "WalkingObstacle" || secondBody.node?.name == "UpFlyingObstacle" || secondBody.node?.name == "DownFlyingObstacle" || secondBody.node?.name == "DroppingObstacle" || secondBody.node?.name == "RisingObstacle" || secondBody.node?.name == "AssObstacle" || secondBody.node?.name == "BombObstacle" || secondBody.node?.name == "ChaseObstacle") {
             //  secondBody.node?.name == "GeneralObstacle"
             if (playerCanGetHit) {
                 print("You got hit")

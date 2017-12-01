@@ -69,13 +69,32 @@ class Obstacle: SKSpriteNode {
     }
 
     
-    func animateObject() {
-//        initializePlayerAndAnimations(atlasName: "NY_obj.atlas", prefix: "obj_NY1_", timePerFrame: 0.08)
-//        self.run(SKAction.repeatForever(animateObstacleAction), withKey: "Animate")
+    func animateObject(atlasName : String, prefix: String, timePerFrame: TimeInterval) {
+        initializePlayerAndAnimations(atlasName: atlasName, prefix: prefix, timePerFrame: timePerFrame)
+        self.run(SKAction.repeatForever(animateObstacleAction), withKey: "Animate")
+    }
+    
+    
+    func walking() {
+        self.position.x -= 3
     }
     
     func flying() {
         self.position.x -= 7
+    }
+    
+    func upFlying() {
+        self.position.x -= 5
+        self.position.y += 5
+    }
+    
+    func downFlying() {
+        self.position.x -= 5
+        self.position.y -= 5
+    }
+    
+    func dropping() {
+        self.position.y -= 3
     }
     
     func rising() {
@@ -92,7 +111,7 @@ class Obstacle: SKSpriteNode {
     func preExplode() {
         if (preExploded == false) {
             preExploded = true
-            preExplosion(atlasName: "Japan_WasabiBomb.atlas", prefix: "WasabiBomb", timePerFrame: 0.3)
+            preExplosion(atlasName: "Japan_WasabiBomb.atlas", prefix: "WasabiBomb", timePerFrame: 0.2)
             self.run(animateObstacleAction, withKey: "Animate")
 
         }
