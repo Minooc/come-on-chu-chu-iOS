@@ -11,6 +11,29 @@
 		DA0432CE1F6AF386002EF8F6 /* collectable.png in Resources */ = {isa = PBXBuildFile; fileRef = DA0432CC1F6AF386002EF8F6 /* collectable.png */; };
 		DA0437AF1FD17D74008F596E /* Spain_dancing_cat.atlas in Resources */ = {isa = PBXBuildFile; fileRef = DA0437AD1FD17D74008F596E /* Spain_dancing_cat.atlas */; };
 		DA0437B01FD17D74008F596E /* Spain_catman.atlas in Resources */ = {isa = PBXBuildFile; fileRef = DA0437AE1FD17D74008F596E /* Spain_catman.atlas */; };
+		DA0437B31FD24151008F596E /* itemCheck_first-crop.png in Resources */ = {isa = PBXBuildFile; fileRef = DA0437B11FD24150008F596E /* itemCheck_first-crop.png */; };
+		DA0437B41FD24151008F596E /* itemCheck_second-crop.png in Resources */ = {isa = PBXBuildFile; fileRef = DA0437B21FD24151008F596E /* itemCheck_second-crop.png */; };
+		DA0437B61FD24270008F596E /* itemshopscenetest.sks in Resources */ = {isa = PBXBuildFile; fileRef = DA0437B51FD24270008F596E /* itemshopscenetest.sks */; };
+		DA0437BE1FD24CB8008F596E /* itemCheck_first-part.png in Resources */ = {isa = PBXBuildFile; fileRef = DA0437BD1FD24CB8008F596E /* itemCheck_first-part.png */; };
+		DA0437C01FD24D14008F596E /* itemCheck_second-part.png in Resources */ = {isa = PBXBuildFile; fileRef = DA0437BF1FD24D13008F596E /* itemCheck_second-part.png */; };
+		DA0437C31FD26C72008F596E /* myhome_designShop-crop.png in Resources */ = {isa = PBXBuildFile; fileRef = DA0437C11FD26C72008F596E /* myhome_designShop-crop.png */; };
+		DA0437C41FD26C72008F596E /* myhome_designShop.png in Resources */ = {isa = PBXBuildFile; fileRef = DA0437C21FD26C72008F596E /* myhome_designShop.png */; };
+		DA0437C71FD26C86008F596E /* designshop_background.png in Resources */ = {isa = PBXBuildFile; fileRef = DA0437C61FD26C86008F596E /* designshop_background.png */; };
+		DA0437D21FD26FDE008F596E /* collectableBar.png in Resources */ = {isa = PBXBuildFile; fileRef = DA0437CF1FD26FDD008F596E /* collectableBar.png */; };
+		DA0437D31FD26FDE008F596E /* settingIcon.png in Resources */ = {isa = PBXBuildFile; fileRef = DA0437D01FD26FDD008F596E /* settingIcon.png */; };
+		DA0437D41FD26FDE008F596E /* itemBar.png in Resources */ = {isa = PBXBuildFile; fileRef = DA0437D11FD26FDE008F596E /* itemBar.png */; };
+		DA0437D81FD26FEB008F596E /* mainItemBar.png in Resources */ = {isa = PBXBuildFile; fileRef = DA0437D51FD26FEB008F596E /* mainItemBar.png */; };
+		DA0437D91FD26FEB008F596E /* mainCollectableBar.png in Resources */ = {isa = PBXBuildFile; fileRef = DA0437D61FD26FEB008F596E /* mainCollectableBar.png */; };
+		DA0437DA1FD26FEB008F596E /* mainSetting.png in Resources */ = {isa = PBXBuildFile; fileRef = DA0437D71FD26FEB008F596E /* mainSetting.png */; };
+		DA0437DC1FD2708B008F596E /* backToMenu.png in Resources */ = {isa = PBXBuildFile; fileRef = DA0437DB1FD2708B008F596E /* backToMenu.png */; };
+		DA0437DF1FD275C1008F596E /* GACHA_Location_Reference1.png in Resources */ = {isa = PBXBuildFile; fileRef = DA0437DD1FD275C0008F596E /* GACHA_Location_Reference1.png */; };
+		DA0437E01FD275C1008F596E /* GACHA_Location_Reference2.png in Resources */ = {isa = PBXBuildFile; fileRef = DA0437DE1FD275C0008F596E /* GACHA_Location_Reference2.png */; };
+		DA0437E51FD27607008F596E /* CCH_Swish.png in Resources */ = {isa = PBXBuildFile; fileRef = DA0437E21FD27607008F596E /* CCH_Swish.png */; };
+		DA0437E71FD27607008F596E /* CCH_Swish_3.atlas in Resources */ = {isa = PBXBuildFile; fileRef = DA0437E41FD27607008F596E /* CCH_Swish_3.atlas */; };
+		DA0437E91FD2792D008F596E /* GachaObjects.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA0437E81FD2792D008F596E /* GachaObjects.swift */; };
+		DA0437EC1FD279E9008F596E /* Feed_Rare.atlas in Resources */ = {isa = PBXBuildFile; fileRef = DA0437EA1FD279E8008F596E /* Feed_Rare.atlas */; };
+		DA0437F11FD27C88008F596E /* CCH_Swish_2.atlas in Resources */ = {isa = PBXBuildFile; fileRef = DA0437F01FD27C88008F596E /* CCH_Swish_2.atlas */; };
+		DA0437F61FD2804C008F596E /* Feed_Super_Rare.atlas in Resources */ = {isa = PBXBuildFile; fileRef = DA0437F41FD27F7E008F596E /* Feed_Super_Rare.atlas */; };
 		DA27070D1FAC325700FE28F5 /* meowshop-1-watch-video.png in Resources */ = {isa = PBXBuildFile; fileRef = DA2706FA1FAC325700FE28F5 /* meowshop-1-watch-video.png */; };
 		DA27070E1FAC325700FE28F5 /* meowshop-2-cool-tuna.png in Resources */ = {isa = PBXBuildFile; fileRef = DA2706FB1FAC325700FE28F5 /* meowshop-2-cool-tuna.png */; };
 		DA27070F1FAC325700FE28F5 /* meowshop-3-1000tuna.png in Resources */ = {isa = PBXBuildFile; fileRef = DA2706FC1FAC325700FE28F5 /* meowshop-3-1000tuna.png */; };
@@ -26,7 +49,6 @@
 		DA27071C1FAC325700FE28F5 /* meowshop-special.png in Resources */ = {isa = PBXBuildFile; fileRef = DA2707091FAC325700FE28F5 /* meowshop-special.png */; };
 		DA27071D1FAC325700FE28F5 /* Special package button.png in Resources */ = {isa = PBXBuildFile; fileRef = DA27070A1FAC325700FE28F5 /* Special package button.png */; };
 		DA27071E1FAC325700FE28F5 /* Ultra booster button.png in Resources */ = {isa = PBXBuildFile; fileRef = DA27070B1FAC325700FE28F5 /* Ultra booster button.png */; };
-		DA2707201FAC326C00FE28F5 /* meowshoptest.sks in Resources */ = {isa = PBXBuildFile; fileRef = DA27071F1FAC326C00FE28F5 /* meowshoptest.sks */; };
 		DA2707221FAC32C500FE28F5 /* Meowshop-Background.png in Resources */ = {isa = PBXBuildFile; fileRef = DA2707211FAC32C500FE28F5 /* Meowshop-Background.png */; };
 		DA2707241FAC36CD00FE28F5 /* MeowshopTable.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA2707231FAC36CD00FE28F5 /* MeowshopTable.swift */; };
 		DA27072E1FAD96D600FE28F5 /* ultrabooster-1.png in Resources */ = {isa = PBXBuildFile; fileRef = DA2707281FAD96D600FE28F5 /* ultrabooster-1.png */; };
@@ -112,8 +134,6 @@
 		DA4AF93D1FD11D4100B4F9B0 /* NY_3.png in Resources */ = {isa = PBXBuildFile; fileRef = DA4AF9381FD11D4000B4F9B0 /* NY_3.png */; };
 		DA4AF93E1FD11D4100B4F9B0 /* NY_4.png in Resources */ = {isa = PBXBuildFile; fileRef = DA4AF9391FD11D4000B4F9B0 /* NY_4.png */; };
 		DA4AF93F1FD11D4100B4F9B0 /* NY_5.png in Resources */ = {isa = PBXBuildFile; fileRef = DA4AF93A1FD11D4000B4F9B0 /* NY_5.png */; };
-		DA4AF9431FD1221500B4F9B0 /* itemCheck_second.png in Resources */ = {isa = PBXBuildFile; fileRef = DA4AF9411FD1221400B4F9B0 /* itemCheck_second.png */; };
-		DA4AF9441FD1221500B4F9B0 /* itemCheck_first.png in Resources */ = {isa = PBXBuildFile; fileRef = DA4AF9421FD1221400B4F9B0 /* itemCheck_first.png */; };
 		DA4AF9621FD1230D00B4F9B0 /* daytime-superrareSelected.png in Resources */ = {isa = PBXBuildFile; fileRef = DA4AF9481FD1230D00B4F9B0 /* daytime-superrareSelected.png */; };
 		DA4AF9631FD1230D00B4F9B0 /* daytime-mycatSelected.png in Resources */ = {isa = PBXBuildFile; fileRef = DA4AF9491FD1230D00B4F9B0 /* daytime-mycatSelected.png */; };
 		DA4AF9641FD1230D00B4F9B0 /* daytime-normalSelected.png in Resources */ = {isa = PBXBuildFile; fileRef = DA4AF94A1FD1230D00B4F9B0 /* daytime-normalSelected.png */; };
@@ -121,7 +141,6 @@
 		DA4AF9661FD1230D00B4F9B0 /* daytime-rareSelected.png in Resources */ = {isa = PBXBuildFile; fileRef = DA4AF94C1FD1230D00B4F9B0 /* daytime-rareSelected.png */; };
 		DA4AF9671FD1230D00B4F9B0 /* daytime-default.png in Resources */ = {isa = PBXBuildFile; fileRef = DA4AF94D1FD1230D00B4F9B0 /* daytime-default.png */; };
 		DA4AF9681FD1230D00B4F9B0 /* switch off.png in Resources */ = {isa = PBXBuildFile; fileRef = DA4AF94F1FD1230D00B4F9B0 /* switch off.png */; };
-		DA4AF9691FD1230D00B4F9B0 /* backToMenu.png in Resources */ = {isa = PBXBuildFile; fileRef = DA4AF9501FD1230D00B4F9B0 /* backToMenu.png */; };
 		DA4AF96A1FD1230D00B4F9B0 /* nighttime-normalSelected.png in Resources */ = {isa = PBXBuildFile; fileRef = DA4AF9531FD1230D00B4F9B0 /* nighttime-normalSelected.png */; };
 		DA4AF96B1FD1230D00B4F9B0 /* nighttime-default.png in Resources */ = {isa = PBXBuildFile; fileRef = DA4AF9541FD1230D00B4F9B0 /* nighttime-default.png */; };
 		DA4AF96C1FD1230D00B4F9B0 /* nighttime-mycatSelected.png in Resources */ = {isa = PBXBuildFile; fileRef = DA4AF9551FD1230D00B4F9B0 /* nighttime-mycatSelected.png */; };
@@ -332,13 +351,9 @@
 		DACF76091F7C798800915446 /* RandomBox.png in Resources */ = {isa = PBXBuildFile; fileRef = DACF75E81F7C798800915446 /* RandomBox.png */; };
 		DACF760A1F7C798800915446 /* SlipperyLotion Inst.png in Resources */ = {isa = PBXBuildFile; fileRef = DACF75E91F7C798800915446 /* SlipperyLotion Inst.png */; };
 		DACF760B1F7C798800915446 /* SlipperyLotion.png in Resources */ = {isa = PBXBuildFile; fileRef = DACF75EA1F7C798800915446 /* SlipperyLotion.png */; };
-		DACF760C1F7C798800915446 /* Boost Item Background.png in Resources */ = {isa = PBXBuildFile; fileRef = DACF75EB1F7C798800915446 /* Boost Item Background.png */; };
-		DACF760D1F7C798800915446 /* Boooost Button.png in Resources */ = {isa = PBXBuildFile; fileRef = DACF75EE1F7C798800915446 /* Boooost Button.png */; };
 		DACF760E1F7C798800915446 /* Boooost Buy Panel.png in Resources */ = {isa = PBXBuildFile; fileRef = DACF75EF1F7C798800915446 /* Boooost Buy Panel.png */; };
 		DACF760F1F7C798800915446 /* Travel Button.png in Resources */ = {isa = PBXBuildFile; fileRef = DACF75F01F7C798800915446 /* Travel Button.png */; };
-		DACF76101F7C798800915446 /* Upgrade Button.png in Resources */ = {isa = PBXBuildFile; fileRef = DACF75F21F7C798800915446 /* Upgrade Button.png */; };
 		DACF76111F7C798800915446 /* Itemshop Background.png in Resources */ = {isa = PBXBuildFile; fileRef = DACF75F31F7C798800915446 /* Itemshop Background.png */; };
-		DACF76121F7C798800915446 /* Upgrade Item Background.png in Resources */ = {isa = PBXBuildFile; fileRef = DACF75F41F7C798800915446 /* Upgrade Item Background.png */; };
 		DACF76141F7C799E00915446 /* ItemShopScene.sks in Resources */ = {isa = PBXBuildFile; fileRef = DACF76131F7C799E00915446 /* ItemShopScene.sks */; };
 		DACF76161F7C7A2200915446 /* ItemShopScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = DACF76151F7C7A2200915446 /* ItemShopScene.swift */; };
 		DAD0B7AB1F9DCCFD00AC8BE1 /* customizingScene.sks in Resources */ = {isa = PBXBuildFile; fileRef = DAD0B7AA1F9DCCFD00AC8BE1 /* customizingScene.sks */; };
@@ -401,31 +416,7 @@
 		DAD3195C1FBEF18600258820 /* Wallpaper 7.png in Resources */ = {isa = PBXBuildFile; fileRef = DAD319271FBEF18600258820 /* Wallpaper 7.png */; };
 		DAD3195D1FBEF18600258820 /* Wallpaper 8.png in Resources */ = {isa = PBXBuildFile; fileRef = DAD319281FBEF18600258820 /* Wallpaper 8.png */; };
 		DAD3195E1FBEF18600258820 /* Wallpaper 9.png in Resources */ = {isa = PBXBuildFile; fileRef = DAD319291FBEF18600258820 /* Wallpaper 9.png */; };
-		DAD319821FBEF4D000258820 /* CCH_Swish.png in Resources */ = {isa = PBXBuildFile; fileRef = DAD319621FBEF4D000258820 /* CCH_Swish.png */; };
-		DAD319831FBEF4D000258820 /* CCH_Swish_2_0.png in Resources */ = {isa = PBXBuildFile; fileRef = DAD319631FBEF4D000258820 /* CCH_Swish_2_0.png */; };
-		DAD319841FBEF4D000258820 /* CCH_Swish_2_1.png in Resources */ = {isa = PBXBuildFile; fileRef = DAD319641FBEF4D000258820 /* CCH_Swish_2_1.png */; };
-		DAD319851FBEF4D000258820 /* CCH_Swish_2_2.png in Resources */ = {isa = PBXBuildFile; fileRef = DAD319651FBEF4D000258820 /* CCH_Swish_2_2.png */; };
-		DAD319861FBEF4D000258820 /* CCH_Swish_2_3.png in Resources */ = {isa = PBXBuildFile; fileRef = DAD319661FBEF4D000258820 /* CCH_Swish_2_3.png */; };
-		DAD319871FBEF4D000258820 /* CCH_Swish_2_4.png in Resources */ = {isa = PBXBuildFile; fileRef = DAD319671FBEF4D000258820 /* CCH_Swish_2_4.png */; };
-		DAD319881FBEF4D000258820 /* CCH_Swish_3_1.png in Resources */ = {isa = PBXBuildFile; fileRef = DAD319681FBEF4D000258820 /* CCH_Swish_3_1.png */; };
-		DAD319891FBEF4D000258820 /* CCH_Swish_3_2.png in Resources */ = {isa = PBXBuildFile; fileRef = DAD319691FBEF4D000258820 /* CCH_Swish_3_2.png */; };
-		DAD3198A1FBEF4D000258820 /* CCH_Swish_3_3.png in Resources */ = {isa = PBXBuildFile; fileRef = DAD3196A1FBEF4D000258820 /* CCH_Swish_3_3.png */; };
-		DAD3198B1FBEF4D000258820 /* CCH_Swish_3_4.png in Resources */ = {isa = PBXBuildFile; fileRef = DAD3196B1FBEF4D000258820 /* CCH_Swish_3_4.png */; };
-		DAD3198C1FBEF4D000258820 /* CCH_Swish_3_5.png in Resources */ = {isa = PBXBuildFile; fileRef = DAD3196C1FBEF4D000258820 /* CCH_Swish_3_5.png */; };
-		DAD3198D1FBEF4D000258820 /* CCH_Swish_3_6.png in Resources */ = {isa = PBXBuildFile; fileRef = DAD3196D1FBEF4D000258820 /* CCH_Swish_3_6.png */; };
-		DAD3198E1FBEF4D000258820 /* CCH_Swish_3_7.png in Resources */ = {isa = PBXBuildFile; fileRef = DAD3196E1FBEF4D000258820 /* CCH_Swish_3_7.png */; };
-		DAD3198F1FBEF4D000258820 /* CCH_Swish_3_8.png in Resources */ = {isa = PBXBuildFile; fileRef = DAD3196F1FBEF4D000258820 /* CCH_Swish_3_8.png */; };
 		DAD319901FBEF4D000258820 /* Clean cat house button.png in Resources */ = {isa = PBXBuildFile; fileRef = DAD319701FBEF4D000258820 /* Clean cat house button.png */; };
-		DAD319911FBEF4D000258820 /* Feed_Rare_1.png in Resources */ = {isa = PBXBuildFile; fileRef = DAD319731FBEF4D000258820 /* Feed_Rare_1.png */; };
-		DAD319921FBEF4D000258820 /* Feed_Rare_2.png in Resources */ = {isa = PBXBuildFile; fileRef = DAD319741FBEF4D000258820 /* Feed_Rare_2.png */; };
-		DAD319931FBEF4D000258820 /* Feed_Rare_3.png in Resources */ = {isa = PBXBuildFile; fileRef = DAD319751FBEF4D000258820 /* Feed_Rare_3.png */; };
-		DAD319941FBEF4D000258820 /* Feed_Rare_4.png in Resources */ = {isa = PBXBuildFile; fileRef = DAD319761FBEF4D000258820 /* Feed_Rare_4.png */; };
-		DAD319951FBEF4D000258820 /* Feed_Super rare_0.png in Resources */ = {isa = PBXBuildFile; fileRef = DAD319781FBEF4D000258820 /* Feed_Super rare_0.png */; };
-		DAD319961FBEF4D000258820 /* Feed_Super rare_1.png in Resources */ = {isa = PBXBuildFile; fileRef = DAD319791FBEF4D000258820 /* Feed_Super rare_1.png */; };
-		DAD319971FBEF4D000258820 /* Feed_Super rare_2.png in Resources */ = {isa = PBXBuildFile; fileRef = DAD3197A1FBEF4D000258820 /* Feed_Super rare_2.png */; };
-		DAD319981FBEF4D000258820 /* Feed_Super rare_3.png in Resources */ = {isa = PBXBuildFile; fileRef = DAD3197B1FBEF4D000258820 /* Feed_Super rare_3.png */; };
-		DAD319991FBEF4D000258820 /* Feed_Super rare_4.png in Resources */ = {isa = PBXBuildFile; fileRef = DAD3197C1FBEF4D000258820 /* Feed_Super rare_4.png */; };
-		DAD3199A1FBEF4D000258820 /* Feed_Super rare_5.png in Resources */ = {isa = PBXBuildFile; fileRef = DAD3197D1FBEF4D000258820 /* Feed_Super rare_5.png */; };
 		DAD3199B1FBEF4D000258820 /* Feed_Common.png in Resources */ = {isa = PBXBuildFile; fileRef = DAD3197E1FBEF4D000258820 /* Feed_Common.png */; };
 		DAD3199C1FBEF4D000258820 /* Feed button.png in Resources */ = {isa = PBXBuildFile; fileRef = DAD3197F1FBEF4D000258820 /* Feed button.png */; };
 		DAD3199D1FBEF4D000258820 /* Gacha_background.png in Resources */ = {isa = PBXBuildFile; fileRef = DAD319801FBEF4D000258820 /* Gacha_background.png */; };
@@ -437,7 +428,6 @@
 		DADC52871F7510550033BB28 /* check sign.png in Resources */ = {isa = PBXBuildFile; fileRef = DADC52811F7510550033BB28 /* check sign.png */; };
 		DADC52881F7510550033BB28 /* default setting screen.png in Resources */ = {isa = PBXBuildFile; fileRef = DADC52821F7510550033BB28 /* default setting screen.png */; };
 		DADC52891F7510550033BB28 /* facebookBtn.png in Resources */ = {isa = PBXBuildFile; fileRef = DADC52831F7510550033BB28 /* facebookBtn.png */; };
-		DADC528A1F7510550033BB28 /* instruction.png in Resources */ = {isa = PBXBuildFile; fileRef = DADC52841F7510550033BB28 /* instruction.png */; };
 		DADC528B1F7510550033BB28 /* selectionBox.png in Resources */ = {isa = PBXBuildFile; fileRef = DADC52851F7510550033BB28 /* selectionBox.png */; };
 		DADC528C1F7510550033BB28 /* Setting Screen.png in Resources */ = {isa = PBXBuildFile; fileRef = DADC52861F7510550033BB28 /* Setting Screen.png */; };
 		DADC52921F7510C10033BB28 /* booster (old).png in Resources */ = {isa = PBXBuildFile; fileRef = DADC528D1F7510C10033BB28 /* booster (old).png */; };
@@ -450,11 +440,8 @@
 		DADC52A01F7510DA0033BB28 /* mainBoard.png in Resources */ = {isa = PBXBuildFile; fileRef = DADC529A1F7510DA0033BB28 /* mainBoard.png */; };
 		DADC52A11F7510DA0033BB28 /* mainCollectionBook.png in Resources */ = {isa = PBXBuildFile; fileRef = DADC529B1F7510DA0033BB28 /* mainCollectionBook.png */; };
 		DADC52A21F7510DA0033BB28 /* mainToHome.png in Resources */ = {isa = PBXBuildFile; fileRef = DADC529C1F7510DA0033BB28 /* mainToHome.png */; };
-		DADC52A91F75111F0033BB28 /* mainCollectableBar.png in Resources */ = {isa = PBXBuildFile; fileRef = DADC52A41F75111F0033BB28 /* mainCollectableBar.png */; };
 		DADC52AA1F75111F0033BB28 /* mainDailyBonus.png in Resources */ = {isa = PBXBuildFile; fileRef = DADC52A51F75111F0033BB28 /* mainDailyBonus.png */; };
-		DADC52AB1F75111F0033BB28 /* mainItemBar.png in Resources */ = {isa = PBXBuildFile; fileRef = DADC52A61F75111F0033BB28 /* mainItemBar.png */; };
 		DADC52AC1F75111F0033BB28 /* mainPresent.png in Resources */ = {isa = PBXBuildFile; fileRef = DADC52A71F75111F0033BB28 /* mainPresent.png */; };
-		DADC52AD1F75111F0033BB28 /* mainSetting.png in Resources */ = {isa = PBXBuildFile; fileRef = DADC52A81F75111F0033BB28 /* mainSetting.png */; };
 		DAEF1E201FA86B6400B888AE /* Social.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DAEF1E1F1FA86B6400B888AE /* Social.framework */; };
 		DAF02F561FAF22870002B2F4 /* CityOfMeow3.sks in Resources */ = {isa = PBXBuildFile; fileRef = DABC2C111F98769600BA3617 /* CityOfMeow3.sks */; };
 		DAF499571F7C8327008CD2F6 /* Travel Button-crop.png in Resources */ = {isa = PBXBuildFile; fileRef = DAF499561F7C8327008CD2F6 /* Travel Button-crop.png */; };
@@ -506,6 +493,29 @@
 		DA0432CC1F6AF386002EF8F6 /* collectable.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = collectable.png; sourceTree = "<group>"; };
 		DA0437AD1FD17D74008F596E /* Spain_dancing_cat.atlas */ = {isa = PBXFileReference; lastKnownFileType = folder.skatlas; path = Spain_dancing_cat.atlas; sourceTree = "<group>"; };
 		DA0437AE1FD17D74008F596E /* Spain_catman.atlas */ = {isa = PBXFileReference; lastKnownFileType = folder.skatlas; path = Spain_catman.atlas; sourceTree = "<group>"; };
+		DA0437B11FD24150008F596E /* itemCheck_first-crop.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "itemCheck_first-crop.png"; sourceTree = "<group>"; };
+		DA0437B21FD24151008F596E /* itemCheck_second-crop.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "itemCheck_second-crop.png"; sourceTree = "<group>"; };
+		DA0437B51FD24270008F596E /* itemshopscenetest.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = itemshopscenetest.sks; sourceTree = "<group>"; };
+		DA0437BD1FD24CB8008F596E /* itemCheck_first-part.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "itemCheck_first-part.png"; sourceTree = "<group>"; };
+		DA0437BF1FD24D13008F596E /* itemCheck_second-part.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "itemCheck_second-part.png"; sourceTree = "<group>"; };
+		DA0437C11FD26C72008F596E /* myhome_designShop-crop.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "myhome_designShop-crop.png"; sourceTree = "<group>"; };
+		DA0437C21FD26C72008F596E /* myhome_designShop.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = myhome_designShop.png; sourceTree = "<group>"; };
+		DA0437C61FD26C86008F596E /* designshop_background.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = designshop_background.png; sourceTree = "<group>"; };
+		DA0437CF1FD26FDD008F596E /* collectableBar.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = collectableBar.png; path = "Assets/General Interface/collectableBar.png"; sourceTree = SOURCE_ROOT; };
+		DA0437D01FD26FDD008F596E /* settingIcon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = settingIcon.png; path = "Assets/General Interface/settingIcon.png"; sourceTree = SOURCE_ROOT; };
+		DA0437D11FD26FDE008F596E /* itemBar.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = itemBar.png; path = "Assets/General Interface/itemBar.png"; sourceTree = SOURCE_ROOT; };
+		DA0437D51FD26FEB008F596E /* mainItemBar.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = mainItemBar.png; path = "Assets/General Interface/mainItemBar.png"; sourceTree = SOURCE_ROOT; };
+		DA0437D61FD26FEB008F596E /* mainCollectableBar.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = mainCollectableBar.png; path = "Assets/General Interface/mainCollectableBar.png"; sourceTree = SOURCE_ROOT; };
+		DA0437D71FD26FEB008F596E /* mainSetting.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = mainSetting.png; path = "Assets/General Interface/mainSetting.png"; sourceTree = SOURCE_ROOT; };
+		DA0437DB1FD2708B008F596E /* backToMenu.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = backToMenu.png; path = "Assets/General Interface/backToMenu.png"; sourceTree = SOURCE_ROOT; };
+		DA0437DD1FD275C0008F596E /* GACHA_Location_Reference1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = GACHA_Location_Reference1.png; sourceTree = "<group>"; };
+		DA0437DE1FD275C0008F596E /* GACHA_Location_Reference2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = GACHA_Location_Reference2.png; sourceTree = "<group>"; };
+		DA0437E21FD27607008F596E /* CCH_Swish.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = CCH_Swish.png; sourceTree = "<group>"; };
+		DA0437E41FD27607008F596E /* CCH_Swish_3.atlas */ = {isa = PBXFileReference; lastKnownFileType = folder.skatlas; path = CCH_Swish_3.atlas; sourceTree = "<group>"; };
+		DA0437E81FD2792D008F596E /* GachaObjects.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = GachaObjects.swift; path = Swifts/GachaObjects.swift; sourceTree = "<group>"; };
+		DA0437EA1FD279E8008F596E /* Feed_Rare.atlas */ = {isa = PBXFileReference; lastKnownFileType = folder.skatlas; path = Feed_Rare.atlas; sourceTree = "<group>"; };
+		DA0437F01FD27C88008F596E /* CCH_Swish_2.atlas */ = {isa = PBXFileReference; lastKnownFileType = folder.skatlas; path = CCH_Swish_2.atlas; sourceTree = "<group>"; };
+		DA0437F41FD27F7E008F596E /* Feed_Super_Rare.atlas */ = {isa = PBXFileReference; lastKnownFileType = folder.skatlas; path = Feed_Super_Rare.atlas; sourceTree = "<group>"; };
 		DA2706FA1FAC325700FE28F5 /* meowshop-1-watch-video.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "meowshop-1-watch-video.png"; sourceTree = "<group>"; };
 		DA2706FB1FAC325700FE28F5 /* meowshop-2-cool-tuna.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "meowshop-2-cool-tuna.png"; sourceTree = "<group>"; };
 		DA2706FC1FAC325700FE28F5 /* meowshop-3-1000tuna.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "meowshop-3-1000tuna.png"; sourceTree = "<group>"; };
@@ -521,7 +531,6 @@
 		DA2707091FAC325700FE28F5 /* meowshop-special.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "meowshop-special.png"; sourceTree = "<group>"; };
 		DA27070A1FAC325700FE28F5 /* Special package button.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Special package button.png"; sourceTree = "<group>"; };
 		DA27070B1FAC325700FE28F5 /* Ultra booster button.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Ultra booster button.png"; sourceTree = "<group>"; };
-		DA27071F1FAC326C00FE28F5 /* meowshoptest.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = meowshoptest.sks; sourceTree = "<group>"; };
 		DA2707211FAC32C500FE28F5 /* Meowshop-Background.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Meowshop-Background.png"; sourceTree = "<group>"; };
 		DA2707231FAC36CD00FE28F5 /* MeowshopTable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = MeowshopTable.swift; path = Swifts/MeowshopTable.swift; sourceTree = "<group>"; };
 		DA2707281FAD96D600FE28F5 /* ultrabooster-1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "ultrabooster-1.png"; sourceTree = "<group>"; };
@@ -612,8 +621,6 @@
 		DA4AF9381FD11D4000B4F9B0 /* NY_3.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = NY_3.png; sourceTree = "<group>"; };
 		DA4AF9391FD11D4000B4F9B0 /* NY_4.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = NY_4.png; sourceTree = "<group>"; };
 		DA4AF93A1FD11D4000B4F9B0 /* NY_5.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = NY_5.png; sourceTree = "<group>"; };
-		DA4AF9411FD1221400B4F9B0 /* itemCheck_second.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = itemCheck_second.png; sourceTree = "<group>"; };
-		DA4AF9421FD1221400B4F9B0 /* itemCheck_first.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = itemCheck_first.png; sourceTree = "<group>"; };
 		DA4AF9481FD1230D00B4F9B0 /* daytime-superrareSelected.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "daytime-superrareSelected.png"; sourceTree = "<group>"; };
 		DA4AF9491FD1230D00B4F9B0 /* daytime-mycatSelected.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "daytime-mycatSelected.png"; sourceTree = "<group>"; };
 		DA4AF94A1FD1230D00B4F9B0 /* daytime-normalSelected.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "daytime-normalSelected.png"; sourceTree = "<group>"; };
@@ -621,7 +628,6 @@
 		DA4AF94C1FD1230D00B4F9B0 /* daytime-rareSelected.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "daytime-rareSelected.png"; sourceTree = "<group>"; };
 		DA4AF94D1FD1230D00B4F9B0 /* daytime-default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "daytime-default.png"; sourceTree = "<group>"; };
 		DA4AF94F1FD1230D00B4F9B0 /* switch off.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "switch off.png"; sourceTree = "<group>"; };
-		DA4AF9501FD1230D00B4F9B0 /* backToMenu.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = backToMenu.png; sourceTree = "<group>"; };
 		DA4AF9531FD1230D00B4F9B0 /* nighttime-normalSelected.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "nighttime-normalSelected.png"; sourceTree = "<group>"; };
 		DA4AF9541FD1230D00B4F9B0 /* nighttime-default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "nighttime-default.png"; sourceTree = "<group>"; };
 		DA4AF9551FD1230D00B4F9B0 /* nighttime-mycatSelected.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "nighttime-mycatSelected.png"; sourceTree = "<group>"; };
@@ -834,13 +840,9 @@
 		DACF75E81F7C798800915446 /* RandomBox.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = RandomBox.png; sourceTree = "<group>"; };
 		DACF75E91F7C798800915446 /* SlipperyLotion Inst.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "SlipperyLotion Inst.png"; sourceTree = "<group>"; };
 		DACF75EA1F7C798800915446 /* SlipperyLotion.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = SlipperyLotion.png; sourceTree = "<group>"; };
-		DACF75EB1F7C798800915446 /* Boost Item Background.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Boost Item Background.png"; sourceTree = "<group>"; };
-		DACF75EE1F7C798800915446 /* Boooost Button.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Boooost Button.png"; sourceTree = "<group>"; };
 		DACF75EF1F7C798800915446 /* Boooost Buy Panel.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Boooost Buy Panel.png"; sourceTree = "<group>"; };
 		DACF75F01F7C798800915446 /* Travel Button.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Travel Button.png"; sourceTree = "<group>"; };
-		DACF75F21F7C798800915446 /* Upgrade Button.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Upgrade Button.png"; sourceTree = "<group>"; };
 		DACF75F31F7C798800915446 /* Itemshop Background.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Itemshop Background.png"; sourceTree = "<group>"; };
-		DACF75F41F7C798800915446 /* Upgrade Item Background.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Upgrade Item Background.png"; sourceTree = "<group>"; };
 		DACF76131F7C799E00915446 /* ItemShopScene.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = ItemShopScene.sks; sourceTree = "<group>"; };
 		DACF76151F7C7A2200915446 /* ItemShopScene.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ItemShopScene.swift; path = Swifts/ItemShopScene.swift; sourceTree = "<group>"; };
 		DAD0B7AA1F9DCCFD00AC8BE1 /* customizingScene.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = customizingScene.sks; sourceTree = "<group>"; };
@@ -903,31 +905,7 @@
 		DAD319271FBEF18600258820 /* Wallpaper 7.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Wallpaper 7.png"; sourceTree = "<group>"; };
 		DAD319281FBEF18600258820 /* Wallpaper 8.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Wallpaper 8.png"; sourceTree = "<group>"; };
 		DAD319291FBEF18600258820 /* Wallpaper 9.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Wallpaper 9.png"; sourceTree = "<group>"; };
-		DAD319621FBEF4D000258820 /* CCH_Swish.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = CCH_Swish.png; sourceTree = "<group>"; };
-		DAD319631FBEF4D000258820 /* CCH_Swish_2_0.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = CCH_Swish_2_0.png; sourceTree = "<group>"; };
-		DAD319641FBEF4D000258820 /* CCH_Swish_2_1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = CCH_Swish_2_1.png; sourceTree = "<group>"; };
-		DAD319651FBEF4D000258820 /* CCH_Swish_2_2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = CCH_Swish_2_2.png; sourceTree = "<group>"; };
-		DAD319661FBEF4D000258820 /* CCH_Swish_2_3.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = CCH_Swish_2_3.png; sourceTree = "<group>"; };
-		DAD319671FBEF4D000258820 /* CCH_Swish_2_4.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = CCH_Swish_2_4.png; sourceTree = "<group>"; };
-		DAD319681FBEF4D000258820 /* CCH_Swish_3_1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = CCH_Swish_3_1.png; sourceTree = "<group>"; };
-		DAD319691FBEF4D000258820 /* CCH_Swish_3_2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = CCH_Swish_3_2.png; sourceTree = "<group>"; };
-		DAD3196A1FBEF4D000258820 /* CCH_Swish_3_3.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = CCH_Swish_3_3.png; sourceTree = "<group>"; };
-		DAD3196B1FBEF4D000258820 /* CCH_Swish_3_4.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = CCH_Swish_3_4.png; sourceTree = "<group>"; };
-		DAD3196C1FBEF4D000258820 /* CCH_Swish_3_5.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = CCH_Swish_3_5.png; sourceTree = "<group>"; };
-		DAD3196D1FBEF4D000258820 /* CCH_Swish_3_6.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = CCH_Swish_3_6.png; sourceTree = "<group>"; };
-		DAD3196E1FBEF4D000258820 /* CCH_Swish_3_7.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = CCH_Swish_3_7.png; sourceTree = "<group>"; };
-		DAD3196F1FBEF4D000258820 /* CCH_Swish_3_8.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = CCH_Swish_3_8.png; sourceTree = "<group>"; };
 		DAD319701FBEF4D000258820 /* Clean cat house button.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Clean cat house button.png"; sourceTree = "<group>"; };
-		DAD319731FBEF4D000258820 /* Feed_Rare_1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Feed_Rare_1.png; sourceTree = "<group>"; };
-		DAD319741FBEF4D000258820 /* Feed_Rare_2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Feed_Rare_2.png; sourceTree = "<group>"; };
-		DAD319751FBEF4D000258820 /* Feed_Rare_3.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Feed_Rare_3.png; sourceTree = "<group>"; };
-		DAD319761FBEF4D000258820 /* Feed_Rare_4.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Feed_Rare_4.png; sourceTree = "<group>"; };
-		DAD319781FBEF4D000258820 /* Feed_Super rare_0.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Feed_Super rare_0.png"; sourceTree = "<group>"; };
-		DAD319791FBEF4D000258820 /* Feed_Super rare_1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Feed_Super rare_1.png"; sourceTree = "<group>"; };
-		DAD3197A1FBEF4D000258820 /* Feed_Super rare_2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Feed_Super rare_2.png"; sourceTree = "<group>"; };
-		DAD3197B1FBEF4D000258820 /* Feed_Super rare_3.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Feed_Super rare_3.png"; sourceTree = "<group>"; };
-		DAD3197C1FBEF4D000258820 /* Feed_Super rare_4.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Feed_Super rare_4.png"; sourceTree = "<group>"; };
-		DAD3197D1FBEF4D000258820 /* Feed_Super rare_5.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Feed_Super rare_5.png"; sourceTree = "<group>"; };
 		DAD3197E1FBEF4D000258820 /* Feed_Common.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Feed_Common.png; sourceTree = "<group>"; };
 		DAD3197F1FBEF4D000258820 /* Feed button.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Feed button.png"; sourceTree = "<group>"; };
 		DAD319801FBEF4D000258820 /* Gacha_background.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Gacha_background.png; sourceTree = "<group>"; };
@@ -939,7 +917,6 @@
 		DADC52811F7510550033BB28 /* check sign.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "check sign.png"; sourceTree = "<group>"; };
 		DADC52821F7510550033BB28 /* default setting screen.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "default setting screen.png"; sourceTree = "<group>"; };
 		DADC52831F7510550033BB28 /* facebookBtn.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = facebookBtn.png; sourceTree = "<group>"; };
-		DADC52841F7510550033BB28 /* instruction.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = instruction.png; sourceTree = "<group>"; };
 		DADC52851F7510550033BB28 /* selectionBox.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = selectionBox.png; sourceTree = "<group>"; };
 		DADC52861F7510550033BB28 /* Setting Screen.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Setting Screen.png"; sourceTree = "<group>"; };
 		DADC528D1F7510C10033BB28 /* booster (old).png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "booster (old).png"; path = "Assets/Gameplay Interface/booster (old).png"; sourceTree = "<group>"; };
@@ -952,11 +929,8 @@
 		DADC529A1F7510DA0033BB28 /* mainBoard.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = mainBoard.png; path = "Assets/Main Menu/mainBoard.png"; sourceTree = "<group>"; };
 		DADC529B1F7510DA0033BB28 /* mainCollectionBook.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = mainCollectionBook.png; path = "Assets/Main Menu/mainCollectionBook.png"; sourceTree = "<group>"; };
 		DADC529C1F7510DA0033BB28 /* mainToHome.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = mainToHome.png; path = "Assets/Main Menu/mainToHome.png"; sourceTree = "<group>"; };
-		DADC52A41F75111F0033BB28 /* mainCollectableBar.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = mainCollectableBar.png; sourceTree = "<group>"; };
 		DADC52A51F75111F0033BB28 /* mainDailyBonus.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = mainDailyBonus.png; sourceTree = "<group>"; };
-		DADC52A61F75111F0033BB28 /* mainItemBar.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = mainItemBar.png; sourceTree = "<group>"; };
 		DADC52A71F75111F0033BB28 /* mainPresent.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = mainPresent.png; sourceTree = "<group>"; };
-		DADC52A81F75111F0033BB28 /* mainSetting.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = mainSetting.png; sourceTree = "<group>"; };
 		DAEF1E1F1FA86B6400B888AE /* Social.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Social.framework; path = System/Library/Frameworks/Social.framework; sourceTree = SDKROOT; };
 		DAF499561F7C8327008CD2F6 /* Travel Button-crop.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Travel Button-crop.png"; sourceTree = "<group>"; };
 		DAF499581F7CB740008CD2F6 /* InstantFish Inst.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "InstantFish Inst.png"; sourceTree = "<group>"; };
@@ -1007,6 +981,38 @@
 				DACF75C11F79FA1000915446 /* GameData.swift */,
 			);
 			name = "Gameplay Controller";
+			sourceTree = "<group>";
+		};
+		DA0437C51FD26C86008F596E /* Myhome Design Shop */ = {
+			isa = PBXGroup;
+			children = (
+				DA0437C61FD26C86008F596E /* designshop_background.png */,
+			);
+			path = "Myhome Design Shop";
+			sourceTree = "<group>";
+		};
+		DA0437C81FD26F08008F596E /* General Interface */ = {
+			isa = PBXGroup;
+			children = (
+				DA0437DB1FD2708B008F596E /* backToMenu.png */,
+				DA0437CF1FD26FDD008F596E /* collectableBar.png */,
+				DA0437D11FD26FDE008F596E /* itemBar.png */,
+				DA0437D01FD26FDD008F596E /* settingIcon.png */,
+				DA0437D61FD26FEB008F596E /* mainCollectableBar.png */,
+				DA0437D51FD26FEB008F596E /* mainItemBar.png */,
+				DA0437D71FD26FEB008F596E /* mainSetting.png */,
+			);
+			path = "General Interface";
+			sourceTree = SOURCE_ROOT;
+		};
+		DA0437E11FD27607008F596E /* Clean cat house */ = {
+			isa = PBXGroup;
+			children = (
+				DA0437E21FD27607008F596E /* CCH_Swish.png */,
+				DA0437E41FD27607008F596E /* CCH_Swish_3.atlas */,
+				DA0437F01FD27C88008F596E /* CCH_Swish_2.atlas */,
+			);
+			path = "Clean cat house";
 			sourceTree = "<group>";
 		};
 		DA25994B1F70CC2900BB9573 /* Main Menu */ = {
@@ -1194,6 +1200,7 @@
 				DAD3195F1FBEF4D000258820 /* GACHA */,
 				DA2706F71FAC325700FE28F5 /* Meowshop */,
 				DAD319A31FBEF65F00258820 /* Daily Bonus */,
+				DA0437C81FD26F08008F596E /* General Interface */,
 			);
 			name = Assets;
 			sourceTree = "<group>";
@@ -1320,8 +1327,10 @@
 		DA4AF9401FD1221400B4F9B0 /* Item Check */ = {
 			isa = PBXGroup;
 			children = (
-				DA4AF9411FD1221400B4F9B0 /* itemCheck_second.png */,
-				DA4AF9421FD1221400B4F9B0 /* itemCheck_first.png */,
+				DA0437B11FD24150008F596E /* itemCheck_first-crop.png */,
+				DA0437B21FD24151008F596E /* itemCheck_second-crop.png */,
+				DA0437BD1FD24CB8008F596E /* itemCheck_first-part.png */,
+				DA0437BF1FD24D13008F596E /* itemCheck_second-part.png */,
 			);
 			path = "Item Check";
 			sourceTree = "<group>";
@@ -1330,7 +1339,6 @@
 			isa = PBXGroup;
 			children = (
 				DA4AF9461FD1230D00B4F9B0 /* Switch OFF */,
-				DA4AF9501FD1230D00B4F9B0 /* backToMenu.png */,
 				DA4AF9511FD1230D00B4F9B0 /* Switch ON */,
 				DA4AF95B1FD1230D00B4F9B0 /* list */,
 				DA4AF9611FD1230D00B4F9B0 /* collectionCell.png */,
@@ -1618,6 +1626,9 @@
 			children = (
 				DABB8F841F974747002AD581 /* Myhome Customizing */,
 				DABB8F8C1F974747002AD581 /* Myhome Design Home */,
+				DA0437C51FD26C86008F596E /* Myhome Design Shop */,
+				DA0437C11FD26C72008F596E /* myhome_designShop-crop.png */,
+				DA0437C21FD26C72008F596E /* myhome_designShop.png */,
 				DABB8F941F974747002AD581 /* myhome_callmycat.png */,
 				DABB8F951F974747002AD581 /* myhome_customize.png */,
 				DABB8F961F974747002AD581 /* myhome_designhome.png */,
@@ -1724,8 +1735,8 @@
 				DACF75B41F79F96200915446 /* map test.sks */,
 				DACF75B51F79F96200915446 /* settingtest.sks */,
 				DAD0B7AA1F9DCCFD00AC8BE1 /* customizingScene.sks */,
-				DA27071F1FAC326C00FE28F5 /* meowshoptest.sks */,
 				DA4AF80B1FC90CA100B4F9B0 /* dailybonusScene.sks */,
+				DA0437B51FD24270008F596E /* itemshopscenetest.sks */,
 			);
 			path = test;
 			sourceTree = "<group>";
@@ -1737,9 +1748,7 @@
 				DAF4995A1F7CB78E008CD2F6 /* Item (Big) */,
 				DACF75D21F7C798800915446 /* Boost Item */,
 				DACF75EC1F7C798800915446 /* Button */,
-				DACF75EB1F7C798800915446 /* Boost Item Background.png */,
 				DACF75F31F7C798800915446 /* Itemshop Background.png */,
-				DACF75F41F7C798800915446 /* Upgrade Item Background.png */,
 			);
 			name = "Item Shop";
 			path = "Assets/Item Shop";
@@ -1783,7 +1792,6 @@
 		DACF75ED1F7C798800915446 /* Boost Panel */ = {
 			isa = PBXGroup;
 			children = (
-				DACF75EE1F7C798800915446 /* Boooost Button.png */,
 				DACF75EF1F7C798800915446 /* Boooost Buy Panel.png */,
 			);
 			path = "Boost Panel";
@@ -1792,7 +1800,6 @@
 		DACF75F11F7C798800915446 /* Upgrade Panel */ = {
 			isa = PBXGroup;
 			children = (
-				DACF75F21F7C798800915446 /* Upgrade Button.png */,
 			);
 			path = "Upgrade Panel";
 			sourceTree = "<group>";
@@ -1878,6 +1885,8 @@
 			children = (
 				DAD319601FBEF4D000258820 /* Gacha Icons */,
 				DAD319801FBEF4D000258820 /* Gacha_background.png */,
+				DA0437DD1FD275C0008F596E /* GACHA_Location_Reference1.png */,
+				DA0437DE1FD275C0008F596E /* GACHA_Location_Reference2.png */,
 			);
 			name = GACHA;
 			path = Assets/GACHA;
@@ -1886,7 +1895,7 @@
 		DAD319601FBEF4D000258820 /* Gacha Icons */ = {
 			isa = PBXGroup;
 			children = (
-				DAD319611FBEF4D000258820 /* Clean cat house */,
+				DA0437E11FD27607008F596E /* Clean cat house */,
 				DAD319701FBEF4D000258820 /* Clean cat house button.png */,
 				DAD319711FBEF4D000258820 /* Feed */,
 				DAD3197F1FBEF4D000258820 /* Feed button.png */,
@@ -1894,59 +1903,14 @@
 			path = "Gacha Icons";
 			sourceTree = "<group>";
 		};
-		DAD319611FBEF4D000258820 /* Clean cat house */ = {
-			isa = PBXGroup;
-			children = (
-				DAD319621FBEF4D000258820 /* CCH_Swish.png */,
-				DAD319631FBEF4D000258820 /* CCH_Swish_2_0.png */,
-				DAD319641FBEF4D000258820 /* CCH_Swish_2_1.png */,
-				DAD319651FBEF4D000258820 /* CCH_Swish_2_2.png */,
-				DAD319661FBEF4D000258820 /* CCH_Swish_2_3.png */,
-				DAD319671FBEF4D000258820 /* CCH_Swish_2_4.png */,
-				DAD319681FBEF4D000258820 /* CCH_Swish_3_1.png */,
-				DAD319691FBEF4D000258820 /* CCH_Swish_3_2.png */,
-				DAD3196A1FBEF4D000258820 /* CCH_Swish_3_3.png */,
-				DAD3196B1FBEF4D000258820 /* CCH_Swish_3_4.png */,
-				DAD3196C1FBEF4D000258820 /* CCH_Swish_3_5.png */,
-				DAD3196D1FBEF4D000258820 /* CCH_Swish_3_6.png */,
-				DAD3196E1FBEF4D000258820 /* CCH_Swish_3_7.png */,
-				DAD3196F1FBEF4D000258820 /* CCH_Swish_3_8.png */,
-			);
-			path = "Clean cat house";
-			sourceTree = "<group>";
-		};
 		DAD319711FBEF4D000258820 /* Feed */ = {
 			isa = PBXGroup;
 			children = (
-				DAD319721FBEF4D000258820 /* Feed Rare */,
-				DAD319771FBEF4D000258820 /* Feed Super Rare */,
 				DAD3197E1FBEF4D000258820 /* Feed_Common.png */,
+				DA0437F41FD27F7E008F596E /* Feed_Super_Rare.atlas */,
+				DA0437EA1FD279E8008F596E /* Feed_Rare.atlas */,
 			);
 			path = Feed;
-			sourceTree = "<group>";
-		};
-		DAD319721FBEF4D000258820 /* Feed Rare */ = {
-			isa = PBXGroup;
-			children = (
-				DAD319731FBEF4D000258820 /* Feed_Rare_1.png */,
-				DAD319741FBEF4D000258820 /* Feed_Rare_2.png */,
-				DAD319751FBEF4D000258820 /* Feed_Rare_3.png */,
-				DAD319761FBEF4D000258820 /* Feed_Rare_4.png */,
-			);
-			path = "Feed Rare";
-			sourceTree = "<group>";
-		};
-		DAD319771FBEF4D000258820 /* Feed Super Rare */ = {
-			isa = PBXGroup;
-			children = (
-				DAD319781FBEF4D000258820 /* Feed_Super rare_0.png */,
-				DAD319791FBEF4D000258820 /* Feed_Super rare_1.png */,
-				DAD3197A1FBEF4D000258820 /* Feed_Super rare_2.png */,
-				DAD3197B1FBEF4D000258820 /* Feed_Super rare_3.png */,
-				DAD3197C1FBEF4D000258820 /* Feed_Super rare_4.png */,
-				DAD3197D1FBEF4D000258820 /* Feed_Super rare_5.png */,
-			);
-			path = "Feed Super Rare";
 			sourceTree = "<group>";
 		};
 		DAD319A31FBEF65F00258820 /* Daily Bonus */ = {
@@ -1979,7 +1943,6 @@
 				DADC52811F7510550033BB28 /* check sign.png */,
 				DADC52821F7510550033BB28 /* default setting screen.png */,
 				DADC52831F7510550033BB28 /* facebookBtn.png */,
-				DADC52841F7510550033BB28 /* instruction.png */,
 				DADC52851F7510550033BB28 /* selectionBox.png */,
 				DADC52861F7510550033BB28 /* Setting Screen.png */,
 			);
@@ -1990,11 +1953,8 @@
 		DADC52A31F75111F0033BB28 /* interface */ = {
 			isa = PBXGroup;
 			children = (
-				DADC52A41F75111F0033BB28 /* mainCollectableBar.png */,
 				DADC52A51F75111F0033BB28 /* mainDailyBonus.png */,
-				DADC52A61F75111F0033BB28 /* mainItemBar.png */,
 				DADC52A71F75111F0033BB28 /* mainPresent.png */,
-				DADC52A81F75111F0033BB28 /* mainSetting.png */,
 			);
 			name = interface;
 			path = "Assets/Main Menu/interface";
@@ -2018,6 +1978,7 @@
 				DA3382AD1FA86ED70027C30E /* Collectables.swift */,
 				DA3382AF1FA86F230027C30E /* Obstacle.swift */,
 				DA3382B71FA874D90027C30E /* Cat.swift */,
+				DA0437E81FD2792D008F596E /* GachaObjects.swift */,
 			);
 			name = "Obstacle Classes";
 			sourceTree = "<group>";
@@ -2158,12 +2119,9 @@
 			files = (
 				DA2707151FAC325700FE28F5 /* meowshop-5-8000tuna.png in Resources */,
 				DA4AF99B1FD1742500B4F9B0 /* LA_camera.png in Resources */,
-				DAD319891FBEF4D000258820 /* CCH_Swish_3_2.png in Resources */,
-				DAD3198B1FBEF4D000258820 /* CCH_Swish_3_4.png in Resources */,
 				DACF76091F7C798800915446 /* RandomBox.png in Resources */,
 				DA4AF9671FD1230D00B4F9B0 /* daytime-default.png in Resources */,
 				DA2707321FAD96D600FE28F5 /* ultrabooster-5.png in Resources */,
-				DA2707201FAC326C00FE28F5 /* meowshoptest.sks in Resources */,
 				DAD3193F1FBEF18600258820 /* Floor 29.png in Resources */,
 				DACF75F61F7C798800915446 /* AutoFlying.png in Resources */,
 				DA4AF9631FD1230D00B4F9B0 /* daytime-mycatSelected.png in Resources */,
@@ -2172,12 +2130,10 @@
 				DAD3193C1FBEF18600258820 /* Floor 26.png in Resources */,
 				DA4AF8221FC9327000B4F9B0 /* Korea_red kimchi.png in Resources */,
 				DA774D301FB5AC5900C6A208 /* Props 7-2.png in Resources */,
-				DAD319841FBEF4D000258820 /* CCH_Swish_2_1.png in Resources */,
 				DAD319421FBEF18600258820 /* Floor 31.png in Resources */,
 				DA4AF97D1FD1241100B4F9B0 /* testcat3.png in Resources */,
 				DA774C7E1FB0403A00C6A208 /* Furniture 5-1.png in Resources */,
 				DA4AF9A41FD1761F00B4F9B0 /* England_princess.atlas in Resources */,
-				DAD319861FBEF4D000258820 /* CCH_Swish_2_3.png in Resources */,
 				DA774C611FB0403A00C6A208 /* Furniture 10-2.png in Resources */,
 				DABB8FB71F974994002AD581 /* customizing_background.png in Resources */,
 				DA4AF8DF1FCC0B2700B4F9B0 /* levelselect_Miau.png in Resources */,
@@ -2187,6 +2143,7 @@
 				DA4AF8751FC949CA00B4F9B0 /* Japan_WasabiBomb.atlas in Resources */,
 				DAD3199C1FBEF4D000258820 /* Feed button.png in Resources */,
 				DAD319441FBEF18600258820 /* Floor 33.png in Resources */,
+				DA0437E71FD27607008F596E /* CCH_Swish_3.atlas in Resources */,
 				DADC529D1F7510DA0033BB28 /* jukebox.png in Resources */,
 				DA4AF81B1FC9148500B4F9B0 /* myhome_screenshot-crop.png in Resources */,
 				DA774C1D1FAFF98800C6A208 /* Ny13.sks in Resources */,
@@ -2197,7 +2154,6 @@
 				DA774C721FB0403A00C6A208 /* Furniture 16-1.png in Resources */,
 				DA4AF98B1FD16B2B00B4F9B0 /* England_man cat2.png in Resources */,
 				DA4AF9681FD1230D00B4F9B0 /* switch off.png in Resources */,
-				DAD319981FBEF4D000258820 /* Feed_Super rare_3.png in Resources */,
 				DADC52AC1F75111F0033BB28 /* mainPresent.png in Resources */,
 				DA774C641FB0403A00C6A208 /* Furniture 11-2.png in Resources */,
 				DA774D231FB5AC5900C6A208 /* Props 34.png in Resources */,
@@ -2208,16 +2164,13 @@
 				DAD319A01FBEF4FD00258820 /* GachaScene.sks in Resources */,
 				DA774D241FB5AC5900C6A208 /* Props 35.png in Resources */,
 				DA4AF99A1FD1742500B4F9B0 /* LA_director.atlas in Resources */,
-				DA4AF9691FD1230D00B4F9B0 /* backToMenu.png in Resources */,
 				DA2974A91F68DEDE005F6B41 /* Main.storyboard in Resources */,
-				DADC52AB1F75111F0033BB28 /* mainItemBar.png in Resources */,
 				DA774D061FB5AC5900C6A208 /* Props 11.png in Resources */,
 				DA4AF8E01FCC0B2700B4F9B0 /* levelselect_default.png in Resources */,
 				DA774C1B1FAFF98800C6A208 /* Ny11.sks in Resources */,
 				DA774D311FB5AC5900C6A208 /* Props 7.png in Resources */,
 				DAD0B7B31F9DCE2C00AC8BE1 /* customizing_checkBtn-crop.png in Resources */,
 				DAD0B7B41F9DCE2C00AC8BE1 /* customizing_exit-crop.png in Resources */,
-				DACF760C1F7C798800915446 /* Boost Item Background.png in Resources */,
 				DA774C7A1FB0403A00C6A208 /* Furniture 3.png in Resources */,
 				DA774C251FAFF98E00C6A208 /* Ny6.sks in Resources */,
 				DA774D271FB5AC5900C6A208 /* Props 4-2.png in Resources */,
@@ -2226,8 +2179,6 @@
 				DA4AF8241FC9327000B4F9B0 /* Korea_SSL cat.png in Resources */,
 				DAD319471FBEF18600258820 /* Floor 36.png in Resources */,
 				DA4AF9731FD1230D00B4F9B0 /* ƒ√∑∫º«_∏ÆΩ∫∆Æ.png in Resources */,
-				DACF76121F7C798800915446 /* Upgrade Item Background.png in Resources */,
-				DACF76101F7C798800915446 /* Upgrade Button.png in Resources */,
 				DA774D1D1FB5AC5900C6A208 /* Props 3-2.png in Resources */,
 				DA774C9E1FB052C900C6A208 /* designhome_exit-crop.png in Resources */,
 				DA2707311FAD96D600FE28F5 /* ultrabooster-4.png in Resources */,
@@ -2244,7 +2195,6 @@
 				DACF760A1F7C798800915446 /* SlipperyLotion Inst.png in Resources */,
 				DA4AF8ED1FCC0B2700B4F9B0 /* levelselect_Chinese.png in Resources */,
 				DA774D151FB5AC5900C6A208 /* Props 23.png in Resources */,
-				DAD319961FBEF4D000258820 /* Feed_Super rare_1.png in Resources */,
 				DABB8FD41F974BE9002AD581 /* pause_button.png in Resources */,
 				DACF76141F7C799E00915446 /* ItemShopScene.sks in Resources */,
 				DA4AF9001FCC0D0E00B4F9B0 /* orgol_receiveBtn.png in Resources */,
@@ -2252,9 +2202,12 @@
 				DAD319501FBEF18600258820 /* Wallpaper 10.png in Resources */,
 				DA4AF98A1FD16B2B00B4F9B0 /* England_man cat.png in Resources */,
 				DA774D1B1FB5AC5900C6A208 /* Props 29.png in Resources */,
+				DA0437C01FD24D14008F596E /* itemCheck_second-part.png in Resources */,
 				DA4AF8E61FCC0B2700B4F9B0 /* level1.png in Resources */,
 				DABB8FD81F974F37002AD581 /* pause_button-crop.png in Resources */,
+				DA0437E51FD27607008F596E /* CCH_Swish.png in Resources */,
 				DABB8FD31F974BDF002AD581 /* length_showing.png in Resources */,
+				DA0437D21FD26FDE008F596E /* collectableBar.png in Resources */,
 				DA774D2D1FB5AC5900C6A208 /* Props 6-2.png in Resources */,
 				DA774D0D1FB5AC5900C6A208 /* Props 18.png in Resources */,
 				DA4AF8DD1FCC0B2700B4F9B0 /* levelselect_MeowKingdom.png in Resources */,
@@ -2269,12 +2222,12 @@
 				DAD319491FBEF18600258820 /* Floor 4.png in Resources */,
 				DA27070D1FAC325700FE28F5 /* meowshop-1-watch-video.png in Resources */,
 				DADC52A01F7510DA0033BB28 /* mainBoard.png in Resources */,
-				DADC52A91F75111F0033BB28 /* mainCollectableBar.png in Resources */,
 				DADC52921F7510C10033BB28 /* booster (old).png in Resources */,
 				DA774C9A1FB0513000C6A208 /* designhome-furniture-selected.png in Resources */,
 				DA2974A01F68DEDE005F6B41 /* GameScene.sks in Resources */,
 				DADC52931F7510C10033BB28 /* healthBar (old).png in Resources */,
 				DAD3193D1FBEF18600258820 /* Floor 27.png in Resources */,
+				DA0437D41FD26FDE008F596E /* itemBar.png in Resources */,
 				DABB8FD01F9749B3002AD581 /* Collectable_fish_head.png in Resources */,
 				DA774C951FB0513000C6A208 /* designhome-floor-selected.png in Resources */,
 				DA774C5E1FB0403A00C6A208 /* Furniture 1-2.png in Resources */,
@@ -2300,10 +2253,12 @@
 				DAF499691F7CB78E008CD2F6 /* RandomBox_big.png in Resources */,
 				DADC52A11F7510DA0033BB28 /* mainCollectionBook.png in Resources */,
 				DAF499681F7CB78E008CD2F6 /* InstantFish_big.png in Resources */,
+				DA0437C41FD26C72008F596E /* myhome_designShop.png in Resources */,
 				DA2707171FAC325700FE28F5 /* Exit button.png in Resources */,
 				DA4AF99D1FD1742500B4F9B0 /* LA_time recorderpng.png in Resources */,
 				DA4AF9021FCC0D0E00B4F9B0 /* orgol_rewardHead.png in Resources */,
 				DA27071B1FAC325700FE28F5 /* meowshop-exit.png in Resources */,
+				DA0437BE1FD24CB8008F596E /* itemCheck_first-part.png in Resources */,
 				DA4AF96D1FD1230D00B4F9B0 /* nighttime-superrareSelected.png in Resources */,
 				DA774D0B1FB5AC5900C6A208 /* Props 16.png in Resources */,
 				DACF75F51F7C798800915446 /* AutoFlying Inst.png in Resources */,
@@ -2322,6 +2277,7 @@
 				DABB8FB61F974990002AD581 /* myhome_screenshot.png in Resources */,
 				DAD3193A1FBEF18600258820 /* Floor 24.png in Resources */,
 				DA4AF8191FC9148500B4F9B0 /* myhome_callmycat-crop.png in Resources */,
+				DA0437E01FD275C1008F596E /* GACHA_Location_Reference2.png in Resources */,
 				DA4AF8141FC90D8200B4F9B0 /* DailyBonus_Exit_button.png in Resources */,
 				DA4AF9891FD16B2B00B4F9B0 /* England_umbrella.atlas in Resources */,
 				DABB8FB41F974990002AD581 /* myhome_customize.png in Resources */,
@@ -2331,17 +2287,16 @@
 				DA774C601FB0403A00C6A208 /* Furniture 10-1.png in Resources */,
 				DA4AF8E11FCC0B2700B4F9B0 /* levelselect_Egypt.png in Resources */,
 				DA4AF9AC1FD178A900B4F9B0 /* Spain_flying tomato.png in Resources */,
-				DAD3198E1FBEF4D000258820 /* CCH_Swish_3_7.png in Resources */,
 				DA4AF8EC1FCC0B2700B4F9B0 /* levelselect_MountainOfMeow.png in Resources */,
 				DA774D1F1FB5AC5900C6A208 /* Props 30.png in Resources */,
 				DA4AF8F01FCC0B2700B4F9B0 /* levelselect_Miao.png in Resources */,
 				DA4AF9AD1FD178A900B4F9B0 /* Spain_tomato.atlas in Resources */,
-				DAD319871FBEF4D000258820 /* CCH_Swish_2_4.png in Resources */,
 				DA2974AB1F68DEDE005F6B41 /* Assets.xcassets in Resources */,
 				DA2974AE1F68DEDE005F6B41 /* LaunchScreen.storyboard in Resources */,
 				DAD0B7B61F9DCE2C00AC8BE1 /* customizing_skin.png in Resources */,
 				DAD319301FBEF18600258820 /* Floor 15.png in Resources */,
 				DA774C1C1FAFF98800C6A208 /* Ny12.sks in Resources */,
+				DA0437DA1FD26FEB008F596E /* mainSetting.png in Resources */,
 				DA774C651FB0403A00C6A208 /* Furniture 11.png in Resources */,
 				DA774C781FB0403A00C6A208 /* Furniture 3-1.png in Resources */,
 				DA774C6C1FB0403A00C6A208 /* Furniture 14-1.png in Resources */,
@@ -2349,7 +2304,6 @@
 				DA774C6A1FB0403A00C6A208 /* Furniture 13-2.png in Resources */,
 				DA4AF9661FD1230D00B4F9B0 /* daytime-rareSelected.png in Resources */,
 				DA774D201FB5AC5900C6A208 /* Props 31.png in Resources */,
-				DA4AF9441FD1221500B4F9B0 /* itemCheck_first.png in Resources */,
 				DA774D041FB5AC5900C6A208 /* Props 1.png in Resources */,
 				DA4AF8FE1FCC0D0E00B4F9B0 /* orgol_howToPlay.png in Resources */,
 				DA4AF97E1FD1241100B4F9B0 /* testcat4.png in Resources */,
@@ -2360,12 +2314,12 @@
 				DA774D161FB5AC5900C6A208 /* Props 24.png in Resources */,
 				DAD319351FBEF18600258820 /* Floor 2.png in Resources */,
 				DA2707161FAC325700FE28F5 /* Can and coin button.png in Resources */,
+				DA0437C71FD26C86008F596E /* designshop_background.png in Resources */,
 				DAD319511FBEF18600258820 /* Wallpaper 11.png in Resources */,
 				DA4AF8C21FCC05FA00B4F9B0 /* worldmap-edit.png in Resources */,
 				DA774C631FB0403A00C6A208 /* Furniture 11-1.png in Resources */,
 				DADC52891F7510550033BB28 /* facebookBtn.png in Resources */,
 				DA0432CE1F6AF386002EF8F6 /* collectable.png in Resources */,
-				DA4AF9431FD1221500B4F9B0 /* itemCheck_second.png in Resources */,
 				DAF499571F7C8327008CD2F6 /* Travel Button-crop.png in Resources */,
 				DAD319561FBEF18600258820 /* Wallpaper 16.png in Resources */,
 				DA4AF9641FD1230D00B4F9B0 /* daytime-normalSelected.png in Resources */,
@@ -2386,10 +2340,8 @@
 				DA774CCA1FB5ABA300C6A208 /* meowshop-9-goldcoin4.png in Resources */,
 				DA774D371FB5AC5900C6A208 /* Props 9.png in Resources */,
 				DAD319521FBEF18600258820 /* Wallpaper 12.png in Resources */,
-				DAD3199A1FBEF4D000258820 /* Feed_Super rare_5.png in Resources */,
 				DA774C861FB0403A00C6A208 /* Furniture 7.png in Resources */,
 				DA774C6E1FB0403A00C6A208 /* Furniture 14.png in Resources */,
-				DADC528A1F7510550033BB28 /* instruction.png in Resources */,
 				DA4AF9761FD1230D00B4F9B0 /* collectionCell.png in Resources */,
 				DA774C621FB0403A00C6A208 /* Furniture 10.png in Resources */,
 				DA4AF9011FCC0D0E00B4F9B0 /* orgol_rewardBackground.png in Resources */,
@@ -2409,20 +2361,20 @@
 				DAD319341FBEF18600258820 /* Floor 19.png in Resources */,
 				DAD319AA1FBEF65F00258820 /* DailyBonus_background.png in Resources */,
 				DA0437B01FD17D74008F596E /* Spain_catman.atlas in Resources */,
+				DA0437D91FD26FEB008F596E /* mainCollectableBar.png in Resources */,
 				DACF75FE1F7C798800915446 /* FluufyTail.png in Resources */,
 				DA4AF81C1FC9148500B4F9B0 /* myhome_designhome-crop.png in Resources */,
-				DAD319941FBEF4D000258820 /* Feed_Rare_4.png in Resources */,
+				DA0437DC1FD2708B008F596E /* backToMenu.png in Resources */,
 				DAD0B7B51F9DCE2C00AC8BE1 /* customizing_face.png in Resources */,
 				DADC52AA1F75111F0033BB28 /* mainDailyBonus.png in Resources */,
 				DA774C891FB0403A00C6A208 /* Furniture 8.png in Resources */,
-				DAD319991FBEF4D000258820 /* Feed_Super rare_4.png in Resources */,
 				DA27070E1FAC325700FE28F5 /* meowshop-2-cool-tuna.png in Resources */,
-				DAD319881FBEF4D000258820 /* CCH_Swish_3_1.png in Resources */,
 				DA774D291FB5AC5900C6A208 /* Props 5-1.png in Resources */,
 				DAD319391FBEF18600258820 /* Floor 23.png in Resources */,
 				DA4AF8E71FCC0B2700B4F9B0 /* level5.png in Resources */,
 				DAD3192C1FBEF18600258820 /* Floor 11.png in Resources */,
 				DAD3192A1FBEF18600258820 /* Floor 1.png in Resources */,
+				DA0437D81FD26FEB008F596E /* mainItemBar.png in Resources */,
 				DA4AF93D1FD11D4100B4F9B0 /* NY_3.png in Resources */,
 				DABB8FCF1F9749B3002AD581 /* Collectable_fish_buttom.png in Resources */,
 				DA4AF8E81FCC0B2700B4F9B0 /* level4.png in Resources */,
@@ -2441,7 +2393,6 @@
 				DACF76081F7C798800915446 /* RandomBox Inst.png in Resources */,
 				DAD0B7AB1F9DCCFD00AC8BE1 /* customizingScene.sks in Resources */,
 				DA4AF96B1FD1230D00B4F9B0 /* nighttime-default.png in Resources */,
-				DAD3198F1FBEF4D000258820 /* CCH_Swish_3_8.png in Resources */,
 				DAD3195B1FBEF18600258820 /* Wallpaper 6.png in Resources */,
 				DAD3193B1FBEF18600258820 /* Floor 25.png in Resources */,
 				DA774C711FB0403A00C6A208 /* Furniture 15.png in Resources */,
@@ -2455,39 +2406,36 @@
 				DACF76111F7C798800915446 /* Itemshop Background.png in Resources */,
 				DA774C691FB0403A00C6A208 /* Furniture 13-1.png in Resources */,
 				DA4AF90F1FCD3DF400B4F9B0 /* Life4.atlas in Resources */,
-				DADC52AD1F75111F0033BB28 /* mainSetting.png in Resources */,
 				DA4AF97F1FD1241100B4F9B0 /* emptycat.png in Resources */,
 				DA4AF8231FC9327000B4F9B0 /* Korea_green kimchi.png in Resources */,
 				DA4AF8E51FCC0B2700B4F9B0 /* level2.png in Resources */,
 				DA4AF9651FD1230D00B4F9B0 /* daytime-holycrapSelected.png in Resources */,
 				DA774C701FB0403A00C6A208 /* Furniture 15-2.png in Resources */,
 				DA774C841FB0403A00C6A208 /* Furniture 7-1.png in Resources */,
-				DAD3198C1FBEF4D000258820 /* CCH_Swish_3_5.png in Resources */,
 				DAD319581FBEF18600258820 /* Wallpaper 3.png in Resources */,
 				DABB8FE01F975110002AD581 /* Collectable_fish_head-crop.png in Resources */,
-				DAD319971FBEF4D000258820 /* Feed_Super rare_2.png in Resources */,
 				DA774D111FB5AC5900C6A208 /* Props 2.png in Resources */,
 				DA774D051FB5AC5900C6A208 /* Props 10.png in Resources */,
 				DAD3199D1FBEF4D000258820 /* Gacha_background.png in Resources */,
-				DAD319951FBEF4D000258820 /* Feed_Super rare_0.png in Resources */,
-				DAD319831FBEF4D000258820 /* CCH_Swish_2_0.png in Resources */,
 				DA774C1A1FAFF98800C6A208 /* Ny10.sks in Resources */,
 				DA4AF9991FD1742500B4F9B0 /* LA_palmtree.png in Resources */,
+				DA0437B61FD24270008F596E /* itemshopscenetest.sks in Resources */,
 				DA774C6B1FB0403A00C6A208 /* Furniture 13.png in Resources */,
-				DAD319821FBEF4D000258820 /* CCH_Swish.png in Resources */,
 				DA774C8B1FB0403A00C6A208 /* Furniture 9-2.png in Resources */,
+				DA0437C31FD26C72008F596E /* myhome_designShop-crop.png in Resources */,
 				DA4AF90C1FCD3DF400B4F9B0 /* Life3.atlas in Resources */,
 				DA774C271FAFF98E00C6A208 /* Ny8.sks in Resources */,
+				DA0437F11FD27C88008F596E /* CCH_Swish_2.atlas in Resources */,
 				DA774C7D1FB0403A00C6A208 /* Furniture 4.png in Resources */,
 				DAD0B7BA1F9DD12200AC8BE1 /* customizing_usemypicture.png in Resources */,
 				DAF499641F7CB78E008CD2F6 /* AwesomeSticker_big.png in Resources */,
 				DAD319411FBEF18600258820 /* Floor 30.png in Resources */,
-				DAD319851FBEF4D000258820 /* CCH_Swish_2_2.png in Resources */,
 				DAD319AE1FBEF65F00258820 /* DailyBonus_Receive.png in Resources */,
 				DAF499661F7CB78E008CD2F6 /* BubbleShield_big.png in Resources */,
 				DA27072E1FAD96D600FE28F5 /* ultrabooster-1.png in Resources */,
 				DA4AF9741FD1230D00B4F9B0 /* ƒ√∑∫º«_∏ÆΩ∫∆ÆøÕ «œ¥‹ ƒøπˆ.png in Resources */,
 				DA774C741FB0403A00C6A208 /* Furniture 16.png in Resources */,
+				DA0437D31FD26FDE008F596E /* settingIcon.png in Resources */,
 				DADC52A21F7510DA0033BB28 /* mainToHome.png in Resources */,
 				DA774C6F1FB0403A00C6A208 /* Furniture 15-1.png in Resources */,
 				DACF75B71F79F96200915446 /* CollectionScene.sks in Resources */,
@@ -2497,8 +2445,6 @@
 				DA4AF8131FC90D8200B4F9B0 /* DailyBonus_list_box.png in Resources */,
 				DAD3192E1FBEF18600258820 /* Floor 13.png in Resources */,
 				DAF499651F7CB78E008CD2F6 /* BadassPaw_big.png in Resources */,
-				DAD319931FBEF4D000258820 /* Feed_Rare_3.png in Resources */,
-				DAD319921FBEF4D000258820 /* Feed_Rare_2.png in Resources */,
 				DACF75141F77CD6500915446 /* redfoot.png in Resources */,
 				DA774C9D1FB052C900C6A208 /* designhome_background.png in Resources */,
 				DA4AF8FC1FCC0D0E00B4F9B0 /* orgol_background.png in Resources */,
@@ -2516,6 +2462,7 @@
 				DA774C851FB0403A00C6A208 /* Furniture 7-2.png in Resources */,
 				DA774D031FB5AC5900C6A208 /* Props 1-2.png in Resources */,
 				DA2974A21F68DEDE005F6B41 /* Actions.sks in Resources */,
+				DA0437B31FD24151008F596E /* itemCheck_first-crop.png in Resources */,
 				DA4AF8DC1FCC0B2700B4F9B0 /* levelselect_Meow.png in Resources */,
 				DA774D2C1FB5AC5900C6A208 /* Props 6-1.png in Resources */,
 				DAD319311FBEF18600258820 /* Floor 16.png in Resources */,
@@ -2528,11 +2475,13 @@
 				DADC529F1F7510DA0033BB28 /* mainBackground.png in Resources */,
 				DAD3192B1FBEF18600258820 /* Floor 10.png in Resources */,
 				DA4AF96A1FD1230D00B4F9B0 /* nighttime-normalSelected.png in Resources */,
+				DA0437F61FD2804C008F596E /* Feed_Super_Rare.atlas in Resources */,
 				DAD3195E1FBEF18600258820 /* Wallpaper 9.png in Resources */,
 				DACF75BD1F79F96200915446 /* settingtest.sks in Resources */,
 				DA4AF8FB1FCC0D0E00B4F9B0 /* orgol_speechBubble.png in Resources */,
 				DAD3194A1FBEF18600258820 /* Floor 5.png in Resources */,
 				DA4AF8E21FCC0B2700B4F9B0 /* levelselect_Korean.png in Resources */,
+				DA0437EC1FD279E9008F596E /* Feed_Rare.atlas in Resources */,
 				DA774D331FB5AC5900C6A208 /* Props 8-2.png in Resources */,
 				DAD3192D1FBEF18600258820 /* Floor 12.png in Resources */,
 				DA4AF99C1FD1742500B4F9B0 /* LA_turkey.atlas in Resources */,
@@ -2559,11 +2508,11 @@
 				DACF75F91F7C798800915446 /* BadassPaw Inst.png in Resources */,
 				DA774D101FB5AC5900C6A208 /* Props 2-2.png in Resources */,
 				DACF75231F77CD6500915446 /* worldmap.png in Resources */,
-				DAD319911FBEF4D000258820 /* Feed_Rare_1.png in Resources */,
 				DA27071A1FAC325700FE28F5 /* meowshop-CanAndCoin.png in Resources */,
 				DADC529E1F7510DA0033BB28 /* main screen.png in Resources */,
 				DA774CC81FB5175800C6A208 /* meowshop-6-goldcoin.png in Resources */,
 				DA4AF9711FD1230D00B4F9B0 /* creat cat.png in Resources */,
+				DA0437B41FD24151008F596E /* itemCheck_second-crop.png in Resources */,
 				DAD319381FBEF18600258820 /* Floor 22.png in Resources */,
 				DAF02F561FAF22870002B2F4 /* CityOfMeow3.sks in Resources */,
 				DA774C6D1FB0403A00C6A208 /* Furniture 14-2.png in Resources */,
@@ -2571,10 +2520,8 @@
 				DA774D2E1FB5AC5900C6A208 /* Props 6.png in Resources */,
 				DACF760E1F7C798800915446 /* Boooost Buy Panel.png in Resources */,
 				DA774D0E1FB5AC5900C6A208 /* Props 19.png in Resources */,
-				DACF760D1F7C798800915446 /* Boooost Button.png in Resources */,
 				DA774C761FB0403A00C6A208 /* Furniture 2-2.png in Resources */,
 				DA774D211FB5AC5900C6A208 /* Props 32.png in Resources */,
-				DAD3198D1FBEF4D000258820 /* CCH_Swish_3_6.png in Resources */,
 				DA774C681FB0403A00C6A208 /* Furniture 12.png in Resources */,
 				DA774D261FB5AC5900C6A208 /* Props 4-1.png in Resources */,
 				DACF760B1F7C798800915446 /* SlipperyLotion.png in Resources */,
@@ -2589,8 +2536,8 @@
 				DAD319541FBEF18600258820 /* Wallpaper 14.png in Resources */,
 				DACF75BC1F79F96200915446 /* map test.sks in Resources */,
 				DA774C8A1FB0403A00C6A208 /* Furniture 9-1.png in Resources */,
-				DAD3198A1FBEF4D000258820 /* CCH_Swish_3_3.png in Resources */,
 				DA4AF90D1FCD3DF400B4F9B0 /* Life1.atlas in Resources */,
+				DA0437DF1FD275C1008F596E /* GACHA_Location_Reference1.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -2634,6 +2581,7 @@
 				DA2974A41F68DEDE005F6B41 /* GameScene.swift in Sources */,
 				DA3382B81FA874D90027C30E /* Cat.swift in Sources */,
 				DA2974A61F68DEDE005F6B41 /* GameViewController.swift in Sources */,
+				DA0437E91FD2792D008F596E /* GachaObjects.swift in Sources */,
 				DACF759D1F79F90400915446 /* GameplayController.swift in Sources */,
 				DACF75A01F79F90D00915446 /* Player.swift in Sources */,
 				DACF75C21F79FA1000915446 /* GameData.swift in Sources */,

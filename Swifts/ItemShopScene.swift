@@ -30,6 +30,9 @@ class ItemShopScene: SKScene {
     
     var locationToTravel: String!
     var levelToTravel: Int!
+    
+    var boostBtn: SKSpriteNode!
+    var upgradeBtn: SKSpriteNode!
 
     
     override func didMove(to view: SKView) {
@@ -37,6 +40,8 @@ class ItemShopScene: SKScene {
         initializePicture()
         
         boostPanelSelected = true
+        upgradeBtn.texture = SKTexture(imageNamed: "itemCheck_second-part")
+        boostBtn.texture = SKTexture(imageNamed: "itemCheck_first-crop")
         displayBoostItems()
         
         itemSelected.isHidden = true
@@ -64,6 +69,8 @@ class ItemShopScene: SKScene {
         instantFish =  self.childNode(withName: "InstantFish") as! SKSpriteNode
         randomBox =  self.childNode(withName: "RandomBox") as! SKSpriteNode
         
+        boostBtn = self.childNode(withName: "BoooostBtn") as! SKSpriteNode
+        upgradeBtn = self.childNode(withName: "UpgradeBtn") as! SKSpriteNode
     }
     
     func displayBoostItems() {
@@ -101,7 +108,9 @@ class ItemShopScene: SKScene {
             
             if touchedNode.name == "BoooostBtn" {
                 if !boostPanelSelected {
-                    background.texture = SKTexture(imageNamed: "Boost Item Background")
+                    upgradeBtn.texture = SKTexture(imageNamed: "itemCheck_second-part")
+                    boostBtn.texture = SKTexture(imageNamed: "itemCheck_first-crop")
+
                     boostBuyPanel.isHidden = false
                     boostPanelSelected = true
                     item_big.isHidden = true
@@ -113,7 +122,8 @@ class ItemShopScene: SKScene {
             
             if touchedNode.name == "UpgradeBtn" {
                 if boostPanelSelected {
-                    background.texture = SKTexture(imageNamed: "Upgrade Item Background")
+                    boostBtn.texture = SKTexture(imageNamed: "itemCheck_first-part")
+                    upgradeBtn.texture = SKTexture(imageNamed: "itemCheck_second-crop")
                     itemSelected.isHidden = true
                     instruction.isHidden = true
                     boostBuyPanel.isHidden = true

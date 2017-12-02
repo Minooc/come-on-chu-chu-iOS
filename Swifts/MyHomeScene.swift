@@ -17,6 +17,7 @@ class MyHomeScene: SKScene {
     var designitem: SKSpriteNode!
     var exitDesign: SKSpriteNode!
     
+//    var designshopPanel: SKSpriteNode!
     
     var customizingPanel: SKSpriteNode!
     var customizeBody: SKSpriteNode!
@@ -30,6 +31,7 @@ class MyHomeScene: SKScene {
     
     var onDesignMode: Bool!
     var onCustomizingMode: Bool!
+    var onDesignShopMode: Bool!
     
     var purchaseItemTable: PurchaseItemTable!
     
@@ -37,6 +39,7 @@ class MyHomeScene: SKScene {
         
         onDesignMode = false
         onCustomizingMode = false
+        onDesignShopMode = false
 
         background = self.childNode(withName: "background") as? SKSpriteNode
 
@@ -56,9 +59,14 @@ class MyHomeScene: SKScene {
             }
             
             if touchedNode.name == "designhome" {
+//                createDesignPanel()
+    
+            }
+            
+            if touchedNode.name == "designShop" {
+                // create design shop panel
                 createDesignPanel()
                 
-
             }
             
             if touchedNode.name == "callmycat" {
@@ -122,6 +130,12 @@ class MyHomeScene: SKScene {
             
             // end of design mode
             
+//            if onDesignShopMode {
+//
+//            }
+            
+            
+            
             if onCustomizingMode {
                 
                 if (touchedNode == customizeExit) {
@@ -165,7 +179,7 @@ class MyHomeScene: SKScene {
     
     func createDesignPanel() {
         
-        designPanel = SKSpriteNode(imageNamed: "designhome_background")
+        designPanel = SKSpriteNode(imageNamed: "designshop_background")
         designPanel.anchorPoint = CGPoint(x: 0.5, y:0.5)
         designPanel.size = CGSize(width: 1337, height: 750)
         designPanel.xScale = 1
@@ -219,8 +233,6 @@ class MyHomeScene: SKScene {
         designPanel.addChild(exitDesign!)
         
         
-        print("on design mode")
-        
         // Build a collection view of purchasable items
         purchaseItemTable = PurchaseItemTable(frame: CGRect(x:55,y:170,width:610,height:220), collectionViewLayout: UICollectionViewLayout())
         purchaseItemHandler()
@@ -230,6 +242,7 @@ class MyHomeScene: SKScene {
         
         perform(#selector(designMode), with: nil, afterDelay: 0.1)
     }
+
     
     func designMode() {
         if (onDesignMode == false) {
@@ -238,6 +251,28 @@ class MyHomeScene: SKScene {
             onDesignMode = false
         }
     }
+    
+//    func createDesignShop() {
+//        designshopPanel = SKSpriteNode(imageNamed: "designshop_background")
+//        designshopPanel.anchorPoint = CGPoint(x: 0.5, y:0.5)
+//        designshopPanel.size = CGSize(width: 1337, height: 750)
+//        designshopPanel.xScale = 1
+//        designshopPanel.yScale = 1
+//        designshopPanel.zPosition = 5
+//        self.addChild(designshopPanel)
+//
+//        perform(#selector(designShopMode), with: nil, afterDelay: 0.1)
+//    }
+    
+    func designShopMode() {
+        if (onDesignShopMode == false) {
+            onDesignShopMode = true
+        } else {
+            onDesignShopMode = false
+        }
+    }
+    
+    
     
     func createCustomizingPanel() {
         
