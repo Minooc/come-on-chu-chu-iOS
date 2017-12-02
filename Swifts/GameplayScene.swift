@@ -14,14 +14,17 @@ class GameplayScene: SKScene, SKPhysicsContactDelegate  {
     var playerImage: String?
     var playerSink = false
     
-
-    
     var background: SKSpriteNode!
     var previousBackground: SKSpriteNode!
     
     var mainCamera: SKCameraNode?
     
     var health: Int!
+    
+    var boostEnabled: Bool!
+    var boostMeter: Int!
+    var boostBtn: Boost!
+    var boostShape: SKShapeNode!
     
     var currentLocation: String?
     var nextLevel: Int!
@@ -30,14 +33,8 @@ class GameplayScene: SKScene, SKPhysicsContactDelegate  {
     var playerGotHit = false
     var playerCanGetHit = true
     
-    var scoreText: SKLabelNode!
+    var scoreText: MKOutlinedLabelNode!
     var coinText: SKLabelNode!
-    
-    var firstHealth: SKSpriteNode!
-    var secondHealth: SKSpriteNode!
-    var thirdHealth: SKSpriteNode!
-    
-
     
     var fishTail: SKSpriteNode!
     var fishBody: SKSpriteNode!
@@ -52,11 +49,12 @@ class GameplayScene: SKScene, SKPhysicsContactDelegate  {
     
     var loaded: Bool!
     
-    
-    var bombSpeedX: CGFloat!
-    var bombSpeedY: CGFloat!
+    var sunglassTrigger: Bool!
+    var boostTrigger: Bool!
+
     
     override func didMove(to view: SKView) {
+        
         // initialize everything
         
         physicsWorld.contactDelegate = self
@@ -70,36 +68,42 @@ class GameplayScene: SKScene, SKPhysicsContactDelegate  {
         backgroundLengthSum = 0
         health = 4
         
+        // Set camera and background
         mainCamera = self.childNode(withName: "Main Camera") as? SKCameraNode
         background = self.childNode(withName: "background") as? SKSpriteNode
         
+        // Initialize booster
+        boostMeter = 0
+        boostEnabled = false
+        boostBtn = Boost()
+        self.mainCamera?.addChild(boostBtn)
+        boostBtn.texture = SKTexture(imageNamed: "BoosterBtn-0")
+        
+        // Initialize Life Engine
         lifeEngine = LifeEngine()
         self.mainCamera?.addChild(lifeEngine)
-        
-        
         lifeHandler()
+    
+        
         labelLocater()
         
         GameplayController.instance.scoreText = scoreText
         GameplayController.instance.coinText = coinText
         GameplayController.instance.initializeVariables()
         
-
         gotFishBody = false
         gotFishHead = false
         gotFishTail = false
         
-//        healthLocater()
         interfaceLocater()
         fishLocater()
-        
         setObstacles()
 
         loaded = false
 //        nextLevel = 1
         
-        bombSpeedX = 0
-        bombSpeedY = 0
+        boostTrigger = true
+        sunglassTrigger = true
         
         print("Current Location is \(currentLocation)")
         
@@ -112,124 +116,32 @@ class GameplayScene: SKScene, SKPhysicsContactDelegate  {
         moveCamera()
         managePlayer()
         
-        for ob in obstacles {
-            if ob.name == "WalkingObstacle" {
-                if (ob.position.x < (player?.position.x)! + 1200) {
-                    ob.walking()
-                }
-            }
-            if ob.name == "FlyingObstacle" {
-                 if (ob.position.x < (player?.position.x)! + 1200) {
-                        ob.flying()
-                    }
-            }
-            
-            if ob.name == "UpFlyingObstacle" {
-                if (ob.position.x < (player?.position.x)! + 1000) {
-                    ob.upFlying()
-                }
-            }
-            
-            if ob.name == "DownFlyingObstacle" {
-                if (ob.position.x < (player?.position.x)! + 1000) {
-                    ob.downFlying()
-                }
-            }
-            
-            if ob.name == "DroppingObstacle" {
-                if (ob.position.x < (player?.position.x)! + 1000) {
-                    ob.dropping()
-                }
-            }
-            
-            if ob.name == "RisingObstacle" {
-                if (ob.position.x < (player?.position.x)! + 500) {
-                    ob.rising()
-                }
-            }
-            
-            if ob.name == "ChaseObstacle" {
-                if (ob.position.x < (player?.position.x)! + 1100) {
-                    
-                    if (ob.position.x > (player?.position.x)! + 1095) {
-                        
-                        let playerX = (player?.position.x)!
-                        let playerY = (player?.position.y)!
-                        
-                        bombSpeedX = (playerX - ob.position.x)/100
-                        bombSpeedY = (playerY - ob.position.y)/100
-                        
-                        
-                    }
-                    
-                    ob.position.x += bombSpeedX
-                    ob.position.y += bombSpeedY
-                }
-            }
-            
-            if ob.name == "BombObstacle" {
-                
-                if (ob.position.x < (player?.position.x)! + 1100) {
-
-                    
-                    if (ob.position.x > (player?.position.x)! + 1095) {
-                        
-                        let playerX = (player?.position.x)!
-                        let playerY = (player?.position.y)!
-                        
-                        bombSpeedX = (playerX - ob.position.x)/100
-                        bombSpeedY = (playerY - ob.position.y)/100
-                        
-                        ob.preExplode()
-                    }
-                    
-                    if (ob.position.x > (player?.position.x)! + 900 && ob.position.x < (player?.position.x)! + 920) {
-                        ob.bombExplode()
-                    }
-                    
-
-                    if (ob.position.x > (player?.position.x)! - 100) {
-                        ob.position.x += bombSpeedX
-                        ob.position.y += bombSpeedY
-
-                    }
-                    
-                
-                }
-
-                
-            }
-            
-            if ob.name == "AssObstacle" {
-                if let presetTexture = ob.texture {
-                    ob.physicsBody = SKPhysicsBody(texture: presetTexture, size: (presetTexture.size()))
-                    ob.physicsBody?.affectedByGravity = false
-                    ob.physicsBody?.allowsRotation = false
-                    ob.physicsBody?.velocity = CGVector(dx: 0, dy: 0)
-                    ob.physicsBody?.categoryBitMask = 2
-                    ob.physicsBody?.collisionBitMask = 0
-                }
-            }
-            
-            
-         // Remove obstacle that passed
-            if (ob.position.x <  (player?.position.x)! - 1200) {
-                let indexToDelete = obstacles.index(of: ob)
-                ob.removeFromParent()
-                obstacles.remove(at: indexToDelete!)
-                print("it's gone")
-                
-            }
+        obstacleHandler()
         
-
-
-        }
         
         if (playerSink) {
             player?.sinkPlayer()
         } else {
             player?.floatPlayer()
         }
+        
+        
+        // If player got all 3 fishes
+        
+        if (gotFishBody && gotFishTail && gotFishHead && sunglassTrigger) {
+            sunglassTrigger = false
+            wearGlass()
+        }
+        
+        
+        if (boostMeter == 12 && boostTrigger) {
+            boostTrigger = false
+            boostFilled()
+        }
+
+        
+        
+        // prepare to load next level
         
         if !loaded {
             if (player!.position.x > background.position.x + (background.size.width / 2) - 1100) {
@@ -238,6 +150,8 @@ class GameplayScene: SKScene, SKPhysicsContactDelegate  {
                 loadNextLevel()
             }
         }
+            
+        // remove previous level
         
         else {
             if (player!.position.x > previousBackground.position.x + (previousBackground.size.width / 2) + 1100) {
@@ -246,6 +160,10 @@ class GameplayScene: SKScene, SKPhysicsContactDelegate  {
         }
     }
     
+
+    
+
+    
     func loadNextLevel() {
         loaded = true
         
@@ -253,10 +171,6 @@ class GameplayScene: SKScene, SKPhysicsContactDelegate  {
         
         print("\(currentLocation!)\(nextLevel!)")
         let nextScene = SKScene(fileNamed: "\(currentLocation!)\(nextLevel!)")
-        
-
-
-//        nextScene?.enumerateChildNodes(withName: "//*", using: { (node, stop) -> Void in
         
 
         if let node = nextScene?.childNode(withName: "background") {
@@ -270,10 +184,8 @@ class GameplayScene: SKScene, SKPhysicsContactDelegate  {
 
         }
 
-        
         backgroundLengthSum = backgroundLengthSum + previousBackground.size.width
 
-        
 
     }
     
@@ -282,6 +194,41 @@ class GameplayScene: SKScene, SKPhysicsContactDelegate  {
         previousBackground.removeFromParent()
         loaded = false
     }
+    
+    func wearGlass() {
+        
+        
+        
+        
+        
+        
+    }
+    
+    func boostUp() {
+        if (boostMeter < 12) {
+            boostMeter = boostMeter + 1
+            boostBtn.texture = SKTexture(imageNamed: "BoosterBtn-\(boostMeter!)")
+        }
+    }
+    
+    func boostFilled() {
+        boostBtn.animateObject(atlasName: "BoostFull.atlas", prefix: "BoosterBtn-full_", timePerFrame: 0.14)
+        boostEnabled = true
+    }
+    
+    func boostFire() {
+        
+        // Do something here
+        
+        
+        // Re-initialize boost
+        boostBtn.stopAnimation()
+        boostBtn.texture = SKTexture(imageNamed: "BoosterBtn-0")
+        boostMeter = 0
+        boostEnabled = false
+        boostTrigger = true
+    }
+    
     
     func setObstacles() {
         
@@ -378,38 +325,168 @@ class GameplayScene: SKScene, SKPhysicsContactDelegate  {
 
     }
     
+    func obstacleHandler() {
+        for ob in obstacles {
+            if ob.name == "WalkingObstacle" {
+                if (ob.position.x < (player?.position.x)! + 1200) {
+                    ob.walking()
+                }
+            }
+            if ob.name == "FlyingObstacle" {
+                if (ob.position.x < (player?.position.x)! + 1200) {
+                    ob.flying()
+                }
+            }
+            
+            if ob.name == "UpFlyingObstacle" {
+                if (ob.position.x < (player?.position.x)! + 1000) {
+                    ob.upFlying()
+                }
+            }
+            
+            if ob.name == "DownFlyingObstacle" {
+                if (ob.position.x < (player?.position.x)! + 1000) {
+                    ob.downFlying()
+                }
+            }
+            
+            if ob.name == "DroppingObstacle" {
+                if (ob.position.x < (player?.position.x)! + 1000) {
+                    ob.dropping()
+                }
+            }
+            
+            if ob.name == "RisingObstacle" {
+                if (ob.position.x < (player?.position.x)! + 500) {
+                    ob.rising()
+                }
+            }
+            
+            if ob.name == "ChaseObstacle" {
+                if (ob.position.x < (player?.position.x)! + 1100) {
+                    
+                    if (ob.position.x > (player?.position.x)! + 1095) {
+                        
+                        let playerX = (player?.position.x)!
+                        let playerY = (player?.position.y)!
+                        
+                        ob.flyingSpeedX = (playerX - ob.position.x)/100
+                        ob.flyingSpeedY = (playerY - ob.position.y)/100
+                        
+                        
+                    }
+                    
+                    ob.position.x += ob.flyingSpeedX
+                    ob.position.y += ob.flyingSpeedY
+                }
+            }
+            
+            if ob.name == "BombObstacle" {
+                
+                if (ob.position.x < (player?.position.x)! + 1100) {
+                    
+                    
+                    if (ob.position.x > (player?.position.x)! + 1095) {
+                        
+                        let playerX = (player?.position.x)!
+                        let playerY = (player?.position.y)!
+                        
+                        ob.flyingSpeedX  = (playerX - ob.position.x)/100
+                        ob.flyingSpeedY  = (playerY - ob.position.y)/100
+                        
+                        ob.preExplode()
+                    }
+                    
+                    if (ob.position.x > (player?.position.x)! + 900 && ob.position.x < (player?.position.x)! + 920) {
+                        ob.bombExplode()
+                    }
+                    
+                    
+                    if (ob.position.x > (player?.position.x)! - 100) {
+                        ob.position.x += ob.flyingSpeedX
+                        ob.position.y += ob.flyingSpeedY
+                        
+                    }
+                    
+                    
+                }
+                
+                
+            }
+            
+            if ob.name == "AssObstacle" {
+                if let presetTexture = ob.texture {
+                    ob.physicsBody = SKPhysicsBody(texture: presetTexture, size: (presetTexture.size()))
+                    ob.physicsBody?.affectedByGravity = false
+                    ob.physicsBody?.allowsRotation = false
+                    ob.physicsBody?.velocity = CGVector(dx: 0, dy: 0)
+                    ob.physicsBody?.categoryBitMask = 2
+                    ob.physicsBody?.collisionBitMask = 0
+                }
+            }
+            
+            
+            // Remove obstacle that passed
+            if (ob.position.x < (player?.position.x)! - 1200) {
+                let indexToDelete = obstacles.index(of: ob)
+                ob.removeFromParent()
+                obstacles.remove(at: indexToDelete!)
+                print("it's gone")
+                
+            }
+            
+            //            if (ob.position.y > 1000) {
+            //                print("yeah yeah yeah")
+            //            }
+            //
+            //            if (ob.position.y < -1000) {
+            //                print("kkkkkk")
+            //            }
+            
+            
+            
+        }
+    }
+    
+    func lifeHandler() {
+        if (health != 0 ) {
+            lifeEngine.animateLife(amount: health)
+        }
+    }
     
     func labelLocater() {
-        scoreText = SKLabelNode(fontNamed: "Conformity")
-        scoreText.fontSize = 48
-        scoreText.fontColor = UIColor.darkText
-        scoreText.position = CGPoint(x: 442.152, y: 313.243)
+        
+        scoreText = MKOutlinedLabelNode(fontNamed: "Conformity", fontSize: 48)
+//        scoreText = SKLabelNode(fontNamed: "Conformity")
+//        scoreText.fontSize = 48
+        scoreText.fontColor = UIColor.white
+        scoreText.borderColor = UIColor(red: 173/256, green: 53/256, blue: 81/256, alpha: 1.0)
+//        scoreText.borderColor = UIColor.blue
+        scoreText.position = CGPoint(x: -557, y: 254)
         scoreText.zPosition = 3
         self.mainCamera?.addChild(scoreText)
-//
-//        coinText = SKLabelNode(fontNamed: "Conformity")
-//        coinText.fontSize = 48
-//        coinText.fontColor = UIColor.darkText
-//        coinText.position = CGPoint(x: -550.779, y: 313.243)
-//        coinText.zPosition = 3
-//        self.mainCamera?.addChild(coinText)
+
+        coinText = SKLabelNode(fontNamed: "Conformity")
+        coinText.fontSize = 48
+        coinText.fontColor = UIColor.white
+        coinText.position = CGPoint(x: -555, y: 208)
+        coinText.zPosition = 3
+        self.mainCamera?.addChild(coinText)
     }
     
     func interfaceLocater() {
-        // Health bar, Coin image, Coin label, Score image, Score label, Booster, pause, item
-        
         
         // pause
-        let pauseBtn = SKSpriteNode(imageNamed: "pause_button-crop")
+        let pauseBtn = SKSpriteNode(imageNamed: "Pause button")
         pauseBtn.anchorPoint = CGPoint(x: 0.5, y:0.5)
-        pauseBtn.size.width = 75.5
-        pauseBtn.size.height = 75.2
-        pauseBtn.position = CGPoint(x: 603.8, y: 323.7)
+        pauseBtn.size.width = 1337
+        pauseBtn.size.height = 750
+        pauseBtn.position = CGPoint(x: 0, y: 0)
         pauseBtn.zPosition = 3
         self.mainCamera?.addChild(pauseBtn)
         
         // collectable image
-        let collectableImg = SKSpriteNode(imageNamed: "Collectable_located")
+        let collectableImg = SKSpriteNode(imageNamed: "Collectable score")
         collectableImg.anchorPoint = CGPoint(x: 0.5, y:0.5)
         collectableImg.size.width = 1337
         collectableImg.size.height = 750
@@ -419,33 +496,22 @@ class GameplayScene: SKScene, SKPhysicsContactDelegate  {
         
      
         // coin image
-//        let coinImg = SKSpriteNode(imageNamed: "Coin_located")
-//        coinImg.anchorPoint = CGPoint(x: 0.5, y:0.5)
-//        coinImg.size.width = 1337
-//        coinImg.size.height = 750
-//        coinImg.position = CGPoint(x: 0, y: 0)
-//        coinImg.zPosition = 3
-//        self.mainCamera?.addChild(coinImg)
+        let coinImg = SKSpriteNode(imageNamed: "Coin score")
+        coinImg.anchorPoint = CGPoint(x: 0.5, y:0.5)
+        coinImg.size.width = 1337
+        coinImg.size.height = 750
+        coinImg.position = CGPoint(x: 0, y: 0)
+        coinImg.zPosition = 3
+        self.mainCamera?.addChild(coinImg)
         
-        // booster
-        let booster = SKSpriteNode(imageNamed: "booster_button-crop")
-        booster.anchorPoint = CGPoint(x: 0.5, y:0.5)
-        booster.size.width = 251.991
-        booster.size.height = 154.679
-        booster.position = CGPoint(x: 529.742, y: -266.488)
-        booster.zPosition = 3
-        self.mainCamera?.addChild(booster)
+        // create circle shape of booster
+        boostShape = SKShapeNode(circleOfRadius: 110)
+        boostShape.zPosition = 4
+        boostShape.position = CGPoint(x: 516, y: -232)
+        boostShape.lineWidth = 0
+        self.mainCamera?.addChild(boostShape)
         
-        
-        let length = SKSpriteNode(imageNamed: "length_showing")
-        length.anchorPoint = CGPoint(x: 0.5, y:0.5)
-        length.size.width = 1337
-        length.size.height = 750
-        length.position = CGPoint(x: 0, y: 0)
-        length.zPosition = 3
-        self.mainCamera?.addChild(length)
-        
-        let fish_bottom = SKSpriteNode(imageNamed: "Collectable_fish_buttom")
+        let fish_bottom = SKSpriteNode(imageNamed: "Fish_base")
         fish_bottom.anchorPoint = CGPoint(x: 0.5, y:0.5)
         fish_bottom.size.width = 1337
         fish_bottom.size.height = 750
@@ -453,21 +519,12 @@ class GameplayScene: SKScene, SKPhysicsContactDelegate  {
         fish_bottom.zPosition = 3
         self.mainCamera?.addChild(fish_bottom)
         
+    }
 
 
-        
-    }
-    
-    
-    
-    func lifeHandler() {
-        if (health != 0 ) {
-            lifeEngine.animateLife(amount: health)
-        }
-    }
     
     func fishLocater() {
-        fishTail = SKSpriteNode(imageNamed: "Collectable_fish_tail")
+        fishTail = SKSpriteNode(imageNamed: "Fish_Tail")
         fishTail.anchorPoint = CGPoint(x: 0.5, y:0.5)
         fishTail.size.width = 1337
         fishTail.size.height = 750
@@ -475,7 +532,7 @@ class GameplayScene: SKScene, SKPhysicsContactDelegate  {
         fishTail.zPosition = 4
         self.mainCamera?.addChild(fishTail)
         
-        fishBody = SKSpriteNode(imageNamed: "Collectable_fish_body")
+        fishBody = SKSpriteNode(imageNamed: "Fish_Body")
         fishBody.anchorPoint = CGPoint(x: 0.5, y:0.5)
         fishBody.size.width = 1337
         fishBody.size.height = 750
@@ -483,7 +540,7 @@ class GameplayScene: SKScene, SKPhysicsContactDelegate  {
         fishBody.zPosition = 4
         self.mainCamera?.addChild(fishBody)
         
-        fishHead = SKSpriteNode(imageNamed: "Collectable_fish_head")
+        fishHead = SKSpriteNode(imageNamed: "Fish_Head")
         fishHead.anchorPoint = CGPoint(x: 0.5, y:0.5)
         fishHead.size.width = 1337
         fishHead.size.height = 750
@@ -491,6 +548,8 @@ class GameplayScene: SKScene, SKPhysicsContactDelegate  {
         fishHead.zPosition = 4
         self.mainCamera?.addChild(fishHead)
     }
+    
+
     
     func didBegin(_ contact: SKPhysicsContact) {
         
@@ -546,7 +605,7 @@ class GameplayScene: SKScene, SKPhysicsContactDelegate  {
         } else if firstBody.node?.name == "Player" && (secondBody.node?.name == "StandingObstacle" || secondBody.node?.name == "FlyingObstacle" || secondBody.node?.name == "WalkingObstacle" || secondBody.node?.name == "UpFlyingObstacle" || secondBody.node?.name == "DownFlyingObstacle" || secondBody.node?.name == "DroppingObstacle" || secondBody.node?.name == "RisingObstacle" || secondBody.node?.name == "AssObstacle" || secondBody.node?.name == "BombObstacle" || secondBody.node?.name == "ChaseObstacle") {
             //  secondBody.node?.name == "GeneralObstacle"
             if (playerCanGetHit) {
-                print("You got hit")
+                
                 playerGotHit = true
                 playerCanGetHit = false
                 health = health - 1
@@ -565,16 +624,26 @@ class GameplayScene: SKScene, SKPhysicsContactDelegate  {
     
     override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
         
-        
         for touch in touches {
-//            let location = touch.location(in: self)
+            let location = touch.location(in: self)
+            let touchedNode = atPoint(location)
+            
+            
+            // Just for Test. Delete this later.
+            if touchedNode == boostShape {
+                boostUp()
+                
+                if boostEnabled {
+                    boostFire()
+                }
+            }
+        
             
             
             playerSink = true
-            
-            
-
         }
+//        for touch in touches {
+//            let location = touch.location(in: self)
         
     }
     
@@ -631,11 +700,10 @@ class GameplayScene: SKScene, SKPhysicsContactDelegate  {
             perform(#selector(setPlayerCanGetHitTrue), with: nil, afterDelay: 1.5)
             
         }
-        
+
         
         if health == 0 {
-            
-            print("Health is 0")
+
             gameEnd()
             self.scene?.isPaused = true
         }
@@ -645,7 +713,7 @@ class GameplayScene: SKScene, SKPhysicsContactDelegate  {
     
     func setPlayerCanGetHitTrue() {
         playerCanGetHit = true
-        print("Now you can hit again")
+
     }
     
 

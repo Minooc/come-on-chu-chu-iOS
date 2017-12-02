@@ -19,6 +19,8 @@ class Obstacle: SKSpriteNode {
     var preExploded: Bool = false
     var exploded: Bool = false
     
+    var flyingSpeedX: CGFloat = 0.0
+    var flyingSpeedY: CGFloat = 0.0
 
     func initializePlayerAndAnimations(atlasName: String, prefix: String, timePerFrame: TimeInterval) {
         

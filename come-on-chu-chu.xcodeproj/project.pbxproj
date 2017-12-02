@@ -34,6 +34,20 @@
 		DA0437EC1FD279E9008F596E /* Feed_Rare.atlas in Resources */ = {isa = PBXBuildFile; fileRef = DA0437EA1FD279E8008F596E /* Feed_Rare.atlas */; };
 		DA0437F11FD27C88008F596E /* CCH_Swish_2.atlas in Resources */ = {isa = PBXBuildFile; fileRef = DA0437F01FD27C88008F596E /* CCH_Swish_2.atlas */; };
 		DA0437F61FD2804C008F596E /* Feed_Super_Rare.atlas in Resources */ = {isa = PBXBuildFile; fileRef = DA0437F41FD27F7E008F596E /* Feed_Super_Rare.atlas */; };
+		DA0438081FD2C064008F596E /* in-game interface location.png in Resources */ = {isa = PBXBuildFile; fileRef = DA0437F91FD2C064008F596E /* in-game interface location.png */; };
+		DA04380A1FD2C064008F596E /* Booster mode.png in Resources */ = {isa = PBXBuildFile; fileRef = DA0437FB1FD2C064008F596E /* Booster mode.png */; };
+		DA04380B1FD2C064008F596E /* Collectable score.png in Resources */ = {isa = PBXBuildFile; fileRef = DA0437FC1FD2C064008F596E /* Collectable score.png */; };
+		DA04380C1FD2C064008F596E /* Coin score.png in Resources */ = {isa = PBXBuildFile; fileRef = DA0437FD1FD2C064008F596E /* Coin score.png */; };
+		DA04380D1FD2C064008F596E /* Fish_All_sunglasses.png in Resources */ = {isa = PBXBuildFile; fileRef = DA0437FF1FD2C064008F596E /* Fish_All_sunglasses.png */; };
+		DA04380E1FD2C064008F596E /* Fish_Allwithsunglasses.png in Resources */ = {isa = PBXBuildFile; fileRef = DA0438001FD2C064008F596E /* Fish_Allwithsunglasses.png */; };
+		DA04380F1FD2C064008F596E /* Fish_Body.png in Resources */ = {isa = PBXBuildFile; fileRef = DA0438011FD2C064008F596E /* Fish_Body.png */; };
+		DA0438101FD2C064008F596E /* Fish_Head.png in Resources */ = {isa = PBXBuildFile; fileRef = DA0438021FD2C064008F596E /* Fish_Head.png */; };
+		DA0438111FD2C064008F596E /* Fish_base.png in Resources */ = {isa = PBXBuildFile; fileRef = DA0438031FD2C064008F596E /* Fish_base.png */; };
+		DA0438121FD2C064008F596E /* Fish_All.png in Resources */ = {isa = PBXBuildFile; fileRef = DA0438041FD2C064008F596E /* Fish_All.png */; };
+		DA0438131FD2C064008F596E /* Fish_Tail.png in Resources */ = {isa = PBXBuildFile; fileRef = DA0438051FD2C064008F596E /* Fish_Tail.png */; };
+		DA0438141FD2C064008F596E /* Pause button.png in Resources */ = {isa = PBXBuildFile; fileRef = DA0438061FD2C064008F596E /* Pause button.png */; };
+		DA0438161FD2C092008F596E /* ingameinterface.sks in Resources */ = {isa = PBXBuildFile; fileRef = DA0438151FD2C092008F596E /* ingameinterface.sks */; };
+		DA0438351FD2C916008F596E /* MKOutlinedLabelNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA0438341FD2C916008F596E /* MKOutlinedLabelNode.swift */; };
 		DA27070D1FAC325700FE28F5 /* meowshop-1-watch-video.png in Resources */ = {isa = PBXBuildFile; fileRef = DA2706FA1FAC325700FE28F5 /* meowshop-1-watch-video.png */; };
 		DA27070E1FAC325700FE28F5 /* meowshop-2-cool-tuna.png in Resources */ = {isa = PBXBuildFile; fileRef = DA2706FB1FAC325700FE28F5 /* meowshop-2-cool-tuna.png */; };
 		DA27070F1FAC325700FE28F5 /* meowshop-3-1000tuna.png in Resources */ = {isa = PBXBuildFile; fileRef = DA2706FC1FAC325700FE28F5 /* meowshop-3-1000tuna.png */; };
@@ -456,6 +470,21 @@
 		DAF4996A1F7CB78E008CD2F6 /* SlipperyLotion_big.png in Resources */ = {isa = PBXBuildFile; fileRef = DAF499621F7CB78E008CD2F6 /* SlipperyLotion_big.png */; };
 		DAF4996E1F7F6620008CD2F6 /* MapSelection.png in Resources */ = {isa = PBXBuildFile; fileRef = DAF4996D1F7F6620008CD2F6 /* MapSelection.png */; };
 		DAF499761F7F7127008CD2F6 /* conformityFont.ttf in Resources */ = {isa = PBXBuildFile; fileRef = DAF499751F7F7127008CD2F6 /* conformityFont.ttf */; };
+		DAFAD1791FD2E11E00B9E2B3 /* BoosterBtn-9.png in Resources */ = {isa = PBXBuildFile; fileRef = DAFAD16B1FD2E11D00B9E2B3 /* BoosterBtn-9.png */; };
+		DAFAD17A1FD2E11E00B9E2B3 /* BoosterBtn-8.png in Resources */ = {isa = PBXBuildFile; fileRef = DAFAD16C1FD2E11D00B9E2B3 /* BoosterBtn-8.png */; };
+		DAFAD17B1FD2E11E00B9E2B3 /* BoosterBtn-5.png in Resources */ = {isa = PBXBuildFile; fileRef = DAFAD16D1FD2E11D00B9E2B3 /* BoosterBtn-5.png */; };
+		DAFAD17C1FD2E11E00B9E2B3 /* BoosterBtn-4.png in Resources */ = {isa = PBXBuildFile; fileRef = DAFAD16E1FD2E11D00B9E2B3 /* BoosterBtn-4.png */; };
+		DAFAD17D1FD2E11E00B9E2B3 /* BoosterBtn-6.png in Resources */ = {isa = PBXBuildFile; fileRef = DAFAD16F1FD2E11D00B9E2B3 /* BoosterBtn-6.png */; };
+		DAFAD17E1FD2E11E00B9E2B3 /* BoosterBtn-7.png in Resources */ = {isa = PBXBuildFile; fileRef = DAFAD1701FD2E11D00B9E2B3 /* BoosterBtn-7.png */; };
+		DAFAD17F1FD2E11E00B9E2B3 /* BoosterBtn-3.png in Resources */ = {isa = PBXBuildFile; fileRef = DAFAD1711FD2E11D00B9E2B3 /* BoosterBtn-3.png */; };
+		DAFAD1801FD2E11E00B9E2B3 /* BoosterBtn-2.png in Resources */ = {isa = PBXBuildFile; fileRef = DAFAD1721FD2E11D00B9E2B3 /* BoosterBtn-2.png */; };
+		DAFAD1811FD2E11E00B9E2B3 /* BoosterBtn-0.png in Resources */ = {isa = PBXBuildFile; fileRef = DAFAD1731FD2E11D00B9E2B3 /* BoosterBtn-0.png */; };
+		DAFAD1821FD2E11E00B9E2B3 /* BoosterBtn-1.png in Resources */ = {isa = PBXBuildFile; fileRef = DAFAD1741FD2E11D00B9E2B3 /* BoosterBtn-1.png */; };
+		DAFAD1831FD2E11E00B9E2B3 /* BoosterBtn-12.png in Resources */ = {isa = PBXBuildFile; fileRef = DAFAD1751FD2E11D00B9E2B3 /* BoosterBtn-12.png */; };
+		DAFAD1841FD2E11E00B9E2B3 /* BoosterBtn-10.png in Resources */ = {isa = PBXBuildFile; fileRef = DAFAD1761FD2E11D00B9E2B3 /* BoosterBtn-10.png */; };
+		DAFAD1851FD2E11E00B9E2B3 /* BoosterBtn-11.png in Resources */ = {isa = PBXBuildFile; fileRef = DAFAD1771FD2E11D00B9E2B3 /* BoosterBtn-11.png */; };
+		DAFAD1861FD2E11E00B9E2B3 /* BoostFull.atlas in Resources */ = {isa = PBXBuildFile; fileRef = DAFAD1781FD2E11D00B9E2B3 /* BoostFull.atlas */; };
+		DAFAD1881FD2E1E500B9E2B3 /* Boost.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAFAD1871FD2E1E500B9E2B3 /* Boost.swift */; };
 		DAFB35C11F7C7F7E00AEE41D /* ItemSelected.png in Resources */ = {isa = PBXBuildFile; fileRef = DAFB35C01F7C7F7E00AEE41D /* ItemSelected.png */; };
 /* End PBXBuildFile section */
 
@@ -516,6 +545,20 @@
 		DA0437EA1FD279E8008F596E /* Feed_Rare.atlas */ = {isa = PBXFileReference; lastKnownFileType = folder.skatlas; path = Feed_Rare.atlas; sourceTree = "<group>"; };
 		DA0437F01FD27C88008F596E /* CCH_Swish_2.atlas */ = {isa = PBXFileReference; lastKnownFileType = folder.skatlas; path = CCH_Swish_2.atlas; sourceTree = "<group>"; };
 		DA0437F41FD27F7E008F596E /* Feed_Super_Rare.atlas */ = {isa = PBXFileReference; lastKnownFileType = folder.skatlas; path = Feed_Super_Rare.atlas; sourceTree = "<group>"; };
+		DA0437F91FD2C064008F596E /* in-game interface location.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "in-game interface location.png"; sourceTree = "<group>"; };
+		DA0437FB1FD2C064008F596E /* Booster mode.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Booster mode.png"; sourceTree = "<group>"; };
+		DA0437FC1FD2C064008F596E /* Collectable score.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Collectable score.png"; sourceTree = "<group>"; };
+		DA0437FD1FD2C064008F596E /* Coin score.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Coin score.png"; sourceTree = "<group>"; };
+		DA0437FF1FD2C064008F596E /* Fish_All_sunglasses.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Fish_All_sunglasses.png; sourceTree = "<group>"; };
+		DA0438001FD2C064008F596E /* Fish_Allwithsunglasses.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Fish_Allwithsunglasses.png; sourceTree = "<group>"; };
+		DA0438011FD2C064008F596E /* Fish_Body.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Fish_Body.png; sourceTree = "<group>"; };
+		DA0438021FD2C064008F596E /* Fish_Head.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Fish_Head.png; sourceTree = "<group>"; };
+		DA0438031FD2C064008F596E /* Fish_base.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Fish_base.png; sourceTree = "<group>"; };
+		DA0438041FD2C064008F596E /* Fish_All.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Fish_All.png; sourceTree = "<group>"; };
+		DA0438051FD2C064008F596E /* Fish_Tail.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Fish_Tail.png; sourceTree = "<group>"; };
+		DA0438061FD2C064008F596E /* Pause button.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Pause button.png"; sourceTree = "<group>"; };
+		DA0438151FD2C092008F596E /* ingameinterface.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = ingameinterface.sks; sourceTree = "<group>"; };
+		DA0438341FD2C916008F596E /* MKOutlinedLabelNode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = MKOutlinedLabelNode.swift; path = Swifts/MKOutlinedLabelNode.swift; sourceTree = "<group>"; };
 		DA2706FA1FAC325700FE28F5 /* meowshop-1-watch-video.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "meowshop-1-watch-video.png"; sourceTree = "<group>"; };
 		DA2706FB1FAC325700FE28F5 /* meowshop-2-cool-tuna.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "meowshop-2-cool-tuna.png"; sourceTree = "<group>"; };
 		DA2706FC1FAC325700FE28F5 /* meowshop-3-1000tuna.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "meowshop-3-1000tuna.png"; sourceTree = "<group>"; };
@@ -944,6 +987,21 @@
 		DAF499621F7CB78E008CD2F6 /* SlipperyLotion_big.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = SlipperyLotion_big.png; sourceTree = "<group>"; };
 		DAF4996D1F7F6620008CD2F6 /* MapSelection.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = MapSelection.png; sourceTree = "<group>"; };
 		DAF499751F7F7127008CD2F6 /* conformityFont.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = conformityFont.ttf; sourceTree = "<group>"; };
+		DAFAD16B1FD2E11D00B9E2B3 /* BoosterBtn-9.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "BoosterBtn-9.png"; sourceTree = "<group>"; };
+		DAFAD16C1FD2E11D00B9E2B3 /* BoosterBtn-8.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "BoosterBtn-8.png"; sourceTree = "<group>"; };
+		DAFAD16D1FD2E11D00B9E2B3 /* BoosterBtn-5.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "BoosterBtn-5.png"; sourceTree = "<group>"; };
+		DAFAD16E1FD2E11D00B9E2B3 /* BoosterBtn-4.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "BoosterBtn-4.png"; sourceTree = "<group>"; };
+		DAFAD16F1FD2E11D00B9E2B3 /* BoosterBtn-6.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "BoosterBtn-6.png"; sourceTree = "<group>"; };
+		DAFAD1701FD2E11D00B9E2B3 /* BoosterBtn-7.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "BoosterBtn-7.png"; sourceTree = "<group>"; };
+		DAFAD1711FD2E11D00B9E2B3 /* BoosterBtn-3.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "BoosterBtn-3.png"; sourceTree = "<group>"; };
+		DAFAD1721FD2E11D00B9E2B3 /* BoosterBtn-2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "BoosterBtn-2.png"; sourceTree = "<group>"; };
+		DAFAD1731FD2E11D00B9E2B3 /* BoosterBtn-0.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "BoosterBtn-0.png"; sourceTree = "<group>"; };
+		DAFAD1741FD2E11D00B9E2B3 /* BoosterBtn-1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "BoosterBtn-1.png"; sourceTree = "<group>"; };
+		DAFAD1751FD2E11D00B9E2B3 /* BoosterBtn-12.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "BoosterBtn-12.png"; sourceTree = "<group>"; };
+		DAFAD1761FD2E11D00B9E2B3 /* BoosterBtn-10.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "BoosterBtn-10.png"; sourceTree = "<group>"; };
+		DAFAD1771FD2E11D00B9E2B3 /* BoosterBtn-11.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "BoosterBtn-11.png"; sourceTree = "<group>"; };
+		DAFAD1781FD2E11D00B9E2B3 /* BoostFull.atlas */ = {isa = PBXFileReference; lastKnownFileType = folder.skatlas; path = BoostFull.atlas; sourceTree = "<group>"; };
+		DAFAD1871FD2E1E500B9E2B3 /* Boost.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = Boost.swift; path = Swifts/Boost.swift; sourceTree = "<group>"; };
 		DAFB35C01F7C7F7E00AEE41D /* ItemSelected.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ItemSelected.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -1013,6 +1071,35 @@
 				DA0437F01FD27C88008F596E /* CCH_Swish_2.atlas */,
 			);
 			path = "Clean cat house";
+			sourceTree = "<group>";
+		};
+		DA0437F71FD2C064008F596E /* In-game Interface */ = {
+			isa = PBXGroup;
+			children = (
+				DA0437F91FD2C064008F596E /* in-game interface location.png */,
+				DA0437FB1FD2C064008F596E /* Booster mode.png */,
+				DA0437FC1FD2C064008F596E /* Collectable score.png */,
+				DA0437FD1FD2C064008F596E /* Coin score.png */,
+				DA0438061FD2C064008F596E /* Pause button.png */,
+				DAFAD16A1FD2E11D00B9E2B3 /* BoosterBtn */,
+				DA0437FE1FD2C064008F596E /* Fish */,
+			);
+			name = "In-game Interface";
+			path = "Assets/In-game Interface";
+			sourceTree = "<group>";
+		};
+		DA0437FE1FD2C064008F596E /* Fish */ = {
+			isa = PBXGroup;
+			children = (
+				DA0437FF1FD2C064008F596E /* Fish_All_sunglasses.png */,
+				DA0438001FD2C064008F596E /* Fish_Allwithsunglasses.png */,
+				DA0438011FD2C064008F596E /* Fish_Body.png */,
+				DA0438021FD2C064008F596E /* Fish_Head.png */,
+				DA0438031FD2C064008F596E /* Fish_base.png */,
+				DA0438041FD2C064008F596E /* Fish_All.png */,
+				DA0438051FD2C064008F596E /* Fish_Tail.png */,
+			);
+			path = Fish;
 			sourceTree = "<group>";
 		};
 		DA25994B1F70CC2900BB9573 /* Main Menu */ = {
@@ -1149,6 +1236,7 @@
 				DA3382B51FA8714A0027C30E /* PurchaseItemTable.swift */,
 				DACF75AB1F79F92C00915446 /* CollectionTable.swift */,
 				DA3382B91FA87E8A0027C30E /* ShopItem.swift */,
+				DA0438341FD2C916008F596E /* MKOutlinedLabelNode.swift */,
 			);
 			name = "Game Classes";
 			sourceTree = "<group>";
@@ -1195,6 +1283,7 @@
 				DA4AF9341FD11D3F00B4F9B0 /* Game Screen Background */,
 				DAD6572C1F6AE454007F99ED /* Game Screen Interface (old) */,
 				DABB8F421F97415B002AD581 /* Game Screen Interface  */,
+				DA0437F71FD2C064008F596E /* In-game Interface */,
 				DABB8F821F974747002AD581 /* My Home */,
 				DA4AF8F11FCC0D0D00B4F9B0 /* Orgol */,
 				DAD3195F1FBEF4D000258820 /* GACHA */,
@@ -1737,6 +1826,7 @@
 				DAD0B7AA1F9DCCFD00AC8BE1 /* customizingScene.sks */,
 				DA4AF80B1FC90CA100B4F9B0 /* dailybonusScene.sks */,
 				DA0437B51FD24270008F596E /* itemshopscenetest.sks */,
+				DA0438151FD2C092008F596E /* ingameinterface.sks */,
 			);
 			path = test;
 			sourceTree = "<group>";
@@ -1979,6 +2069,7 @@
 				DA3382AF1FA86F230027C30E /* Obstacle.swift */,
 				DA3382B71FA874D90027C30E /* Cat.swift */,
 				DA0437E81FD2792D008F596E /* GachaObjects.swift */,
+				DAFAD1871FD2E1E500B9E2B3 /* Boost.swift */,
 			);
 			name = "Obstacle Classes";
 			sourceTree = "<group>";
@@ -2004,6 +2095,27 @@
 				DAF499621F7CB78E008CD2F6 /* SlipperyLotion_big.png */,
 			);
 			path = "Item (Big)";
+			sourceTree = "<group>";
+		};
+		DAFAD16A1FD2E11D00B9E2B3 /* BoosterBtn */ = {
+			isa = PBXGroup;
+			children = (
+				DAFAD16B1FD2E11D00B9E2B3 /* BoosterBtn-9.png */,
+				DAFAD16C1FD2E11D00B9E2B3 /* BoosterBtn-8.png */,
+				DAFAD16D1FD2E11D00B9E2B3 /* BoosterBtn-5.png */,
+				DAFAD16E1FD2E11D00B9E2B3 /* BoosterBtn-4.png */,
+				DAFAD16F1FD2E11D00B9E2B3 /* BoosterBtn-6.png */,
+				DAFAD1701FD2E11D00B9E2B3 /* BoosterBtn-7.png */,
+				DAFAD1711FD2E11D00B9E2B3 /* BoosterBtn-3.png */,
+				DAFAD1721FD2E11D00B9E2B3 /* BoosterBtn-2.png */,
+				DAFAD1731FD2E11D00B9E2B3 /* BoosterBtn-0.png */,
+				DAFAD1741FD2E11D00B9E2B3 /* BoosterBtn-1.png */,
+				DAFAD1751FD2E11D00B9E2B3 /* BoosterBtn-12.png */,
+				DAFAD1761FD2E11D00B9E2B3 /* BoosterBtn-10.png */,
+				DAFAD1771FD2E11D00B9E2B3 /* BoosterBtn-11.png */,
+				DAFAD1781FD2E11D00B9E2B3 /* BoostFull.atlas */,
+			);
+			path = BoosterBtn;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -2123,6 +2235,7 @@
 				DA4AF9671FD1230D00B4F9B0 /* daytime-default.png in Resources */,
 				DA2707321FAD96D600FE28F5 /* ultrabooster-5.png in Resources */,
 				DAD3193F1FBEF18600258820 /* Floor 29.png in Resources */,
+				DAFAD1841FD2E11E00B9E2B3 /* BoosterBtn-10.png in Resources */,
 				DACF75F61F7C798800915446 /* AutoFlying.png in Resources */,
 				DA4AF9631FD1230D00B4F9B0 /* daytime-mycatSelected.png in Resources */,
 				DACF760F1F7C798800915446 /* Travel Button.png in Resources */,
@@ -2150,12 +2263,14 @@
 				DA2707341FAF08F700FE28F5 /* CityOfMeow2.sks in Resources */,
 				DA4AF80C1FC90CA100B4F9B0 /* dailybonusScene.sks in Resources */,
 				DA774C831FB0403A00C6A208 /* Furniture 6.png in Resources */,
+				DAFAD17E1FD2E11E00B9E2B3 /* BoosterBtn-7.png in Resources */,
 				DA4AF8DE1FCC0B2700B4F9B0 /* levelselect_FestivalOfMiau.png in Resources */,
 				DA774C721FB0403A00C6A208 /* Furniture 16-1.png in Resources */,
 				DA4AF98B1FD16B2B00B4F9B0 /* England_man cat2.png in Resources */,
 				DA4AF9681FD1230D00B4F9B0 /* switch off.png in Resources */,
 				DADC52AC1F75111F0033BB28 /* mainPresent.png in Resources */,
 				DA774C641FB0403A00C6A208 /* Furniture 11-2.png in Resources */,
+				DA04380B1FD2C064008F596E /* Collectable score.png in Resources */,
 				DA774D231FB5AC5900C6A208 /* Props 34.png in Resources */,
 				DA774C981FB0513000C6A208 /* designhome-props-selected.png in Resources */,
 				DABB8FB51F974990002AD581 /* myhome_designhome.png in Resources */,
@@ -2198,6 +2313,7 @@
 				DABB8FD41F974BE9002AD581 /* pause_button.png in Resources */,
 				DACF76141F7C799E00915446 /* ItemShopScene.sks in Resources */,
 				DA4AF9001FCC0D0E00B4F9B0 /* orgol_receiveBtn.png in Resources */,
+				DAFAD1821FD2E11E00B9E2B3 /* BoosterBtn-1.png in Resources */,
 				DA4AF93B1FD11D4100B4F9B0 /* NY_1.png in Resources */,
 				DAD319501FBEF18600258820 /* Wallpaper 10.png in Resources */,
 				DA4AF98A1FD16B2B00B4F9B0 /* England_man cat.png in Resources */,
@@ -2220,6 +2336,7 @@
 				DA4AF86B1FC9406100B4F9B0 /* Japan_sushi 2.png in Resources */,
 				DADC528B1F7510550033BB28 /* selectionBox.png in Resources */,
 				DAD319491FBEF18600258820 /* Floor 4.png in Resources */,
+				DA0438101FD2C064008F596E /* Fish_Head.png in Resources */,
 				DA27070D1FAC325700FE28F5 /* meowshop-1-watch-video.png in Resources */,
 				DADC52A01F7510DA0033BB28 /* mainBoard.png in Resources */,
 				DADC52921F7510C10033BB28 /* booster (old).png in Resources */,
@@ -2230,6 +2347,7 @@
 				DA0437D41FD26FDE008F596E /* itemBar.png in Resources */,
 				DABB8FD01F9749B3002AD581 /* Collectable_fish_head.png in Resources */,
 				DA774C951FB0513000C6A208 /* designhome-floor-selected.png in Resources */,
+				DAFAD17F1FD2E11E00B9E2B3 /* BoosterBtn-3.png in Resources */,
 				DA774C5E1FB0403A00C6A208 /* Furniture 1-2.png in Resources */,
 				DA774C7F1FB0403A00C6A208 /* Furniture 5-2.png in Resources */,
 				DA4AF9721FD1230D00B4F9B0 /* ƒ√∑∫º«_«œ¥‹ø° ∏¬√Á ¿⁄∏• ∏ÆΩ∫∆Æ.png in Resources */,
@@ -2260,6 +2378,8 @@
 				DA27071B1FAC325700FE28F5 /* meowshop-exit.png in Resources */,
 				DA0437BE1FD24CB8008F596E /* itemCheck_first-part.png in Resources */,
 				DA4AF96D1FD1230D00B4F9B0 /* nighttime-superrareSelected.png in Resources */,
+				DAFAD1851FD2E11E00B9E2B3 /* BoosterBtn-11.png in Resources */,
+				DAFAD17D1FD2E11E00B9E2B3 /* BoosterBtn-6.png in Resources */,
 				DA774D0B1FB5AC5900C6A208 /* Props 16.png in Resources */,
 				DACF75F51F7C798800915446 /* AutoFlying Inst.png in Resources */,
 				DA4AF9621FD1230D00B4F9B0 /* daytime-superrareSelected.png in Resources */,
@@ -2288,6 +2408,7 @@
 				DA4AF8E11FCC0B2700B4F9B0 /* levelselect_Egypt.png in Resources */,
 				DA4AF9AC1FD178A900B4F9B0 /* Spain_flying tomato.png in Resources */,
 				DA4AF8EC1FCC0B2700B4F9B0 /* levelselect_MountainOfMeow.png in Resources */,
+				DA0438121FD2C064008F596E /* Fish_All.png in Resources */,
 				DA774D1F1FB5AC5900C6A208 /* Props 30.png in Resources */,
 				DA4AF8F01FCC0B2700B4F9B0 /* levelselect_Miao.png in Resources */,
 				DA4AF9AD1FD178A900B4F9B0 /* Spain_tomato.atlas in Resources */,
@@ -2302,6 +2423,7 @@
 				DA774C6C1FB0403A00C6A208 /* Furniture 14-1.png in Resources */,
 				DA774C871FB0403A00C6A208 /* Furniture 8-1.png in Resources */,
 				DA774C6A1FB0403A00C6A208 /* Furniture 13-2.png in Resources */,
+				DAFAD1791FD2E11E00B9E2B3 /* BoosterBtn-9.png in Resources */,
 				DA4AF9661FD1230D00B4F9B0 /* daytime-rareSelected.png in Resources */,
 				DA774D201FB5AC5900C6A208 /* Props 31.png in Resources */,
 				DA774D041FB5AC5900C6A208 /* Props 1.png in Resources */,
@@ -2323,9 +2445,12 @@
 				DAF499571F7C8327008CD2F6 /* Travel Button-crop.png in Resources */,
 				DAD319561FBEF18600258820 /* Wallpaper 16.png in Resources */,
 				DA4AF9641FD1230D00B4F9B0 /* daytime-normalSelected.png in Resources */,
+				DAFAD17A1FD2E11E00B9E2B3 /* BoosterBtn-8.png in Resources */,
 				DA4AF8DB1FCC0B2700B4F9B0 /* levelselect_CityOfMeow.png in Resources */,
 				DA27072F1FAD96D600FE28F5 /* ultrabooster-2.png in Resources */,
+				DA04380D1FD2C064008F596E /* Fish_All_sunglasses.png in Resources */,
 				DA774C991FB0513000C6A208 /* designhome-furniture-unselected.png in Resources */,
+				DA0438081FD2C064008F596E /* in-game interface location.png in Resources */,
 				DABB8FDF1F97510E002AD581 /* Collectable_fish_body-crop.png in Resources */,
 				DA774C241FAFF98E00C6A208 /* Ny5.sks in Resources */,
 				DAD319531FBEF18600258820 /* Wallpaper 13.png in Resources */,
@@ -2343,6 +2468,7 @@
 				DA774C861FB0403A00C6A208 /* Furniture 7.png in Resources */,
 				DA774C6E1FB0403A00C6A208 /* Furniture 14.png in Resources */,
 				DA4AF9761FD1230D00B4F9B0 /* collectionCell.png in Resources */,
+				DAFAD1831FD2E11E00B9E2B3 /* BoosterBtn-12.png in Resources */,
 				DA774C621FB0403A00C6A208 /* Furniture 10.png in Resources */,
 				DA4AF9011FCC0D0E00B4F9B0 /* orgol_rewardBackground.png in Resources */,
 				DA4AF86D1FC9406100B4F9B0 /* Japan_toy.png in Resources */,
@@ -2380,6 +2506,7 @@
 				DA4AF8E81FCC0B2700B4F9B0 /* level4.png in Resources */,
 				DAF499631F7CB78E008CD2F6 /* AutoFlying_big.png in Resources */,
 				DA4AF8EA1FCC0B2700B4F9B0 /* level7.png in Resources */,
+				DA04380C1FD2C064008F596E /* Coin score.png in Resources */,
 				DA4AF84D1FC9406100B4F9B0 /* Japan_naruto.png in Resources */,
 				DAD319451FBEF18600258820 /* Floor 34.png in Resources */,
 				DABB8FCC1F9749B3002AD581 /* Coin_located.png in Resources */,
@@ -2391,6 +2518,7 @@
 				DA774C791FB0403A00C6A208 /* Furniture 3-2.png in Resources */,
 				DA774D171FB5AC5900C6A208 /* Props 25.png in Resources */,
 				DACF76081F7C798800915446 /* RandomBox Inst.png in Resources */,
+				DA04380A1FD2C064008F596E /* Booster mode.png in Resources */,
 				DAD0B7AB1F9DCCFD00AC8BE1 /* customizingScene.sks in Resources */,
 				DA4AF96B1FD1230D00B4F9B0 /* nighttime-default.png in Resources */,
 				DAD3195B1FBEF18600258820 /* Wallpaper 6.png in Resources */,
@@ -2417,6 +2545,7 @@
 				DA774D111FB5AC5900C6A208 /* Props 2.png in Resources */,
 				DA774D051FB5AC5900C6A208 /* Props 10.png in Resources */,
 				DAD3199D1FBEF4D000258820 /* Gacha_background.png in Resources */,
+				DA0438111FD2C064008F596E /* Fish_base.png in Resources */,
 				DA774C1A1FAFF98800C6A208 /* Ny10.sks in Resources */,
 				DA4AF9991FD1742500B4F9B0 /* LA_palmtree.png in Resources */,
 				DA0437B61FD24270008F596E /* itemshopscenetest.sks in Resources */,
@@ -2427,6 +2556,7 @@
 				DA774C271FAFF98E00C6A208 /* Ny8.sks in Resources */,
 				DA0437F11FD27C88008F596E /* CCH_Swish_2.atlas in Resources */,
 				DA774C7D1FB0403A00C6A208 /* Furniture 4.png in Resources */,
+				DAFAD17C1FD2E11E00B9E2B3 /* BoosterBtn-4.png in Resources */,
 				DAD0B7BA1F9DD12200AC8BE1 /* customizing_usemypicture.png in Resources */,
 				DAF499641F7CB78E008CD2F6 /* AwesomeSticker_big.png in Resources */,
 				DAD319411FBEF18600258820 /* Floor 30.png in Resources */,
@@ -2450,6 +2580,7 @@
 				DA4AF8FC1FCC0D0E00B4F9B0 /* orgol_background.png in Resources */,
 				DA774C881FB0403A00C6A208 /* Furniture 8-2.png in Resources */,
 				DAD0B7B21F9DCE2C00AC8BE1 /* customizing_body.png in Resources */,
+				DAFAD1811FD2E11E00B9E2B3 /* BoosterBtn-0.png in Resources */,
 				DA774C661FB0403A00C6A208 /* Furniture 12-1.png in Resources */,
 				DA774D021FB5AC5900C6A208 /* Props 1-1.png in Resources */,
 				DA774D221FB5AC5900C6A208 /* Props 33.png in Resources */,
@@ -2459,7 +2590,10 @@
 				DACF75F71F7C798800915446 /* AwesomeSticker Inst.png in Resources */,
 				DAD3195D1FBEF18600258820 /* Wallpaper 8.png in Resources */,
 				DA774D1C1FB5AC5900C6A208 /* Props 3-1.png in Resources */,
+				DA04380F1FD2C064008F596E /* Fish_Body.png in Resources */,
 				DA774C851FB0403A00C6A208 /* Furniture 7-2.png in Resources */,
+				DA04380E1FD2C064008F596E /* Fish_Allwithsunglasses.png in Resources */,
+				DAFAD1861FD2E11E00B9E2B3 /* BoostFull.atlas in Resources */,
 				DA774D031FB5AC5900C6A208 /* Props 1-2.png in Resources */,
 				DA2974A21F68DEDE005F6B41 /* Actions.sks in Resources */,
 				DA0437B31FD24151008F596E /* itemCheck_first-crop.png in Resources */,
@@ -2467,6 +2601,7 @@
 				DA774D2C1FB5AC5900C6A208 /* Props 6-1.png in Resources */,
 				DAD319311FBEF18600258820 /* Floor 16.png in Resources */,
 				DA774D131FB5AC5900C6A208 /* Props 21.png in Resources */,
+				DA0438141FD2C064008F596E /* Pause button.png in Resources */,
 				DA4AF8E41FCC0B2700B4F9B0 /* level3.png in Resources */,
 				DA4AF96C1FD1230D00B4F9B0 /* nighttime-mycatSelected.png in Resources */,
 				DA4AF8FD1FCC0D0E00B4F9B0 /* 오르골페이지_엔지니어님께.png in Resources */,
@@ -2500,6 +2635,7 @@
 				DA774D341FB5AC5900C6A208 /* Props 8.png in Resources */,
 				DAD3199B1FBEF4D000258820 /* Feed_Common.png in Resources */,
 				DADC528C1F7510550033BB28 /* Setting Screen.png in Resources */,
+				DA0438131FD2C064008F596E /* Fish_Tail.png in Resources */,
 				DA774C771FB0403A00C6A208 /* Furniture 2.png in Resources */,
 				DAF499671F7CB78E008CD2F6 /* FluufyTail_big.png in Resources */,
 				DACF75B91F79F96200915446 /* MainMenuScene.sks in Resources */,
@@ -2512,6 +2648,7 @@
 				DADC529E1F7510DA0033BB28 /* main screen.png in Resources */,
 				DA774CC81FB5175800C6A208 /* meowshop-6-goldcoin.png in Resources */,
 				DA4AF9711FD1230D00B4F9B0 /* creat cat.png in Resources */,
+				DAFAD17B1FD2E11E00B9E2B3 /* BoosterBtn-5.png in Resources */,
 				DA0437B41FD24151008F596E /* itemCheck_second-crop.png in Resources */,
 				DAD319381FBEF18600258820 /* Floor 22.png in Resources */,
 				DAF02F561FAF22870002B2F4 /* CityOfMeow3.sks in Resources */,
@@ -2529,6 +2666,7 @@
 				DA4AF93E1FD11D4100B4F9B0 /* NY_4.png in Resources */,
 				DA774D2F1FB5AC5900C6A208 /* Props 7-1.png in Resources */,
 				DA774D191FB5AC5900C6A208 /* Props 27.png in Resources */,
+				DA0438161FD2C092008F596E /* ingameinterface.sks in Resources */,
 				DA0437AF1FD17D74008F596E /* Spain_dancing_cat.atlas in Resources */,
 				DA4AF8251FC9327000B4F9B0 /* Korea_bird.png in Resources */,
 				DAD319321FBEF18600258820 /* Floor 17.png in Resources */,
@@ -2537,6 +2675,7 @@
 				DACF75BC1F79F96200915446 /* map test.sks in Resources */,
 				DA774C8A1FB0403A00C6A208 /* Furniture 9-1.png in Resources */,
 				DA4AF90D1FCD3DF400B4F9B0 /* Life1.atlas in Resources */,
+				DAFAD1801FD2E11E00B9E2B3 /* BoosterBtn-2.png in Resources */,
 				DA0437DF1FD275C1008F596E /* GACHA_Location_Reference1.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -2571,6 +2710,7 @@
 				DACF75AC1F79F92C00915446 /* CollectionTable.swift in Sources */,
 				DAD657211F6A2E66007F99ED /* Constants.swift in Sources */,
 				DA2707241FAC36CD00FE28F5 /* MeowshopTable.swift in Sources */,
+				DAFAD1881FD2E1E500B9E2B3 /* Boost.swift in Sources */,
 				DA3382B41FA86F3E0027C30E /* MyHomeScene.swift in Sources */,
 				DA3382AE1FA86ED70027C30E /* Collectables.swift in Sources */,
 				DACF75A71F79F92100915446 /* GameplayScene.swift in Sources */,
@@ -2585,6 +2725,7 @@
 				DACF759D1F79F90400915446 /* GameplayController.swift in Sources */,
 				DACF75A01F79F90D00915446 /* Player.swift in Sources */,
 				DACF75C21F79FA1000915446 /* GameData.swift in Sources */,
+				DA0438351FD2C916008F596E /* MKOutlinedLabelNode.swift in Sources */,
 				DACF76161F7C7A2200915446 /* ItemShopScene.swift in Sources */,
 				DA29749E1F68DEDE005F6B41 /* AppDelegate.swift in Sources */,
 				DACF75A81F79F92100915446 /* LevelSelectScene.swift in Sources */,
