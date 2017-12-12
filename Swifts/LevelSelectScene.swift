@@ -34,6 +34,14 @@ class LevelSelectScene: SKScene {
                 scene!.scaleMode = .aspectFill
                 self.view?.presentScene(scene!, transition: SKTransition.doorsOpenVertical(withDuration: 1))
             }
+            
+            if touchedNode.name == "level2" {
+                let scene = ItemShopScene(fileNamed: "ItemShopScene")
+                scene?.locationToTravel = selectedMap
+                scene?.levelToTravel = 2
+                scene!.scaleMode = .aspectFill
+                self.view?.presentScene(scene!, transition: SKTransition.doorsOpenVertical(withDuration: 1))
+            }
         }
     }
 }

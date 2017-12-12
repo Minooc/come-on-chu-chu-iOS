@@ -69,8 +69,13 @@ class GameplayScene: SKScene, SKPhysicsContactDelegate  {
         health = 4
         
         // Set camera and background
+        
         mainCamera = self.childNode(withName: "Main Camera") as? SKCameraNode
         background = self.childNode(withName: "background") as? SKSpriteNode
+        
+
+        
+        
         
         // Initialize booster
         boostMeter = 0
@@ -105,6 +110,7 @@ class GameplayScene: SKScene, SKPhysicsContactDelegate  {
         boostTrigger = true
         sunglassTrigger = true
         
+        
         print("Current Location is \(currentLocation)")
         
 
@@ -113,6 +119,9 @@ class GameplayScene: SKScene, SKPhysicsContactDelegate  {
     override func update(_ currentTime: TimeInterval) {
         
         player?.movePlayer()
+
+
+        
         moveCamera()
         managePlayer()
         
@@ -144,7 +153,8 @@ class GameplayScene: SKScene, SKPhysicsContactDelegate  {
         // prepare to load next level
         
         if !loaded {
-            if (player!.position.x > background.position.x + (background.size.width / 2) - 1100) {
+
+            if (player!.position.x > background.position.x + (background.size.width/2) - 1100) {
 
                 print("close close!")
                 loadNextLevel()
@@ -158,6 +168,7 @@ class GameplayScene: SKScene, SKPhysicsContactDelegate  {
                 removePreviousLevel()
             }
         }
+
     }
     
 
@@ -168,16 +179,16 @@ class GameplayScene: SKScene, SKPhysicsContactDelegate  {
         loaded = true
         
         nextLevel = nextLevel + 1
-        
+
         print("\(currentLocation!)\(nextLevel!)")
         let nextScene = SKScene(fileNamed: "\(currentLocation!)\(nextLevel!)")
-        
+
 
         if let node = nextScene?.childNode(withName: "background") {
             let nextNode = node.copy() as! SKSpriteNode
             nextNode.position.x += self.background.size.width + backgroundLengthSum
             self.addChild(nextNode)
-            
+
             self.previousBackground = self.background
             self.background = nextNode
             print("background changed")
@@ -185,7 +196,7 @@ class GameplayScene: SKScene, SKPhysicsContactDelegate  {
         }
 
         backgroundLengthSum = backgroundLengthSum + previousBackground.size.width
-
+        setObstacles()
 
     }
     
@@ -205,7 +216,7 @@ class GameplayScene: SKScene, SKPhysicsContactDelegate  {
     }
     
     func boostUp() {
-        if (boostMeter < 12) {
+        if (boostMeter < 12 && player?.boosted == false) {
             boostMeter = boostMeter + 1
             boostBtn.texture = SKTexture(imageNamed: "BoosterBtn-\(boostMeter!)")
         }
@@ -219,7 +230,7 @@ class GameplayScene: SKScene, SKPhysicsContactDelegate  {
     func boostFire() {
         
         // Do something here
-        
+        player?.boosted = true
         
         // Re-initialize boost
         boostBtn.stopAnimation()
@@ -227,14 +238,34 @@ class GameplayScene: SKScene, SKPhysicsContactDelegate  {
         boostMeter = 0
         boostEnabled = false
         boostTrigger = true
+        
+        perform(#selector(boostEnd), with: nil, afterDelay: 5.0)
+    }
+    
+    func boostEnd() {
+        print("boost ended")
+        player?.boosted = false
+        playerGotHit = true
+        playerCanGetHit = false
+        
     }
     
     
     func setObstacles() {
         
+        
+        for obs in background.children {
+            if let ob = obs as? Obstacle {
+
+                ob.move(toParent: self)
+
+            }
+        }
+        
         while(true) {
             if let obs = self.childNode(withName: "princess_cat") as? Obstacle {
                 obs.animateObject(atlasName: "England_princess.atlas", prefix: "England_princess_cat_", timePerFrame: 0.16)
+                
                 obs.name = "StandingObstacle"
                 obstacles.append(obs)
             }
@@ -313,6 +344,7 @@ class GameplayScene: SKScene, SKPhysicsContactDelegate  {
                 
             }
             else if let obs = self.childNode(withName: "bomb") as? Obstacle {
+                
                 obs.name = "BombObstacle"
                 obstacles.append(obs)
                 
@@ -365,13 +397,14 @@ class GameplayScene: SKScene, SKPhysicsContactDelegate  {
             if ob.name == "ChaseObstacle" {
                 if (ob.position.x < (player?.position.x)! + 1100) {
                     
-                    if (ob.position.x > (player?.position.x)! + 1095) {
-                        
+                    if (ob.triggered) {
+                        ob.triggered = false
                         let playerX = (player?.position.x)!
                         let playerY = (player?.position.y)!
                         
                         ob.flyingSpeedX = (playerX - ob.position.x)/100
                         ob.flyingSpeedY = (playerY - ob.position.y)/100
+                        
                         
                         
                     }
@@ -383,24 +416,29 @@ class GameplayScene: SKScene, SKPhysicsContactDelegate  {
             
             if ob.name == "BombObstacle" {
                 
+//                print("ob \(ob.position.x)")
+//                print("player \((player?.position.x)! - 4333)")
+                
                 if (ob.position.x < (player?.position.x)! + 1100) {
                     
+                    if (ob.triggered) {
+                        
+                            ob.triggered = false
+                            let playerX = (player?.position.x)!
+                            let playerY = (player?.position.y)!
+                        
+                            ob.flyingSpeedX  = (playerX - ob.position.x)/100
+                            ob.flyingSpeedY  = (playerY - ob.position.y)/100
+                        
+                            print("pre-explosion")
+                            ob.preExplode()
+                        }
                     
-                    if (ob.position.x > (player?.position.x)! + 1095) {
-                        
-                        let playerX = (player?.position.x)!
-                        let playerY = (player?.position.y)!
-                        
-                        ob.flyingSpeedX  = (playerX - ob.position.x)/100
-                        ob.flyingSpeedY  = (playerY - ob.position.y)/100
-                        
-                        ob.preExplode()
-                    }
-                    
-                    if (ob.position.x > (player?.position.x)! + 900 && ob.position.x < (player?.position.x)! + 920) {
+                    if (ob.exploded == false && (ob.position.x > (player?.position.x)!)) {
+                        print("explosion")
+                        ob.exploded = true
                         ob.bombExplode()
                     }
-                    
                     
                     if (ob.position.x > (player?.position.x)! - 100) {
                         ob.position.x += ob.flyingSpeedX
@@ -408,9 +446,8 @@ class GameplayScene: SKScene, SKPhysicsContactDelegate  {
                         
                     }
                     
-                    
                 }
-                
+
                 
             }
             
@@ -428,10 +465,12 @@ class GameplayScene: SKScene, SKPhysicsContactDelegate  {
             
             // Remove obstacle that passed
             if (ob.position.x < (player?.position.x)! - 1200) {
+//                print(ob.position.x)
+//                print((player?.position.x)! - 1200 - 4333)
                 let indexToDelete = obstacles.index(of: ob)
                 ob.removeFromParent()
                 obstacles.remove(at: indexToDelete!)
-                print("it's gone")
+//                print("it's gone")
                 
             }
             
@@ -604,7 +643,7 @@ class GameplayScene: SKScene, SKPhysicsContactDelegate  {
             
         } else if firstBody.node?.name == "Player" && (secondBody.node?.name == "StandingObstacle" || secondBody.node?.name == "FlyingObstacle" || secondBody.node?.name == "WalkingObstacle" || secondBody.node?.name == "UpFlyingObstacle" || secondBody.node?.name == "DownFlyingObstacle" || secondBody.node?.name == "DroppingObstacle" || secondBody.node?.name == "RisingObstacle" || secondBody.node?.name == "AssObstacle" || secondBody.node?.name == "BombObstacle" || secondBody.node?.name == "ChaseObstacle") {
             //  secondBody.node?.name == "GeneralObstacle"
-            if (playerCanGetHit) {
+            if (playerCanGetHit && !(player?.boosted)!) {
                 
                 playerGotHit = true
                 playerCanGetHit = false
@@ -654,6 +693,10 @@ class GameplayScene: SKScene, SKPhysicsContactDelegate  {
     
     func moveCamera() {
         self.mainCamera?.position.x += 4   // move camera right
+        
+        if (player?.boosted)! {
+            self.mainCamera?.position.x += 4
+        }
     }
     
 

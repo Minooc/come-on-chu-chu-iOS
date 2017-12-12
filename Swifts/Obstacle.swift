@@ -19,6 +19,8 @@ class Obstacle: SKSpriteNode {
     var preExploded: Bool = false
     var exploded: Bool = false
     
+    var triggered: Bool = true
+    
     var flyingSpeedX: CGFloat = 0.0
     var flyingSpeedY: CGFloat = 0.0
 
@@ -43,11 +45,15 @@ class Obstacle: SKSpriteNode {
         // retrieve pieces of player image from Player.atltas
         textureAtlas = SKTextureAtlas(named: atlasName)
         
+        obstacleAnimation = []
+        
         // store images to array
         for i in 1...3 {
             let name = "\(prefix)\(i)"
             obstacleAnimation.append(SKTexture(imageNamed: name))
         }
+        
+//        print(obstacleAnimation)
         
         animateObstacleAction = SKAction.animate(with: obstacleAnimation, timePerFrame: timePerFrame, resize: true, restore: false)
         
@@ -59,13 +65,20 @@ class Obstacle: SKSpriteNode {
         // retrieve pieces of player image from Player.atltas
         textureAtlas = SKTextureAtlas(named: atlasName)
         
+        obstacleAnimation = []
+        
         // store images to array
         for i in 4...textureAtlas.textureNames.count {
             let name = "\(prefix)\(i)"
             obstacleAnimation.append(SKTexture(imageNamed: name))
         }
         
+
+
+        
         animateObstacleAction = SKAction.animate(with: obstacleAnimation, timePerFrame: timePerFrame, resize: true, restore: false)
+        
+//        print(animateObstacleAction)
         
         
     }
@@ -111,23 +124,17 @@ class Obstacle: SKSpriteNode {
     }
     
     func preExplode() {
-        if (preExploded == false) {
-            preExploded = true
-            preExplosion(atlasName: "Japan_WasabiBomb.atlas", prefix: "WasabiBomb", timePerFrame: 0.2)
-            self.run(animateObstacleAction, withKey: "Animate")
+        preExplosion(atlasName: "Japan_WasabiBomb.atlas", prefix: "WasabiBomb", timePerFrame: 0.3)
+        self.run(animateObstacleAction, withKey: "Animate")
 
-        }
     }
     
     func bombExplode() {
-        
-        if (exploded == false) {
-            exploded = true
-            initializePlayerAndAnimations(atlasName: "Japan_WasabiBomb.atlas", prefix: "WasabiBomb", timePerFrame: 0.08)
-            self.run(animateObstacleAction, withKey: "Animate")
+            
+        explosion(atlasName: "Japan_WasabiBomb.atlas", prefix: "WasabiBomb", timePerFrame: 0.12)
+        self.run(animateObstacleAction, withKey: "Animate")
 
-        }
-//        self.run(SKAction.repeatForever(animateObstacleAction), withKey: "Animate")
+
     }
     
 }

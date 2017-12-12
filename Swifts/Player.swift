@@ -9,11 +9,15 @@
 import SpriteKit
 
 class Player: SKSpriteNode {
+    
+    var boosted: Bool!
 
     private var blinkAnimation = [SKTexture]()
     private var animateBlinkAction = SKAction()
     
     func initialize() {
+        
+        boosted = false
         
         self.physicsBody = SKPhysicsBody(texture: self.texture!, size: (self.texture?.size())!)
 //        self.physicsBody = SKPhysicsBody(rectangleOf: CGSize(width: self.size.width - 50, height: self.size.height - 50))
@@ -31,6 +35,9 @@ class Player: SKSpriteNode {
     
     func movePlayer() {
         self.position.x += 4
+        if boosted {
+            self.position.x += 4
+        }
     }
     
     func sinkPlayer() {
@@ -39,6 +46,11 @@ class Player: SKSpriteNode {
     
     func floatPlayer() {
         self.position.y += 7
+    }
+    
+    func boostPlayer() {
+        self.position.x += 4
+        
     }
     
     func initializeBlinkAnimation(timePerFrame: TimeInterval) {
